@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Frivolous Musings</title>
+  <id>http://localhost/</id>
+  <updated>2018-11-01T00:00:00Z</updated>
+  <link href="http://localhost/" />
+  <link href="http://localhost/" rel="self" />
+  <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
+  <generator>Werkzeug</generator>
+  <entry xml:base="http://localhost/">
+    <title type="text">Biodiversity // Doctors // BMX</title>
+    <id>http://localhost/posts/Biodiversity :: Doctors :: BMX</id>
+    <updated>2018-11-01T00:00:00Z</updated>
+    <published>2018-11-01T00:00:00Z</published>
+    <link href="http://localhost/posts/Biodiversity :: Doctors :: BMX" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;I’ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I’ve been bothered by ‫]‬these guys‫[‬(https://en.wikipedia.org/wiki/Aedes_albopictus#/media/File:Aedes_Albopictus.jpg). Googling mosquitoes with zebra-striped abdomens reveals that this is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Aedes_albopictus&quot;&gt;tiger mosquito&lt;/a&gt;, an aggressive invader from SE Asia. Ranked as one of the hundred worst invasive species, it originally spread on packing crates and has penetrated most of the world, first being seen in Israel in 2003. And besides for worse things, such as being disease vectors, they are unusually awful pests: they hunt by day, unlike regular mozzies, and can easily adapt to living in almost any human habitat, not needing a humid bog. I can testify to their peculiarly aggressive nature, not minding being brushed away or swatted at, persisting until finding blood.&lt;/p&gt;
+&lt;p&gt;One of the side-effects of globalisation is the cross-pollination of nonhuman species all over the world, and simple Darwinism makes it likely that the strongest contenders from foreign environments will quickly take over many others (note the invasive Indian Mynahs and crows so prevalent here). It seems inevitable that this will result in a significant reduction in biodiversity. (The WWF claimed &lt;a href=&quot;https://qz.com/1443473/wwf-living-planet-report-says-humans-wiped-out-60-of-animals-since-1970/&quot;&gt;in a report this week&lt;/a&gt; that 60% of species had been wiped out since 1970.) This seems unpreventable, hard to track, and there might even be some unanticipated positive consequences. But it is a remarkable phenomenon.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A doctor recommended I have a mole taken out, so I went to a plastic surgeon, who said it was unnecessary, but he could do it anyway. “OK,” I said. “OK what?” he asked, with typical Israeli patience. “Well, you say no, she says yes - how can I know what to do?” He waved his hand. “Don’t worry about it, you can rely on me. It’s the easiest thing to prescribe an op. That’s not called being a doctor! Anyone could say that. It takes knowledge to say, it’s not necessary.” It reminded me a bit of doctrine of &lt;a href=&quot;https://he.wikipedia.org/wiki/%D7%9B%D7%95%D7%97_%D7%93%D7%94%D7%99%D7%AA%D7%A8%D7%90_%D7%A2%D7%93%D7%99%D7%A3&quot;&gt;כוחא דהיתרא עדיף&lt;/a&gt; (Beitza 2b) - anyone can prohibit something, but it takes a scholar to permit it!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;On the way back from the doctor I walked past BMXers doing tricks outside the Cinematheque. What they do is unreal, Matrix stuff; it seems to override the law of gravity.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">My early life</title>
+    <id>http://localhost/posts/winston</id>
+    <updated>2017-07-04T00:00:00Z</updated>
+    <published>2017-07-04T00:00:00Z</published>
+    <link href="http://localhost/posts/winston" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2 id=&quot;by-winston-s.-churchill&quot;&gt;By Winston S. Churchill&lt;/h2&gt;
+&lt;p&gt;When does one first begin to remember? When do the waving lights and shadows of dawning consciousness cast their print upon the mind of a child? My earliest mem ories are Ireland. I can recall scenes and events in Ireland quite well, and sometimes dimly even, people. Yet I was born on November 30, 1874, and I left Ireland early in the year 1879. My father had gone to Ireland as secretary to his father, the Duke of Marlborough, appointed Lord-Lieu tenant by Mr. Disraeli in 1876. We lived in a house called &lt;em&gt;The Little Lodge&lt;/em&gt; about a stone’s throw from the Vice regal. Here I spent nearly three years of childhood. I have clear and vivid impressions of some events. I remem ber my grandfather, the Viceroy, unveiling the Lord Gough statue in 1878. A great black crowd, scarlet soldiers on horse back, strings pulling away a brown shiny sheet, the old Duke, the formidable grandpapa, talking loudly to the crowd. I recall even a phrase he used: ‘and with a wither ing volley he shattered the enemy’s line.’ I quite under stood that he was speaking about war and fighting and that a Volley’ meant what the black-coated soldiers (Riflemen) used to do with loud bangs so often in the Phoenix Park where I was taken for my morning walks. This, I think, is my first coherent memory.&lt;/p&gt;
+&lt;p&gt;Other events stand out more distinctly. We were to go to a pantomime. There was great excitement about it. The long- looked-for afternoon arrived. We started from the Vice regal and drove to the Castle where other children were no doubt to be picked up. Inside the Castle was a great square space paved with small oblong stones. It rained. It nearly always rained just as it does now. People came out of the doors of the Castle, and there seemed to be much stir. Then we were told we could not go to the pantomime be cause the theatre had been burned down. All that was found of the manager was the keys that had been in his pocket. We were promised as a consolation for not going to the pantomime to go next day and see the ruins of the building. I wanted very much to see the keys, but this request does not seem to have been well received.&lt;/p&gt;
+&lt;p&gt;In one of these years we paid a visit to Emo Park, the seat of Lord Portarlington, who was explained to me as a sort of uncle. Of this place I can give very clear descrip tions, though I have never been there since I was four or four and a half. The central point in my memory is a tall white stone tower which we reached after a considerable drive. I was told it had been blown up by Oliver Cromwell. I understood definitely that he had blown up all sorts of things and was therefore a very great man.&lt;/p&gt;
+&lt;p&gt;My nurse, Mrs. Everest, was nervous about the Fenians. I gathered these were wicked people and there was no end to what they would do if they had their way. On one occa sion when I was out riding on my donkey, we thought we saw a long dark procession of Fenians approaching. I am sure now it must have been the Rifle Brigade out for a route march. But we were all very much alarmed, particularly the donkey, who expressed his anxiety by kicking. I was thrown off and had concussion of the brain. This was my first intro duction to Irish politics!&lt;/p&gt;
+&lt;p&gt;In the Phoenix Park there was a great round clump of trees with a house inside it. In this house there lived a per sonage styled the Chief Secretary or the Under Secretary, I am not clear which. But at any rate from this house there came a man called Mr. Burke. He gave me a drum. I can not remember what he looked like, but I remember the drum. Two years afterwards when we were back in England, they told me he had been murdered by the Fenians in this same Phoenix Park we used to walk about in every day. Everyone round me seemed much upset about it, and I thought how lucky it was the Fenians had not got me when I fell off the donkey.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+</feed>
