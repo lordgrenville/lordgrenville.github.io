@@ -2,11 +2,189 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2018-11-01T00:00:00Z</updated>
+  <updated>2019-01-06T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
   <generator>Werkzeug</generator>
+  <entry xml:base="http://localhost/">
+    <title type="text">Prayer</title>
+    <id>http://localhost/posts/Prayer</id>
+    <updated>2018-12-20T00:00:00Z</updated>
+    <published>2018-12-20T00:00:00Z</published>
+    <link href="http://localhost/posts/Prayer" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Back in my yeshiva days, I struggled with the concept of prayer. We observe that sometimes people pray for things and aren’t answered - after all, we all pray every day for health, wealth and the ultimate redemption. So the underlying theory seems to be something along the lines of prayer increasing your odds. Or, since presumably these things are deterministic, your score: perhaps a young, healthy person needs 100 points to recover from an illness, and has 80 points on their own merit, prayer can boost them 20 points and make it happen. Perhaps to recover from a rare cancer requires 10,000 points and so even a pretty righteous person, with many people praying for them, might get like, 8,000 points, close but no cigar. (Perhaps this even warrants them a temporary remission, but not a full one.)&lt;br /&gt; &lt;br /&gt;But all of this seems a little silly: the “vending machine” model of divine worship. Insert prayers, get rewarded. In fact there are Jewish sources that claim that God makes life especially tough for the righteous because he desires their prayers. A model that appeals to me more would be the exact opposite: that prayer affects nothing at all, but is a form of meditation and Divine closeness, and so is worthy for its own sake. But in this case praying for something to happen does absolutely nothing, which makes the activity seem somewhat paradoxical.&lt;br /&gt; &lt;br /&gt;Of course, at its core this is entangled with the problem of theodicy, so it’s no wonder that it’s such a conundrum.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Democracy &amp; Elitism // Fish</title>
+    <id>http://localhost/posts/Democracy &amp; Elitism :: Fish</id>
+    <updated>2018-11-08T00:00:00Z</updated>
+    <published>2018-11-08T00:00:00Z</published>
+    <link href="http://localhost/posts/Democracy &amp; Elitism :: Fish" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;There’s a “salon” here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are “good” and “bad” voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I’ve been groping towa Back in my yeshiva days, I struggled with the concept of prayer. We observe that sometimes people pray for things and aren’t answered - after all, we all pray every day for health, wealth and the ultimate redemption. So the underlying theory seems to be something along the lines of prayer increasing your odds. Or, since presumably these things are deterministic, your score: perhaps a young, healthy person needs 100 points to recover from an illness, and has 80 points on their own merit, prayer can boost them 20 points and make it happen. Perhaps to recover from a rare cancer requires 10,000 points and so even a pretty righteous person, with many people praying for them, might get like, 8,000 points, close but no cigar. (Perhaps this even warrants them a temporary remission, but not a full one.)&lt;/p&gt;
+&lt;p&gt;But all of this seems a little silly: the “vending machine” model of divine worship. Insert prayers, get rewarded. In fact there are Jewish sources that claim that God makes life especially tough for the righteous because he desires their prayers. A model that appeals to me more would be the exact opposite: that prayer affects nothing at all, but is a form of meditation and Divine closeness, and so is worthy for its own sake. But in this case praying for something to happen does absolutely nothing, which makes the activity seem somewhat paradoxical.&lt;/p&gt;
+&lt;p&gt;Of course, at its core this is entangled with the problem of theodicy, so it’s no wonder that it’s such a conundrum. rds an idea of “democratic elitism” for a while, in which the great value of democracy, I think, is that everyone’s &lt;em&gt;interests&lt;/em&gt; are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.&lt;/p&gt;
+&lt;p&gt;In this as in most things, it turns out that there’s a literature. While reading Alan Ryan’s biography &lt;a href=&quot;https://www.amazon.com/John-Dewey-High-American-Liberalism/dp/1511384352&quot;&gt;&lt;em&gt;John Dewey and the High Tide of American Liberalism&lt;/em&gt;&lt;/a&gt;, I came across Dewey’s debates with journalist Walter Lippmann, a towering figure in American journalism I’d never heard of. He studied under Santayana at Harvard, co-founded the &lt;em&gt;New Republic&lt;/em&gt;, and was a much read journalist and critic for half a century. (This &lt;a href=&quot;https://www.foreignaffairs.com/reviews/review-essay/2015-02-11/walter-lippmann-and-american-century&quot;&gt;helpful 1980 retrospective&lt;/a&gt; in &lt;em&gt;Foreign Affairs&lt;/em&gt; is temporarily ungated, probably due to an oversight.) In the &lt;a href=&quot;https://en.wikipedia.org/wiki/Journalism#Writing_for_experts_or_for_ordinary_citizens?&quot;&gt;Lippmann-Dewey&lt;/a&gt; debates, Lippmann made several very prescient critiques of the media-public pipeline: firstly, reality is too complicated for anyone to understand, and journalists tend to fall back on a stereotype backed up by some reporting. Secondly, the public has little interest in political engagement, and is not prepared to pay the price of thorough, well-researched journalism. “For a dollar, you may not even get an armful of candy, but for a dollar or less people expect reality/representations of truth to fall into their laps.” A lot of important facts are impossible to find out, and editorial judgment adds bias to the allocation of news coverage. Thus, people don’t want to keep up, and wouldn’t be able to even if they could.&lt;/p&gt;
+&lt;p&gt;Lippmann advocated a technocracy, where a governing elite would be advised by a cadre of technocrats, experts in a very narrow field. (Lippmann’s name is thus associated with our modern vision of the neoliberal state, and in fact it was Foucault who pointed out that the the term originated at the first meeting in Paris of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Colloque_Walter_Lippmann&quot;&gt;Colloque Walter Lippmann&lt;/a&gt;.) Dewey’s side of the argument was in favour of civilian journalism, and a “Great Society” of slow community-wide consensus. (Always majestic in idealism but obscurely phrased, Dewey’s writing was perfectly described by Oliver Wendell Homes Jr.:“So methought God would have spoken had He been inarticulate but keenly desirous to tell you how it was.”)&lt;/p&gt;
+&lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually Joseph Schumpeter. In his famous work &lt;a href=&quot;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&quot;&gt;Capitalism, Socialism and Democracy&lt;/a&gt; Schumpeter argued that a) the people are unlikely to know what is best for them, since they are usually manipulated by politicians, and b) even if they did have a clear agenda, they wouldn’t know the best means to achieving it. He thus (following Weber) argued for a largely arms-length democratic system, in which policy decisions are made at a government level and the public’s role is restricted to choosing one of these options and giving it a rubber stamp.&lt;/p&gt;
+&lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Social Justice Warriors on the Intellectual Dark Web // Who Needs the News?// The Nature of Reality</title>
+    <id>http://localhost/posts/Social Justice Warriors on the Intellectual Dark Web  Who Needs the News The Nature of Reality</id>
+    <updated>2018-11-12T00:00:00Z</updated>
+    <published>2018-11-12T00:00:00Z</published>
+    <link href="http://localhost/posts/Social Justice Warriors on the Intellectual Dark Web  Who Needs the News The Nature of Reality" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;A very overdiscussed topic lately is political correctness, and if there’s too much of it. I propose the following three points:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;At least some measure of socially ordained political correctness is unquestionably a good thing&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;There is a point where social monitoring of offensive speech becomes intrusive, burdensome and overall not worthwhile&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;‘PC Culture’ is currently unevenly distributed - there are some places which have it in very high levels (many university campuses, say), whereas there are also plenty of places where some pretty offensive things are considered acceptable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Basically my feeling is that there is a high level of variance among people. Outside of the Western world there is a wild thicket of systems of etiquette, views on race and caste and culture and gender, etc. And even within the West, there is quite a lot of variance. I think this variance is OK, a part of human nature. What the internet has changed is that we see much more of each other’s views, and have more opportunity to take offence, such that people get angrier and more polarised. The internet is less like a global village than like all the villages in the world compressed into one physical space, haphazardly glimpsing each other’s business and getting offended.&lt;/p&gt;
+&lt;p&gt;I also suspect that a lot of people within places that have high levels of PC aren’t fully on board with the culture, but don’t feel it’s worth taking on. I strongly endorse this hypothetical view, because a) this doesn’t seem like the biggest deal, and b) people’s will probably regress back to a calmer mean over time.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;So the late, revered programmer Aaron Swartz, patron saint of the Internet, has a &lt;a href=&quot;http://www.aaronsw.com/weblog/hatethenews&quot;&gt;blog post&lt;/a&gt; I categorically disagree with. Swartz argues that reading the news is pointless because it doesn’t affect your life, and that it is a form of mindless entertainment.&lt;/p&gt;
+&lt;p&gt;By that logic, should you read news of scientific developments? It affects your life very little, too, and it’s unlikely that someone outside of a very specialised field will be able to contribute. Why read anything besides technical literature from your profession, and perhaps investment advice? If one is going to read anything, it might as well be keeping up with the world around you, and one might even be able to use it to make small talk with other human beings.&lt;/p&gt;
+&lt;p&gt;I also think that this argument stems from a time when the media seemed sturdier. Nowadays, the media business model is barely alive, and the media’s role in a democracy doesn’t just work on its own. Swartz argues that if the newspaper criticises the mayor, the mayor will apologise or justify herself or whatever, so why does the reader need to get involved? But nowadays the mayor has her own media. You could still argue, as Swartz does, that one individual’s opinion, or their vote, doesn’t really matter. But one might say in today’s terms that that argument “doesn’t scale”.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;English speakers encountering the words for scientific things in other languages often find them somewhat childlike, but that’s only because English obfuscates them with Latin and Greek, because tradition. Just one example: TV in German is Fernsehen, “see-far”; in English it’s the same, but a hideous Greek-Latin hybrid. Leaving aside the Sapir-Whorff hypothesis, it’s beyond a doubt that the solidity of our language hides an enormous amount of uncertainty. Not to get too Kantian, but in a sense scientific models - not just of black holes and quantum particles, but of all matter, consciousness, life! - are weird, hacky concepts, leaky metaphors which partially describe observations of phenomena that multiple people experience. I found this idea of the ubiquity and fundamental nature of metaphor in human experience in a book I’m reading (&lt;a href=&quot;https://www.amazon.com/Origin-Consciousness-Breakdown-Bicameral-Mind/dp/0618057072&quot;&gt;&lt;em&gt;The Origin of Consciousness in the Breakdown of the Bicameral Mind&lt;/em&gt;&lt;/a&gt;), and I’ll quote from it somewhat at length.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;follow&quot; style=&quot;text-align: justify;&quot;&gt;
+A random glance at the etymologies of common words in a dictionary will demonstrate [the ubiquity of metaphors]. Or take the naming of various fauna and flora in their Latin indicants, or even in their wonderful common English names, such as stag beetle, lady’s-slipper, darning needle, Queen Anne’s lace, or buttercup. The human body is a particularly generative metaphier [his term for a source of metaphors], creating previously unspeakable distinctions in a throng of areas. The &lt;em&gt;head&lt;/em&gt; of an army, table, page, bed, ship, household, or nail, or of steam or water; the &lt;em&gt;face&lt;/em&gt; of a clock, cliff, card, or crystal; the &lt;em&gt;eyes&lt;/em&gt; of needles, winds, storms, targets, flowers, or potatoes; the &lt;em&gt;brow&lt;/em&gt; of a hill; the &lt;em&gt;cheeks&lt;/em&gt; of a vise; the &lt;em&gt;teeth&lt;/em&gt; of cogs or combs; the &lt;em&gt;lips&lt;/em&gt; of pitchers, craters, augers; the &lt;em&gt;tongues&lt;/em&gt; of shoes, board joints, or railway switches; the &lt;em&gt;arm&lt;/em&gt; of a chair or the sea; the &lt;em&gt;leg&lt;/em&gt; of a table, compass, sailor’s voyage, or cricket field; and so on and on. Or the &lt;em&gt;foot&lt;/em&gt; of this page. Or the &lt;em&gt;leaf&lt;/em&gt; you will soon turn. All of these concrete metaphors increase enormously our powers of perception of the world about us and our understanding of it, and literally create new objects. Indeed, language is an organ of perception, not simply a means of communication.
+&lt;/div&gt;
+&lt;div class=&quot;follow&quot; style=&quot;text-align: justify;&quot;&gt;
+…This is indeed the nub (knob), heart, pith, kernel, core, marrow, etc. of my argument, which itself is a metaphor and ‘seen’ only with the mind’s ‘eye’. In the abstractions of human relations, the skin becomes a particularly important metaphier. We get or stay ‘in touch’ with others who may be ‘thick-’ or ‘thin-skinned’ or perhaps ‘touchy’ in which case they have to be ‘handled’ carefully lest we ‘rub’ them the wrong way; we may have a ‘feeling’ for another person with whom we may have a ‘touching’ experience.
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;follow&quot; style=&quot;text-align: justify;&quot;&gt;
+The concepts of science are all of this kind, abstract concepts generated by concrete metaphors. In physics, we have force, acceleration (to increase one’s steps), inertia (originally an indolent person), impedance, resistance, fields, and now charm. In physiology, the metaphier of a machine has been at the very center of discovery. We understand the brain by metaphors to everything from batteries and telegraphy to computers and holograms. Medical practice is sometimes dictated by metaphor. In the eighteenth century, the heart in fever was like a boiling pot, and so bloodletting was prescribed to reduce its fuel. And even today, a great deal of medicine is based upon the military metaphor of defense of the body against attacks of this or that. The very concept of law in Greek derives from &lt;em&gt;nomos,&lt;/em&gt; the word for the foundations of a building. To be liable, or bound in law, comes from the Latin &lt;em&gt;ligare,&lt;/em&gt; meaning to bind with cord.
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;follow&quot; style=&quot;text-align: justify;&quot;&gt;
+In early times, language and its referents climbed up from the concrete to the abstract on the steps of metaphors, even, we may say, created the abstract on the bases of metaphors.
+&lt;/div&gt;
+&lt;div class=&quot;follow&quot; style=&quot;text-align: justify;&quot;&gt;
+It is not always obvious that metaphor has played this all important function. But this is because the concrete metaphiers become hidden in phonemic change, leaving the words to exist on their own. Even such an unmetaphorical-sounding word as the verb ‘to be’ was generated from a metaphor. It comes from the Sanskrit &lt;em&gt;bhu&lt;/em&gt;, “to grow, or make grow,” while the English forms ‘am’ and ‘is’ have evolved from the same root as the Sanskrit &lt;em&gt;asmi,&lt;/em&gt; “to breathe.” It is something of a lovely surprise that the irregular conjugation of our most nondescript verb is thus a record of a time when man had no independent word for ‘existence’ and could only say that something ‘grows’ or that it “breathes.” Of course we are not conscious that the concept of being is thus generated from a metaphor about growing and breathing. Abstract words are ancient coins whose concrete images in the busy give-and-take of talk have worn away with use.
+&lt;/div&gt;
+&lt;p&gt;Because in our brief lives we catch so little of the vastnesses of history, we tend too much to think of language as being solid as a dictionary, with a granite-like permanence, rather than as the rampant restless sea of metaphor which it is. Indeed, if we consider the changes in vocabulary that have occurred over the last few millennia, and project them several millennia hence, an interesting paradox arises. For if we ever achieve a language that has the power of expressing everything, then metaphor will no longer be possible. I would not say, in that case, my love is like a red, red rose, for love would have exploded into terms for its thousands of nuances, and applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Depressing Art // Likable Politicians</title>
+    <id>http://localhost/posts/Depressing Art  Likable Politicians</id>
+    <updated>2019-01-03T00:00:00Z</updated>
+    <published>2019-01-03T00:00:00Z</published>
+    <link href="http://localhost/posts/Depressing Art  Likable Politicians" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;There are elections now, and people here are deeply cynical about the slate of candidates. Political despair is the dominant tone, and has been for some time. This is also true in the wider world, where few politicians inspire trust or excitement. There was talk this week of Elizabeth Warren launching a Presidential campaign, which &lt;a href=&quot;https://www.mcsweeneys.net/articles/i-dont-hate-women-candidates-i-just-hated-hillary-and-coincidentally-im-starting-to-hate-elizabeth-warren&quot;&gt;&quot;I Don’t Hate Women Candidates — I Just Hated Hillary and Coincidentally I’m Starting to Hate Elizabeth Warren&lt;/a&gt;&quot; references. I don’t really have an opinion on Warren, but it made me think of a politician I do find powerfully likable: Alexandria Ocasio-Cortez. Trying to put my finger on what it was, I came up with 1) cheerfulness and 2) optimism. O-C is a politician, and invariably does need to say divisive things and spar with rivals; but she seems excited, spontaneous, and again, optimistic. That optimism is very valuable in such a toxic political climate. Perhaps Obama as a Senator projected a similar fresh optimism. It probably is made easier when a young candidate puts together a string of victories. Beto O’Rouke’s defeat to Ted Cruz - no matter how predictable - may have detracted slightly from his likability. (And for a bit of nonpartisanship, I’d mention Ben Shapiro as a conservative whose precociousness and Reaganesque moral optimism has won him a lot of attention, though he’s not exactly a political figure - more in the “discourse” game.)&lt;/p&gt;
+&lt;p&gt;I should stress that I do not think this likability necessarily translates to leadership ability or worthwhile ideas. This approbation is from a rhetoric/political communication point of view. “Cheer” and “optimism” are hard to fake successfully: the public is used to seeing politicians try all the time. When they exist sincerely, they are valuable assets, but not a substitute for good policy and governance.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A lot of the music I like is not exactly fun. A fair amount of it might be described as something one might bump themselves off to. And yet I don’t really relate to it from a depressed space. In a way, I find it cathartic to listen to other people’s depression (and perhaps feel better by comparison!)&lt;/p&gt;
+&lt;p&gt;There’s an old debate about if some artists need to suffer from depression, or other mental illness, to be successful at their craft. Many find this idea repugnant, with its implication that these people must live in a state of untreated illness in order to ply their trade. I certainly don’t think anyone’s mental health should take second place to their artistic output. We as a society should do everything possible to make professional medical help available to everyone, and encourage people to make use of it. But it is at least possible that there are artistic truths that are accessible only to those deep in the well of melancholy. Better, certainly, that we lived without these truths, and still had Elliot Smith. But that doesn’t alter the fact.&lt;/p&gt;
+&lt;p&gt;The idea of &lt;a href=&quot;https://en.wikipedia.org/wiki/Depressive_realism&quot;&gt;depressive realism&lt;/a&gt; dovetails with this nicely: if we imagine that the world is fundamentally a tragic place, and that neurotypical people deal with it via defensive mental obfuscating, it might make sense that we would be drawn to the work of the depressed, seeing in the expression of these unlucky prophets a vision of a truth almost, but not quite perceived.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
   <entry xml:base="http://localhost/">
     <title type="text">Biodiversity // Doctors // BMX</title>
     <id>http://localhost/posts/Biodiversity :: Doctors :: BMX</id>
@@ -45,11 +223,11 @@
 </content>
   </entry>
   <entry xml:base="http://localhost/">
-    <title type="text">My early life</title>
-    <id>http://localhost/posts/winston</id>
-    <updated>2017-07-04T00:00:00Z</updated>
-    <published>2017-07-04T00:00:00Z</published>
-    <link href="http://localhost/posts/winston" />
+    <title type="text">Parallel Texts</title>
+    <id>http://localhost/posts/Parallel Texts</id>
+    <updated>2019-01-06T00:00:00Z</updated>
+    <published>2019-01-06T00:00:00Z</published>
+    <link href="http://localhost/posts/Parallel Texts" />
     <author>
       <name>Josh Friedlander</name>
     </author>
@@ -71,12 +249,52 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h2 id=&quot;by-winston-s.-churchill&quot;&gt;By Winston S. Churchill&lt;/h2&gt;
-&lt;p&gt;When does one first begin to remember? When do the waving lights and shadows of dawning consciousness cast their print upon the mind of a child? My earliest mem ories are Ireland. I can recall scenes and events in Ireland quite well, and sometimes dimly even, people. Yet I was born on November 30, 1874, and I left Ireland early in the year 1879. My father had gone to Ireland as secretary to his father, the Duke of Marlborough, appointed Lord-Lieu tenant by Mr. Disraeli in 1876. We lived in a house called &lt;em&gt;The Little Lodge&lt;/em&gt; about a stone’s throw from the Vice regal. Here I spent nearly three years of childhood. I have clear and vivid impressions of some events. I remem ber my grandfather, the Viceroy, unveiling the Lord Gough statue in 1878. A great black crowd, scarlet soldiers on horse back, strings pulling away a brown shiny sheet, the old Duke, the formidable grandpapa, talking loudly to the crowd. I recall even a phrase he used: ‘and with a wither ing volley he shattered the enemy’s line.’ I quite under stood that he was speaking about war and fighting and that a Volley’ meant what the black-coated soldiers (Riflemen) used to do with loud bangs so often in the Phoenix Park where I was taken for my morning walks. This, I think, is my first coherent memory.&lt;/p&gt;
-&lt;p&gt;Other events stand out more distinctly. We were to go to a pantomime. There was great excitement about it. The long- looked-for afternoon arrived. We started from the Vice regal and drove to the Castle where other children were no doubt to be picked up. Inside the Castle was a great square space paved with small oblong stones. It rained. It nearly always rained just as it does now. People came out of the doors of the Castle, and there seemed to be much stir. Then we were told we could not go to the pantomime be cause the theatre had been burned down. All that was found of the manager was the keys that had been in his pocket. We were promised as a consolation for not going to the pantomime to go next day and see the ruins of the building. I wanted very much to see the keys, but this request does not seem to have been well received.&lt;/p&gt;
-&lt;p&gt;In one of these years we paid a visit to Emo Park, the seat of Lord Portarlington, who was explained to me as a sort of uncle. Of this place I can give very clear descrip tions, though I have never been there since I was four or four and a half. The central point in my memory is a tall white stone tower which we reached after a considerable drive. I was told it had been blown up by Oliver Cromwell. I understood definitely that he had blown up all sorts of things and was therefore a very great man.&lt;/p&gt;
-&lt;p&gt;My nurse, Mrs. Everest, was nervous about the Fenians. I gathered these were wicked people and there was no end to what they would do if they had their way. On one occa sion when I was out riding on my donkey, we thought we saw a long dark procession of Fenians approaching. I am sure now it must have been the Rifle Brigade out for a route march. But we were all very much alarmed, particularly the donkey, who expressed his anxiety by kicking. I was thrown off and had concussion of the brain. This was my first intro duction to Irish politics!&lt;/p&gt;
-&lt;p&gt;In the Phoenix Park there was a great round clump of trees with a house inside it. In this house there lived a per sonage styled the Chief Secretary or the Under Secretary, I am not clear which. But at any rate from this house there came a man called Mr. Burke. He gave me a drum. I can not remember what he looked like, but I remember the drum. Two years afterwards when we were back in England, they told me he had been murdered by the Fenians in this same Phoenix Park we used to walk about in every day. Everyone round me seemed much upset about it, and I thought how lucky it was the Fenians had not got me when I fell off the donkey.&lt;/p&gt;
+&lt;p&gt;An anecdote from Richard Rhodes’ book &lt;em&gt;The Making of the Atomic Bomb&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: small;&quot;&gt;Out of curiosity in 1940, while visiting Berkeley to deliver a lecture, Enrico Fermi attended a seminar one of [J. Robert] Oppenheimer’s protégés led in the master’s style. “Emilio,” Fermi joked afterward with Segrè, “I am getting rusty and old. I cannot follow the highbrow theory developed by Oppenheimer’s pupils anymore. I went to their seminar and was depressed by my inability to understand them. Only the last sentence cheered me up; it was: ‘and this is Fermi’s theory of beta decay.’” (p. 667)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you’re familiar with Menachot 29b, you’ll see the parallel immediately. In case you don’t, I quote it here (&lt;a href=&quot;https://www.sefaria.org.il/Menachot.29b.4?lang=bi&amp;amp;with=all&amp;amp;lang2=en&quot;&gt;via Sefaria&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Moses said before God: Master of the Universe, show him to me. God said to him: Return behind you. Moses went and sat at the end of the eighth row in Rabbi Akiva’s study hall and did not understand what they were saying. Moses’ strength waned, as he thought his Torah knowledge was deficient. When Rabbi Akiva arrived at the discussion of one matter, his students said to him: My teacher, from where do you derive this? Rabbi Akiva said to them: It is a &lt;em&gt;halakha&lt;/em&gt; transmitted to Moses from Sinai. When Moses heard this, his mind was put at ease, as this too was part of the Torah that he was to receive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">What is a Male Feminist? // Stats and the Social Sciences</title>
+    <id>http://localhost/posts/What is a Male Feminist? :: Stats and the Social Sciences</id>
+    <updated>2018-11-21T00:00:00Z</updated>
+    <published>2018-11-21T00:00:00Z</published>
+    <link href="http://localhost/posts/What is a Male Feminist? :: Stats and the Social Sciences" />
+    <author>
+      <name>Josh Friedlander</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;A few years ago, a lot of people were sharing an &lt;a href=&quot;https://www.youtube.com/watch?v=WJvm5-lO_Dw&quot;&gt;Aziz Ansari bit&lt;/a&gt; about feminism. The thrust - if you don’t want to click through - is that if you think men and women deserve equal treatment, then you are a feminist, and shouldn’t try avoid the label.&lt;/p&gt;
+&lt;p&gt;It’s a good joke, but philosophically I think it is a little bit more complex. Words have multiple shades of meaning, and words with far less complex histories can be hard to define simply. Put simply, what is feminism? It can mean a wide range of views, from ‘Wages for Housework’ to ‘Lean In’ neoliberal feminism to intersectionality to TERFs to arguments about abortion and the wage gap. If someone feels that women deserve to earn equally to men, but that the wage gap is explained by revealed preferences, unequal choices of hours and profession, is he not a feminist? If a Christian believes abortion is murder, is she not a feminist?&lt;/p&gt;
+&lt;p&gt;There is undoubtedly complexity here, and I’m here to say this: &lt;em&gt;I think men should not be involved in this discussion&lt;/em&gt;. It is women who are affected by these issues, and they who should decide what feminism is defined by, each in her own way. I think this is a reasonable claim, though not a common one, even if one does not subscribe to the identitarian “&lt;a href=&quot;https://en.wikipedia.org/wiki/Standpoint_theory&quot;&gt;standpoint theory&lt;/a&gt;” epistemology that claims the impossibility of outsider knowledge&lt;/p&gt;
+&lt;p&gt;But a corollary of this is, since I can’t define feminism, I prefer to call myself &lt;em&gt;pro-feminist&lt;/em&gt;, not a &lt;em&gt;feminist&lt;/em&gt;. It is up to women to decide what feminism is. But I can’t call myself something I can’t define.&lt;/p&gt;
+&lt;p&gt;Put another way: “&lt;em&gt;I don’t know what feminism is, but whatever it is, I’m for it&lt;/em&gt;.”&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Data Science may be a sexy term for statistics, but statistics is more sexy than it’s given credit for. Any social science, under the Popperian paradigm, must make predictions: diagnosing a structure means nothing if it has no predictive capacity. (Or else it’s humanities, kind of the way some historians want to go, and the way psychoanalysis has gone completely). Are, say, political scientists any better than monkeys throwing darts? That’s why they need statistics. So both data science and all of the social sciences can be defined as &lt;em&gt;applied statistics&lt;/em&gt; (with the balance just varying between domain knowledge vs stats knowledge, though any long-term DS project does involve getting deep into the domain knowledge). Where it gets weird is where DS models and makes predictions without an explanatory model, such as the case of NLP. Statistical relationships working by themselves, not being supported by any deep idea of how things fundamentally are supposed to work. The next word is “meeting”, that green lump is a tree, just based on probability. This was the subject of a debate between Google’s Peter Norvig and Noam Chomsky, the former sums it up in a fascinating, deep-ranging blog post &lt;a href=&quot;http://norvig.com/chomsky.html&quot;&gt;over here&lt;/a&gt;.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
