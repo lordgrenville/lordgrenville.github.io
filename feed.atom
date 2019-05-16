@@ -327,50 +327,6 @@
 </content>
   </entry>
   <entry xml:base="http://localhost/">
-    <title type="text">4 easy pieces</title>
-    <id>http://localhost/posts/4 Easy Pieces</id>
-    <updated>2019-05-16T00:00:00Z</updated>
-    <published>2019-05-16T00:00:00Z</published>
-    <link href="http://localhost/posts/4 Easy Pieces" />
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
-  &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  &lt;/style&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;By the way, you may think that this post is named after the ‘Feynman Lectures for Dummies’ book &lt;a href=&quot;https://www.goodreads.com/book/show/5553.Six_Easy_Pieces&quot;&gt;Six Easy Pieces&lt;/a&gt;, but in fact that book probably referenced the film 1970 drama &lt;em&gt;Five Easy Pieces&lt;/em&gt;, to which this post serves as a prequel in title, though not in substance.&lt;/p&gt;
-&lt;p&gt;Ben Lindsay &lt;a href=&quot;https://twitter.com/ben_j_lindsay/status/1108427124518645762&quot;&gt;says&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;One of the most underrated &lt;a href=&quot;https://twitter.com/hashtag/Pandas?src=hash&quot;&gt;#&lt;strong&gt;Pandas&lt;/strong&gt;&lt;/a&gt; functions in &lt;a href=&quot;https://twitter.com/hashtag/Python?src=hash&quot;&gt;#&lt;strong&gt;Python&lt;/strong&gt;&lt;/a&gt; is &lt;code&gt;.query()&lt;/code&gt;. I use it all the time. data = data.query(‘age==42’) looks so much nicer than: data = data[data[‘age’] == 42] And it allows chaining like: data = data.query(‘age &amp;gt;18’).query(‘age &amp;lt; 32’)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I tend to agree. I like elegance, but it’s hard to get over how grotesquely unpythonic it looks, even by the already low standards of Pandas.&lt;/p&gt;
-&lt;p&gt;Here’s one of mine: if you’ve run a calculation in a Jupyter notebook but forgot to assign it, Jupyter’s got your back. In the next cell you can use something as &lt;code&gt;_&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;[1] long_calculation.solve()&lt;/p&gt;
-&lt;p&gt;#Aaaah, no!&lt;/p&gt;
-&lt;p&gt;[2] result = _&lt;/p&gt;
-&lt;p&gt;# Phew&lt;/p&gt;
-&lt;p&gt;You can’t do chained comparison in Pandas but you can do &lt;a href=&quot;https://stackoverflow.com/a/18091240&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;post on dev.to&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</content>
-  </entry>
-  <entry xml:base="http://localhost/">
     <title type="text">Parallel Texts</title>
     <id>http://localhost/posts/Parallel_Texts</id>
     <updated>2019-01-06T00:00:00Z</updated>
