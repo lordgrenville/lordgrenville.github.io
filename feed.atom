@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2019-05-16T00:00:00Z</updated>
+  <updated>2019-06-13T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -36,6 +36,39 @@
 &lt;body&gt;
 &lt;p&gt;Haven’t written anything in a while, and so this post seems appropriate. It seems sometimes like in the Internet age, everything has been said, and it’s mostly wrong. Take any news event in the last 24 hours, and you will find on Twitter a vast panoply of opinions, taking every possible perspective: joking, chiding, worrying, connecting it to the Grain Riots of 1874. These will link to longer takes, rushing up like mushrooms before the internet’s atttention shifts and we forget all about it. I tend to be cynical, but my cynicism is in every case pre-empted: and so is any other position I might take. Considering how I might want to respond, I’m confronted with the feeling that I won’t be adding anything, and so I usually refrain.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Of making many books there is no end&lt;/em&gt;, says Ecclesiastes. Today everyone can publish everything and distribute everything they have to say. In some ways this is good - more variety in media. It may have hurt society in some ways, because when you remove all gatekeepers you give equal weight to every crank and paranoiac. But it has also caused me to doubt my interest in and love for the printed word. Lately I find myself reading more maths, which for all its troubles, is a much calmer place to be. I don’t know if it’s a long term solution.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">The Truth Is Whatever We Believe</title>
+    <id>http://localhost/posts/Truth</id>
+    <updated>2019-06-13T00:00:00Z</updated>
+    <published>2019-06-13T00:00:00Z</published>
+    <link href="http://localhost/posts/Truth" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;You could tell a story in which the West is in decline, and China (and perhaps India, Africa, whoever) is rising to take its place. Similarly, you could take the post Cold War view that liberalism survives all attacks, and that the current backlash against liberalism will also run out of steam. Which of these is correct? Maybe whichever we believe it is. I thought of this while reading Jack Weatherford’s Genghis Khan and the Making of the Modern World. He talks about Kublai Khan’s conquest of China, and his assiduous use of propaganda. While the Mongols fought the Song in Southern China and tried to unite the country, they were able to change their public perception from that of foreign invaders to be cast out, to that of new rulers, graced by heaven, who gained legitimacy with every new victory. many people defected to them and were treated fairly.&lt;/p&gt;
+&lt;p&gt;Probably the leaders of al the great powers today suspect that their narratives might not be true, and that destiny might not actually carry them forward. but they hope it to be the case, and try to convince others. That might be all that is needed.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
