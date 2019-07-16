@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days &mdash; Frivolous Musings</title>
+  <link rel="stylesheet" type="text/css" href="/static/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/static/latex.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/pygments.min.css">
+  <script type="text/javascript" src="/static/enquire.min.js"></script>
+  <script type="text/javascript" src="/static/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="/static/resources.min.js"></script>
+  <script type="text/javascript" src="/static/LaTeXMathML.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' href="/static/favicon.ico" type='image/x-icon'/>
+  <style type="text/css">
+   img { mix-blend-mode: multiply; }
+  </style>
+  <meta property="og:author" content="lordgrenville" />
+  <meta property="og:title" content="Carrying Podcasts From the Well On My Shoulders, Like In the Old Days" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Carrying podcasts from the well on my shoulders, like in the old days" />
+  <meta property="og:url" content="/posts/podcasts/" />
+  <meta property="og:image" content="/static/img/athena.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Carrying Podcasts From the Well On My Shoulders, Like In the Old Days" />
+  <meta name="twitter:description" content="Carrying podcasts from the well on my shoulders, like in the old days" />
+  <meta name="twitter:url" content="/posts/podcasts/" />
+  <meta name="twitter:image" content="/static/img/athena.png" />
+</head>
+<body>
+  <div class="thearticle">
+
+  <article>
+  
+    <h1>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</h1>
+    <p id="blog-p"><span id="blogdesc" class="marginnote">
+    I think stuff. Sometimes I write it down here.<br><br>
+    <a href="/">home</a> ·
+    
+      <a href="/about/">
+        about</a> ·
+    
+    <a href="/feed.atom">subscribe</a></span></p>
+
+    <subtitle class="sub-date">July 16, 2019 · <span style="font-size: 1.6rem;"><a style="border-bottom-width: 0px !important;" href="/posts/podcasts/">&infin;</a></span></subtitle>
+    
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Untitled</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>In general my view on podcasts is the shorter the better. So I really like <a href="https://www.bloomberg.com/podcasts/view">Bloomberg View</a>, which runs just over a minute and distills the essence of a longer (usually well thought-out) op-ed. (I guess by this logic the ideal podcast would be 0 seconds - very Cagean.)</p>
+<p>But it seems like the Berg is phasing this one out. It no longer appears on the website or on most podcast providers, and the RSS feed I had (from iTunes) on <a href="https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&amp;hl=en_US">Podcast Addict</a> (a truly excellent app) suddenly returned <code>SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found</code>. I emailed the developer and he promptly (shout-out Xavier! He really is awesome) explained that SSL cert verification in modern versions of Android is done by the device for all apps (except web browsers), so this error is not coming from inside the app. I confirmed that I hadn’t accidentally disabled my trust of any previously accepted certificate, and he later showed me that the SSL cert for the RSS feed was indeed expired.</p>
+<p>I emailed Bloomberg about this, but I think they are sunsetting this podcast, and their support ticket confirmation email never showed up. In the meatime I wanted to just grab those episodes, so I did it old school.</p>
+<pre><code>import requests
+import xml.etree.ElementTree as ET
+
+feed = requests.get(&#39;https://feeds.bloomberg.fm/BLM8578726790&#39;, verify=False).text  
+# you need to disable verify because of the dodgy SSL. requests throws up a warning telling you that this is very foolish
+feed = ET.fromstring(feed)</code></pre>
+<p>After fooling around with the <code>xml</code> I get this:</p>
+<pre><code>for child in feed.getchildren()[0].getchildren():
+    if child.tag == &#39;item&#39;:
+        x = child.getchildren()
+        print(x[0].text)
+        print(x[-2].text)
+
+&gt;
+Bloomberg Opinion Radio: Weekend Edition for 7-12-19 (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vrsTK.0wJcuQ/v4.mp3
+How to Tame Europe’s Game of Thrones: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRijgKsrekSc/v4.mp3
+Ramesh Ponnuru on the Obamacare Lawsuit Paradox (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRzEW1v7.DEc/v4.mp3
+Demanding Straight Answers on Immigration: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/viPbxsujOdcQ/v4.mp3
+
+etc..</code></pre>
+<p>And then I just grabbed the ones I wanted with <code>wget</code>:</p>
+<pre><code>mkdir podcasts &amp;&amp; cd podcasts/
+wget -O pelosi.mp3 https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vAThJHLXwFKM/v4.mp3
+
+etc...</code></pre>
+<p>Sent them to my phone with bluetooth, and added the <code>bluetooth</code> folder as a virtual podcast. And there you go, podcasts the old fashioned way!</p>
+</body>
+</html>
+
+  
+  </article>
+
+  </div>
+  <div class="thefooter">
+    <p>Generated with <a href="https://github.com/apas/athena">Athena</a> (which uses <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>). Hosted on Github (duh).
+      <br><br>Copyright, <i>2016</i></p>
+  </div> <!-- footer end -->
+</body>
+</html>
