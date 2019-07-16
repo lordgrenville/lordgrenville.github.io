@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2019-06-13T00:00:00Z</updated>
+  <updated>2019-07-16T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -392,6 +392,70 @@
 &lt;blockquote&gt;
 &lt;p&gt;Moses said before God: Master of the Universe, show him to me. God said to him: Return behind you. Moses went and sat at the end of the eighth row in Rabbi Akiva’s study hall and did not understand what they were saying. Moses’ strength waned, as he thought his Torah knowledge was deficient. When Rabbi Akiva arrived at the discussion of one matter, his students said to him: My teacher, from where do you derive this? Rabbi Akiva said to them: It is a &lt;em&gt;halakha&lt;/em&gt; transmitted to Moses from Sinai. When Moses heard this, his mind was put at ease, as this too was part of the Torah that he was to receive.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
+    <id>http://localhost/posts/podcasts</id>
+    <updated>2019-07-16T00:00:00Z</updated>
+    <published>2019-07-16T00:00:00Z</published>
+    <link href="http://localhost/posts/podcasts" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;In general my view on podcasts is the shorter the better. So I really like &lt;a href=&quot;https://www.bloomberg.com/podcasts/view&quot;&gt;Bloomberg View&lt;/a&gt;, which runs just over a minute and distills the essence of a longer (usually well thought-out) op-ed. (I guess by this logic the ideal podcast would be 0 seconds - very Cagean.)&lt;/p&gt;
+&lt;p&gt;But it seems like the Berg is phasing this one out. It no longer appears on the website or on most podcast providers, and the RSS feed I had (from iTunes) on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&amp;amp;hl=en_US&quot;&gt;Podcast Addict&lt;/a&gt; (a truly excellent app) suddenly returned &lt;code&gt;SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found&lt;/code&gt;. I emailed the developer and he promptly (shout-out Xavier! He really is awesome) explained that SSL cert verification in modern versions of Android is done by the device for all apps (except web browsers), so this error is not coming from inside the app. I confirmed that I hadn’t accidentally disabled my trust of any previously accepted certificate, and he later showed me that the SSL cert for the RSS feed was indeed expired.&lt;/p&gt;
+&lt;p&gt;I emailed Bloomberg about this, but I think they are sunsetting this podcast, and their support ticket confirmation email never showed up. In the meatime I wanted to just grab those episodes, so I did it old school.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import requests
+import xml.etree.ElementTree as ET
+
+feed = requests.get(&amp;#39;https://feeds.bloomberg.fm/BLM8578726790&amp;#39;, verify=False).text  
+# you need to disable verify because of the dodgy SSL. requests throws up a warning telling you that this is very foolish
+feed = ET.fromstring(feed)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After fooling around with the &lt;code&gt;xml&lt;/code&gt; I get this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for child in feed.getchildren()[0].getchildren():
+    if child.tag == &amp;#39;item&amp;#39;:
+        x = child.getchildren()
+        print(x[0].text)
+        print(x[-2].text)
+
+&amp;gt;
+Bloomberg Opinion Radio: Weekend Edition for 7-12-19 (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vrsTK.0wJcuQ/v4.mp3
+How to Tame Europe’s Game of Thrones: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRijgKsrekSc/v4.mp3
+Ramesh Ponnuru on the Obamacare Lawsuit Paradox (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRzEW1v7.DEc/v4.mp3
+Demanding Straight Answers on Immigration: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/viPbxsujOdcQ/v4.mp3
+
+etc..&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then I just grabbed the ones I wanted with &lt;code&gt;wget&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir podcasts &amp;amp;&amp;amp; cd podcasts/
+wget -O pelosi.mp3 https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vAThJHLXwFKM/v4.mp3
+
+etc...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sent them to my phone with bluetooth, and added the &lt;code&gt;bluetooth&lt;/code&gt; folder as a virtual podcast. And there you go, podcasts the old fashioned way!&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
