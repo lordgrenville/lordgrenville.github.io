@@ -2,11 +2,113 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2019-07-16T00:00:00Z</updated>
+  <updated>2019-11-13T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
   <generator>Werkzeug</generator>
+  <entry xml:base="http://localhost/">
+    <title type="text">Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
+    <id>http://localhost/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web_Who_Needs_the_News_The_Nature_of_Reality</id>
+    <updated>2018-11-12T00:00:00Z</updated>
+    <published>2018-11-12T00:00:00Z</published>
+    <link href="http://localhost/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web_Who_Needs_the_News_The_Nature_of_Reality" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;A very overdiscussed topic lately is political correctness, and if there’s too much of it. I propose the following three points:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;At least some measure of socially ordained political correctness is unquestionably a good thing&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;There is a point where social monitoring of offensive speech becomes intrusive, burdensome and overall not worthwhile&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;‘PC Culture’ is currently unevenly distributed - there are some places which have it in very high levels (many university campuses, say), whereas there are also plenty of places where some pretty offensive things are considered acceptable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Basically my feeling is that there is a high level of variance among people. Outside of the Western world there is a wild thicket of systems of etiquette, views on race and caste and culture and gender, etc. And even within the West, there is quite a lot of variance. I think this variance is OK, a part of human nature. What the internet has changed is that we see much more of each other’s views, and have more opportunity to take offence, such that people get angrier and more polarised. The internet is less like a global village than like all the villages in the world compressed into one physical space, haphazardly glimpsing each other’s business and getting offended.&lt;/p&gt;
+&lt;p&gt;I also suspect that a lot of people within places that have high levels of PC aren’t fully on board with the culture, but don’t feel it’s worth taking on. I strongly endorse this hypothetical view, because a) this doesn’t seem like the biggest deal, and b) people’s will probably regress back to a calmer mean over time.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;So the late, revered programmer Aaron Swartz, patron saint of the Internet, has a &lt;a href=&quot;http://www.aaronsw.com/weblog/hatethenews&quot;&gt;blog post&lt;/a&gt; I categorically disagree with. Swartz argues that reading the news is pointless because it doesn’t affect your life, and that it is a form of mindless entertainment.&lt;/p&gt;
+&lt;p&gt;By that logic, should you read news of scientific developments? It affects your life very little, too, and it’s unlikely that someone outside of a very specialised field will be able to contribute. Why read anything besides technical literature from your profession, and perhaps investment advice? If one is going to read anything, it might as well be keeping up with the world around you, and one might even be able to use it to make small talk with other human beings.&lt;/p&gt;
+&lt;p&gt;I also think that this argument stems from a time when the media seemed sturdier. Nowadays, the media business model is barely alive, and the media’s role in a democracy doesn’t just work on its own. Swartz argues that if the newspaper criticises the mayor, the mayor will apologise or justify herself or whatever, so why does the reader need to get involved? But nowadays the mayor has her own media. You could still argue, as Swartz does, that one individual’s opinion, or their vote, doesn’t really matter. But one might say in today’s terms that that argument “doesn’t scale”.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;English speakers encountering the words for scientific things in other languages often find them somewhat childlike, but that’s only because English obfuscates them with Latin and Greek, because tradition. Just one example: TV in German is Fernsehen, “see-far”; in English it’s the same, but a hideous Greek-Latin hybrid. Leaving aside the Sapir-Whorff hypothesis, it’s beyond a doubt that the solidity of our language hides an enormous amount of uncertainty. Not to get too Kantian, but in a sense scientific models - not just of black holes and quantum particles, but of all matter, consciousness, life! - are weird, hacky concepts, leaky metaphors which partially describe observations of phenomena that multiple people experience. I found this idea of the ubiquity and fundamental nature of metaphor in human experience in a book I’m reading (&lt;a href=&quot;https://www.amazon.com/Origin-Consciousness-Breakdown-Bicameral-Mind/dp/0618057072&quot;&gt;&lt;em&gt;The Origin of Consciousness in the Breakdown of the Bicameral Mind&lt;/em&gt;&lt;/a&gt;), and I’ll quote from it somewhat at length.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A random glance at the etymologies of common words in a dictionary will demonstrate [the ubiquity of metaphors]. Or take the naming of various fauna and flora in their Latin indicants, or even in their wonderful common English names, such as stag beetle, lady’s-slipper, darning needle, Queen Anne’s lace, or buttercup. The human body is a particularly generative metaphier [his term for a source of metaphors], creating previously unspeakable distinctions in a throng of areas. The &lt;em&gt;head&lt;/em&gt; of an army, table, page, bed, ship, household, or nail, or of steam or water; the &lt;em&gt;face&lt;/em&gt; of a clock, cliff, card, or crystal; the &lt;em&gt;eyes&lt;/em&gt; of needles, winds, storms, targets, flowers, or potatoes; the &lt;em&gt;brow&lt;/em&gt; of a hill; the &lt;em&gt;cheeks&lt;/em&gt; of a vise; the &lt;em&gt;teeth&lt;/em&gt; of cogs or combs; the &lt;em&gt;lips&lt;/em&gt; of pitchers, craters, augers; the &lt;em&gt;tongues&lt;/em&gt; of shoes, board joints, or railway switches; the &lt;em&gt;arm&lt;/em&gt; of a chair or the sea; the &lt;em&gt;leg&lt;/em&gt; of a table, compass, sailor’s voyage, or cricket field; and so on and on. Or the &lt;em&gt;foot&lt;/em&gt; of this page. Or the &lt;em&gt;leaf&lt;/em&gt; you will soon turn. All of these concrete metaphors increase enormously our powers of perception of the world about us and our understanding of it, and literally create new objects. Indeed, language is an organ of perception, not simply a means of communication.&lt;/p&gt;
+&lt;p&gt;…This is indeed the nub (knob), heart, pith, kernel, core, marrow, etc. of my argument, which itself is a metaphor and ‘seen’ only with the mind’s ‘eye’. In the abstractions of human relations, the skin becomes a particularly important metaphier. We get or stay ‘in touch’ with others who may be ‘thick-’ or ‘thin-skinned’ or perhaps ‘touchy’ in which case they have to be ‘handled’ carefully lest we ‘rub’ them the wrong way; we may have a ‘feeling’ for another person with whom we may have a ‘touching’ experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The concepts of science are all of this kind, abstract concepts generated by concrete metaphors. In physics, we have force, acceleration (to increase one’s steps), inertia (originally an indolent person), impedance, resistance, fields, and now charm. In physiology, the metaphier of a machine has been at the very center of discovery. We understand the brain by metaphors to everything from batteries and telegraphy to computers and holograms. Medical practice is sometimes dictated by metaphor. In the eighteenth century, the heart in fever was like a boiling pot, and so bloodletting was prescribed to reduce its fuel. And even today, a great deal of medicine is based upon the military metaphor of defense of the body against attacks of this or that. The very concept of law in Greek derives from &lt;em&gt;nomos,&lt;/em&gt; the word for the foundations of a building. To be liable, or bound in law, comes from the Latin &lt;em&gt;ligare,&lt;/em&gt; meaning to bind with cord.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In early times, language and its referents climbed up from the concrete to the abstract on the steps of metaphors, even, we may say, created the abstract on the bases of metaphors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is not always obvious that metaphor has played this all important function. But this is because the concrete metaphiers become hidden in phonemic change, leaving the words to exist on their own. Even such an unmetaphorical-sounding word as the verb ‘to be’ was generated from a metaphor. It comes from the Sanskrit &lt;em&gt;bhu&lt;/em&gt;, “to grow, or make grow,” while the English forms ‘am’ and ‘is’ have evolved from the same root as the Sanskrit &lt;em&gt;asmi,&lt;/em&gt; “to breathe.” It is something of a lovely surprise that the irregular conjugation of our most nondescript verb is thus a record of a time when man had no independent word for ‘existence’ and could only say that something ‘grows’ or that it “breathes.” Of course we are not conscious that the concept of being is thus generated from a metaphor about growing and breathing. Abstract words are ancient coins whose concrete images in the busy give-and-take of talk have worn away with use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Because in our brief lives we catch so little of the vastnesses of history, we tend too much to think of language as being solid as a dictionary, with a granite-like permanence, rather than as the rampant restless sea of metaphor which it is. Indeed, if we consider the changes in vocabulary that have occurred over the last few millennia, and project them several millennia hence, an interesting paradox arises. For if we ever achieve a language that has the power of expressing everything, then metaphor will no longer be possible. I would not say, in that case, my love is like a red, red rose, for love would have exploded into terms for its thousands of nuances, and applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">How Twitter Works in 2019</title>
+    <id>http://localhost/posts/Twitter</id>
+    <updated>2019-11-13T00:00:00Z</updated>
+    <published>2019-11-13T00:00:00Z</published>
+    <link href="http://localhost/posts/Twitter" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Someone tweets: I like mushrooms. Mushrooms are great. Yummy! Hits “send tweet”.&lt;/p&gt;
+&lt;p&gt;Most of the replies are from the person’s followers. “Wow, you’re so right! You have the best take on mushrooms.” “Totally! Mushrooms rule!” “Ugh people who don’t like mushrooms be like [GIF from The Office]”.&lt;/p&gt;
+&lt;p&gt;Then one person says “mushrooms are OK, but garlic is also cool”.&lt;/p&gt;
+&lt;p&gt;Everyone else goes: “oh look it’s reply guy! here to mansplain the evils of mushrooms. Who hurt you?!?”&lt;/p&gt;
+&lt;p&gt;I kind of understand the product decision behind this, because in previous iterations of Twitter, what would happen is some random user with a Nazi avatar searching the hashtag #mushrooms would find the tweet and say something like “death to the mushroom eaters!!! I will track you down and rape and kill you. I know where you live” So helpfully, Twitter wanted to make the conversation more like a conversation in a safe space between friends, and less like an open space.&lt;/p&gt;
+&lt;p&gt;The problem is just that Twitter is &lt;em&gt;also&lt;/em&gt; an open space: lots of people (like me) follow influential people because we want to hear their views, but it’s nice to see those views encounter the views of others who disagree, fostering conversation. When someone’s conversation is only with their acolytes, the public discourse is impoverished.&lt;/p&gt;
+&lt;p&gt;I don’t have a good solution for this.&lt;/p&gt;
+&lt;p&gt;(This essay is indebted to Megan McArdle’s idea &lt;a href=&quot;https://www.econtalk.org/megan-mcardle-on-internet-shaming-and-online-mobs/&quot;&gt;here&lt;/a&gt; about friend circles and internet circles.)&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
   <entry xml:base="http://localhost/">
     <title type="text">The Futility of Writing</title>
     <id>http://localhost/posts/Futility_of_Writing</id>
@@ -109,6 +211,44 @@
 </content>
   </entry>
   <entry xml:base="http://localhost/">
+    <title type="text">Democracy &amp; Elitism // Fish</title>
+    <id>http://localhost/posts/Democracy &amp; Elitism_Fish</id>
+    <updated>2018-11-08T00:00:00Z</updated>
+    <published>2018-11-08T00:00:00Z</published>
+    <link href="http://localhost/posts/Democracy &amp; Elitism_Fish" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;style&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;There’s a “salon” here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are “good” and “bad” voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I’ve been groping towards an idea of “democratic elitism” for a while, in which the great value of democracy, I think, is that everyone’s &lt;em&gt;interests&lt;/em&gt; are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.&lt;/p&gt;
+&lt;p&gt;In this as in most things, it turns out that there’s a literature. While reading Alan Ryan’s biography &lt;a href=&quot;https://www.amazon.com/John-Dewey-High-American-Liberalism/dp/1511384352&quot;&gt;&lt;em&gt;John Dewey and the High Tide of American Liberalism&lt;/em&gt;&lt;/a&gt;, I came across Dewey’s debates with journalist Walter Lippmann, a towering figure in American journalism I’d never heard of. He studied under Santayana at Harvard, co-founded the &lt;em&gt;New Republic&lt;/em&gt;, and was a much read journalist and critic for half a century. (This &lt;a href=&quot;https://www.foreignaffairs.com/reviews/review-essay/2015-02-11/walter-lippmann-and-american-century&quot;&gt;helpful 1980 retrospective&lt;/a&gt; in &lt;em&gt;Foreign Affairs&lt;/em&gt; is temporarily ungated, probably due to an oversight.) In the &lt;a href=&quot;https://en.wikipedia.org/wiki/Journalism#Writing_for_experts_or_for_ordinary_citizens?&quot;&gt;Lippmann-Dewey&lt;/a&gt; debates, Lippmann made several very prescient critiques of the media-public pipeline: firstly, reality is too complicated for anyone to understand, and journalists tend to fall back on a stereotype backed up by some reporting. Secondly, the public has little interest in political engagement, and is not prepared to pay the price of thorough, well-researched journalism. “For a dollar, you may not even get an armful of candy, but for a dollar or less people expect reality/representations of truth to fall into their laps.” A lot of important facts are impossible to find out, and editorial judgment adds bias to the allocation of news coverage. Thus, people don’t want to keep up, and wouldn’t be able to even if they could.&lt;/p&gt;
+&lt;p&gt;Lippmann advocated a technocracy, where a governing elite would be advised by a cadre of technocrats, experts in a very narrow field. (Lippmann’s name is thus associated with our modern vision of the neoliberal state, and in fact it was Foucault who pointed out that the the term originated at the first meeting in Paris of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Colloque_Walter_Lippmann&quot;&gt;Colloque Walter Lippmann&lt;/a&gt;.) Dewey’s side of the argument was in favour of civilian journalism, and a “Great Society” of slow community-wide consensus. (Always majestic in idealism but obscurely phrased, Dewey’s writing was perfectly described by Oliver Wendell Homes Jr.:“So methought God would have spoken had He been inarticulate but keenly desirous to tell you how it was.”)&lt;/p&gt;
+&lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually Joseph Schumpeter. In his famous work &lt;a href=&quot;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&quot;&gt;Capitalism, Socialism and Democracy&lt;/a&gt; Schumpeter argued that a) the people are unlikely to know what is best for them, since they are usually manipulated by politicians, and b) even if they did have a clear agenda, they wouldn’t know the best means to achieving it. He thus (following Weber) argued for a largely arms-length democratic system, in which policy decisions are made at a government level and the public’s role is restricted to choosing one of these options and giving it a rubber stamp.&lt;/p&gt;
+&lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
     <title type="text">Prayer</title>
     <id>http://localhost/posts/Prayer</id>
     <updated>2018-12-20T00:00:00Z</updated>
@@ -135,7 +275,11 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;Back in my yeshiva days, I struggled with the concept of prayer. We observe that sometimes people pray for things and aren’t answered - after all, we all pray every day for health, wealth and the ultimate redemption. So the underlying theory seems to be something along the lines of prayer increasing your odds. Or, since presumably these things are deterministic, your score: perhaps a young, healthy person needs 100 points to recover from an illness, and has 80 points on their own merit, prayer can boost them 20 points and make it happen. Perhaps to recover from a rare cancer requires 10,000 points and so even a pretty righteous person, with many people praying for them, might get like, 8,000 points, close but no cigar. (Perhaps this even warrants them a temporary remission, but not a full one.)&lt;br /&gt; &lt;br /&gt;But all of this seems a little silly: the “vending machine” model of divine worship. Insert prayers, get rewarded. In fact there are Jewish sources that claim that God makes life especially tough for the righteous because he desires their prayers. A model that appeals to me more would be the exact opposite: that prayer affects nothing at all, but is a form of meditation and Divine closeness, and so is worthy for its own sake. But in this case praying for something to happen does absolutely nothing, which makes the activity seem somewhat paradoxical.&lt;br /&gt; &lt;br /&gt;Of course, at its core this is entangled with the problem of theodicy, so it’s no wonder that it’s such a conundrum.&lt;/p&gt;
+&lt;p&gt;Back in my yeshiva days, I struggled with the concept of prayer. We observe that sometimes people pray for things and aren’t answered - after all, we all pray every day for health, wealth and the ultimate redemption. So the underlying theory seems to be something along the lines of prayer increasing your odds. Or, since presumably these things are deterministic, your score: perhaps a young, healthy person needs 100 points to recover from an illness, and has 80 points on their own merit, prayer can boost them 20 points and make it happen. Perhaps to recover from a rare cancer requires 10,000 points and so even a pretty righteous person, with many people praying for them, might get like, 8,000 points, close but no cigar. (Perhaps this even warrants them a temporary remission, but not a full one.)&lt;br /&gt;
+&lt;br /&gt;
+But all of this seems a little silly: the “vending machine” model of divine worship. Insert prayers, get rewarded. In fact there are Jewish sources that claim that God makes life especially tough for the righteous because he desires their prayers. A model that appeals to me more would be the exact opposite: that prayer affects nothing at all, but is a form of meditation and Divine closeness, and so is worthy for its own sake. But in this case praying for something to happen does absolutely nothing, which makes the activity seem somewhat paradoxical.&lt;br /&gt;
+&lt;br /&gt;
+Of course, at its core this is entangled with the problem of theodicy, so it’s no wonder that it’s such a conundrum.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -169,7 +313,7 @@
 &lt;body&gt;
 &lt;p&gt;I’ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I’ve been bothered by &lt;a href=&quot;https://en.wikipedia.org/wiki/Aedes_albopictus#/media/File:Aedes_Albopictus.jpg&quot;&gt;these guys&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;/static/img/Aedes_Albopictus.jpg&quot; title=&quot;Aedes_Albopictus.&quot; alt=&quot;Aedes Albopictus (public domain image via the Centre for Disease Control)&quot; /&gt;&lt;figcaption&gt;Aedes Albopictus (public domain image via the Centre for Disease Control)&lt;/figcaption&gt;
+&lt;img src=&quot;/static/img/Aedes_Albopictus.jpg&quot; id=&quot;fig:Aedes&quot; alt=&quot;&quot; /&gt;&lt;figcaption&gt;Figure 1: Aedes Albopictus (public domain image via the Centre for Disease Control&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Googling mosquitoes with zebra-striped abdomens reveals that this is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Aedes_albopictus&quot;&gt;tiger mosquito&lt;/a&gt;, an aggressive invader from SE Asia. Ranked as one of the hundred worst invasive species, it originally spread on packing crates and has penetrated most of the world, first being seen in Israel in 2003. And besides for worse things, such as being disease vectors, they are unusually awful pests: they hunt by day, unlike regular mozzies, and can easily adapt to living in almost any human habitat, not needing a humid bog. I can testify to their peculiarly aggressive nature, not minding being brushed away or swatted at, persisting until finding blood.&lt;/p&gt;
 &lt;p&gt;One of the side-effects of globalisation is the cross-pollination of nonhuman species all over the world, and simple Darwinism makes it likely that the strongest contenders from foreign environments will quickly take over many others (note the invasive Indian Mynahs and crows so prevalent here). It seems inevitable that this will result in a significant reduction in biodiversity. (The WWF claimed &lt;a href=&quot;https://qz.com/1443473/wwf-living-planet-report-says-humans-wiped-out-60-of-animals-since-1970/&quot;&gt;in a report this week&lt;/a&gt; that 60% of species had been wiped out since 1970.) This seems unpreventable, hard to track, and there might even be some unanticipated positive consequences. But it is a remarkable phenomenon.&lt;/p&gt;
@@ -220,44 +364,6 @@
 </content>
   </entry>
   <entry xml:base="http://localhost/">
-    <title type="text">Democracy &amp; Elitism // Fish</title>
-    <id>http://localhost/posts/Democracy_and _Elitism_Fish</id>
-    <updated>2018-11-08T00:00:00Z</updated>
-    <published>2018-11-08T00:00:00Z</published>
-    <link href="http://localhost/posts/Democracy_and _Elitism_Fish" />
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
-  &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  &lt;/style&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;There’s a “salon” here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are “good” and “bad” voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I’ve been groping towards an idea of “democratic elitism” for a while, in which the great value of democracy, I think, is that everyone’s &lt;em&gt;interests&lt;/em&gt; are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.&lt;/p&gt;
-&lt;p&gt;In this as in most things, it turns out that there’s a literature. While reading Alan Ryan’s biography &lt;a href=&quot;https://www.amazon.com/John-Dewey-High-American-Liberalism/dp/1511384352&quot;&gt;&lt;em&gt;John Dewey and the High Tide of American Liberalism&lt;/em&gt;&lt;/a&gt;, I came across Dewey’s debates with journalist Walter Lippmann, a towering figure in American journalism I’d never heard of. He studied under Santayana at Harvard, co-founded the &lt;em&gt;New Republic&lt;/em&gt;, and was a much read journalist and critic for half a century. (This &lt;a href=&quot;https://www.foreignaffairs.com/reviews/review-essay/2015-02-11/walter-lippmann-and-american-century&quot;&gt;helpful 1980 retrospective&lt;/a&gt; in &lt;em&gt;Foreign Affairs&lt;/em&gt; is temporarily ungated, probably due to an oversight.) In the &lt;a href=&quot;https://en.wikipedia.org/wiki/Journalism#Writing_for_experts_or_for_ordinary_citizens?&quot;&gt;Lippmann-Dewey&lt;/a&gt; debates, Lippmann made several very prescient critiques of the media-public pipeline: firstly, reality is too complicated for anyone to understand, and journalists tend to fall back on a stereotype backed up by some reporting. Secondly, the public has little interest in political engagement, and is not prepared to pay the price of thorough, well-researched journalism. “For a dollar, you may not even get an armful of candy, but for a dollar or less people expect reality/representations of truth to fall into their laps.” A lot of important facts are impossible to find out, and editorial judgment adds bias to the allocation of news coverage. Thus, people don’t want to keep up, and wouldn’t be able to even if they could.&lt;/p&gt;
-&lt;p&gt;Lippmann advocated a technocracy, where a governing elite would be advised by a cadre of technocrats, experts in a very narrow field. (Lippmann’s name is thus associated with our modern vision of the neoliberal state, and in fact it was Foucault who pointed out that the the term originated at the first meeting in Paris of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Colloque_Walter_Lippmann&quot;&gt;Colloque Walter Lippmann&lt;/a&gt;.) Dewey’s side of the argument was in favour of civilian journalism, and a “Great Society” of slow community-wide consensus. (Always majestic in idealism but obscurely phrased, Dewey’s writing was perfectly described by Oliver Wendell Homes Jr.:“So methought God would have spoken had He been inarticulate but keenly desirous to tell you how it was.”)&lt;/p&gt;
-&lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually Joseph Schumpeter. In his famous work &lt;a href=&quot;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&quot;&gt;Capitalism, Socialism and Democracy&lt;/a&gt; Schumpeter argued that a) the people are unlikely to know what is best for them, since they are usually manipulated by politicians, and b) even if they did have a clear agenda, they wouldn’t know the best means to achieving it. He thus (following Weber) argued for a largely arms-length democratic system, in which policy decisions are made at a government level and the public’s role is restricted to choosing one of these options and giving it a rubber stamp.&lt;/p&gt;
-&lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</content>
-  </entry>
-  <entry xml:base="http://localhost/">
     <title type="text">Depressing Art // Likable Politicians</title>
     <id>http://localhost/posts/Depressing_Art_Likable_Politicians</id>
     <updated>2019-01-03T00:00:00Z</updated>
@@ -290,69 +396,6 @@
 &lt;p&gt;A lot of the music I like is not exactly fun. A fair amount of it might be described as something one might bump themselves off to. And yet I don’t really relate to it from a depressed space. In a way, I find it cathartic to listen to other people’s depression (and perhaps feel better by comparison!)&lt;/p&gt;
 &lt;p&gt;There’s an old debate about if some artists need to suffer from depression, or other mental illness, to be successful at their craft. Many find this idea repugnant, with its implication that these people must live in a state of untreated illness in order to ply their trade. I certainly don’t think anyone’s mental health should take second place to their artistic output. We as a society should do everything possible to make professional medical help available to everyone, and encourage people to make use of it. But it is at least possible that there are artistic truths that are accessible only to those deep in the well of melancholy. Better, certainly, that we lived without these truths, and still had Elliot Smith. But that doesn’t alter the fact.&lt;/p&gt;
 &lt;p&gt;The idea of &lt;a href=&quot;https://en.wikipedia.org/wiki/Depressive_realism&quot;&gt;depressive realism&lt;/a&gt; dovetails with this nicely: if we imagine that the world is fundamentally a tragic place, and that neurotypical people deal with it via defensive mental obfuscating, it might make sense that we would be drawn to the work of the depressed, seeing in the expression of these unlucky prophets a vision of a truth almost, but not quite perceived.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</content>
-  </entry>
-  <entry xml:base="http://localhost/">
-    <title type="text">Social Justice Warriors on the Intellectual Dark Web // Who Needs the News?// The Nature of Reality</title>
-    <id>http://localhost/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web _Who_Needs_the_News_The_Nature_of_Reality</id>
-    <updated>2018-11-12T00:00:00Z</updated>
-    <published>2018-11-12T00:00:00Z</published>
-    <link href="http://localhost/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web _Who_Needs_the_News_The_Nature_of_Reality" />
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
-  &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  &lt;/style&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;A very overdiscussed topic lately is political correctness, and if there’s too much of it. I propose the following three points:&lt;/p&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;At least some measure of socially ordained political correctness is unquestionably a good thing&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;There is a point where social monitoring of offensive speech becomes intrusive, burdensome and overall not worthwhile&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;‘PC Culture’ is currently unevenly distributed - there are some places which have it in very high levels (many university campuses, say), whereas there are also plenty of places where some pretty offensive things are considered acceptable.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Basically my feeling is that there is a high level of variance among people. Outside of the Western world there is a wild thicket of systems of etiquette, views on race and caste and culture and gender, etc. And even within the West, there is quite a lot of variance. I think this variance is OK, a part of human nature. What the internet has changed is that we see much more of each other’s views, and have more opportunity to take offence, such that people get angrier and more polarised. The internet is less like a global village than like all the villages in the world compressed into one physical space, haphazardly glimpsing each other’s business and getting offended.&lt;/p&gt;
-&lt;p&gt;I also suspect that a lot of people within places that have high levels of PC aren’t fully on board with the culture, but don’t feel it’s worth taking on. I strongly endorse this hypothetical view, because a) this doesn’t seem like the biggest deal, and b) people’s will probably regress back to a calmer mean over time.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;So the late, revered programmer Aaron Swartz, patron saint of the Internet, has a &lt;a href=&quot;http://www.aaronsw.com/weblog/hatethenews&quot;&gt;blog post&lt;/a&gt; I categorically disagree with. Swartz argues that reading the news is pointless because it doesn’t affect your life, and that it is a form of mindless entertainment.&lt;/p&gt;
-&lt;p&gt;By that logic, should you read news of scientific developments? It affects your life very little, too, and it’s unlikely that someone outside of a very specialised field will be able to contribute. Why read anything besides technical literature from your profession, and perhaps investment advice? If one is going to read anything, it might as well be keeping up with the world around you, and one might even be able to use it to make small talk with other human beings.&lt;/p&gt;
-&lt;p&gt;I also think that this argument stems from a time when the media seemed sturdier. Nowadays, the media business model is barely alive, and the media’s role in a democracy doesn’t just work on its own. Swartz argues that if the newspaper criticises the mayor, the mayor will apologise or justify herself or whatever, so why does the reader need to get involved? But nowadays the mayor has her own media. You could still argue, as Swartz does, that one individual’s opinion, or their vote, doesn’t really matter. But one might say in today’s terms that that argument “doesn’t scale”.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;English speakers encountering the words for scientific things in other languages often find them somewhat childlike, but that’s only because English obfuscates them with Latin and Greek, because tradition. Just one example: TV in German is Fernsehen, “see-far”; in English it’s the same, but a hideous Greek-Latin hybrid. Leaving aside the Sapir-Whorff hypothesis, it’s beyond a doubt that the solidity of our language hides an enormous amount of uncertainty. Not to get too Kantian, but in a sense scientific models - not just of black holes and quantum particles, but of all matter, consciousness, life! - are weird, hacky concepts, leaky metaphors which partially describe observations of phenomena that multiple people experience. I found this idea of the ubiquity and fundamental nature of metaphor in human experience in a book I’m reading (&lt;a href=&quot;https://www.amazon.com/Origin-Consciousness-Breakdown-Bicameral-Mind/dp/0618057072&quot;&gt;&lt;em&gt;The Origin of Consciousness in the Breakdown of the Bicameral Mind&lt;/em&gt;&lt;/a&gt;), and I’ll quote from it somewhat at length.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A random glance at the etymologies of common words in a dictionary will demonstrate [the ubiquity of metaphors]. Or take the naming of various fauna and flora in their Latin indicants, or even in their wonderful common English names, such as stag beetle, lady’s-slipper, darning needle, Queen Anne’s lace, or buttercup. The human body is a particularly generative metaphier [his term for a source of metaphors], creating previously unspeakable distinctions in a throng of areas. The &lt;em&gt;head&lt;/em&gt; of an army, table, page, bed, ship, household, or nail, or of steam or water; the &lt;em&gt;face&lt;/em&gt; of a clock, cliff, card, or crystal; the &lt;em&gt;eyes&lt;/em&gt; of needles, winds, storms, targets, flowers, or potatoes; the &lt;em&gt;brow&lt;/em&gt; of a hill; the &lt;em&gt;cheeks&lt;/em&gt; of a vise; the &lt;em&gt;teeth&lt;/em&gt; of cogs or combs; the &lt;em&gt;lips&lt;/em&gt; of pitchers, craters, augers; the &lt;em&gt;tongues&lt;/em&gt; of shoes, board joints, or railway switches; the &lt;em&gt;arm&lt;/em&gt; of a chair or the sea; the &lt;em&gt;leg&lt;/em&gt; of a table, compass, sailor’s voyage, or cricket field; and so on and on. Or the &lt;em&gt;foot&lt;/em&gt; of this page. Or the &lt;em&gt;leaf&lt;/em&gt; you will soon turn. All of these concrete metaphors increase enormously our powers of perception of the world about us and our understanding of it, and literally create new objects. Indeed, language is an organ of perception, not simply a means of communication.&lt;/p&gt;
-&lt;p&gt;…This is indeed the nub (knob), heart, pith, kernel, core, marrow, etc. of my argument, which itself is a metaphor and ‘seen’ only with the mind’s ‘eye’. In the abstractions of human relations, the skin becomes a particularly important metaphier. We get or stay ‘in touch’ with others who may be ‘thick-’ or ‘thin-skinned’ or perhaps ‘touchy’ in which case they have to be ‘handled’ carefully lest we ‘rub’ them the wrong way; we may have a ‘feeling’ for another person with whom we may have a ‘touching’ experience.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The concepts of science are all of this kind, abstract concepts generated by concrete metaphors. In physics, we have force, acceleration (to increase one’s steps), inertia (originally an indolent person), impedance, resistance, fields, and now charm. In physiology, the metaphier of a machine has been at the very center of discovery. We understand the brain by metaphors to everything from batteries and telegraphy to computers and holograms. Medical practice is sometimes dictated by metaphor. In the eighteenth century, the heart in fever was like a boiling pot, and so bloodletting was prescribed to reduce its fuel. And even today, a great deal of medicine is based upon the military metaphor of defense of the body against attacks of this or that. The very concept of law in Greek derives from &lt;em&gt;nomos,&lt;/em&gt; the word for the foundations of a building. To be liable, or bound in law, comes from the Latin &lt;em&gt;ligare,&lt;/em&gt; meaning to bind with cord.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In early times, language and its referents climbed up from the concrete to the abstract on the steps of metaphors, even, we may say, created the abstract on the bases of metaphors.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is not always obvious that metaphor has played this all important function. But this is because the concrete metaphiers become hidden in phonemic change, leaving the words to exist on their own. Even such an unmetaphorical-sounding word as the verb ‘to be’ was generated from a metaphor. It comes from the Sanskrit &lt;em&gt;bhu&lt;/em&gt;, “to grow, or make grow,” while the English forms ‘am’ and ‘is’ have evolved from the same root as the Sanskrit &lt;em&gt;asmi,&lt;/em&gt; “to breathe.” It is something of a lovely surprise that the irregular conjugation of our most nondescript verb is thus a record of a time when man had no independent word for ‘existence’ and could only say that something ‘grows’ or that it “breathes.” Of course we are not conscious that the concept of being is thus generated from a metaphor about growing and breathing. Abstract words are ancient coins whose concrete images in the busy give-and-take of talk have worn away with use.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Because in our brief lives we catch so little of the vastnesses of history, we tend too much to think of language as being solid as a dictionary, with a granite-like permanence, rather than as the rampant restless sea of metaphor which it is. Indeed, if we consider the changes in vocabulary that have occurred over the last few millennia, and project them several millennia hence, an interesting paradox arises. For if we ever achieve a language that has the power of expressing everything, then metaphor will no longer be possible. I would not say, in that case, my love is like a red, red rose, for love would have exploded into terms for its thousands of nuances, and applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -398,10 +441,10 @@
   </entry>
   <entry xml:base="http://localhost/">
     <title type="text">Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
-    <id>http://localhost/posts/podcasts</id>
+    <id>http://localhost/posts/Podcasts</id>
     <updated>2019-07-16T00:00:00Z</updated>
     <published>2019-07-16T00:00:00Z</published>
-    <link href="http://localhost/posts/podcasts" />
+    <link href="http://localhost/posts/Podcasts" />
     <author>
       <name>lordgrenville</name>
     </author>
