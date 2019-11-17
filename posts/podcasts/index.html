@@ -67,7 +67,7 @@
 <pre><code>import requests
 import xml.etree.ElementTree as ET
 
-feed = requests.get(&#39;https://feeds.bloomberg.fm/BLM8578726790&#39;, verify=False).text  
+feed = requests.get(&#39;https://feeds.bloomberg.fm/BLM8578726790&#39;, verify=False).text
 # you need to disable verify because of the dodgy SSL. requests throws up a warning telling you that this is very foolish
 feed = ET.fromstring(feed)</code></pre>
 <p>After fooling around with the <code>xml</code> I get this:</p>

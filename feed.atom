@@ -472,7 +472,7 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;pre&gt;&lt;code&gt;import requests
 import xml.etree.ElementTree as ET
 
-feed = requests.get(&amp;#39;https://feeds.bloomberg.fm/BLM8578726790&amp;#39;, verify=False).text  
+feed = requests.get(&amp;#39;https://feeds.bloomberg.fm/BLM8578726790&amp;#39;, verify=False).text
 # you need to disable verify because of the dodgy SSL. requests throws up a warning telling you that this is very foolish
 feed = ET.fromstring(feed)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After fooling around with the &lt;code&gt;xml&lt;/code&gt; I get this:&lt;/p&gt;
