@@ -2,11 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2019-11-13T00:00:00Z</updated>
+  <updated>2020-04-17T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
   <generator>Werkzeug</generator>
+  <entry xml:base="http://localhost/">
+    <title type="text">Democracy &amp; Elitism // Fish</title>
+    <id>http://localhost/posts/Democracy___Elitism_Fish</id>
+    <updated>2018-11-08T00:00:00Z</updated>
+    <published>2018-11-08T00:00:00Z</published>
+    <link href="http://localhost/posts/Democracy___Elitism_Fish" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;There’s a “salon” here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are “good” and “bad” voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I’ve been groping towards an idea of “democratic elitism” for a while, in which the great value of democracy, I think, is that everyone’s &lt;em&gt;interests&lt;/em&gt; are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.&lt;/p&gt;
+&lt;p&gt;In this as in most things, it turns out that there’s a literature. While reading Alan Ryan’s biography &lt;a href=&quot;https://www.amazon.com/John-Dewey-High-American-Liberalism/dp/1511384352&quot;&gt;&lt;em&gt;John Dewey and the High Tide of American Liberalism&lt;/em&gt;&lt;/a&gt;, I came across Dewey’s debates with journalist Walter Lippmann, a towering figure in American journalism I’d never heard of. He studied under Santayana at Harvard, co-founded the &lt;em&gt;New Republic&lt;/em&gt;, and was a much read journalist and critic for half a century. (This &lt;a href=&quot;https://www.foreignaffairs.com/reviews/review-essay/2015-02-11/walter-lippmann-and-american-century&quot;&gt;helpful 1980 retrospective&lt;/a&gt; in &lt;em&gt;Foreign Affairs&lt;/em&gt; is temporarily ungated, probably due to an oversight.) In the &lt;a href=&quot;https://en.wikipedia.org/wiki/Journalism#Writing_for_experts_or_for_ordinary_citizens?&quot;&gt;Lippmann-Dewey&lt;/a&gt; debates, Lippmann made several very prescient critiques of the media-public pipeline: firstly, reality is too complicated for anyone to understand, and journalists tend to fall back on a stereotype backed up by some reporting. Secondly, the public has little interest in political engagement, and is not prepared to pay the price of thorough, well-researched journalism. “For a dollar, you may not even get an armful of candy, but for a dollar or less people expect reality/representations of truth to fall into their laps.” A lot of important facts are impossible to find out, and editorial judgment adds bias to the allocation of news coverage. Thus, people don’t want to keep up, and wouldn’t be able to even if they could.&lt;/p&gt;
+&lt;p&gt;Lippmann advocated a technocracy, where a governing elite would be advised by a cadre of technocrats, experts in a very narrow field. (Lippmann’s name is thus associated with our modern vision of the neoliberal state, and in fact it was Foucault who pointed out that the the term originated at the first meeting in Paris of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Colloque_Walter_Lippmann&quot;&gt;Colloque Walter Lippmann&lt;/a&gt;.) Dewey’s side of the argument was in favour of civilian journalism, and a “Great Society” of slow community-wide consensus. (Always majestic in idealism but obscurely phrased, Dewey’s writing was perfectly described by Oliver Wendell Homes Jr.:“So methought God would have spoken had He been inarticulate but keenly desirous to tell you how it was.”)&lt;/p&gt;
+&lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually Joseph Schumpeter. In his famous work &lt;a href=&quot;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&quot;&gt;Capitalism, Socialism and Democracy&lt;/a&gt; Schumpeter argued that a) the people are unlikely to know what is best for them, since they are usually manipulated by politicians, and b) even if they did have a clear agenda, they wouldn’t know the best means to achieving it. He thus (following Weber) argued for a largely arms-length democratic system, in which policy decisions are made at a government level and the public’s role is restricted to choosing one of these options and giving it a rubber stamp.&lt;/p&gt;
+&lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Finally Figured Out Monty Hall!</title>
+    <id>http://localhost/posts/Monty_Hall</id>
+    <updated>2020-03-30T00:00:00Z</updated>
+    <published>2020-03-30T00:00:00Z</published>
+    <link href="http://localhost/posts/Monty_Hall" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/DeegC/monty_hall_paradox&quot;&gt;this explanantion&lt;/a&gt; (coding it out in Ruby made it clearer to me, but it’s really the verbal explanation that worked).&lt;/p&gt;
+&lt;p&gt;At the outset you have doors A, B and C. Given the choice between A or B and C, obviously you would take the latter. That’s what you’re choosing here! B and C, which combined have a greater chance of being correct. It’s more likely that it was in the two you didn’t choose: specifically the one of them which isn’t wrong. But they still represent 2/3.&lt;/p&gt;
+&lt;p&gt;As a &lt;a href=&quot;https://news.ycombinator.com/item?id=22717754&quot;&gt;HN commenter&lt;/a&gt; put it, it’s easier to think of it when it’s 100 doors. To begin, you choose one. What’s the chance you’re correct? A measly 1%. You almost certainly got it wrong. Imagine if you could switch to select &lt;em&gt;the other 99&lt;/em&gt;. Of course you’d do it! Now the host opens the 98 goat doors. The other 99 are 98 goats + 1 &lt;code&gt;?&lt;/code&gt;. Of course you should switch! &lt;em&gt;You picked the minority, so the majority of times you are wrong. You’re being given a chance to switch to the majority&lt;/em&gt;. Of course, if no door is opened, you’re still picking one of 3 - you’re still a minority, so it makes no difference if you switch or stay.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
   <entry xml:base="http://localhost/">
     <title type="text">Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
     <id>http://localhost/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web_Who_Needs_the_News_The_Nature_of_Reality</id>
@@ -22,12 +98,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -77,12 +155,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -116,12 +196,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -149,12 +231,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -182,12 +266,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -217,12 +303,14 @@
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -253,12 +341,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -294,12 +384,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -313,6 +405,48 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Put another way: “&lt;em&gt;I don’t know what feminism is, but whatever it is, I’m for it&lt;/em&gt;.”&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Data Science may be a sexy term for statistics, but statistics is more sexy than it’s given credit for. Any social science, under the Popperian paradigm, must make predictions: diagnosing a structure means nothing if it has no predictive capacity. (Or else it’s humanities, kind of the way some historians want to go, and the way psychoanalysis has gone completely). Are, say, political scientists any better than monkeys throwing darts? That’s why they need statistics. So both data science and all of the social sciences can be defined as &lt;em&gt;applied statistics&lt;/em&gt; (with the balance just varying between domain knowledge vs stats knowledge, though any long-term DS project does involve getting deep into the domain knowledge). Where it gets weird is where DS models and makes predictions without an explanatory model, such as the case of NLP. Statistical relationships working by themselves, not being supported by any deep idea of how things fundamentally are supposed to work. The next word is “meeting”, that green lump is a tree, just based on probability. This was the subject of a debate between Google’s Peter Norvig and Noam Chomsky, the former sums it up in a fascinating, deep-ranging blog post &lt;a href=&quot;http://norvig.com/chomsky.html&quot;&gt;over here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Boredom</title>
+    <id>http://localhost/posts/Boredom</id>
+    <updated>2020-04-17T00:00:00Z</updated>
+    <published>2020-04-17T00:00:00Z</published>
+    <link href="http://localhost/posts/Boredom" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;I almost always have earphones in, filling up the time in which I’m not actively focusing on something else with a steady patter of podcasts or mildly interesting books. But occasionally I wonder: aren’t I missing out on being alone with my thoughts, the serendipitous free flow borne of tedium? Maybe it isn’t worth it.&lt;/p&gt;
+&lt;p&gt;So I have a control: one day a week, I forswear all electronic devices, and when I go for walks it’s just me and my own thoughts. I guess the ideal would be for me to ponder hard problems, or come up with a more efficient solution to a maths problem (this actually did happen the other day, for &lt;a href=&quot;https://projecteuler.net/problem=205&quot;&gt;this&lt;/a&gt;! But most of the time the topics seem to be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inventing the perfect response for situations where I didn’t have one&lt;/li&gt;
+&lt;li&gt;Getting angry about the news&lt;/li&gt;
+&lt;li&gt;Imagining situations where someone tries to beat me up, but then it turns out that I have superpowers and I beat &lt;em&gt;them&lt;/em&gt; up (is this normal for an adult??? What does this say about me!?)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tentative conclsuion: I’m not missing out on much. Alhough it’s possible that the “boredom premium” is cumulative, and only after building up a long period of boredom does true creativity flourish. By cycling between long periods of hyperstimulation and brief pauses, I’m just letting my overstimulated mind lapse into white noise on its off days.&lt;/p&gt;
+&lt;p&gt;¯\&lt;em&gt;(ツ)&lt;/em&gt;/¯&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -332,12 +466,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -350,44 +486,6 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;A lot of the music I like is not exactly fun. A fair amount of it might be described as something one might bump themselves off to. And yet I don’t really relate to it from a depressed space. In a way, I find it cathartic to listen to other people’s depression (and perhaps feel better by comparison!)&lt;/p&gt;
 &lt;p&gt;There’s an old debate about if some artists need to suffer from depression, or other mental illness, to be successful at their craft. Many find this idea repugnant, with its implication that these people must live in a state of untreated illness in order to ply their trade. I certainly don’t think anyone’s mental health should take second place to their artistic output. We as a society should do everything possible to make professional medical help available to everyone, and encourage people to make use of it. But it is at least possible that there are artistic truths that are accessible only to those deep in the well of melancholy. Better, certainly, that we lived without these truths, and still had Elliot Smith. But that doesn’t alter the fact.&lt;/p&gt;
 &lt;p&gt;The idea of &lt;a href=&quot;https://en.wikipedia.org/wiki/Depressive_realism&quot;&gt;depressive realism&lt;/a&gt; dovetails with this nicely: if we imagine that the world is fundamentally a tragic place, and that neurotypical people deal with it via defensive mental obfuscating, it might make sense that we would be drawn to the work of the depressed, seeing in the expression of these unlucky prophets a vision of a truth almost, but not quite perceived.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</content>
-  </entry>
-  <entry xml:base="http://localhost/">
-    <title type="text">Democracy &amp; Elitism // Fish</title>
-    <id>http://localhost/posts/Democracy_&amp;_Elitism_Fish</id>
-    <updated>2018-11-08T00:00:00Z</updated>
-    <published>2018-11-08T00:00:00Z</published>
-    <link href="http://localhost/posts/Democracy_&amp;_Elitism_Fish" />
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
-  &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  &lt;/style&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;There’s a “salon” here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are “good” and “bad” voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I’ve been groping towards an idea of “democratic elitism” for a while, in which the great value of democracy, I think, is that everyone’s &lt;em&gt;interests&lt;/em&gt; are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.&lt;/p&gt;
-&lt;p&gt;In this as in most things, it turns out that there’s a literature. While reading Alan Ryan’s biography &lt;a href=&quot;https://www.amazon.com/John-Dewey-High-American-Liberalism/dp/1511384352&quot;&gt;&lt;em&gt;John Dewey and the High Tide of American Liberalism&lt;/em&gt;&lt;/a&gt;, I came across Dewey’s debates with journalist Walter Lippmann, a towering figure in American journalism I’d never heard of. He studied under Santayana at Harvard, co-founded the &lt;em&gt;New Republic&lt;/em&gt;, and was a much read journalist and critic for half a century. (This &lt;a href=&quot;https://www.foreignaffairs.com/reviews/review-essay/2015-02-11/walter-lippmann-and-american-century&quot;&gt;helpful 1980 retrospective&lt;/a&gt; in &lt;em&gt;Foreign Affairs&lt;/em&gt; is temporarily ungated, probably due to an oversight.) In the &lt;a href=&quot;https://en.wikipedia.org/wiki/Journalism#Writing_for_experts_or_for_ordinary_citizens?&quot;&gt;Lippmann-Dewey&lt;/a&gt; debates, Lippmann made several very prescient critiques of the media-public pipeline: firstly, reality is too complicated for anyone to understand, and journalists tend to fall back on a stereotype backed up by some reporting. Secondly, the public has little interest in political engagement, and is not prepared to pay the price of thorough, well-researched journalism. “For a dollar, you may not even get an armful of candy, but for a dollar or less people expect reality/representations of truth to fall into their laps.” A lot of important facts are impossible to find out, and editorial judgment adds bias to the allocation of news coverage. Thus, people don’t want to keep up, and wouldn’t be able to even if they could.&lt;/p&gt;
-&lt;p&gt;Lippmann advocated a technocracy, where a governing elite would be advised by a cadre of technocrats, experts in a very narrow field. (Lippmann’s name is thus associated with our modern vision of the neoliberal state, and in fact it was Foucault who pointed out that the the term originated at the first meeting in Paris of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Colloque_Walter_Lippmann&quot;&gt;Colloque Walter Lippmann&lt;/a&gt;.) Dewey’s side of the argument was in favour of civilian journalism, and a “Great Society” of slow community-wide consensus. (Always majestic in idealism but obscurely phrased, Dewey’s writing was perfectly described by Oliver Wendell Homes Jr.:“So methought God would have spoken had He been inarticulate but keenly desirous to tell you how it was.”)&lt;/p&gt;
-&lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually Joseph Schumpeter. In his famous work &lt;a href=&quot;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&quot;&gt;Capitalism, Socialism and Democracy&lt;/a&gt; Schumpeter argued that a) the people are unlikely to know what is best for them, since they are usually manipulated by politicians, and b) even if they did have a clear agenda, they wouldn’t know the best means to achieving it. He thus (following Weber) argued for a largely arms-length democratic system, in which policy decisions are made at a government level and the public’s role is restricted to choosing one of these options and giving it a rubber stamp.&lt;/p&gt;
-&lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -407,12 +505,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -446,12 +546,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
@@ -510,12 +612,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Untitled&lt;/title&gt;
+  &lt;title&gt;-&lt;/title&gt;
   &lt;style&gt;
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   &lt;/style&gt;
   &lt;!--[if lt IE 9]&gt;
     &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
