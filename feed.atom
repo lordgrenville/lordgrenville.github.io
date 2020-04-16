@@ -76,7 +76,7 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/DeegC/monty_hall_paradox&quot;&gt;this explanantion&lt;/a&gt; (coding it out in Ruby made it clearer to me, but it’s really the verbal explanation that worked).&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/DeegC/monty_hall_paradox&quot;&gt;this explanation&lt;/a&gt; (coding it out in Ruby made it clearer to me, but it’s really the verbal explanation that worked).&lt;/p&gt;
 &lt;p&gt;At the outset you have doors A, B and C. Given the choice between A or B and C, obviously you would take the latter. That’s what you’re choosing here! B and C, which combined have a greater chance of being correct. It’s more likely that it was in the two you didn’t choose: specifically the one of them which isn’t wrong. But they still represent 2/3.&lt;/p&gt;
 &lt;p&gt;As a &lt;a href=&quot;https://news.ycombinator.com/item?id=22717754&quot;&gt;HN commenter&lt;/a&gt; put it, it’s easier to think of it when it’s 100 doors. To begin, you choose one. What’s the chance you’re correct? A measly 1%. You almost certainly got it wrong. Imagine if you could switch to select &lt;em&gt;the other 99&lt;/em&gt;. Of course you’d do it! Now the host opens the 98 goat doors. The other 99 are 98 goats + 1 &lt;code&gt;?&lt;/code&gt;. Of course you should switch! &lt;em&gt;You picked the minority, so the majority of times you are wrong. You’re being given a chance to switch to the majority&lt;/em&gt;. Of course, if no door is opened, you’re still picking one of 3 - you’re still a minority, so it makes no difference if you switch or stay.&lt;/p&gt;
 &lt;/body&gt;
@@ -445,7 +445,7 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;li&gt;Getting angry about the news&lt;/li&gt;
 &lt;li&gt;Imagining situations where someone tries to beat me up, but then it turns out that I have superpowers and I beat &lt;em&gt;them&lt;/em&gt; up (is this normal for an adult??? What does this say about me!?)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tentative conclsuion: I’m not missing out on much. Alhough it’s possible that the “boredom premium” is cumulative, and only after building up a long period of boredom does true creativity flourish. By cycling between long periods of hyperstimulation and brief pauses, I’m just letting my overstimulated mind lapse into white noise on its off days.&lt;/p&gt;
+&lt;p&gt;Tentative conclusion: I’m not missing out on much. Alhough it’s possible that the “boredom premium” is cumulative, and only after building up a long period of boredom does true creativity flourish. By cycling between long periods of hyperstimulation and brief pauses, I’m just letting my overstimulated mind lapse into white noise on its off days.&lt;/p&gt;
 &lt;p&gt;¯\&lt;em&gt;(ツ)&lt;/em&gt;/¯&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
