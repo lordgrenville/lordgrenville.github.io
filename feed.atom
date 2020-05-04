@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2020-04-17T00:00:00Z</updated>
+  <updated>2020-05-03T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -43,6 +43,42 @@
 &lt;p&gt;Of course the issue here, where a lot of people disagree with me, is if there really is a rational, ideal way to run a modern society. The democratic upheaval of the last few years (which no doubt sowed the seed of these musings) can arguably be attributed to the failure of the watchman state during the financial crisis and America’s war on terror. If the technocrats cannot claim greater knowledge than the public, what authority do they hold? And if reason has no special status in public life, does that mean that we are all forever doomed to shout at each other to no end, ignorant voters on a darkling plain?&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Communication</title>
+    <id>http://localhost/posts/Communication</id>
+    <updated>2020-05-03T00:00:00Z</updated>
+    <published>2020-05-03T00:00:00Z</published>
+    <link href="http://localhost/posts/Communication" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;I’ve just finished a &lt;a href=&quot;https://www.goodreads.com/book/show/560818.Speaking_Peace&quot;&gt;book on Nonviolent Comunication&lt;/a&gt; and thought it would have made a good pairing with one I read last year, &lt;a href=&quot;https://www.goodreads.com/book/show/26156469-never-split-the-difference&quot;&gt;&lt;em&gt;Never Split the Difference&lt;/em&gt;&lt;/a&gt;, as a lesson in effective communication. The latter is about getting what you want from your counterparty, no matter your relationship afterwards. An adversarial, zero-sum situation is assumed, and Voss (the author, a former FBI hostage negotiator) urges the reader to push for everything, using empathy toward the counterparty only as a weapon.&lt;/p&gt;
+&lt;p&gt;By contrast, Rosenberg urges something of the opposite approach: creating a peaceful relationship even at the risk of not achieving your goals. He has a somewhat Buddhistic approach to life, seeing all people as essentially good and the goal of communication as seeing the goodness in the counterparty, validating their feelings without criticising (this applies equally to oneself), and trying to find a way in which everyone’s goals can be achieved.&lt;/p&gt;
+&lt;p&gt;Both authors present a bevy of case studies in which they used their principles to achieve miraculous results, even in cases which seemed like certain exceptions. I think that both authors imply a falsehood, without making it explicit: &lt;em&gt;my principles will work in all situations&lt;/em&gt;. When push comes to shove, both would have to admit that some situations are simply insoluble; no amount of negotiating savvy or peace-building communication will lead to a positive outcome. Nonetheless, such cases are rare, and some hyperbole is probably needed in order to convince sceptical readers to apply these rules among their families and colleagues.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
