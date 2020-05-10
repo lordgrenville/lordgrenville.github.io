@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2020-05-03T00:00:00Z</updated>
+  <updated>2020-05-11T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -629,6 +629,124 @@ wget -O pelosi.mp3 https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vAThJHLXwFKM/v4.
 
 etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Sent them to my phone with bluetooth, and added the &lt;code&gt;bluetooth&lt;/code&gt; folder as a virtual podcast. And there you go, podcasts the old fashioned way!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Tar Hack</title>
+    <id>http://localhost/posts/Tar</id>
+    <updated>2020-05-11T00:00:00Z</updated>
+    <published>2020-05-11T00:00:00Z</published>
+    <link href="http://localhost/posts/Tar" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre &gt; code.sourceCode { white-space: pre; position: relative; }
+    pre &gt; code.sourceCode &gt; span { display: inline-block; line-height: 1.25; }
+    pre &gt; code.sourceCode &gt; span:empty { height: 1.2em; }
+    code.sourceCode &gt; span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre &gt; code.sourceCode { white-space: pre-wrap; }
+    pre &gt; code.sourceCode &gt; span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code &gt; span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code &gt; span &gt; a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre &gt; code.sourceCode &gt; span &gt; a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;There’s a funny &lt;a href=&quot;https://xkcd.com/1168/&quot;&gt;xkcd cartoon&lt;/a&gt; about the &lt;code&gt;tar&lt;/code&gt; command:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/tar_2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;How does one remember those ridiculous single letter commands? My preferred solution is to first consult with &lt;a href=&quot;https://tldr.sh/&quot;&gt;TLDR&lt;/a&gt;, but Justin Abrahams has a fun solution &lt;a href=&quot;https://justin.abrah.ms/bash/forgotten_friend_3.html&quot;&gt;over at his blog&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb1&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span id=&quot;cb1-1&quot;&gt;&lt;a href=&quot;#cb1-1&quot;&gt;&lt;/a&gt;  &lt;span class=&quot;fu&quot;&gt;extract ()&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;{&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-2&quot;&gt;&lt;a href=&quot;#cb1-2&quot;&gt;&lt;/a&gt;    &lt;span class=&quot;kw&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;bu&quot;&gt; [&lt;/span&gt; &lt;span class=&quot;ot&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;bu&quot;&gt; ]&lt;/span&gt; ; &lt;span class=&quot;kw&quot;&gt;then&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-3&quot;&gt;&lt;a href=&quot;#cb1-3&quot;&gt;&lt;/a&gt;      &lt;span class=&quot;kw&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;kw&quot;&gt; in&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-4&quot;&gt;&lt;a href=&quot;#cb1-4&quot;&gt;&lt;/a&gt;        *.tar.bz2&lt;span class=&quot;kw&quot;&gt;)&lt;/span&gt;        &lt;span class=&quot;fu&quot;&gt;tar&lt;/span&gt; xjf &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-5&quot;&gt;&lt;a href=&quot;#cb1-5&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.tar.gz&lt;/span&gt;)         &lt;span class=&quot;fu&quot;&gt;tar&lt;/span&gt; xzf &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-6&quot;&gt;&lt;a href=&quot;#cb1-6&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.bz2&lt;/span&gt;)            &lt;span class=&quot;fu&quot;&gt;bunzip2&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-7&quot;&gt;&lt;a href=&quot;#cb1-7&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.rar&lt;/span&gt;)            &lt;span class=&quot;ex&quot;&gt;unrar&lt;/span&gt; x &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-8&quot;&gt;&lt;a href=&quot;#cb1-8&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.gz&lt;/span&gt;)             &lt;span class=&quot;fu&quot;&gt;gunzip&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;         &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-9&quot;&gt;&lt;a href=&quot;#cb1-9&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.tar&lt;/span&gt;)            &lt;span class=&quot;fu&quot;&gt;tar&lt;/span&gt; xf &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;         &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-10&quot;&gt;&lt;a href=&quot;#cb1-10&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.tbz2&lt;/span&gt;)           &lt;span class=&quot;fu&quot;&gt;tar&lt;/span&gt; xjf &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-11&quot;&gt;&lt;a href=&quot;#cb1-11&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.tgz&lt;/span&gt;)            &lt;span class=&quot;fu&quot;&gt;tar&lt;/span&gt; xzf &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;        &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-12&quot;&gt;&lt;a href=&quot;#cb1-12&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.zip&lt;/span&gt;)            &lt;span class=&quot;fu&quot;&gt;unzip&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;          &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-13&quot;&gt;&lt;a href=&quot;#cb1-13&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*.Z&lt;/span&gt;)              &lt;span class=&quot;ex&quot;&gt;uncompress&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;     &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-14&quot;&gt;&lt;a href=&quot;#cb1-14&quot;&gt;&lt;/a&gt;        &lt;span class=&quot;ex&quot;&gt;*&lt;/span&gt;)                &lt;span class=&quot;bu&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;#39; cannot be extracted via extract()&amp;quot;&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;;;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-15&quot;&gt;&lt;a href=&quot;#cb1-15&quot;&gt;&lt;/a&gt;    &lt;span class=&quot;kw&quot;&gt;esac&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-16&quot;&gt;&lt;a href=&quot;#cb1-16&quot;&gt;&lt;/a&gt;    &lt;span class=&quot;kw&quot;&gt;else&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-17&quot;&gt;&lt;a href=&quot;#cb1-17&quot;&gt;&lt;/a&gt;      &lt;span class=&quot;bu&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;&amp;#39;&lt;/span&gt;&lt;span class=&quot;va&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;st&quot;&gt;&amp;#39; is not a valid file&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-18&quot;&gt;&lt;a href=&quot;#cb1-18&quot;&gt;&lt;/a&gt;    &lt;span class=&quot;kw&quot;&gt;fi&lt;/span&gt;&lt;/span&gt;
+&lt;span id=&quot;cb1-19&quot;&gt;&lt;a href=&quot;#cb1-19&quot;&gt;&lt;/a&gt;  &lt;span class=&quot;kw&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;(Appended, naturally, to &lt;code&gt;.bashrc&lt;/code&gt;.)&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
