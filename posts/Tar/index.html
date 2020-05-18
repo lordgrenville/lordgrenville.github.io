@@ -15,12 +15,12 @@
   <meta property="og:author" content="lordgrenville" />
   <meta property="og:title" content="Tar Hack" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="Tar Hack..." />
+  <meta property="og:description" content="Tar Hack" />
   <meta property="og:url" content="http://localhost/posts/Tar/" />
   <meta property="og:image" content="/static/img/athena.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Tar Hack" />
-  <meta name="twitter:description" content="Tar Hack..." />
+  <meta name="twitter:description" content="Tar Hack" />
   <meta name="twitter:url" content="http://localhost/posts/Tar/" />
   <meta name="twitter:image" content="/static/img/athena.png" />
 </head>
@@ -129,22 +129,22 @@
 <p><img src="https://imgs.xkcd.com/comics/tar_2x.png" /></p>
 <p>How does one remember those ridiculous single letter commands? My preferred solution is to first consult with <a href="https://tldr.sh/">TLDR</a>, but Justin Abrahams has a fun solution <a href="https://justin.abrah.ms/bash/forgotten_friend_3.html">over at his blog</a>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="fu">extract ()</span> <span class="kw">{</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">if</span><span class="bu"> [</span> <span class="ot">-f</span> <span class="va">$1</span><span class="bu"> ]</span> ; <span class="kw">then</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>      <span class="kw">case</span> <span class="va">$1</span><span class="kw"> in</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>        *.tar.bz2<span class="kw">)</span>        <span class="fu">tar</span> xjf <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>        <span class="ex">*.tar.gz</span>)         <span class="fu">tar</span> xzf <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>        <span class="ex">*.bz2</span>)            <span class="fu">bunzip2</span> <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>        <span class="ex">*.rar</span>)            <span class="ex">unrar</span> x <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>        <span class="ex">*.gz</span>)             <span class="fu">gunzip</span> <span class="va">$1</span>         <span class="kw">;;</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>        <span class="ex">*.tar</span>)            <span class="fu">tar</span> xf <span class="va">$1</span>         <span class="kw">;;</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>        <span class="ex">*.tbz2</span>)           <span class="fu">tar</span> xjf <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>        <span class="ex">*.tgz</span>)            <span class="fu">tar</span> xzf <span class="va">$1</span>        <span class="kw">;;</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>        <span class="ex">*.zip</span>)            <span class="fu">unzip</span> <span class="va">$1</span>          <span class="kw">;;</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>        <span class="ex">*.Z</span>)              <span class="ex">uncompress</span> <span class="va">$1</span>     <span class="kw">;;</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a>        <span class="ex">*</span>)                <span class="bu">echo</span> <span class="st">&quot;&#39;</span><span class="va">$1</span><span class="st">&#39; cannot be extracted via extract()&quot;</span> <span class="kw">;;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">if</span><span class="bu"> [</span> <span class="ot">-f</span> 1<span class="bu"> ]</span> ; <span class="kw">then</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>      <span class="kw">case</span> 1<span class="kw"> in</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>        *.tar.bz2<span class="kw">)</span>        <span class="fu">tar</span> xjf 1        <span class="kw">;;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>        <span class="ex">*.tar.gz</span>)         <span class="fu">tar</span> xzf 1        <span class="kw">;;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>        <span class="ex">*.bz2</span>)            <span class="fu">bunzip2</span> 1        <span class="kw">;;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>        <span class="ex">*.rar</span>)            <span class="ex">unrar</span> x 1        <span class="kw">;;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>        <span class="ex">*.gz</span>)             <span class="fu">gunzip</span> 1         <span class="kw">;;</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>        <span class="ex">*.tar</span>)            <span class="fu">tar</span> xf 1         <span class="kw">;;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>        <span class="ex">*.tbz2</span>)           <span class="fu">tar</span> xjf 1        <span class="kw">;;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>        <span class="ex">*.tgz</span>)            <span class="fu">tar</span> xzf 1        <span class="kw">;;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>        <span class="ex">*.zip</span>)            <span class="fu">unzip</span> 1          <span class="kw">;;</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>        <span class="ex">*.Z</span>)              <span class="ex">uncompress</span> 1     <span class="kw">;;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>        <span class="ex">*</span>)                <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; cannot be extracted via extract()&quot;</span> <span class="kw">;;</span></span>
 <span id="cb1-15"><a href="#cb1-15"></a>    <span class="kw">esac</span></span>
 <span id="cb1-16"><a href="#cb1-16"></a>    <span class="kw">else</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>      <span class="bu">echo</span> <span class="st">&quot;&#39;</span><span class="va">$1</span><span class="st">&#39; is not a valid file&quot;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>      <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; is not a valid file&quot;</span></span>
 <span id="cb1-18"><a href="#cb1-18"></a>    <span class="kw">fi</span></span>
 <span id="cb1-19"><a href="#cb1-19"></a>  <span class="kw">}</span></span></code></pre></div>
 <p>(Appended, naturally, to <code>.bashrc</code>.)</p>
