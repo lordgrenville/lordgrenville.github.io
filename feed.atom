@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2020-05-18T00:00:00Z</updated>
+  <updated>2020-05-25T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -283,6 +283,43 @@
 &lt;body&gt;
 &lt;p&gt;You could tell a story in which the West is in decline, and China (and perhaps India, Africa, whoever) is rising to take its place. Similarly, you could take the post Cold War view that liberalism survives all attacks, and that the current backlash against liberalism will also run out of steam. Which of these is correct? Maybe whichever we believe it is. I thought of this while reading Jack Weatherford’s &lt;em&gt;Genghis Khan and the Making of the Modern World&lt;/em&gt;. He talks about Kublai Khan’s conquest of China, and his assiduous use of propaganda. While the Mongols fought the Song in Southern China and tried to unite the country, they were able to change their public perception from that of foreign invaders to be cast out, to that of new rulers, graced by heaven, who gained legitimacy with every new victory. Many people defected to them and were treated fairly.&lt;/p&gt;
 &lt;p&gt;Probably the leaders of all the great powers today suspect that their narratives might not be true, and that destiny might not actually carry them forward. But they hope it to be the case, and try to convince others. Perhaps that is all that is necessary.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Gifts</title>
+    <id>http://localhost/posts/Gifts</id>
+    <updated>2020-05-25T00:00:00Z</updated>
+    <published>2020-05-25T00:00:00Z</published>
+    <link href="http://localhost/posts/Gifts" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;I recently read the book &lt;a href=&quot;https://www.goodreads.com/book/show/160171.Just_for_Fun&quot;&gt;Just for Fun&lt;/a&gt;, a lot of which focuses on Linus Torvalds’ battle for his operating system, Linux, to be “Open Source” software. Open Source doesn’t mean free; but it means that the software’s code (the source) is freely available, so anyone can copy it. Thus there’s no viable business in selling the code, but there could be in supplying and installing the software for less tech-savvy users, or in ancillary services such as support. At the time, the &lt;em&gt;bête noire&lt;/em&gt; of OS was Bill Gates, who made a reasonable argument: OS software made it hard to earn a living from software, meaning worse quality for everybody. Yet today OS has basically won out, with even Microsoft embracing Linux and &lt;a href=&quot;https://github.com/microsoft?q=license%3Agpl-3.0+license%3Amit&amp;amp;type=&amp;amp;language=&quot;&gt;open-sourcing&lt;/a&gt; hundreds of projects. So how does the Open Source world square the circle of making it pay?&lt;/p&gt;
+&lt;p&gt;This reminds me of something the financial writer Matt Levine says about the &lt;a href=&quot;https://www.bloomberg.com/opinion/articles/2017-05-02/litvaking-and-lending&quot;&gt;gift economy&lt;/a&gt; (based on the essay &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Gift_(essay)&quot;&gt;&lt;em&gt;The Gift&lt;/em&gt;&lt;/a&gt; by the anthropologist Marcel Mauss). At a basic level, people trade goods based on pure financial value; but at a very large scale - say, an oil-and-gas company is looking for bankers to facilitate an acquisition - decisions are made much more based on gifts and relationships, which are not anchored in pure economic rationality. For example, the bank may gift the company’s decision-makers watches or fancy dinners or golfing weekends, in the hope that at some later point, they will remember them for some major deal (never as an explicit &lt;em&gt;quid pro quo&lt;/em&gt;, which would seem distatestful to both sides).&lt;/p&gt;
+&lt;p&gt;In some ways the software world has moved toward this model. Companies want to hire star developers, and to do so try to impress them with their friendliness toward open-source, perhaps through sponsorships or by allowing some of their employees to contribute to open-source projects on company time. They may also open up some of their own source code, usually from side projects which aren’t part of their main business model, or as a way to tempt customers to integrate into their ecosystem. On the developer side, a beginner programmer may contribute to an open-source project related to her specialty as a way of making an name for herself. In each case, these are not transactions based on economic value, but part of a more sophisticated ritual in which each side hopes to gain, but is able to talk in terms of lofty values such as the good of the community, gift-giving, and generally a world free of grubby pecuniary thoughts.&lt;/p&gt;
+&lt;p&gt;Of course, as &lt;a href=&quot;https://twitter.com/wesmckinn/status/1237488666425131011&quot;&gt;this complaint&lt;/a&gt; (representative of many others) shows, in practice the model doesn’t work as well as we might hope.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
