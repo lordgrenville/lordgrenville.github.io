@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2020-06-14T00:00:00Z</updated>
+  <updated>2020-07-28T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -398,6 +398,44 @@
 &lt;p&gt;In his book &lt;em&gt;Amusing Ourselves to Death&lt;/em&gt; Neil Postman mentions this as a possible difference between the media of oral and written culture: when things are said, they must be constructed to be beautiful; when written, people care more about how much sense they make.&lt;/p&gt;
 &lt;p&gt;There may be a similar idea with &lt;em&gt;mishna&lt;/em&gt; and &lt;em&gt;gemara&lt;/em&gt;: could this be why the &lt;em&gt;gemara&lt;/em&gt; so often reinterprets a pithy &lt;em&gt;mishna&lt;/em&gt; to a clunky but more consistent reading?&lt;/p&gt;
 &lt;p&gt;And of course the underlying, mischievous idea that one is not necessarily better - they are just different forms of knowledge.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">Status &amp; Jewish Intellectuals</title>
+    <id>http://localhost/posts/Status</id>
+    <updated>2020-07-28T00:00:00Z</updated>
+    <published>2020-07-28T00:00:00Z</published>
+    <link href="http://localhost/posts/Status" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;I recently asked a French friend why that country produces so many brilliant mathematicians and scientists - not really expecting a good answer. He replied that in France, being an academic or theoretician is seen as the most admirable position to aspire to, on a par with philosopher or artist. However, engineers and entrepreneurs are associated with far less prestige, which would roughly explain why so many of those scientists and mathematicians end up working for foreign companies.&lt;/p&gt;
+&lt;p&gt;It reminded me that when I was growing up, I thought of writers, historians, philosophers and other intellectuals as most worthy of respect, and assumed that I should want to do something similar when I was older, if I could afford it. It is possible that this is undergoing a sea-change, as the increased prominence of information technology and financial difficulties of media and academia increase the social capital (in Bourdieu’s term) associated with “STEM” subjects. Nonetheless, I was surprised to find a very bald expression of this idea in Stefan Zweig’s memoir &lt;em&gt;The World of Yesterday&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is generally assumed that getting rich is a Jew’s true and typical aim in life. Nothing could be further from the truth. Getting rich, to a Jew, is only an interim stage, a means to his real end, by no means his aim in itself. The true desire of a Jew, his inbuilt ideal, is to rise to a higher social plane by becoming an intellectual. Even the most prosperous Jew would rather marry his daughter to an indigent intellectual than a merchant. This high regard for intellectuals runs through all classes of Jewish society, and the poorest pedlar who carries his pack through wind and weather will try to give at least one son the chance of studying at university, however great the sacrifices he must make, and will consider it an honour to the entire family that one of them is clearly regarded as an intellectual: a professor, a scholar, a musician. It is as if such a man’s achievements ennobled them all.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
