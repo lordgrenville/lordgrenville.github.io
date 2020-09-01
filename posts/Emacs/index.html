@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>A Complete Idiot&#39;s Guide to Doom Emacs &mdash; Frivolous Musings</title>
+
+  <link type="text/css" rel="stylesheet" href="/static/sdist/e9c7a6a5dc992b2c60455ecc4a6641ce.css">
+
+  <script type="text/javascript" src="/static/sdist/c752cd137614177858641b78f67df408.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' href="/static/favicon.ico" type='image/x-icon'/>
+  <style type="text/css">
+   img { mix-blend-mode: multiply; }
+  </style>
+  <meta property="og:author" content="lordgrenville" />
+  <meta property="og:title" content="A Complete Idiot&#39;s Guide to Doom Emacs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A Complete Idiot&#39;s Guide to Doom Emacs" />
+  <meta property="og:url" content="http://localhost/posts/Emacs/" />
+  <meta property="og:image" content="/static/img/athena.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Complete Idiot&#39;s Guide to Doom Emacs" />
+  <meta name="twitter:description" content="A Complete Idiot&#39;s Guide to Doom Emacs" />
+  <meta name="twitter:url" content="http://localhost/posts/Emacs/" />
+  <meta name="twitter:image" content="/static/img/athena.png" />
+</head>
+<body>
+  <div class="thearticle">
+  
+  <article>
+  
+    <h1>A Complete Idiot&#39;s Guide to Doom Emacs</h1>
+    <p id="blog-p"><span id="blogdesc" class="marginnote">
+    I think stuff. Sometimes I write it down here.<br><br>
+    <a href="/">home</a> ·
+    
+      <a href="/about/">
+        about</a> ·
+    
+    <a href="/feed.atom">subscribe</a></span></p>
+
+    <subtitle class="sub-date">September 01, 2020 · <span
+    style="font-size: 1.6rem;"><a style="border-bottom-width: 0px !important;"
+    href="http://localhost/posts/Emacs/">&infin;</a></span></subtitle>
+
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/">This</a> is a good guide from zero to Emacs. I was also helped/inspired by <a href="https://noelwelsh.com/posts/2019-01-10-doom-emacs.html">Noel Welsh’s</a> Doom guide, and that of mad genius <a href="https://tecosaur.github.io/emacs-config/config.html">Tecosaur</a>.)</p>
+<p>After several aborted attempts to get started with Emacs, I’ve finally made some sense of it. Since there aren’t many basic guides online, I thought I’d document my process. Vim (which I’m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit…) I think that has to do with its greater simplicity, as well as the fact that there’s basically only one flavour. (NeoVim is from a user’s perspective mostly identical, and if you’re using <code>vi</code> you probably know what you’re doing.) Emacs by contrast is a whole world.</p>
+<p>The first question I had to deal with is: which Emacs do I use? Vanilla Emacs looks like something from the Stone Age, and doesn’t offer you enough out of the box to persuade you to learn it - at least that was my experience. I was tempted back first with <a href="https://www.spacemacs.org/">Spacemacs</a>, and finally settled on <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>, which will be the subject of this guide.</p>
+<p>To clarify, all of these involve installing Emacs, and then building stuff on top of it. Emacs adds a <code>.emacs.d</code> folder to your home directory for your personal config, and these both customize that to look snazzier and use some extra tools right out of the box. Both Spacemacs and Doom emphasise <code>Evil</code>, an Emacs layer allowing Vim keys to be used instead of learning Emacs keys (though they allow either to be configured). Doom also stresses quick loading time and simplicity: it strives to do some basic config and let you get on with your work, rather than going down the rabbit-hole of eternal tweaking.</p>
+<p>After installing Emacs and cloning the Doom repo, you will have a <code>.doom.d</code> folder alongside <code>emacs.d</code>. This is where you will do everything. <code>.doom.d</code> contains three files:</p>
+<ul>
+<li><code>init.el</code></li>
+<li><code>config.el</code></li>
+<li><code>packages.el</code></li>
+</ul>
+<p><code>init.el</code> is where you select what you want Doom to take care of. This part is the most abstracted away from regular Emacs. Instead of installing, say, a package for Python development, you tell Doom you want to use Python and it will install the Python stuff it recommends. If you want to know how to configure this, you need to look inside the repo itself: <code>~/doom-emacs/modules/lang/python/README.org</code> in this example. (Don’t make changes here, though, unless you want to contribute to Doom development, in which case you’re way beyond this humble guide.) That README will tell you what packages are used, and sometimes which flags you can add. For example, you can add a <code>conda</code> flag in Python by replacing <code>python</code> in <code>init.el</code> with <code>(python +conda)</code>. The more languages and other tools you add, the slower start-up will be, so take only what you need. You can edit it at any time, but you must then sync, either with <code>~/.emacs.d/bin/doom sync</code>, or if you have Emacs open with <code>M-x doom-reload</code>. (<code>M-x</code> is META-x, or alt-x, the Emacs key for a menu for typing in commands. In Evil this is <code>SPC :</code> However this stuff is found in many newbie guides, so I’ll try focus on stuff that I struggled to find online.)</p>
+<p>The reason you have to sync after changing <code>init.el</code> is that it relies on Doom doing some work behind the scenes to install and load packages - those are the abstractions. <code>config.el</code>, by contrast, is a regular Emacs lisp document, so any changes you make in it can be evaluated and applied immediately. <code>config.el</code> is where you’ll make any custom changes you want. <em>Whenever people tell you online to add stuff with</em> <code>(setq blah blah)</code> <em>you should put it in here.</em> If you want to install any <em>packages</em>, which in Emacs are usually installed from a repository called MELPA, but can also come from the web (eg GitHub), you do it here.</p>
+<p>By default Emacs uses different workspaces, each one containing a project. When you start working you should add your project root, and then you can navigate within it with <code>SPC f f</code>.</p>
+<p>Lastly, a word about modes. Continuing the musical analogy of chords (key combinations), Emacs has modes which are basically added functionality within a buffer. A major mode is usually the language type, and a buffer can only have one, while it can have many minor modes. Major mode chords in Evil begin with <code>SPC m</code>, after which you will see a guide in the minibuffer with your next options. (Always true in Doom.)</p>
+<p>Hopefully this should be enough to get you started with a project, the correct major mode, and some nice looking defaults. I definitely haven’t been persuaded to drop Vim as my default <code>$EDITOR</code>, but I see it as my day-to-day tool, with Emacs as more of a speciality tool with capabilities like <a href="https://magit.vc/">Magit</a>, <code>org-mode</code>, and way more.</p>
+</body>
+</html>
+
+  
+  </article>
+  
+  </div>
+  <div class="thefooter">
+    <p>Generated with <a href="https://github.com/apas/athena">Athena</a> (which uses <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>). Hosted on Github (duh).
+    </p>
+  </div> <!-- footer end -->
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Frivolous Musings</title>
   <id>http://localhost/</id>
-  <updated>2020-07-28T00:00:00Z</updated>
+  <updated>2020-09-01T00:00:00Z</updated>
   <link href="http://localhost/" />
   <link href="http://localhost/" rel="self" />
   <subtitle type="text">Frivolous Musings Atom Feed</subtitle>
@@ -115,6 +115,54 @@
 &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/DeegC/monty_hall_paradox&quot;&gt;this explanation&lt;/a&gt; (coding it out in Ruby made it clearer to me, but it’s really the verbal explanation that worked).&lt;/p&gt;
 &lt;p&gt;At the outset you have doors A, B and C. Given the choice between A or B and C, obviously you would take the latter. That’s what you’re choosing here! B and C, which combined have a greater chance of being correct. It’s more likely that it was in the two you didn’t choose: specifically the one of them which isn’t wrong. But they still represent 2/3.&lt;/p&gt;
 &lt;p&gt;As a &lt;a href=&quot;https://news.ycombinator.com/item?id=22717754&quot;&gt;HN commenter&lt;/a&gt; put it, it’s easier to think of it when it’s 100 doors. To begin, you choose one. What’s the chance you’re correct? A measly 1%. You almost certainly got it wrong. Imagine if you could switch to select &lt;em&gt;the other 99&lt;/em&gt;. Of course you’d do it! Now the host opens the 98 goat doors. The other 99 are 98 goats + 1 &lt;code&gt;?&lt;/code&gt;. Of course you should switch! &lt;em&gt;You picked the minority, so the majority of times you are wrong. You’re being given a chance to switch to the majority&lt;/em&gt;. Of course, if no door is opened, you’re still picking one of 3 - you’re still a minority, so it makes no difference if you switch or stay.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry xml:base="http://localhost/">
+    <title type="text">A Complete Idiot's Guide to Doom Emacs</title>
+    <id>http://localhost/posts/Emacs</id>
+    <updated>2020-09-01T00:00:00Z</updated>
+    <published>2020-09-01T00:00:00Z</published>
+    <link href="http://localhost/posts/Emacs" />
+    <author>
+      <name>lordgrenville</name>
+    </author>
+    <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;-&lt;/title&gt;
+  &lt;style&gt;
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. &lt;a href=&quot;http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/&quot;&gt;This&lt;/a&gt; is a good guide from zero to Emacs. I was also helped/inspired by &lt;a href=&quot;https://noelwelsh.com/posts/2019-01-10-doom-emacs.html&quot;&gt;Noel Welsh’s&lt;/a&gt; Doom guide, and that of mad genius &lt;a href=&quot;https://tecosaur.github.io/emacs-config/config.html&quot;&gt;Tecosaur&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;After several aborted attempts to get started with Emacs, I’ve finally made some sense of it. Since there aren’t many basic guides online, I thought I’d document my process. Vim (which I’m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit…) I think that has to do with its greater simplicity, as well as the fact that there’s basically only one flavour. (NeoVim is from a user’s perspective mostly identical, and if you’re using &lt;code&gt;vi&lt;/code&gt; you probably know what you’re doing.) Emacs by contrast is a whole world.&lt;/p&gt;
+&lt;p&gt;The first question I had to deal with is: which Emacs do I use? Vanilla Emacs looks like something from the Stone Age, and doesn’t offer you enough out of the box to persuade you to learn it - at least that was my experience. I was tempted back first with &lt;a href=&quot;https://www.spacemacs.org/&quot;&gt;Spacemacs&lt;/a&gt;, and finally settled on &lt;a href=&quot;https://github.com/hlissner/doom-emacs&quot;&gt;Doom Emacs&lt;/a&gt;, which will be the subject of this guide.&lt;/p&gt;
+&lt;p&gt;To clarify, all of these involve installing Emacs, and then building stuff on top of it. Emacs adds a &lt;code&gt;.emacs.d&lt;/code&gt; folder to your home directory for your personal config, and these both customize that to look snazzier and use some extra tools right out of the box. Both Spacemacs and Doom emphasise &lt;code&gt;Evil&lt;/code&gt;, an Emacs layer allowing Vim keys to be used instead of learning Emacs keys (though they allow either to be configured). Doom also stresses quick loading time and simplicity: it strives to do some basic config and let you get on with your work, rather than going down the rabbit-hole of eternal tweaking.&lt;/p&gt;
+&lt;p&gt;After installing Emacs and cloning the Doom repo, you will have a &lt;code&gt;.doom.d&lt;/code&gt; folder alongside &lt;code&gt;emacs.d&lt;/code&gt;. This is where you will do everything. &lt;code&gt;.doom.d&lt;/code&gt; contains three files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;init.el&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config.el&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;packages.el&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;init.el&lt;/code&gt; is where you select what you want Doom to take care of. This part is the most abstracted away from regular Emacs. Instead of installing, say, a package for Python development, you tell Doom you want to use Python and it will install the Python stuff it recommends. If you want to know how to configure this, you need to look inside the repo itself: &lt;code&gt;~/doom-emacs/modules/lang/python/README.org&lt;/code&gt; in this example. (Don’t make changes here, though, unless you want to contribute to Doom development, in which case you’re way beyond this humble guide.) That README will tell you what packages are used, and sometimes which flags you can add. For example, you can add a &lt;code&gt;conda&lt;/code&gt; flag in Python by replacing &lt;code&gt;python&lt;/code&gt; in &lt;code&gt;init.el&lt;/code&gt; with &lt;code&gt;(python +conda)&lt;/code&gt;. The more languages and other tools you add, the slower start-up will be, so take only what you need. You can edit it at any time, but you must then sync, either with &lt;code&gt;~/.emacs.d/bin/doom sync&lt;/code&gt;, or if you have Emacs open with &lt;code&gt;M-x doom-reload&lt;/code&gt;. (&lt;code&gt;M-x&lt;/code&gt; is META-x, or alt-x, the Emacs key for a menu for typing in commands. In Evil this is &lt;code&gt;SPC :&lt;/code&gt; However this stuff is found in many newbie guides, so I’ll try focus on stuff that I struggled to find online.)&lt;/p&gt;
+&lt;p&gt;The reason you have to sync after changing &lt;code&gt;init.el&lt;/code&gt; is that it relies on Doom doing some work behind the scenes to install and load packages - those are the abstractions. &lt;code&gt;config.el&lt;/code&gt;, by contrast, is a regular Emacs lisp document, so any changes you make in it can be evaluated and applied immediately. &lt;code&gt;config.el&lt;/code&gt; is where you’ll make any custom changes you want. &lt;em&gt;Whenever people tell you online to add stuff with&lt;/em&gt; &lt;code&gt;(setq blah blah)&lt;/code&gt; &lt;em&gt;you should put it in here.&lt;/em&gt; If you want to install any &lt;em&gt;packages&lt;/em&gt;, which in Emacs are usually installed from a repository called MELPA, but can also come from the web (eg GitHub), you do it here.&lt;/p&gt;
+&lt;p&gt;By default Emacs uses different workspaces, each one containing a project. When you start working you should add your project root, and then you can navigate within it with &lt;code&gt;SPC f f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lastly, a word about modes. Continuing the musical analogy of chords (key combinations), Emacs has modes which are basically added functionality within a buffer. A major mode is usually the language type, and a buffer can only have one, while it can have many minor modes. Major mode chords in Evil begin with &lt;code&gt;SPC m&lt;/code&gt;, after which you will see a guide in the minibuffer with your next options. (Always true in Doom.)&lt;/p&gt;
+&lt;p&gt;Hopefully this should be enough to get you started with a project, the correct major mode, and some nice looking defaults. I definitely haven’t been persuaded to drop Vim as my default &lt;code&gt;$EDITOR&lt;/code&gt;, but I see it as my day-to-day tool, with Emacs as more of a speciality tool with capabilities like &lt;a href=&quot;https://magit.vc/&quot;&gt;Magit&lt;/a&gt;, &lt;code&gt;org-mode&lt;/code&gt;, and way more.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
