@@ -51,6 +51,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>-</title>
   <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -60,6 +190,7 @@
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
     div.sourceCode { margin: 1em 0; }
     pre.sourceCode { margin: 0; }
@@ -128,25 +259,25 @@
 <p>There’s a funny <a href="https://xkcd.com/1168/">xkcd cartoon</a> about the <code>tar</code> command:</p>
 <p><img src="https://imgs.xkcd.com/comics/tar_2x.png" /></p>
 <p>How does one remember those ridiculous single letter commands? My preferred solution is to first consult with <a href="https://tldr.sh/">TLDR</a>, but Justin Abrahams has a fun solution <a href="https://justin.abrah.ms/bash/forgotten_friend_3.html">over at his blog</a>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="fu">extract ()</span> <span class="kw">{</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">if</span><span class="bu"> [</span> <span class="ot">-f</span> 1<span class="bu"> ]</span> ; <span class="kw">then</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>      <span class="kw">case</span> 1<span class="kw"> in</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>        *.tar.bz2<span class="kw">)</span>        <span class="fu">tar</span> xjf 1        <span class="kw">;;</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>        <span class="ex">*.tar.gz</span>)         <span class="fu">tar</span> xzf 1        <span class="kw">;;</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>        <span class="ex">*.bz2</span>)            <span class="fu">bunzip2</span> 1        <span class="kw">;;</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>        <span class="ex">*.rar</span>)            <span class="ex">unrar</span> x 1        <span class="kw">;;</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>        <span class="ex">*.gz</span>)             <span class="fu">gunzip</span> 1         <span class="kw">;;</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>        <span class="ex">*.tar</span>)            <span class="fu">tar</span> xf 1         <span class="kw">;;</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a>        <span class="ex">*.tbz2</span>)           <span class="fu">tar</span> xjf 1        <span class="kw">;;</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>        <span class="ex">*.tgz</span>)            <span class="fu">tar</span> xzf 1        <span class="kw">;;</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>        <span class="ex">*.zip</span>)            <span class="fu">unzip</span> 1          <span class="kw">;;</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a>        <span class="ex">*.Z</span>)              <span class="ex">uncompress</span> 1     <span class="kw">;;</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a>        <span class="ex">*</span>)                <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; cannot be extracted via extract()&quot;</span> <span class="kw">;;</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>    <span class="kw">esac</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>    <span class="kw">else</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a>      <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; is not a valid file&quot;</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="kw">fi</span></span>
-<span id="cb1-19"><a href="#cb1-19"></a>  <span class="kw">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">extract ()</span> <span class="kw">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> 1 <span class="bu">]</span> <span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">case</span> 1 <span class="kw">in</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.tar.bz2</span><span class="kw">)</span>        <span class="fu">tar</span> xjf 1        <span class="cf">;;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.tar.gz</span><span class="kw">)</span>         <span class="fu">tar</span> xzf 1        <span class="cf">;;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.bz2</span><span class="kw">)</span>            <span class="fu">bunzip2</span> 1        <span class="cf">;;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.rar</span><span class="kw">)</span>            <span class="ex">unrar</span> x 1        <span class="cf">;;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.gz</span><span class="kw">)</span>             <span class="fu">gunzip</span> 1         <span class="cf">;;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.tar</span><span class="kw">)</span>            <span class="fu">tar</span> xf 1         <span class="cf">;;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.tbz2</span><span class="kw">)</span>           <span class="fu">tar</span> xjf 1        <span class="cf">;;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.tgz</span><span class="kw">)</span>            <span class="fu">tar</span> xzf 1        <span class="cf">;;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.zip</span><span class="kw">)</span>            <span class="fu">unzip</span> 1          <span class="cf">;;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="ss">.Z</span><span class="kw">)</span>              <span class="ex">uncompress</span> 1     <span class="cf">;;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="kw">)</span>                <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; cannot be extracted via extract()&quot;</span> <span class="cf">;;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">esac</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">&quot;&#39;1&#39; is not a valid file&quot;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span></code></pre></div>
 <p>(Appended, naturally, to <code>.bashrc</code>.)</p>
 </body>
 </html>
