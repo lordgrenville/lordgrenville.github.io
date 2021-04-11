@@ -1,18 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://lordgrenville.github.io</id>
-  <title>Frivolous Musings</title>
-  <updated>2021-04-09T12:28:49.946218+00:00</updated>
-  <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <subtitle>Frivolous Musings Atom Feed</subtitle>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Pragmatism</id>
-    <title>Pragmatism</title>
-    <updated>2020-05-18T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Frivolous Musings</title>
+    <link>https://lordgrenville.github.io/feed.rss</link>
+    <description>Frivolous Musings Atom Feed</description>
+    <atom:link href="https://lordgrenville.github.io/feed.rss" rel="self" type="application/rss+xml"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Sun, 11 Apr 2021 09:12:00 +0000</lastBuildDate>
+    <item>
+      <title>Pragmatism</title>
+      <link>https://lordgrenville.github.io/posts/Pragmatism</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -37,17 +36,14 @@
 &lt;p&gt;But maybe I’m too rational to understand all this…&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-05-18T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Conversation</id>
-    <title>Conversation</title>
-    <updated>2019-03-27T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">28487397-b22c-464f-8257-97375cc7259a</guid>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Conversation</title>
+      <link>https://lordgrenville.github.io/posts/Conversation</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -65,17 +61,14 @@
 &lt;p&gt;Another common idea is that you shouldn’t ask boring questions such as “where are you from” or “what job do you do.” I don’t agree with this bit of wisdom. To me, hitting someone you’ve just met with something like “what’s the scariest thing you’ve ever done?” or “are humans becoming obsolete?” is somewhat obnoxious. It’s a way of putting yourself in the centre, marking yourself as a Bold and Interesting Person who has no time for little minds. Some people find small talk reassuring, at least at the beginning, and there’s a reason why it’s a pretty common social lubricant. To me the goal of conversation is to find the other person’s comfort zone and interests, find what excites them, find some way that it intersects with your own interests, and build on that. Everyone is different: some people like to talk about hypotheticals, some people like talking about their jobs, some like debating current events, some like emotional discussions, and some people don’t like to talk at all, or don’t want to talk to you, and shouldn’t be pushed. A non-threatening opener is your gambit into finding which one it is.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-03-27T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Tar</id>
-    <title>Tar Hack</title>
-    <updated>2020-05-11T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">47a144a0-234a-41d9-8f26-923096ee4baa</guid>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Tar Hack</title>
+      <link>https://lordgrenville.github.io/posts/Tar</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -112,17 +105,14 @@
 &lt;p&gt;(Appended, naturally, to &lt;code&gt;.bashrc&lt;/code&gt;.)&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-05-11T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Podcasts</id>
-    <title>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
-    <updated>2019-07-16T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">cdf47af8-6b8a-46ee-a5d4-4d60638c81f6</guid>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
+      <link>https://lordgrenville.github.io/posts/Podcasts</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -169,17 +159,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Sent them to my phone with bluetooth, and added the &lt;code&gt;bluetooth&lt;/code&gt; folder as a virtual podcast. And there you go, podcasts the old fashioned way!&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-07-16T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Arch</id>
-    <title>Notes from Installing Arch Linux</title>
-    <updated>2021-04-07T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">bd9fc3ed-3a86-48cf-954d-c8268cc680cb</guid>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Notes from Installing Arch Linux</title>
+      <link>https://lordgrenville.github.io/posts/Arch</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -198,17 +185,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A final note: Arch doesn’t include sudo with its basic install, so you can just grab it with pacman. But note that if you first created a non-root user, you get a “naughty, naughty” message when trying to use sudo as no-root. I had to set a default &lt;code&gt;\$EDITOR&lt;/code&gt;, and then call &lt;code&gt;visudo&lt;/code&gt; and add myself to sudo-capable users. Once I had this I installed &lt;code&gt;yay&lt;/code&gt;, Firefox, and vim and called it a day.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2021-04-07T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Parallel_Texts</id>
-    <title>Parallel Texts</title>
-    <updated>2019-01-06T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">f4d8aeb7-d205-4a80-8772-ed0287de50f8</guid>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Parallel Texts</title>
+      <link>https://lordgrenville.github.io/posts/Parallel_Texts</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -230,17 +214,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-01-06T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Depressing_Art_Likable_Politicians</id>
-    <title>Depressing Art // Likable Politicians</title>
-    <updated>2019-01-03T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">950bdc2e-0023-415d-9a73-ba4fd307377a</guid>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Depressing Art // Likable Politicians</title>
+      <link>https://lordgrenville.github.io/posts/Depressing_Art_Likable_Politicians</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -260,17 +241,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The idea of &lt;a href="https://en.wikipedia.org/wiki/Depressive_realism"&gt;depressive realism&lt;/a&gt; dovetails with this nicely: if we imagine that the world is fundamentally a tragic place, and that neurotypical people deal with it via defensive mental obfuscating, it might make sense that we would be drawn to the work of the depressed, seeing in the expression of these unlucky prophets a vision of a truth almost, but not quite perceived.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-01-03T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Boredom</id>
-    <title>Boredom</title>
-    <updated>2020-04-17T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">b70fbcc7-7883-4551-b0c4-0bdae635ac83</guid>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Boredom</title>
+      <link>https://lordgrenville.github.io/posts/Boredom</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -292,17 +270,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Tentative conclusion: I’m not missing out on much. Although it’s possible that the “boredom premium” is cumulative, and only after building up a long period of boredom does true creativity flourish. By cycling between long periods of hyperstimulation and brief pauses, I’m just letting my overstimulated mind lapse into white noise on its off days. ¯_(ツ)_/¯&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-04-17T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/What_is_a_Male_Feminist_Stats_and_the_Social_Sciences</id>
-    <title>What is a Male Feminist? // Stats and the Social Sciences</title>
-    <updated>2018-11-21T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">b18931ca-c83e-4cea-ac9b-3ce068d0565f</guid>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>What is a Male Feminist? // Stats and the Social Sciences</title>
+      <link>https://lordgrenville.github.io/posts/What_is_a_Male_Feminist_Stats_and_the_Social_Sciences</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -323,17 +298,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Data Science may be a sexy term for statistics, but statistics is more sexy than it’s given credit for. Any social science, under the Popperian paradigm, must make predictions: diagnosing a structure means nothing if it has no predictive capacity. (Or else it’s humanities, kind of the way some historians want to go, and the way psychoanalysis has gone completely). Are, say, political scientists any better than monkeys throwing darts? That’s why they need statistics. So both data science and all of the social sciences can be defined as &lt;em&gt;applied statistics&lt;/em&gt; (with the balance just varying between domain knowledge vs stats knowledge, though any long-term DS project does involve getting deep into the domain knowledge). Where it gets weird is where DS models and makes predictions without an explanatory model, such as the case of NLP. Statistical relationships working by themselves, not being supported by any deep idea of how things fundamentally are supposed to work. The next word is “meeting,” that green lump is a tree, just based on probability. This was the subject of a debate between Google’s Peter Norvig and Noam Chomsky, the former sums it up in a fascinating, deep-ranging blog post &lt;a href="http://norvig.com/chomsky.html"&gt;over here&lt;/a&gt;.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2018-11-21T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Biodiversity_Doctors_BMX</id>
-    <title>Biodiversity // Doctors // BMX</title>
-    <updated>2018-11-01T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">94d62dc0-e992-455f-89a7-4695fa7f8168</guid>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Biodiversity // Doctors // BMX</title>
+      <link>https://lordgrenville.github.io/posts/Biodiversity_Doctors_BMX</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -357,17 +329,14 @@ etc...&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;On the way back from the doctor I walked past BMXers doing tricks outside the Cinematheque. What they do is unreal, Matrix stuff; it seems to override the law of gravity.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2018-11-01T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Prayer</id>
-    <title>Prayer</title>
-    <updated>2018-12-20T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">95f4bba8-e1a8-4522-bf62-9e4a24b2ce83</guid>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Prayer</title>
+      <link>https://lordgrenville.github.io/posts/Prayer</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -386,17 +355,14 @@ But all of this seems a little silly: the “vending machine” model of divine 
 Of course, at its core this is entangled with the problem of theodicy, so it’s no wonder that it’s such a conundrum.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2018-12-20T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Status</id>
-    <title>Status &amp; Jewish Intellectuals</title>
-    <updated>2020-07-28T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">e8138abb-fa34-46e6-8d0c-c541848c9db7</guid>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Status &amp; Jewish Intellectuals</title>
+      <link>https://lordgrenville.github.io/posts/Status</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -419,17 +385,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;/blockquote&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-07-28T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Rhetoric_Rationalism</id>
-    <title>Rhetoric &amp; Rationalism</title>
-    <updated>2019-03-11T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">68e894c2-3e20-4286-b718-3d89d3014fb1</guid>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Rhetoric &amp; Rationalism</title>
+      <link>https://lordgrenville.github.io/posts/Rhetoric_Rationalism</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -447,17 +410,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;And of course the underlying, mischievous idea that one is not necessarily better - they are just different forms of knowledge.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-03-11T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Gifts</id>
-    <title>Gifts</title>
-    <updated>2020-05-25T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">fa88fe66-5a6c-433d-ae00-1b0e860cbab6</guid>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Gifts</title>
+      <link>https://lordgrenville.github.io/posts/Gifts</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -475,17 +435,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Of course, as &lt;a href="https://twitter.com/wesmckinn/status/1237488666425131011"&gt;this complaint&lt;/a&gt; (representative of many others) shows, in practice the model doesn’t work as well as we might hope.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-05-25T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Truth</id>
-    <title>The Truth Is Whatever We Believe</title>
-    <updated>2019-06-13T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">64ff2394-b423-45b5-a99f-0634cfec26c6</guid>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>The Truth Is Whatever We Believe</title>
+      <link>https://lordgrenville.github.io/posts/Truth</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -501,17 +458,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Probably the leaders of all the great powers today suspect that their narratives might not be true, and that destiny might not actually carry them forward. But they hope it to be the case, and try to convince others. Perhaps that is all that is necessary.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-06-13T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Futility_of_Writing</id>
-    <title>The Futility of Writing</title>
-    <updated>2019-05-16T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">999c9073-ea3c-41ac-9d79-ebc63a18b595</guid>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>The Futility of Writing</title>
+      <link>https://lordgrenville.github.io/posts/Futility_of_Writing</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -527,17 +481,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;&lt;em&gt;Of making many books there is no end&lt;/em&gt;, says Ecclesiastes. Today everyone can publish everything and distribute everything they have to say. In some ways this is good - more variety in media. It may have hurt society in some ways, because when you remove all gatekeepers you give equal weight to every crank and paranoiac. But it has also caused me to doubt my interest in and love for the printed word. Lately I find myself reading more maths, which for all its troubles, is a much calmer place to be. I don’t know if it’s a long term solution.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-05-16T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Adams</id>
-    <title>The Douglas Adams Principle</title>
-    <updated>2020-06-14T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">5b43c28a-dbb3-41f2-b94f-44b34901edd9</guid>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>The Douglas Adams Principle</title>
+      <link>https://lordgrenville.github.io/posts/Adams</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -559,17 +510,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;In a more prosaic sense, I find as I get older that I am less and less interested in discovering new music. It isn’t that I think new music is less good; I just &lt;em&gt;know enough&lt;/em&gt; music! And likewise, to a lesser extent, with TV and movies: I have enough to get by, I don’t need any more. Of course one could make an effort to overcome this, by constantly exposing oneself to new stuff, it just takes work - there are plenty of people who keep up with new gadgets or music well into old age. But it doesn’t seem worth it to most people. Perhaps in the political sphere the effort is more worthwhile.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-06-14T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Twitter</id>
-    <title>How Twitter Works in 2019</title>
-    <updated>2019-11-13T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">fabe39df-8683-4c9e-9c83-70bc6da295ae</guid>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>How Twitter Works in 2019</title>
+      <link>https://lordgrenville.github.io/posts/Twitter</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -591,17 +539,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;(This essay is indebted to Megan McArdle’s idea &lt;a href="https://www.econtalk.org/megan-mcardle-on-internet-shaming-and-online-mobs/"&gt;here&lt;/a&gt; about friend circles and internet circles.)&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2019-11-13T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web_Who_Needs_the_News_The_Nature_of_Reality</id>
-    <title>Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
-    <updated>2018-11-12T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">e39e2147-68f4-4f68-b923-932b7cbbe647</guid>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
+      <link>https://lordgrenville.github.io/posts/Social_Justice_Warriors_on_the_Intellectual_Dark_Web_Who_Needs_the_News_The_Nature_of_Reality</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -639,17 +584,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;/blockquote&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2018-11-12T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Emacs</id>
-    <title>A Complete Idiot's Guide to Doom Emacs</title>
-    <updated>2020-09-01T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">1c7017b5-edab-41e6-b1c8-08c5950ad6f4</guid>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>A Complete Idiot's Guide to Doom Emacs</title>
+      <link>https://lordgrenville.github.io/posts/Emacs</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -678,17 +620,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Hopefully this should be enough to get you started with a project, the correct major mode, and some nice looking defaults. I definitely haven’t been persuaded to drop Vim as my default &lt;code&gt;$EDITOR&lt;/code&gt;, but I see it as my day-to-day tool, with Emacs as more of a speciality tool with capabilities like &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt;, &lt;code&gt;org-mode&lt;/code&gt;, and way more.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-09-01T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Monty_Hall</id>
-    <title>Finally Figured Out Monty Hall!</title>
-    <updated>2020-03-30T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">98b987db-fad8-4ea3-bee7-62f89b2b7abc</guid>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Finally Figured Out Monty Hall!</title>
+      <link>https://lordgrenville.github.io/posts/Monty_Hall</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -705,17 +644,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;As a &lt;a href="https://news.ycombinator.com/item?id=22717754"&gt;HN commenter&lt;/a&gt; put it, it’s easier to think of it when it’s 100 doors. To begin, you choose one. What’s the chance you’re correct? A measly 1%. You almost certainly got it wrong. Imagine if you could switch to select &lt;em&gt;the other 99&lt;/em&gt;. Of course you’d do it! Now the host opens the 98 goat doors. The other 99 are 98 goats + 1 &lt;code&gt;?&lt;/code&gt;. Of course you should switch! &lt;em&gt;You picked the minority, so the majority of times you are wrong. You’re being given a chance to switch to the majority&lt;/em&gt;. Of course, if no door is opened, you’re still picking one of 3 - you’re still a minority, so it makes no difference if you switch or stay.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-03-30T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Communication</id>
-    <title>Communication</title>
-    <updated>2020-05-03T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">98adf87b-f014-4c1c-ac3e-abdadec2b033</guid>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Communication</title>
+      <link>https://lordgrenville.github.io/posts/Communication</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -732,17 +668,14 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Both authors present a bevy of case studies in which they used their principles to achieve miraculous results, even in cases which seemed like certain exceptions. I think that both authors imply a falsehood, without making it explicit: &lt;em&gt;my principles will work in all situations&lt;/em&gt;. When push comes to shove, both would have to admit that some situations are simply insoluble; no amount of negotiating savvy or peace-building communication will lead to a positive outcome. Nonetheless, such cases are rare, and some hyperbole is probably needed in order to convince sceptical readers to apply these rules among their families and colleagues.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2020-05-03T00:00:00+03:00</published>
-  </entry>
-  <entry>
-    <id>https://lordgrenville.github.io/posts/Democracy___Elitism_Fish</id>
-    <title>Democracy &amp; Elitism // Fish</title>
-    <updated>2018-11-08T00:00:00+03:00</updated>
-    <author>
-      <name>lordgrenville</name>
-    </author>
-    <content>&lt;!DOCTYPE html&gt;
+</description>
+      <guid isPermaLink="false">49934faf-4edc-435f-be94-88af7e1f0b31</guid>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0300</pubDate>
+    </item>
+    <item>
+      <title>Democracy &amp; Elitism // Fish</title>
+      <link>https://lordgrenville.github.io/posts/Democracy___Elitism_Fish</link>
+      <description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8" /&gt;
@@ -763,7 +696,9 @@ Of course, at its core this is entangled with the problem of theodicy, so it’s
 &lt;p&gt;Today, for the first time in my life, I picked up a whole fish (red tilapia) at the souk, and decided to cook it. It feels so strange and primitive! I gingerly unwrapped the newspaper and plastic bag, let the liquid (blood?) drain, marinated it, added some garlic and thyme and banged it in the oven. A brave new world.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</content>
-    <published>2018-11-08T00:00:00+03:00</published>
-  </entry>
-</feed>
+</description>
+      <guid isPermaLink="false">5805ef18-2699-4052-b47b-3f87a1cfbd00</guid>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0300</pubDate>
+    </item>
+  </channel>
+</rss>
