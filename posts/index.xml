@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Frivolous Musings</title>
+    <link>http://lordgrenville.github.io/posts/</link>
+    <description>Recent content in Posts on Frivolous Musings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-za</language>
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Corruption</title>
+      <link>http://lordgrenville.github.io/posts/corruption/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/corruption/</guid>
+      <description>I was listening to a podcast (about metaphysics in the social sciences, very interesting but not the topic of this post) and the guest mentioned as an aside the principal-agent theory of political corruption, pretty common in economically-inclined poli-sci literature. Susan Rose-Ackerman, Corruption: A Study in Political Economy seems to be the classic The idea that politicians will rationally try to maximise personal gain unless held accountable by voters struck me as excessively cynical.</description>
+    </item>
+    
+    <item>
+      <title>Scraping Kevin Lewis</title>
+      <link>http://lordgrenville.github.io/posts/kevin/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/kevin/</guid>
+      <description>Kevin Lewis&#39; daily Findings blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&amp;rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.
+The basic script I started with went to the author&amp;rsquo;s page, found the box with most recent posts, followed and scraped each link, encoded them as RSS (basically URL-encoding the HTML tags), added opening and closing RSS XML tags, and saved the file.</description>
+    </item>
+    
+    <item>
+      <title>Notes from Installing Arch Linux</title>
+      <link>http://lordgrenville.github.io/posts/arch/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/arch/</guid>
+      <description>About six months ago I downloaded the Arch ISO and stuck it on a thumb drive. I finally got around to installing it now - I was nervous about accidentally nuking my computer, so didn&amp;rsquo;t want to try dual-boot the way I would with a distro with a graphical installer, and running it via WSL would be missing the point. I finally got my hands on an old laptop I could mess around with and did it.</description>
+    </item>
+    
+    <item>
+      <title>A Complete Idiot&#39;s Guide to Doom Emacs</title>
+      <link>http://lordgrenville.github.io/posts/emacs/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/emacs/</guid>
+      <description>(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. This is a good guide from zero to Emacs. I was also helped/inspired by Noel Welsh&amp;rsquo;s Doom guide, and that of mad genius Tecosaur.)
+After several aborted attempts to get started with Emacs, I&amp;rsquo;ve finally made some sense of it. Since there aren&amp;rsquo;t many basic guides online, I thought I&amp;rsquo;d document my process. Vim (which I&amp;rsquo;m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit&amp;hellip;) I think that has to do with its greater simplicity, as well as the fact that there&amp;rsquo;s basically only one flavour.</description>
+    </item>
+    
+    <item>
+      <title>Status &amp; Jewish Intellectuals</title>
+      <link>http://lordgrenville.github.io/posts/status/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/status/</guid>
+      <description>I recently asked a French friend why that country produces so many brilliant mathematicians and scientists - not really expecting a good answer. He replied that in France, being an academic or theoretician is seen as the most admirable position to aspire to, on a par with philosopher or artist. However, engineers and entrepreneurs are associated with far less prestige, which would roughly explain why so many of those scientists and mathematicians end up working for foreign companies.</description>
+    </item>
+    
+    <item>
+      <title>The Douglas Adams Principle</title>
+      <link>http://lordgrenville.github.io/posts/adams/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/adams/</guid>
+      <description>There&amp;rsquo;s a great quote from Douglas Adams&#39; posthumous final novel, The Salmon of Doubt:
+Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works. Anything that&amp;rsquo;s invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.
+Anything invented after you&amp;rsquo;re thirty-five is against the natural order of things.</description>
+    </item>
+    
+    <item>
+      <title>Gifts</title>
+      <link>http://lordgrenville.github.io/posts/gifts/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/gifts/</guid>
+      <description>I recently read the book Just for Fun, a lot of which focuses on Linus Torvalds&#39; battle for his operating system, Linux, to be &amp;ldquo;Open Source&amp;rdquo; software. Open Source doesn&amp;rsquo;t mean free; but it means that the software&amp;rsquo;s code (the source) is freely available, so anyone can copy it. Thus there&amp;rsquo;s no viable business in selling the code, but there could be in supplying and installing the software for less tech-savvy users, or in ancillary services such as support.</description>
+    </item>
+    
+    <item>
+      <title>Pragmatism</title>
+      <link>http://lordgrenville.github.io/posts/pragmatism/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/pragmatism/</guid>
+      <description>In The Will to Believe (Is Life Worth Living?, IV), William James writes:
+ Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss.</description>
+    </item>
+    
+    <item>
+      <title>Tar Hack</title>
+      <link>http://lordgrenville.github.io/posts/tar/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/tar/</guid>
+      <description>There’s a funny xkcd cartoon about the tar command:
+How does one remember those ridiculous single letter commands? My preferred solution is to first consult with TLDR, but Justin Abrahams has a fun solution over at his blog:
+extract () { if [ -f 1 ] ; then case 1 in *.tar.bz2) tar xjf 1 ;; *.tar.gz) tar xzf 1 ;; *.bz2) bunzip2 1 ;; *.rar) unrar x 1 ;; *.</description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>http://lordgrenville.github.io/posts/communication/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/communication/</guid>
+      <description>I’ve just finished a book on Nonviolent Comunication and thought it would have made a good pairing with one I read last year, Never Split the Difference, as a lesson in effective communication. The latter is about getting what you want from your counterparty, no matter your relationship afterwards. An adversarial, zero-sum situation is assumed, and Voss (the author, a former FBI hostage negotiator) urges the reader to push for everything, using empathy toward the counterparty only as a weapon.</description>
+    </item>
+    
+    <item>
+      <title>Boredom</title>
+      <link>http://lordgrenville.github.io/posts/boredom/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/boredom/</guid>
+      <description>I almost always have earphones in, filling up the time in which I&amp;rsquo;m not actively focusing on something else with a steady patter of podcasts or mildly interesting books. But occasionally I wonder: aren&amp;rsquo;t I missing out on being alone with my thoughts, the serendipitous free flow borne of tedium? Maybe it isn&amp;rsquo;t worth it.
+So I have a control: one day a week, I forswear all electronic devices, and when I go for walks it&amp;rsquo;s just me and my own thoughts.</description>
+    </item>
+    
+    <item>
+      <title>Finally Figured Out Monty Hall!</title>
+      <link>http://lordgrenville.github.io/posts/monty_hall/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/monty_hall/</guid>
+      <description>Thanks to this explanation (coding it out in Ruby made it clearer to me, but it&amp;rsquo;s really the verbal explanation that worked).
+At the outset you have doors A, B and C. Given the choice between A or B and C, obviously you would take the latter. That&amp;rsquo;s what you&amp;rsquo;re choosing here! B and C, which combined have a greater chance of being correct. It&amp;rsquo;s more likely that it was in the two you didn&amp;rsquo;t choose: specifically the one of them which isn&amp;rsquo;t wrong.</description>
+    </item>
+    
+    <item>
+      <title>How Twitter Works in 2019</title>
+      <link>http://lordgrenville.github.io/posts/twitter/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/twitter/</guid>
+      <description>Someone tweets: I like mushrooms. Mushrooms are great. Yummy! Hits “send tweet”.
+Most of the replies are from the person’s followers. “Wow, you’re so right! You have the best take on mushrooms.” “Totally! Mushrooms rule!” “Ugh people who don’t like mushrooms be like [GIF from The Office]”.
+Then one person says “mushrooms are OK, but garlic is also cool”.
+Everyone else goes: “oh look it’s reply guy! here to mansplain the evils of mushrooms.</description>
+    </item>
+    
+    <item>
+      <title>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
+      <link>http://lordgrenville.github.io/posts/podcasts/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/podcasts/</guid>
+      <description>In general my view on podcasts is the shorter the better. So I really like Bloomberg View, which runs just over a minute and distills the essence of a longer (usually well thought-out) op-ed. (I guess by this logic the ideal podcast would be 0 seconds - very Cagean.)
+But it seems like the Berg is phasing this one out. It no longer appears on the website or on most podcast providers, and the RSS feed I had (from iTunes) on Podcast Addict (a truly excellent app) suddenly returned SSLHandshakeException: java.</description>
+    </item>
+    
+    <item>
+      <title>The Truth Is Whatever We Believe</title>
+      <link>http://lordgrenville.github.io/posts/truth/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/truth/</guid>
+      <description>You could tell a story in which the West is in decline, and China (and perhaps India, Africa, whoever) is rising to take its place. Similarly, you could take the post Cold War view that liberalism survives all attacks, and that the current backlash against liberalism will also run out of steam. Which of these is correct? Maybe whichever we believe it is. I thought of this while reading Jack Weatherford&amp;rsquo;s Genghis Khan and the Making of the Modern World.</description>
+    </item>
+    
+    <item>
+      <title>The Futility of Writing</title>
+      <link>http://lordgrenville.github.io/posts/futility_of_writing/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/futility_of_writing/</guid>
+      <description>Haven&amp;rsquo;t written anything in a while, and so this post seems appropriate. It seems sometimes like in the Internet age, everything has been said, and it&amp;rsquo;s mostly wrong. Take any news event in the last 24 hours, and you will find on Twitter a vast panoply of opinions, taking every possible perspective: joking, chiding, worrying, connecting it to the Grain Riots of 1874. These will link to longer takes, rushing up like mushrooms before the internet&amp;rsquo;s atttention shifts and we forget all about it.</description>
+    </item>
+    
+    <item>
+      <title>Conversation</title>
+      <link>http://lordgrenville.github.io/posts/conversation/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/conversation/</guid>
+      <description>I like to think that I&amp;rsquo;ve taught myself to become a better conversationalist. I know that makes me sounds rather dull; but I do try not to think about it as a set of procedures or an algorithm, but rather as a general attitude that can make you more fun to hang out with.
+Famously, the golden rule of conversation is to &amp;ldquo;ask people about themselves and let them talk&amp;rdquo;. This is true; with the caveat that you need to be interested in their answers.</description>
+    </item>
+    
+    <item>
+      <title>Rhetoric &amp; Rationalism</title>
+      <link>http://lordgrenville.github.io/posts/rhetoric_rationalism/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/rhetoric_rationalism/</guid>
+      <description>It&amp;rsquo;s common to think of rhetoric as a gloss on top of &amp;lsquo;true&amp;rsquo; thinking, mere packaging for the intellectual content of our ideas. From some of the Platonic dialogues it seems like rhetoric, (or sophistry, which Plato made into an insult) is a foil to rational thought, an alternative tradition which privileges aesthetic value - elegance of expression - over content. (I seem to remember hearing a podcast [probably this one] about how Deleuze and Guattari suggest that as a better criterion than Occam&amp;rsquo;s Razor for choosing a scientific explanation.</description>
+    </item>
+    
+    <item>
+      <title>Parallel Texts</title>
+      <link>http://lordgrenville.github.io/posts/parallel_texts/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/parallel_texts/</guid>
+      <description>An anecdote from Richard Rhodes&#39; book The Making of the Atomic Bomb:
+ Out of curiosity in 1940, while visiting Berkeley to deliver a lecture, Enrico Fermi attended a seminar one of [J. Robert] Oppenheimer&amp;rsquo;s protégés led in the master&amp;rsquo;s style. &amp;ldquo;Emilio,&amp;rdquo; Fermi joked afterward with Segrè, &amp;ldquo;I am getting rusty and old. I cannot follow the highbrow theory developed by Oppenheimer&amp;rsquo;s pupils anymore. I went to their seminar and was depressed by my inability to understand them.</description>
+    </item>
+    
+    <item>
+      <title>Depressing Art // Likable Politicians</title>
+      <link>http://lordgrenville.github.io/posts/depressing_art_likable_politicians/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/depressing_art_likable_politicians/</guid>
+      <description>There are elections now, and people here are deeply cynical about the slate of candidates. Political despair is the dominant tone, and has been for some time. This is also true in the wider world, where few politicians inspire trust or excitement. There was talk this week of Elizabeth Warren launching a Presidential campaign, which &amp;quot;I Don&amp;rsquo;t Hate Women Candidates &amp;mdash; I Just Hated Hillary and Coincidentally I&amp;rsquo;m Starting to Hate Elizabeth Warren&amp;quot; references.</description>
+    </item>
+    
+    <item>
+      <title>Prayer</title>
+      <link>http://lordgrenville.github.io/posts/prayer/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/prayer/</guid>
+      <description>Back in my yeshiva days, I struggled with the concept of prayer. We observe that sometimes people pray for things and aren&amp;rsquo;t answered - after all, we all pray every day for health, wealth and the ultimate redemption. So the underlying theory seems to be something along the lines of prayer increasing your odds. Or, since presumably these things are deterministic, your score: perhaps a young, healthy person needs 100 points to recover from an illness, and has 80 points on their own merit, prayer can boost them 20 points and make it happen.</description>
+    </item>
+    
+    <item>
+      <title>What is a Male Feminist? // Stats and the Social Sciences</title>
+      <link>http://lordgrenville.github.io/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</guid>
+      <description>A few years ago, a lot of people were sharing an Aziz Ansari bit about feminism. The thrust - if you don&amp;rsquo;t want to click through - is that if you think men and women deserve equal treatment, then you are a feminist, and shouldn&amp;rsquo;t try avoid the label.
+It&amp;rsquo;s a good joke, but philosophically I think it is a little bit more complex. Words have multiple shades of meaning, and words with far less complex histories can be hard to define simply.</description>
+    </item>
+    
+    <item>
+      <title>Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
+      <link>http://lordgrenville.github.io/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</guid>
+      <description>A very overdiscussed topic lately is political correctness, and if there&amp;rsquo;s too much of it. I propose the following three points:
+ At least some measure of socially ordained political correctness is unquestionably a good thing. There is a point where social monitoring of offensive speech becomes intrusive, burdensome and overall not worthwhile. &amp;lsquo;PC Culture&amp;rsquo; is currently unevenly distributed - there are some places which have it in very high levels (many university campuses, say), whereas there are also plenty of places where some pretty offensive things are considered acceptable.</description>
+    </item>
+    
+    <item>
+      <title>Democracy &amp; Elitism // Fish</title>
+      <link>http://lordgrenville.github.io/posts/democracy___elitism_fish/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/democracy___elitism_fish/</guid>
+      <description>There&amp;rsquo;s a &amp;ldquo;salon&amp;rdquo; here where people get together once in a fortnight to discuss a topic. The other week we were talking about politics and I floated the idea that there are &amp;ldquo;good&amp;rdquo; and &amp;ldquo;bad&amp;rdquo; voters: those who understand the issues to a greater extent and vote correctly representing their interests, and those who understand less, whose vote is essentially adding noise to the system. I&amp;rsquo;ve been groping towards an idea of &amp;ldquo;democratic elitism&amp;rdquo; for a while, in which the great value of democracy, I think, is that everyone&amp;rsquo;s interests are represented equally, but the messy practice of democracy muddies that and leads to suboptimal outcomes.</description>
+    </item>
+    
+    <item>
+      <title>Biodiversity // Doctors // BMX</title>
+      <link>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</guid>
+      <description>I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys.
+Googling mosquitoes with zebra-striped abdomens reveals that this is a tiger mosquito, an aggressive invader from SE Asia. Ranked as one of the hundred worst invasive species, it originally spread on packing crates and has penetrated most of the world, first being seen in Israel in 2003.</description>
+    </item>
+    
+  </channel>
+</rss>

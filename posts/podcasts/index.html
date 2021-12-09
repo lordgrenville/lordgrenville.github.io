@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<title>Frivolous Musings - Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="In general my view on podcasts is the shorter the better. So I really like Bloomberg View, which runs just over a minute and distills the essence of a longer (usually well thought-out) op-ed. (I guess by this logic the ideal podcast would be 0 seconds - very Cagean.)
+But it seems like the Berg is phasing this one out. It no longer appears on the website or on most podcast providers, and the RSS feed I had (from iTunes) on Podcast Addict (a truly excellent app) suddenly returned SSLHandshakeException: java. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/podcasts/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/podcasts/">Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>In general my view on podcasts is the shorter the better. So I really
+like <a href="https://www.bloomberg.com/podcasts/view">Bloomberg View</a>, which
+runs just over a minute and distills the essence of a longer (usually
+well thought-out) op-ed. (I guess by this logic the ideal podcast would
+be 0 seconds - very Cagean.)</p>
+<p>But it seems like the Berg is phasing this one out. It no longer appears
+on the website or on most podcast providers, and the RSS feed I had
+(from iTunes) on <a href="https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&amp;hl=en_US">Podcast
+Addict</a>
+(a truly excellent app) suddenly returned
+<code>SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found</code>.
+I emailed the developer and he promptly (shout-out Xavier! He really is
+awesome) explained that SSL cert verification in modern versions of
+Android is done by the device for all apps (except web browsers), so
+this error is not coming from inside the app. I confirmed that I hadn&rsquo;t
+accidentally disabled my trust of any previously accepted certificate,
+and he later showed me that the SSL cert for the RSS feed was indeed
+expired.</p>
+<p>I emailed Bloomberg about this, but I think they are sunsetting this
+podcast, and their support ticket confirmation email never showed up. In
+the meatime I wanted to just grab those episodes, so I did it old
+school.</p>
+<pre><code>import requests
+import xml.etree.ElementTree as ET
+
+feed = requests.get('https://feeds.bloomberg.fm/BLM8578726790', verify=False).text
+# you need to disable verify because of the dodgy SSL. requests throws up a warning telling you that this is very foolish
+feed = ET.fromstring(feed)
+</code></pre>
+<p>After fooling around with the <code>xml</code> I get this:</p>
+<pre><code>for child in feed.getchildren()[0].getchildren():
+    if child.tag == 'item':
+        x = child.getchildren()
+        print(x[0].text)
+        print(x[-2].text)
+
+&gt;
+Bloomberg Opinion Radio: Weekend Edition for 7-12-19 (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vrsTK.0wJcuQ/v4.mp3
+How to Tame Europe’s Game of Thrones: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRijgKsrekSc/v4.mp3
+Ramesh Ponnuru on the Obamacare Lawsuit Paradox (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vRzEW1v7.DEc/v4.mp3
+Demanding Straight Answers on Immigration: Editorial (Podcast)
+https://assets.bwbx.io/av/users/iqjWHBFdfxIU/viPbxsujOdcQ/v4.mp3
+
+etc..
+</code></pre>
+<p>And then I just grabbed the ones I wanted with <code>wget</code>:</p>
+<pre><code>mkdir podcasts &amp;&amp; cd podcasts/
+wget -O pelosi.mp3 https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vAThJHLXwFKM/v4.mp3
+
+etc...
+</code></pre>
+<p>Sent them to my phone with bluetooth, and added the <code>bluetooth</code> folder
+as a virtual podcast. And there you go, podcasts the old fashioned way!</p>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/truth/?ref=footer">« The Truth Is Whatever We Believe</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/twitter/?ref=footer">How Twitter Works in 2019 »</a>
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>

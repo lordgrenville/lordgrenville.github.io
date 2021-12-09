@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<title>Frivolous Musings - A Complete Idiot&#39;s Guide to Doom Emacs</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. This is a good guide from zero to Emacs. I was also helped/inspired by Noel Welsh&rsquo;s Doom guide, and that of mad genius Tecosaur.)
+After several aborted attempts to get started with Emacs, I&rsquo;ve finally made some sense of it. Since there aren&rsquo;t many basic guides online, I thought I&rsquo;d document my process. Vim (which I&rsquo;m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit&hellip;) I think that has to do with its greater simplicity, as well as the fact that there&rsquo;s basically only one flavour. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/emacs/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/emacs/">A Complete Idiot&#39;s Guide to Doom Emacs</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/">This</a> is a good guide from zero to Emacs. I was also helped/inspired by <a href="https://noelwelsh.com/posts/2019-01-10-doom-emacs.html">Noel Welsh&rsquo;s</a> Doom guide, and that of mad genius <a href="https://tecosaur.github.io/emacs-config/config.html">Tecosaur</a>.)</p>
+<p>After several aborted attempts to get started with Emacs, I&rsquo;ve finally made some sense of it. Since there aren&rsquo;t many basic guides online, I thought I&rsquo;d document my process. Vim (which I&rsquo;m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit&hellip;) I think that has to do with its greater simplicity, as well as the fact that there&rsquo;s basically only one flavour. (NeoVim is from a user&rsquo;s perspective mostly identical, and if you&rsquo;re using <code>vi</code> you probably know what you&rsquo;re doing.) Emacs by contrast is a whole world.</p>
+<p>The first question I had to deal with is: which Emacs do I use? Vanilla Emacs looks like something from the Stone Age, and doesn&rsquo;t offer you enough out of the box to persuade you to learn it - at least that was my experience. I was tempted back first with <a href="https://www.spacemacs.org/">Spacemacs</a>, and finally settled on <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>, which will be the subject of this guide.</p>
+<p>To clarify, all of these involve installing Emacs, and then building stuff on top of it. Emacs adds a <code>.emacs.d</code> folder to your home directory for your personal config, and these both customize that to look snazzier and use some extra tools right out of the box. Both Spacemacs and Doom emphasise <code>Evil</code>, an Emacs layer allowing Vim keys to be used instead of learning Emacs keys (though they allow either to be configured). Doom also stresses quick loading time and simplicity: it strives to do some basic config and let you get on with your work, rather than going down the rabbit-hole of eternal tweaking.</p>
+<p>After installing Emacs and cloning the Doom repo, you will have a <code>.doom.d</code> folder alongside <code>emacs.d</code>. This is where you will do everything. <code>.doom.d</code> contains three files:</p>
+<ul>
+<li><code>init.el</code></li>
+<li><code>config.el</code></li>
+<li><code>packages.el</code></li>
+</ul>
+<p><code>init.el</code> is where you select what you want Doom to take care of. This part is the most abstracted away from regular Emacs. Instead of installing, say, a package for Python development, you tell Doom you want to use Python and it will install the Python stuff it recommends.  If you want to know how to configure this, you need to look inside the repo itself: <code>~/doom-emacs/modules/lang/python/README.org</code> in this example. (Don&rsquo;t make changes here, though, unless you want to contribute to Doom development, in which case you&rsquo;re way beyond this humble guide.) That README will tell you what packages are used, and sometimes which flags you can add. For example, you can add a <code>conda</code> flag in Python by replacing <code>python</code> in <code>init.el</code> with <code>(python +conda)</code>. The more languages and other tools you add, the slower start-up will be, so take only what you need. You can edit it at any time, but you must then sync, either with <code>~/.emacs.d/bin/doom sync</code>, or if you have Emacs open with <code>M-x doom-reload</code>. (<code>M-x</code> is META-x, or alt-x, the Emacs key for a menu for typing in commands. In Evil this is <code>SPC :</code> However this stuff is found in many newbie guides, so I&rsquo;ll try focus on stuff that I struggled to find online.)</p>
+<p>The reason you have to sync after changing <code>init.el</code> is that it relies on Doom doing some work behind the scenes to install and load
+packages - those are the abstractions. <code>config.el</code>, by contrast, is a regular Emacs lisp document, so any changes you make in it can be
+evaluated and applied immediately. <code>config.el</code> is where you&rsquo;ll make any custom changes you want. <em>Whenever people tell you online to add
+stuff with</em> <code>(setq blah blah)</code> <em>you should put it in here.</em> If you want to install any <em>packages</em>, which in Emacs are usually installed from
+a repository called MELPA, but can also come from the web (eg GitHub), you put them in <code>packages.el</code>.</p>
+<p>By default Emacs uses different workspaces, each one containing a project. When you start working you should add your project root, and then you can navigate within it with <code>SPC f f</code>.</p>
+<p>Lastly, a word about modes. Continuing the musical analogy of chords (key combinations), Emacs has modes which are basically added functionality within a buffer. A major mode is usually the language type, and a buffer can only have one, while it can have many minor modes. Major mode chords in Evil begin with <code>SPC m</code>, after which you will see a guide in the minibuffer with your next options. (Always true in Doom.)</p>
+<p>Hopefully this should be enough to get you started with a project, the correct major mode, and some nice looking defaults. I definitely haven&rsquo;t been persuaded to drop Vim as my default <code>$EDITOR</code>, but I see it as my day-to-day tool, with Emacs as more of a speciality tool with capabilities like <a href="https://magit.vc/">Magit</a>, <code>org-mode</code>, and way more.</p>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/status/?ref=footer">« Status &amp; Jewish Intellectuals</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/arch/?ref=footer">Notes from Installing Arch Linux »</a>
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>
