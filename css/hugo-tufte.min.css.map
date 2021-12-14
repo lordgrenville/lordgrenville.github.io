@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "hugo-tufte.min.css",
-	"sourceRoot": "/Users/josh/Documents/research/dev/blog/athena",
+	"sourceRoot": "/Users/josh/Documents/dev/blog/athena",
 	"sources": [
 		"themes/tufte/assets/scss/hugo-tufte.scss",
 		"themes/tufte/assets/scss/vendor/tufte.scss",
