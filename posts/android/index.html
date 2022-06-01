@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<script data-goatcounter="https://lordgrenville.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<title>Frivolous Musings - Editing an Android App</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Problem: I have an app I like. I want to make a trivial change to the text in one screen. Emailed the developer, he said I could just edit the file in the assets folder and sideload it (although he failed to see the point of the edit&hellip;)
+Background: an APK is just a zipped archive, you can unzip it and edit the text files, then zip, rename to a . ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/android/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/android/">Editing an Android App</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>Problem: I have an app I like. I want to make a trivial change to the text in one screen. Emailed the developer, he said I could just edit the file in the <code>assets</code> folder and sideload it (although he failed to see the point of the edit&hellip;)</p>
+<p>Background: an APK is just a zipped archive, you can unzip it and edit the text files, then zip, rename to a <code>.apk</code> extension and try install it (easiest is <code>adb install /path/to/app.apk</code>). Since an Android app is compiled, most of the decompressed files will be binaries, but not all - some simple things are in plain text, including the ones I wanted to change.</p>
+<p>Solved? Not quite. For security reasons, Android requires the app to be <em>signed</em>, so once I edited it and sent it back, it was lacking a signature and I got the error <code>Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]</code>. OK, how do I sign it? The <a href="https://developer.android.com/studio/publish/app-signing">Android Studio docs</a> have detailed instructions. I downloaded Android Studio, and hit a wall - the menu option <code>Build &gt; Generate Signed Bundle/APK</code> just didn&rsquo;t exist on the menu. I looked at some online advice, but none of it helped. Anyway, I just wanted to generate a key pair, do I really need an entire IDE for that? Apparently not, the IDE is using a tool that comes with Java called <code>jarsigner</code> but I wasn&rsquo;t able to find this in my <code>%JAVA\_HOME%</code> and also hit permission issues (I was using WSL on Windows which may have been part of the cause).</p>
+<p>Anyway, I eventually found a &ldquo;batteries included&rdquo; <a href="https://github.com/techexpertize/SignApk">repo</a> claiming to do this for me. The signing worked, but the install still didn&rsquo;t. Maybe this was because the repo was eight years old? I found <a href="https://github.com/patrickfav/uber-apk-signer">a newer one</a> which happily signed my APK, but installation still failed, with the error <code>[INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION: Failed to parse /data/app...AndroidManifest.xml]</code>. What was wrong the AndroidManifest.xml? I hadn&rsquo;t touched it, and I couldn&rsquo;t read it because it was compiled. (<a href="https://blogs.sap.com/2014/05/21/how-to-modify-an-apk-file/">Here</a> is a blog post from 2014, a more innocent time, which does what I did until here and succeeds.)</p>
+<p>Time for the big guns. I downloaded <a href="https://ibotpeaches.github.io/Apktool/">Apktool</a>, a reverse-engineering tool that tries to restore the source. I was warned that this can break complicated apps, but the one I was editing is pretty simple and survived the compilation. Starting with my original <code>apk</code> file, I ran <code>apktool d myapp.apk</code>, edited the file in the assets, had a quick look at the now-readable <code>AndroidManifest.xml</code> (utterly ordinary, nothing of interest to see!), rebuilt the app with <code>apktool b myapp.zip.out -o edited_app.apk</code>, and then tried to install. No good - no certificate! Signed the new <code>apk</code> with <code>uber-apk-signer</code> and tried again: this time it was rejected with a new error: <code>[INSTALL_FAILED_UPDATE_INCOMPATIBLE]</code>. Looks like the problem is the old version existing on my phone. I uninstalled it, reran <code>adb install</code> and hey presto - it worked!</p>
+<p>If this sounds like a tedious and horrible exercise to you, you&rsquo;re
+probably right. But somehow my brain is wired to find the lure of the
+solution greater than the frustration of the journey.</p>
+<p>Summary:</p>
+<ul>
+<li>Merely unzipping and editing doesn&rsquo;t work. Use <code>apktool</code> to reverse-engineer and a modern signing tool to generate a new signature</li>
+<li>Uninstall the old version, and then <code>adb install</code>. (You&rsquo;ll lose your old settings, this way, so be ready to restore them.)</li>
+<li>If you want to distribute your app to other people via the Play Store, you&rsquo;re beyond the scope of this post!</li>
+</ul>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/prediction/?ref=footer">« Insight Without Prediction?</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>

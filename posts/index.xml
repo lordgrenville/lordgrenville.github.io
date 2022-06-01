@@ -6,7 +6,42 @@
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editing an Android App</title>
+      <link>http://lordgrenville.github.io/posts/android/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/android/</guid>
+      <description>&lt;p&gt;Problem: I have an app I like. I want to make a trivial change to the text in one screen. Emailed the developer, he said I could just edit the file in the &lt;code&gt;assets&lt;/code&gt; folder and sideload it (although he failed to see the point of the edit&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Background: an APK is just a zipped archive, you can unzip it and edit the text files, then zip, rename to a &lt;code&gt;.apk&lt;/code&gt; extension and try install it (easiest is &lt;code&gt;adb install /path/to/app.apk&lt;/code&gt;). Since an Android app is compiled, most of the decompressed files will be binaries, but not all - some simple things are in plain text, including the ones I wanted to change.&lt;/p&gt;
+&lt;p&gt;Solved? Not quite. For security reasons, Android requires the app to be &lt;em&gt;signed&lt;/em&gt;, so once I edited it and sent it back, it was lacking a signature and I got the error &lt;code&gt;Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]&lt;/code&gt;. OK, how do I sign it? The &lt;a href=&#34;https://developer.android.com/studio/publish/app-signing&#34;&gt;Android Studio docs&lt;/a&gt; have detailed instructions. I downloaded Android Studio, and hit a wall - the menu option &lt;code&gt;Build &amp;gt; Generate Signed Bundle/APK&lt;/code&gt; just didn&amp;rsquo;t exist on the menu. I looked at some online advice, but none of it helped. Anyway, I just wanted to generate a key pair, do I really need an entire IDE for that? Apparently not, the IDE is using a tool that comes with Java called &lt;code&gt;jarsigner&lt;/code&gt; but I wasn&amp;rsquo;t able to find this in my &lt;code&gt;%JAVA\_HOME%&lt;/code&gt; and also hit permission issues (I was using WSL on Windows which may have been part of the cause).&lt;/p&gt;
+&lt;p&gt;Anyway, I eventually found a &amp;ldquo;batteries included&amp;rdquo; &lt;a href=&#34;https://github.com/techexpertize/SignApk&#34;&gt;repo&lt;/a&gt; claiming to do this for me. The signing worked, but the install still didn&amp;rsquo;t. Maybe this was because the repo was eight years old? I found &lt;a href=&#34;https://github.com/patrickfav/uber-apk-signer&#34;&gt;a newer one&lt;/a&gt; which happily signed my APK, but installation still failed, with the error &lt;code&gt;[INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION: Failed to parse /data/app...AndroidManifest.xml]&lt;/code&gt;. What was wrong the AndroidManifest.xml? I hadn&amp;rsquo;t touched it, and I couldn&amp;rsquo;t read it because it was compiled. (&lt;a href=&#34;https://blogs.sap.com/2014/05/21/how-to-modify-an-apk-file/&#34;&gt;Here&lt;/a&gt; is a blog post from 2014, a more innocent time, which does what I did until here and succeeds.)&lt;/p&gt;
+&lt;p&gt;Time for the big guns. I downloaded &lt;a href=&#34;https://ibotpeaches.github.io/Apktool/&#34;&gt;Apktool&lt;/a&gt;, a reverse-engineering tool that tries to restore the source. I was warned that this can break complicated apps, but the one I was editing is pretty simple and survived the compilation. Starting with my original &lt;code&gt;apk&lt;/code&gt; file, I ran &lt;code&gt;apktool d myapp.apk&lt;/code&gt;, edited the file in the assets, had a quick look at the now-readable &lt;code&gt;AndroidManifest.xml&lt;/code&gt; (utterly ordinary, nothing of interest to see!), rebuilt the app with &lt;code&gt;apktool b myapp.zip.out -o edited_app.apk&lt;/code&gt;, and then tried to install. No good - no certificate! Signed the new &lt;code&gt;apk&lt;/code&gt; with &lt;code&gt;uber-apk-signer&lt;/code&gt; and tried again: this time it was rejected with a new error: &lt;code&gt;[INSTALL_FAILED_UPDATE_INCOMPATIBLE]&lt;/code&gt;. Looks like the problem is the old version existing on my phone. I uninstalled it, reran &lt;code&gt;adb install&lt;/code&gt; and hey presto - it worked!&lt;/p&gt;
+&lt;p&gt;If this sounds like a tedious and horrible exercise to you, you&amp;rsquo;re
+probably right. But somehow my brain is wired to find the lure of the
+solution greater than the frustration of the journey.&lt;/p&gt;
+&lt;p&gt;Summary:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Merely unzipping and editing doesn&amp;rsquo;t work. Use &lt;code&gt;apktool&lt;/code&gt; to reverse-engineer and a modern signing tool to generate a new signature&lt;/li&gt;
+&lt;li&gt;Uninstall the old version, and then &lt;code&gt;adb install&lt;/code&gt;. (You&amp;rsquo;ll lose your old settings, this way, so be ready to restore them.)&lt;/li&gt;
+&lt;li&gt;If you want to distribute your app to other people via the Play Store, you&amp;rsquo;re beyond the scope of this post!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insight Without Prediction?</title>
+      <link>http://lordgrenville.github.io/posts/prediction/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/prediction/</guid>
+      <description>&lt;p&gt;
+discussion about intelligence on USSR - is it worth anything?
+Popper&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Evolution of Ideas</title>
       <link>http://lordgrenville.github.io/posts/evolution/</link>
@@ -31,7 +66,7 @@
 &lt;input type=&#34;checkbox&#34; id=&#34;marginnote-7666d4b74b76fb655532a0499c307e7e-1&#34; class=&#34;margin-toggle&#34;/&gt;
 &lt;span class=&#34;marginnote&#34;&gt;Keep this guy out of your commune&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;For this reason I think that it tends to work at small scale, like the &lt;em&gt;kibbutz&lt;/em&gt; movement or student dorm co-ops. Say I live on a &lt;em&gt;kibbutz&lt;/em&gt; and am a software engineer at Google. I put my salary into the pot, so does my neighbour the poet. At the end of year one we have a big surplus. In year two one of the members is diagnosed with a medical condition requiring expensive treatment, but luckily the surplus covers it. In year three we have grown, and by the end of the year there is little surplus left, despite the sick member having stabilised and not requiring new treatments. Upon inspection we discover that one new member, Bob, fraudulently claimed for some expenses related to renovations, spending the money on cars he sold on the side. We kick him out, but I still feel resentful. While my colleagues at Google are living it up, I am leading a modest and idealistic lifestyle, just so someone can steal or mismanage the money?!&lt;/p&gt;
-&lt;p&gt;This is a miniature; but we can well imagine that a Ukrainian farmer might not feel well-disposed towards the Workers&#39; Republic after &lt;a href=&#34;https://en.wikipedia.org/wiki/Holodomor&#34;&gt;being starved&lt;/a&gt; (historians disagree over whether it was intentional or if Stalin just didn&amp;rsquo;t care, but there&amp;rsquo;s not much difference for our purposes.) The Russian Empire was a vast mix of ethnicities, languages and religions, who never had much of a shared basis for trust; that is the worst possible situation in which to build a communist society.&lt;/p&gt;
+&lt;p&gt;This is a miniature; but we can well imagine that a Ukrainian farmer might not feel well-disposed towards the Workers&amp;rsquo; Republic after &lt;a href=&#34;https://en.wikipedia.org/wiki/Holodomor&#34;&gt;being starved&lt;/a&gt; (historians disagree over whether it was intentional or if Stalin just didn&amp;rsquo;t care, but there&amp;rsquo;s not much difference for our purposes.) The Russian Empire was a vast mix of ethnicities, languages and religions, who never had much of a shared basis for trust; that is the worst possible situation in which to build a communist society.&lt;/p&gt;
 &lt;p&gt;So in sum what I believe is that it is &amp;ldquo;against human nature&amp;rdquo; only in the sense that some people are bad; and in a situation with bad people capitalism works better, since it requires less trust. In small groups of decent people it does work. I strive to make the world better; in the interim, capitalism is a Band-Aid, not a panacea.&lt;/p&gt;
 </description>
     </item>
@@ -44,20 +79,20 @@
       <guid>http://lordgrenville.github.io/posts/wordle/</guid>
       <description>&lt;p&gt;You may know that the solution for each day&amp;rsquo;s Wordle puzzle is in its source code. Is there a way to grab it from the command line? Naturally.&lt;/p&gt;
 &lt;p&gt;Start with grabbing the source and outputting to stdin (may as well add &lt;code&gt;-q&lt;/code&gt;, we don&amp;rsquo;t need the output):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;wget -q -O- powerlanguage.co.uk/wordle/main.e65ce0a5.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next we just grab the solutions list (look for &lt;code&gt;Var La&lt;/code&gt;, then note the index of the opening bracket, then go to the matching bracket (using &lt;code&gt;%&lt;/code&gt; in Vim) and note the closing index):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cut -c 28467-46985
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, calculate the number of days since the beginning and return this word. This stage took a bit of experimenting, to find today&amp;rsquo;s solution&amp;rsquo;s index, then work backwards to find how many days ago Solution Zero is.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date -jf &lt;span class=&#34;s2&#34;&gt;&amp;#34;%F&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2021-06-18&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)/(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3600&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then we can use awk to find the word:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;awk -F&lt;span class=&#34;s1&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; -v &lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$day&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $day}&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We now have our answer, but this returns a lot of whitespace, so let&amp;rsquo;s clean it up:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;/^$/d&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And remove the quotes, for extra credit:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To sum up:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;wget -O- -q powerlanguage.co.uk/wordle/main.e65ce0a5.js &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cut -c 28467-46985 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; awk -F&lt;span class=&#34;s1&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; -v &lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date -jf &lt;span class=&#34;s2&#34;&gt;&amp;#34;%F&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2021-06-18&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)/(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3600&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $day}&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;/^$/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wordle 220 1/6&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -q -O- powerlanguage.co.uk/wordle/main.e65ce0a5.js
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next we just grab the solutions list (look for &lt;code&gt;Var La&lt;/code&gt;, then note the index of the opening bracket, then go to the matching bracket (using &lt;code&gt;%&lt;/code&gt; in Vim) and note the closing index):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cut -c 28467-46985
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, calculate the number of days since the beginning and return this word. This stage took a bit of experimenting, to find today&amp;rsquo;s solution&amp;rsquo;s index, then work backwards to find how many days ago Solution Zero is.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date -jf &lt;span class=&#34;s2&#34;&gt;&amp;#34;%F&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2021-06-18&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)/(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3600&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then we can use awk to find the word:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;awk -F&lt;span class=&#34;s1&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; -v &lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$day&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $day}&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We now have our answer, but this returns a lot of whitespace, so let&amp;rsquo;s clean it up:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;/^$/d&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And remove the quotes, for extra credit:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To sum up:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -O- -q powerlanguage.co.uk/wordle/main.e65ce0a5.js &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cut -c 28467-46985 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; awk -F&lt;span class=&#34;s1&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; -v &lt;span class=&#34;nv&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date -jf &lt;span class=&#34;s2&#34;&gt;&amp;#34;%F&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2021-06-18&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;+%s&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)/(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3600&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;{print $day}&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;/^$/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tr -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#34;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wordle 220 1/6&lt;/p&gt;
 &lt;p&gt;🟩🟩🟩🟩🟩&lt;/p&gt;
 </description>
     </item>
@@ -107,7 +142,7 @@ The idea that politicians will rationally try to maximise personal gain unless h
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/kevin/</guid>
-      <description>&lt;p&gt;Kevin Lewis&#39; daily &lt;em&gt;Findings&lt;/em&gt; blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&amp;rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.&lt;/p&gt;
+      <description>&lt;p&gt;Kevin Lewis&amp;rsquo; daily &lt;em&gt;Findings&lt;/em&gt; blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&amp;rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.&lt;/p&gt;
 &lt;p&gt;The basic script I started with went to &lt;a href=&#34;https://www.nationalaffairs.com/authors/detail/kevin-lewis&#34;&gt;the author&amp;rsquo;s page&lt;/a&gt;, found the box with most recent posts, followed and scraped each link, encoded them as RSS (basically URL-encoding the HTML tags), added opening and closing RSS XML tags, and saved the file. In further iterations I added the ability to open the file if it exists, check if an item exists (and not scrape it), and cleaned up the code. Once I was happy with it, the last thing I wanted to add (for now!) was the ability to run it on the reg. The code is &lt;a href=&#34;https://github.com/lordgrenville/scrape_kevin&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My first instinct was to run &lt;code&gt;crontab -e&lt;/code&gt; and set up a weekly run there. But I found that since my Macbook goes to sleep quite aggressively to save power, often the job wouldn&amp;rsquo;t be carried out. Turns out that macOS has a built in tool called &lt;code&gt;launchd&lt;/code&gt; which is recommended over cron, and can also run after waking if it missed its cue.&lt;/p&gt;
 &lt;p&gt;To add it I created a file called &lt;code&gt;~/Library/LaunchAgents/update_lewis.plist&lt;/code&gt;, with the command arguments as outlined &lt;a href=&#34;https://www.launchd.info/&#34;&gt;here&lt;/a&gt;. Then I called &lt;code&gt;launchctl load ~/Library/LaunchAgents/update_lewis.plist&lt;/code&gt; (cancel with &lt;code&gt;unload&lt;/code&gt;), and voilà!&lt;/p&gt;
@@ -180,7 +215,7 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/adams/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s a great quote from Douglas Adams&#39; posthumous final novel, &lt;em&gt;The Salmon of Doubt&lt;/em&gt;:&lt;/p&gt;
+      <description>&lt;p&gt;There&amp;rsquo;s a great quote from Douglas Adams&amp;rsquo; posthumous final novel, &lt;em&gt;The Salmon of Doubt&lt;/em&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.&lt;/p&gt;
 &lt;p&gt;Anything that&amp;rsquo;s invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.&lt;/p&gt;
@@ -197,7 +232,7 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/gifts/</guid>
-      <description>&lt;p&gt;I recently read the book &lt;a href=&#34;https://www.goodreads.com/book/show/160171.Just_for_Fun&#34;&gt;Just for Fun&lt;/a&gt;, a lot of which focuses on Linus Torvalds&#39; battle for his operating system, Linux, to be &amp;ldquo;Open Source&amp;rdquo; software. Open Source doesn&amp;rsquo;t mean free; but it  means that the software&amp;rsquo;s code (the source) is freely available, so anyone can copy it. Thus there&amp;rsquo;s no viable business in selling the code, but there could be in supplying and installing the software for less tech-savvy users, or in ancillary services such as support. At the time, the &lt;em&gt;bête noire&lt;/em&gt; of OS was Bill Gates, who made a reasonable argument: OS software made it hard to earn a living from software, meaning worse quality for everybody. Yet today OS has basically won out, with even Microsoft embracing Linux and &lt;a href=&#34;https://github.com/microsoft?q=license%3Agpl-3.0+license%3Amit&amp;amp;type=&amp;amp;language=&#34;&gt;open-sourcing&lt;/a&gt; hundreds of projects. So how does the Open Source world square the circle of making it pay?&lt;/p&gt;
+      <description>&lt;p&gt;I recently read the book &lt;a href=&#34;https://www.goodreads.com/book/show/160171.Just_for_Fun&#34;&gt;Just for Fun&lt;/a&gt;, a lot of which focuses on Linus Torvalds&amp;rsquo; battle for his operating system, Linux, to be &amp;ldquo;Open Source&amp;rdquo; software. Open Source doesn&amp;rsquo;t mean free; but it  means that the software&amp;rsquo;s code (the source) is freely available, so anyone can copy it. Thus there&amp;rsquo;s no viable business in selling the code, but there could be in supplying and installing the software for less tech-savvy users, or in ancillary services such as support. At the time, the &lt;em&gt;bête noire&lt;/em&gt; of OS was Bill Gates, who made a reasonable argument: OS software made it hard to earn a living from software, meaning worse quality for everybody. Yet today OS has basically won out, with even Microsoft embracing Linux and &lt;a href=&#34;https://github.com/microsoft?q=license%3Agpl-3.0+license%3Amit&amp;amp;type=&amp;amp;language=&#34;&gt;open-sourcing&lt;/a&gt; hundreds of projects. So how does the Open Source world square the circle of making it pay?&lt;/p&gt;
 &lt;p&gt;This reminds me of something the financial writer Matt Levine says about the &lt;a href=&#34;https://www.bloomberg.com/opinion/articles/2017-05-02/litvaking-and-lending&#34;&gt;gift economy&lt;/a&gt; (based on the essay &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Gift_(essay)&#34;&gt;&lt;em&gt;The Gift&lt;/em&gt;&lt;/a&gt; by the anthropologist Marcel Mauss). At a basic level, people trade goods based on pure financial value; but at a very large scale - say, an oil-and-gas company is looking for bankers to facilitate an acquisition - decisions are made much more based on gifts and relationships, which are not anchored in pure economic rationality. For example, the bank may gift the company&amp;rsquo;s decision-makers watches or fancy dinners or golfing weekends, in the hope that at some later point, they will remember them for some major deal (never as an explicit &lt;em&gt;quid pro quo&lt;/em&gt;, which would seem distatestful to both sides).&lt;/p&gt;
 &lt;p&gt;In some ways the software world has moved toward this model. Companies want to hire star developers, and to do so try to impress them with their friendliness toward open-source, perhaps through sponsorships or by allowing some of their employees to contribute to open-source projects on company time. They may also open up some of their own source code, usually from side projects which aren&amp;rsquo;t part of their main business model, or as a way to tempt customers to integrate into their ecosystem. On the developer side, a beginner programmer may contribute to an open-source project related to her specialty as a way of making an name for herself. In each case, these are not transactions based on economic value, but part of a more sophisticated ritual in which each side hopes to gain, but is able to talk in terms of lofty values such as the good of the community, gift-giving, and generally a world free of grubby pecuniary thoughts.&lt;/p&gt;
 &lt;p&gt;Of course, as &lt;a href=&#34;https://twitter.com/wesmckinn/status/1237488666425131011&#34;&gt;this complaint&lt;/a&gt; (representative of many others) shows, in practice the model doesn&amp;rsquo;t  work as well as we might hope.&lt;/p&gt;
@@ -214,7 +249,7 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
 &lt;blockquote&gt;
 &lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I&amp;rsquo;ve come across a similar idea in &lt;a href=&#34;https://philosophybites.com/2014/03/david-papineau-on-philosophy-and-sport.html&#34;&gt;this podcast&lt;/a&gt;: that &lt;em&gt;the fact of believing in something&lt;/em&gt; makes it more likely to happen. This can be true in mountaineering (James&#39; example), sport (as in the podcast), or in business, which I&amp;rsquo;ve always thought takes extraordinary self-belief: most businesses fail, so one has to wilfully ignore the laws of probability in order to start a new one, yet countless people do, and society benefits from their appetite for risk.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve come across a similar idea in &lt;a href=&#34;https://philosophybites.com/2014/03/david-papineau-on-philosophy-and-sport.html&#34;&gt;this podcast&lt;/a&gt;: that &lt;em&gt;the fact of believing in something&lt;/em&gt; makes it more likely to happen. This can be true in mountaineering (James&amp;rsquo; example), sport (as in the podcast), or in business, which I&amp;rsquo;ve always thought takes extraordinary self-belief: most businesses fail, so one has to wilfully ignore the laws of probability in order to start a new one, yet countless people do, and society benefits from their appetite for risk.&lt;/p&gt;
 &lt;p&gt;As someone who tends towards &amp;ldquo;rationalism&amp;rdquo; (using the term colloquially), I struggle to understand this impulse. How does one ignore reality and leap ahead into something, convincing oneself that is true? And, at what point should reality be allowed to once again influence one&amp;rsquo;s decision-making? The perenially loss-making business foolhardily propelled into an avalanche of red ink comes to mind.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/wework.jpg&#34; alt=&#34;Look before you leap?&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This is also relevant in what we might might call &amp;ldquo;self-help&amp;rdquo;. Common advice goes that one should &amp;ldquo;be oneself&amp;rdquo; and not worry about what other people think. And sure, confidence is attractive. But judgements from others are also a way in which society communicates; obviously one doesn&amp;rsquo;t want to entirely cut oneself off from what others think. Say someone has an intensely annoying laugh, something which causes anyone with normal hearing deep psychic pain - wouldn&amp;rsquo;t it be more reasonable for him to try change it, rather than soldier on believing that others should just accept him?&lt;/p&gt;
@@ -231,25 +266,25 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <description>&lt;p&gt;There’s a funny &lt;a href=&#34;https://xkcd.com/1168/&#34;&gt;xkcd cartoon&lt;/a&gt; about the &lt;code&gt;tar&lt;/code&gt; command:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://imgs.xkcd.com/comics/tar_2x.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;How does one remember those ridiculous single letter commands? My preferred solution is to first consult with &lt;a href=&#34;https://tldr.sh/&#34;&gt;TLDR&lt;/a&gt;, but Justin Abrahams has a fun solution &lt;a href=&#34;https://justin.abrah.ms/bash/forgotten_friend_3.html&#34;&gt;over at his blog&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;  extract &lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-      &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; in
-        *.tar.bz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;        tar xjf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.tar.gz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;         tar xzf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.bz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            bunzip2 &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.rar&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            unrar x &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.gz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;             gunzip &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;         &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.tar&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            tar xf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;         &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.tbz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;           tar xjf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.tgz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            tar xzf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.zip&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            unzip &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;          &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *.Z&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;              uncompress &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;     &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-        *&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;                &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;1&amp;#39; cannot be extracted via extract()&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;esac&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
-      &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;1&amp;#39; is not a valid file&amp;#34;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Appended, naturally, to &lt;code&gt;.bashrc&lt;/code&gt;.)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  extract &lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.tar.bz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;        tar xjf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.tar.gz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;         tar xzf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.bz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            bunzip2 &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.rar&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            unrar x &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.gz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;             gunzip &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;         &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.tar&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            tar xf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;         &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.tbz2&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;           tar xjf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.tgz&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            tar xzf &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;        &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.zip&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;            unzip &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;          &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *.Z&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;              uncompress &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;     &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        *&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;                &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;1&amp;#39; cannot be extracted via extract()&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;esac&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;1&amp;#39; is not a valid file&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(Appended, naturally, to &lt;code&gt;.bashrc&lt;/code&gt;.)&lt;/p&gt;
 </description>
     </item>
     
@@ -450,7 +485,7 @@ aware of it. Luckily, people are fascinating - if you can&amp;rsquo;t see that,
 read some fiction!&lt;/p&gt;
 &lt;p&gt;Open-ended or ambiguous questions, of course, are infinitely better.
 &amp;ldquo;What is your favourite part of &amp;ndash;&amp;rdquo; or &amp;ldquo;Do you think that &amp;ndash;&amp;rdquo; are better
-than questions with specific answers (&amp;ldquo;do you like it?&amp;quot;), and &amp;ldquo;what do
+than questions with specific answers (&amp;ldquo;do you like it?&amp;rdquo;), and &amp;ldquo;what do
 you do?&amp;rdquo; is better than &amp;ldquo;what line of work are you in?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Another common idea is that you shouldn&amp;rsquo;t ask boring questions such as
 &amp;ldquo;where are you from&amp;rdquo; or &amp;ldquo;what job do you do&amp;rdquo;. I don&amp;rsquo;t agree with this
@@ -478,7 +513,7 @@ finding which one it is.&lt;/p&gt;
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/rhetoric_rationalism/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s common to think of rhetoric as a gloss on top of &amp;lsquo;true&amp;rsquo; thinking,
+      <description>&lt;p&gt;It&amp;rsquo;s common to think of rhetoric as a gloss on top of &amp;rsquo;true&amp;rsquo; thinking,
 mere packaging for the intellectual content of our ideas. From some of
 the Platonic dialogues it seems like rhetoric, (or &lt;em&gt;sophistry&lt;/em&gt;, which
 Plato made into an insult) is a foil to rational thought, an alternative
@@ -505,7 +540,7 @@ necessarily better - they are just different forms of knowledge.&lt;/p&gt;
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/parallel_texts/</guid>
-      <description>&lt;p&gt;An anecdote from Richard Rhodes&#39; book &lt;em&gt;The Making of the Atomic Bomb&lt;/em&gt;:&lt;/p&gt;
+      <description>&lt;p&gt;An anecdote from Richard Rhodes&amp;rsquo; book &lt;em&gt;The Making of the Atomic Bomb&lt;/em&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Out of curiosity in 1940, while visiting Berkeley to deliver a
 lecture, Enrico Fermi attended a seminar one of [J. Robert]
@@ -514,7 +549,7 @@ joked afterward with Segrè, &amp;ldquo;I am getting rusty and old. I cannot
 follow the highbrow theory developed by Oppenheimer&amp;rsquo;s pupils anymore.
 I went to their seminar and was depressed by my inability to
 understand them. Only the last sentence cheered me up; it was: &amp;lsquo;and
-this is Fermi&amp;rsquo;s theory of beta decay.&#39;&amp;rdquo; (p. 667)&lt;/p&gt;
+this is Fermi&amp;rsquo;s theory of beta decay.&amp;rsquo;&amp;rdquo; (p. 667)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;If you&amp;rsquo;re familiar with Menachot 29b, you&amp;rsquo;ll see the parallel
 immediately. In case you don&amp;rsquo;t, I quote it here (&lt;a href=&#34;https://www.sefaria.org.il/Menachot.29b.4?lang=bi&amp;amp;with=all&amp;amp;lang2=en&#34;&gt;via
@@ -777,12 +812,12 @@ of it, and literally create new objects. Indeed, language is an organ
 of perception, not simply a means of communication.&lt;/p&gt;
 &lt;p&gt;&amp;hellip;This is indeed the nub (knob), heart, pith, kernel, core, marrow,
 etc. of my argument, which itself is a metaphor and &amp;lsquo;seen&amp;rsquo; only with
-the mind&amp;rsquo;s &amp;lsquo;eye&amp;rsquo;. In the abstractions of human relations, the skin
+the mind&amp;rsquo;s &amp;rsquo;eye&amp;rsquo;. In the abstractions of human relations, the skin
 becomes a particularly important metaphier. We get or stay &amp;lsquo;in touch&amp;rsquo;
-with others who may be &amp;lsquo;thick-&amp;rsquo; or &amp;lsquo;thin-skinned&amp;rsquo; or perhaps &amp;lsquo;touchy&amp;rsquo;
+with others who may be &amp;rsquo;thick-&amp;rsquo; or &amp;rsquo;thin-skinned&amp;rsquo; or perhaps &amp;rsquo;touchy&amp;rsquo;
 in which case they have to be &amp;lsquo;handled&amp;rsquo; carefully lest we &amp;lsquo;rub&amp;rsquo; them
 the wrong way; we may have a &amp;lsquo;feeling&amp;rsquo; for another person with whom we
-may have a &amp;lsquo;touching&amp;rsquo; experience.&lt;/p&gt;
+may have a &amp;rsquo;touching&amp;rsquo; experience.&lt;/p&gt;
 &lt;p&gt;The concepts of science are all of this kind, abstract concepts
 generated by concrete metaphors. In physics, we have force,
 acceleration (to increase one&amp;rsquo;s steps), inertia (originally an
@@ -804,13 +839,13 @@ created the abstract on the bases of metaphors.&lt;/p&gt;
 &lt;p&gt;It is not always obvious that metaphor has played this all important
 function. But this is because the concrete metaphiers become hidden in
 phonemic change, leaving the words to exist on their own. Even such an
-unmetaphorical-sounding word as the verb &amp;lsquo;to be&amp;rsquo; was generated from a
+unmetaphorical-sounding word as the verb &amp;rsquo;to be&amp;rsquo; was generated from a
 metaphor. It comes from the Sanskrit &lt;em&gt;bhu&lt;/em&gt;, &amp;ldquo;to grow, or make grow,&amp;rdquo;
 while the English forms &amp;lsquo;am&amp;rsquo; and &amp;lsquo;is&amp;rsquo; have evolved from the same root
 as the Sanskrit &lt;em&gt;asmi,&lt;/em&gt; &amp;ldquo;to breathe.&amp;rdquo; It is something of a lovely
 surprise that the irregular conjugation of our most nondescript verb
 is thus a record of a time when man had no independent word for
-&amp;lsquo;existence&amp;rsquo; and could only say that something &amp;lsquo;grows&amp;rsquo; or that it
+&amp;rsquo;existence&amp;rsquo; and could only say that something &amp;lsquo;grows&amp;rsquo; or that it
 &amp;ldquo;breathes.&amp;rdquo; Of course we are not conscious that the concept of being
 is thus generated from a metaphor about growing and breathing.
 Abstract words are ancient coins whose concrete images in the busy
@@ -879,7 +914,7 @@ Dewey&amp;rsquo;s side of the argument was in favour of civilian journalism, and
 &amp;ldquo;Great Society&amp;rdquo; of slow community-wide consensus. (Always majestic in
 idealism but obscurely phrased, Dewey&amp;rsquo;s writing was perfectly described
 by Oliver Wendell Homes Jr.:&amp;ldquo;So methought God would have spoken had He
-been inarticulate but keenly desirous to tell you how it was.&amp;quot;)&lt;/p&gt;
+been inarticulate but keenly desirous to tell you how it was.&amp;rdquo;)&lt;/p&gt;
 &lt;p&gt;Ryan notes that the classic theorist of democratic elitism is actually
 Joseph Schumpeter. In his famous work &lt;a href=&#34;https://en.wikipedia.org/wiki/Capitalism,_Socialism_and_Democracy&#34;&gt;Capitalism, Socialism and
 Democracy&lt;/a&gt;

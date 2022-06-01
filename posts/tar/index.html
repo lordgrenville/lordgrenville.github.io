@@ -77,25 +77,25 @@ extract () { if [ -f 1 ] ; then case 1 in *.tar.bz2) tar xjf 1 ;; *.tar.gz) tar 
     <section><p>There’s a funny <a href="https://xkcd.com/1168/">xkcd cartoon</a> about the <code>tar</code> command:</p>
 <p><img src="https://imgs.xkcd.com/comics/tar_2x.png" alt=""></p>
 <p>How does one remember those ridiculous single letter commands? My preferred solution is to first consult with <a href="https://tldr.sh/">TLDR</a>, but Justin Abrahams has a fun solution <a href="https://justin.abrah.ms/bash/forgotten_friend_3.html">over at his blog</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  extract <span class="o">()</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">[</span> -f <span class="m">1</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
-      <span class="k">case</span> <span class="m">1</span> in
-        *.tar.bz2<span class="o">)</span>        tar xjf <span class="m">1</span>        <span class="p">;;</span>
-        *.tar.gz<span class="o">)</span>         tar xzf <span class="m">1</span>        <span class="p">;;</span>
-        *.bz2<span class="o">)</span>            bunzip2 <span class="m">1</span>        <span class="p">;;</span>
-        *.rar<span class="o">)</span>            unrar x <span class="m">1</span>        <span class="p">;;</span>
-        *.gz<span class="o">)</span>             gunzip <span class="m">1</span>         <span class="p">;;</span>
-        *.tar<span class="o">)</span>            tar xf <span class="m">1</span>         <span class="p">;;</span>
-        *.tbz2<span class="o">)</span>           tar xjf <span class="m">1</span>        <span class="p">;;</span>
-        *.tgz<span class="o">)</span>            tar xzf <span class="m">1</span>        <span class="p">;;</span>
-        *.zip<span class="o">)</span>            unzip <span class="m">1</span>          <span class="p">;;</span>
-        *.Z<span class="o">)</span>              uncompress <span class="m">1</span>     <span class="p">;;</span>
-        *<span class="o">)</span>                <span class="nb">echo</span> <span class="s2">&#34;&#39;1&#39; cannot be extracted via extract()&#34;</span> <span class="p">;;</span>
-    <span class="k">esac</span>
-    <span class="k">else</span>
-      <span class="nb">echo</span> <span class="s2">&#34;&#39;1&#39; is not a valid file&#34;</span>
-    <span class="k">fi</span>
-</code></pre></div><p>(Appended, naturally, to <code>.bashrc</code>.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  extract <span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> -f <span class="m">1</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">      <span class="k">case</span> <span class="m">1</span> in
+</span></span><span class="line"><span class="cl">        *.tar.bz2<span class="o">)</span>        tar xjf <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.tar.gz<span class="o">)</span>         tar xzf <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.bz2<span class="o">)</span>            bunzip2 <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.rar<span class="o">)</span>            unrar x <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.gz<span class="o">)</span>             gunzip <span class="m">1</span>         <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.tar<span class="o">)</span>            tar xf <span class="m">1</span>         <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.tbz2<span class="o">)</span>           tar xjf <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.tgz<span class="o">)</span>            tar xzf <span class="m">1</span>        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.zip<span class="o">)</span>            unzip <span class="m">1</span>          <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *.Z<span class="o">)</span>              uncompress <span class="m">1</span>     <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">        *<span class="o">)</span>                <span class="nb">echo</span> <span class="s2">&#34;&#39;1&#39; cannot be extracted via extract()&#34;</span> <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">esac</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">echo</span> <span class="s2">&#34;&#39;1&#39; is not a valid file&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span></code></pre></div><p>(Appended, naturally, to <code>.bashrc</code>.)</p>
 </section>
     <section>
       <footer class="page-footer">
