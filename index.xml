@@ -8,6 +8,33 @@
     <language>en-za</language>
     <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Easy Things that are Hard</title>
+      <link>http://lordgrenville.github.io/posts/server/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/server/</guid>
+      <description>&lt;p&gt;Something that should be easy but weirdly isn&amp;rsquo;t is sharing text or files between two of my devices, say a laptop and a phone. There are lots of sometime solutions for this - if you have a Macbook and an iPhone on the same account, you have a shared clipboard, and &lt;a href=&#34;https://kdeconnect.kde.org/&#34;&gt;KDE Connect&lt;/a&gt; is also designed to solve this, but unfortunately its support for macOS is &lt;a href=&#34;https://binary-factory.kde.org/view/MacOS/job/kdeconnect-kde_Nightly_macos/&#34;&gt;experimental&lt;/a&gt; and doesn&amp;rsquo;t seem to support Apple Silicon. Failing that, there are the more prosaic workarounds: texting it to a trusted friend (and maybe deleting afterwards), or emailing it to yourself. These solutions are inelegant to me - why should I send a file all the way to a Google or WhatsApp or Dropbox server just to move it 20 centimetres physically, within the same local network? There must be a better way!&lt;/p&gt;
+&lt;p&gt;(My previous solutions have also included using my knowledge base &lt;a href=&#34;https://joplinapp.org/&#34;&gt;Joplin&lt;/a&gt;, which also roundtrips to Dropbox [side point: another rainy day project is to use local sync most of the time for this, with a separate regular backup to Dropbox, but this does at least pose more difficult problems of consistency and resolving conflicts, etc], or else using the unpretentious &lt;a href=&#34;https://sharetxt.live&#34;&gt;https://sharetxt.live&lt;/a&gt;, built for this purpose, but sharing everything publicly unless you log in.)&lt;/p&gt;
+&lt;p&gt;Anyway, I&amp;rsquo;ve recently been writing long messages to send on my phone, so I want to edit them in Emacs and then send them to my phone clipboard. This is actually easy to solve with a local server (so the title of this post is wrong I guess&amp;hellip;), and I&amp;rsquo;m mainly just putting it here to remember the exact command. I use &lt;code&gt;buffer.txt&lt;/code&gt; for editing, then in &lt;code&gt;app.py&lt;/code&gt; I have:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;flask&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@app.route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;message&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;buffer.txt&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;br&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;join&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;readlines&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;lt;/p&amp;gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then launch with &lt;code&gt;flask --debug run --host=0.0.0.0 --port=5001&lt;/code&gt;. Explanations for the options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;debug&lt;/code&gt; is to auto-reload the server whenever one of the files in the directory changes (in this case &lt;code&gt;buffer.txt&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;host&lt;/code&gt; given explicitly is to make it available to other machines on the network, which is otherwise disabled as a security precaution. Python&amp;rsquo;s &lt;code&gt;http.server&lt;/code&gt; doesn&amp;rsquo;t restrict this, but it only allows files to be viewed and downloaded, not code execution.&lt;/li&gt;
+&lt;li&gt;Explicit port is only needed because the default, 5000, is used by Apple for some dumb service of its own (&lt;code&gt;AirPlay Receiver&lt;/code&gt;, whatever that is).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then the text is accessible to any device connected to the local network at &lt;code&gt;http://&amp;lt;internal IP address&amp;gt;:5001&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Editing an Android App</title>
       <link>http://lordgrenville.github.io/posts/android/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
@@ -27,18 +54,6 @@ solution greater than the frustration of the journey.&lt;/p&gt;
 &lt;li&gt;Uninstall the old version, and then &lt;code&gt;adb install&lt;/code&gt;. (You&amp;rsquo;ll lose your old settings, this way, so be ready to restore them.)&lt;/li&gt;
 &lt;li&gt;If you want to distribute your app to other people via the Play Store, you&amp;rsquo;re beyond the scope of this post!&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Insight Without Prediction?</title>
-      <link>http://lordgrenville.github.io/posts/prediction/</link>
-      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://lordgrenville.github.io/posts/prediction/</guid>
-      <description>&lt;p&gt;
-discussion about intelligence on USSR - is it worth anything?
-Popper&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<script data-goatcounter="https://lordgrenville.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<title>Frivolous Musings - Easy Things that are Hard</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Something that should be easy but weirdly isn&rsquo;t is sharing text or files between two of my devices, say a laptop and a phone. There are lots of sometime solutions for this - if you have a Macbook and an iPhone on the same account, you have a shared clipboard, and KDE Connect is also designed to solve this, but unfortunately its support for macOS is experimental and doesn&rsquo;t seem to support Apple Silicon. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/server/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/server/">Easy Things that are Hard</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>Something that should be easy but weirdly isn&rsquo;t is sharing text or files between two of my devices, say a laptop and a phone. There are lots of sometime solutions for this - if you have a Macbook and an iPhone on the same account, you have a shared clipboard, and <a href="https://kdeconnect.kde.org/">KDE Connect</a> is also designed to solve this, but unfortunately its support for macOS is <a href="https://binary-factory.kde.org/view/MacOS/job/kdeconnect-kde_Nightly_macos/">experimental</a> and doesn&rsquo;t seem to support Apple Silicon. Failing that, there are the more prosaic workarounds: texting it to a trusted friend (and maybe deleting afterwards), or emailing it to yourself. These solutions are inelegant to me - why should I send a file all the way to a Google or WhatsApp or Dropbox server just to move it 20 centimetres physically, within the same local network? There must be a better way!</p>
+<p>(My previous solutions have also included using my knowledge base <a href="https://joplinapp.org/">Joplin</a>, which also roundtrips to Dropbox [side point: another rainy day project is to use local sync most of the time for this, with a separate regular backup to Dropbox, but this does at least pose more difficult problems of consistency and resolving conflicts, etc], or else using the unpretentious <a href="https://sharetxt.live">https://sharetxt.live</a>, built for this purpose, but sharing everything publicly unless you log in.)</p>
+<p>Anyway, I&rsquo;ve recently been writing long messages to send on my phone, so I want to edit them in Emacs and then send them to my phone clipboard. This is actually easy to solve with a local server (so the title of this post is wrong I guess&hellip;), and I&rsquo;m mainly just putting it here to remember the exact command. I use <code>buffer.txt</code> for editing, then in <code>app.py</code> I have:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.route</span><span class="p">(</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">message</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;buffer.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;&lt;p&gt;</span><span class="si">{</span><span class="s1">&#39;&lt;br&gt;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span><span class="si">}</span><span class="s2">&lt;/p&gt;&#34;</span>
+</span></span></code></pre></div><p>And then launch with <code>flask --debug run --host=0.0.0.0 --port=5001</code>. Explanations for the options:</p>
+<ul>
+<li><code>debug</code> is to auto-reload the server whenever one of the files in the directory changes (in this case <code>buffer.txt</code>)</li>
+<li><code>host</code> given explicitly is to make it available to other machines on the network, which is otherwise disabled as a security precaution. Python&rsquo;s <code>http.server</code> doesn&rsquo;t restrict this, but it only allows files to be viewed and downloaded, not code execution.</li>
+<li>Explicit port is only needed because the default, 5000, is used by Apple for some dumb service of its own (<code>AirPlay Receiver</code>, whatever that is).</li>
+</ul>
+<p>Then the text is accessible to any device connected to the local network at <code>http://&lt;internal IP address&gt;:5001</code>.</p>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/android/?ref=footer">« Editing an Android App</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>
