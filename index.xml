@@ -8,6 +8,19 @@
     <language>en-za</language>
     <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Deadweight</title>
+      <link>http://lordgrenville.github.io/posts/deadweight/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/deadweight/</guid>
+      <description>&lt;p&gt;I was listening to a podcast about the topic of politician&amp;rsquo;s salaries, which I think are too high almost everywhere because of the obvious, but hard to mitigate, moral hazard issue. Maybe it&amp;rsquo;s best just to think of money wasted on inflated salaries as an inevitable extra tax that pays for political stability? But just for fun, let&amp;rsquo;s pretend the issue was managed fairly and consider how to handle one aspect: differentiation.&lt;/p&gt;
+&lt;p&gt;Clearly there are some parliamentarians who accomplish a lot and others who barely show up, despite the paucity of hours their office is open in general. Ideally we would condition pay on performance, but how would we measure this? One obviously bad metric is number of laws passed: too easy to game. (The more libertarian-minded might prefer number of regulations removed, but you have the same issue here.) And even if you &lt;em&gt;could&lt;/em&gt; measure performance accurately, different citizens want different things: if the pro-X politician passes lots of X laws, the pro-X citizens are happy for her salary to be higher, but not the anti-X ones.&lt;/p&gt;
+&lt;p&gt;I considered suggesting simple attendance as a metric. Just &lt;em&gt;show up&lt;/em&gt;, you know? And maybe check your phone at the door so you have to actually participate. What bad behaviour might this encourage? But on second thought, the politicians who don&amp;rsquo;t care enough to show up might actually be more harm than good if forced to participate. Paying the bad people to stay out of the way might be better than making them show up and having them get in the way of people that are getting things done. In a similar vein, the role of &amp;ldquo;Minister without Portfolio&amp;rdquo; has mostly been eliminated due to public mockery, but the result is that now some sort of portfolio is hacked together from other offices in order to give the redundant minister some responsibilities, resulting in added layers of bureaucracy and less efficiency. The Minister without Portfolio would be better for the public. Once again, just paying the deadweight tax seems the only way to go.&lt;/p&gt;
+&lt;p&gt;(Had Israel in mind, but applies to a lot of countries.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Easy Things that are Hard</title>
       <link>http://lordgrenville.github.io/posts/server/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
