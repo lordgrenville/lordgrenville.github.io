@@ -8,6 +8,45 @@
     <language>en-za</language>
     <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>&#34;Prestige&#34; in Art and Hobbies</title>
+      <link>http://lordgrenville.github.io/posts/prestige/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/prestige/</guid>
+      <description>&lt;p&gt;
+Scott Alexander &lt;a href=&#34;https://astralcodexten.substack.com/p/highlights-from-the-comments-on-nerds&#34;&gt;has a post&lt;/a&gt; about nerds and hipsters and &amp;#34;authentically&amp;#34; liking stuff and what makes art actually &amp;#34;good&amp;#34;. I&amp;#39;ve been interested in this topic for years and it doesn&amp;#39;t seem to have gotten much clearer, but I will try gather my scattered thoughts in this post.&lt;/p&gt;
+&lt;p&gt;
+Scott has an amusing classification of tiers of hobbies, or &amp;#34;things to build an identity around&amp;#34;, based on, I guess, perceived class signals. The top tier is some obscure intellectual area, such as &amp;#34;trans-finite 8-dimensional Hoffdorf groups&amp;#34;. Next is unusual art or music, or unusual political or philosophical views. Next is normal hobbies and mainstream mass culture. And the bottom tier is ubiquitous, obnoxious politics (&amp;#34;hating Trump/hating wokeness&amp;#34;), or &amp;#34;any kind of corporatized mass culture institution popular enough to have a marketing team&amp;#34;.&lt;/p&gt;
+&lt;p&gt;
+We have a vast array of leisure options and there is a corresponding anxiety about this. We are in the territory of class markers. It is easy to say, &amp;#34;stop worrying about what other people will think, just consume something you enjoy&amp;#34;, but a significant part of that consumption is a social act, a way to build an identity that will be respected and validated by our peers.&lt;/p&gt;
+&lt;p&gt;
+Scott touches on the question of value with the following &lt;em&gt;gedankenexperiment&lt;/em&gt;: let&amp;#39;s say you rewrote the film &lt;em&gt;Ant-Man&lt;/em&gt; into the language of ancient Welsh myth. Then you show ten real ancient Welsh myths plus that one to an intelligent, tasteful person. Would they recoil at the Ant-Man story, detecting something lacking the qualities of real mythology? (For the purpose of this experiment, we will assume that &lt;em&gt;Ant-Man&lt;/em&gt; is a bad movie.) If not, does this mean that there is no real difference between ancient myths and new stories, or do we say that the rewriting creates something new and better, or claim that the value of the myth is in its place in time and history, not just the story?&lt;/p&gt;
+&lt;p&gt;
+I personally would go with the last one, and am reminded of Walter Benjamin&amp;#39;s idea of &amp;#34;aura&amp;#34; in relation to mechanical copies of artworks. Images like the &lt;em&gt;Avignon Pietà&lt;/em&gt; are instantly viewable anywhere, but the original retains a value derived from its physical position and its interaction with generations of devout viewers. Today with AI models we can conjure infinite new works in the style of Picasso or Goya, and if the originals have value it is probably in the way they are enmeshed in this social context.&lt;/p&gt;
+&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34; alt=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34; title=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34; width=&#34;400px&#34;/&gt;
+&lt;p&gt;
+When it comes to the Marvel Cinematic Universe vs Welsh myth, or Bergman, I am split between two views, which I think both have some validity. The first is that a good story is a good story, and genre snobbery is just class signalling. Art is about entertainment, and modern mass cinema has distilled its essence. But in modern society success is mainly predicated on IQ, or the perception of it, and so people try find means to signal intellectual sophistication, by sitting through movies that are objectively less fun.&lt;/p&gt;
+&lt;p&gt;
+The other argument is that there are more sophisticated kinds of aesthetic pleasures than seeing people get blown up or fall in love. In this respect, the MCU films might be more sophisticated than, say, &lt;em&gt;Die Hard&lt;/em&gt;: they are self-aware, they bring up more complicated ethical dilemmas, they contain myriad hidden details planted for obsessive fans. But &lt;em&gt;Last Year at Marienbad&lt;/em&gt;, say, goes much further in challenging the viewer, and creates an experience that must be digested, and might have a more profound impact on the viewer. People talk about books that changed their lives: could this happen from a movie that aimed purely to entertain?&lt;/p&gt;
+&lt;p&gt;
+(Honestly, I consider pretty much all entertainment a waste of time, and think that if there is any value at all it is in something which describes the world in a way you hadn&amp;#39;t thought of that seems true. I remember as a high-schooler being very moved by&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a gusty shower wraps
+The grimy scraps
+Of withered leaves about your feet
+And newspapers from vacant lots;
+The showers beat
+On broken blinds and chimney-pots,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;or by fiction about human relationships that pointed out things about people that I hadn&amp;#39;t realised and that helped me be less obtuse in social situations.)&lt;/p&gt;
+&lt;p&gt;
+So, I guess I come down on the side of 50% pretentiousness, 50% real value. And it struck me that the program I am using to write this, &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Emacs&#34;&gt;GNU Emacs&lt;/a&gt;, is similar. I have to admit that I picked it up out of a desire to fake being a very talented developer. What the army calls &amp;#34;wasaḥ&amp;#34;, the appearance of seniority, like the private beating his beret to make it seem worn, or the student bending the spines of his new books. I wanted a 1337 h4x0r setup, the no-mouse, all command-line, lines of output scrolling nonstop. And for the most part this was a silly but harmless pastime. But I think I also did get something out of it. It is true that one could argue that Emacs has been replaced by IntelliJ, many of whose features are hard if not impossible to replicate in Emacs, and as a general purpose editor by VSCode, and that the nostalgia for it is just the prejudice of older developers who remember when IDEs were much worse. But I think that using Emacs has also made me a better developer. It taught me to be better at reading documentation and asking for help in a way that would get an answer; it gave me some practice writing Lisp code; it made me learn the fundamentals of some of my tools when trying to integrate them with Emacs because they don&amp;#39;t &amp;#34;just work&amp;#34; out of the box. So 50% pretentiousness, 50% real value.&lt;/p&gt;
+&lt;p&gt;
+And would I ever have switched into tech if society hadn&amp;#39;t decided that it had higher status than it did when I as a high schooler chose not to take any coding classes? Being totally honest - probably not.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Deadweight</title>
       <link>http://lordgrenville.github.io/posts/deadweight/</link>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
@@ -85,14 +124,34 @@ solution greater than the frustration of the journey.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;&lt;strong&gt;Is capitalism more conducive than communism to human nature?&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;(Firstly, this is an old debate, between Hobbes and Rousseau.)
-&lt;label for=&#34;marginnote-7666d4b74b76fb655532a0499c307e7e-0&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-&lt;input type=&#34;checkbox&#34; id=&#34;marginnote-7666d4b74b76fb655532a0499c307e7e-0&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;p&gt;(Firstly, this is an old debate, between Hobbes and Rousseau.)&lt;/p&gt;
+&lt;p&gt;&amp;lt;label
+for=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-0&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⊕
+&lt;/label&gt;
+&amp;lt;input
+type=&amp;ldquo;checkbox&amp;rdquo;
+id=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-0&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;
+/&amp;gt;
 &lt;span class=&#34;marginnote&#34;&gt;&lt;img src=&#34;https://pyxis.nymag.com/v1/imgs/e98/60b/54adc00b2464e4d121017900c37924b19a-06-nicholas-cage.rsquare.w190.jpg&#34; alt=&#34;Nicolas Cage&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I don&amp;rsquo;t believe this is true, but I do believe that communism &lt;em&gt;doesn&amp;rsquo;t scale&lt;/em&gt; because as the group grows, the likelihood of bad actors increases, and bad actors destroy the trust needed for a communist society to thrive.
-&lt;label for=&#34;marginnote-7666d4b74b76fb655532a0499c307e7e-1&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-&lt;input type=&#34;checkbox&#34; id=&#34;marginnote-7666d4b74b76fb655532a0499c307e7e-1&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t believe this is true, but I do believe that communism &lt;em&gt;doesn&amp;rsquo;t scale&lt;/em&gt; because as the group grows, the likelihood of bad actors increases, and bad actors destroy the trust needed for a communist society to thrive.&lt;/p&gt;
+&lt;p&gt;&amp;lt;label
+for=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-1&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⊕
+&lt;/label&gt;
+&amp;lt;input
+type=&amp;ldquo;checkbox&amp;rdquo;
+id=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-1&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;
+/&amp;gt;
 &lt;span class=&#34;marginnote&#34;&gt;Keep this guy out of your commune&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;For this reason I think that it tends to work at small scale, like the &lt;em&gt;kibbutz&lt;/em&gt; movement or student dorm co-ops. Say I live on a &lt;em&gt;kibbutz&lt;/em&gt; and am a software engineer at Google. I put my salary into the pot, so does my neighbour the poet. At the end of year one we have a big surplus. In year two one of the members is diagnosed with a medical condition requiring expensive treatment, but luckily the surplus covers it. In year three we have grown, and by the end of the year there is little surplus left, despite the sick member having stabilised and not requiring new treatments. Upon inspection we discover that one new member, Bob, fraudulently claimed for some expenses related to renovations, spending the money on cars he sold on the side. We kick him out, but I still feel resentful. While my colleagues at Google are living it up, I am leading a modest and idealistic lifestyle, just so someone can steal or mismanage the money?!&lt;/p&gt;
 &lt;p&gt;This is a miniature; but we can well imagine that a Ukrainian farmer might not feel well-disposed towards the Workers&amp;rsquo; Republic after &lt;a href=&#34;https://en.wikipedia.org/wiki/Holodomor&#34;&gt;being starved&lt;/a&gt; (historians disagree over whether it was intentional or if Stalin just didn&amp;rsquo;t care, but there&amp;rsquo;s not much difference for our purposes.) The Russian Empire was a vast mix of ethnicities, languages and religions, who never had much of a shared basis for trust; that is the worst possible situation in which to build a communist society.&lt;/p&gt;
 &lt;p&gt;So in sum what I believe is that it is &amp;ldquo;against human nature&amp;rdquo; only in the sense that some people are bad; and in a situation with bad people capitalism works better, since it requires less trust. In small groups of decent people it does work. I strive to make the world better; in the interim, capitalism is a Band-Aid, not a panacea.&lt;/p&gt;
@@ -977,9 +1036,20 @@ banged it in the oven. A brave new world.&lt;/p&gt;
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys on the right. &lt;label for=&#34;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-&lt;input type=&#34;checkbox&#34; id=&#34;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&#34; class=&#34;margin-toggle&#34;/&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys on the right.
+&amp;lt;label
+for=&amp;ldquo;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⊕
+&lt;/label&gt;
+&amp;lt;input
+type=&amp;ldquo;checkbox&amp;rdquo;
+id=&amp;ldquo;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&amp;rdquo;
+class=&amp;ldquo;margin-toggle&amp;rdquo;
+/&amp;gt;
 &lt;span class=&#34;marginnote&#34;&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/Aedes_Albopictus.jpg&#34; alt=&#34;Aedes Albopictus (public domain image via the Centre for Disease Control)&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Googling mosquitoes with zebra-striped abdomens reveals that this is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Aedes_albopictus&#34;&gt;tiger mosquito&lt;/a&gt;, an aggressive invader from SE Asia. Ranked as one of the hundred worst invasive species, it originally spread on packing crates and has penetrated most of the world, first being seen in Israel in 2003. And besides for worse things, such as being disease vectors, they are unusually awful pests: they hunt by day, unlike regular mozzies, and can easily adapt to living in almost any human habitat, not needing a humid bog. I can testify to their peculiarly aggressive nature, not minding being brushed away or swatted at, persisting until finding blood.&lt;/p&gt;
 &lt;p&gt;One of the side-effects of globalisation is the cross-pollination of nonhuman species all over the world, and simple Darwinism makes it likely that the strongest contenders from foreign environments will quickly take over many others (note the invasive Indian Mynahs and crows so prevalent here). It seems inevitable that this will result in a significant reduction in biodiversity. (The WWF claimed &lt;a href=&#34;https://qz.com/1443473/wwf-living-planet-report-says-humans-wiped-out-60-of-animals-since-1970/&#34;&gt;in a report this week&lt;/a&gt; that 60% of species had been wiped out since 1970.) This seems unpreventable, hard to track, and there might even be some unanticipated positive consequences. But it is a remarkable phenomenon.&lt;/p&gt;
 &lt;hr&gt;
