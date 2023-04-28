@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "hugo-tufte.min.css",
-	"sourceRoot": "/Users/josh/Documents/dev/blog/lordgrenville_hugo",
+	"sourceRoot": "/Users/josh/Documents/dev/hugo_blog_source",
 	"sources": [
 		"themes/tufte/assets/scss/hugo-tufte.scss",
 		"themes/tufte/assets/scss/vendor/tufte.scss",
