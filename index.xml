@@ -22,13 +22,34 @@
 
 
 
-&lt;div class=&#34;center&#34;&gt;
-  &lt;img
-    src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34;
-    alt=&#34;&#34;
-    decoding=&#34;async&#34;
-  /&gt;
-&lt;/div&gt;
+  
+    &lt;figure  class=&#34;class param&#34;&gt;
+  
+
+
+
+  &lt;label for=&#34;mn-export-import&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;mn-export-import&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  &lt;strong&gt;Pietà of Villeneuve-lès-Avignon &lt;/strong&gt;
+  Oil on wood, 163cm x 219cm
+  &lt;a href=&#34;https://en.wikipedia.org/wiki/Enguerrand_Quarton&#34;&gt;
+  Enguerrand Quarton
+  &lt;/a&gt;
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34; alt=&#34;Avignon Pieta&#34;&gt;
+  
+
+
+
+&lt;/figure&gt;
+
 
 &lt;p&gt;When it comes to the Marvel Cinematic Universe vs Welsh myth, or Bergman, I am split between two views, which I think both have some validity. The first is that a good story is a good story, and genre snobbery is just class signalling. Art is about entertainment, and modern mass cinema has distilled its essence. But in modern society success is mainly predicated on IQ, or the perception of it, and so people try find means to signal intellectual sophistication, by sitting through movies that are objectively less fun.&lt;/p&gt;
 &lt;p&gt;The other argument is that there are more sophisticated kinds of aesthetic pleasures than seeing people get blown up or fall in love. In this respect, the MCU films might be more sophisticated than, say, &lt;em&gt;Die Hard&lt;/em&gt;: they are self-aware, they bring up more complicated ethical dilemmas, they contain myriad hidden details planted for obsessive fans. But &lt;em&gt;Last Year at Marienbad&lt;/em&gt;, say, goes much further in challenging the viewer, and creates an experience that must be digested, and might have a more profound impact on the viewer. People talk about books that changed their lives: could this happen from a movie that aimed purely to entertain?&lt;/p&gt;
@@ -125,35 +146,35 @@ solution greater than the frustration of the journey.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;&lt;strong&gt;Is capitalism more conducive than communism to human nature?&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;(Firstly, this is an old debate, between Hobbes and Rousseau.)&lt;/p&gt;
-&lt;p&gt;&amp;lt;label
-for=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-0&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⊕
-&lt;/label&gt;
-&amp;lt;input
-type=&amp;ldquo;checkbox&amp;rdquo;
-id=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-0&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;
-/&amp;gt;
-&lt;span class=&#34;marginnote&#34;&gt;&lt;img src=&#34;https://pyxis.nymag.com/v1/imgs/e98/60b/54adc00b2464e4d121017900c37924b19a-06-nicholas-cage.rsquare.w190.jpg&#34; alt=&#34;Nicolas Cage&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I don&amp;rsquo;t believe this is true, but I do believe that communism &lt;em&gt;doesn&amp;rsquo;t scale&lt;/em&gt; because as the group grows, the likelihood of bad actors increases, and bad actors destroy the trust needed for a communist society to thrive.&lt;/p&gt;
-&lt;p&gt;&amp;lt;label
-for=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-1&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⊕
-&lt;/label&gt;
-&amp;lt;input
-type=&amp;ldquo;checkbox&amp;rdquo;
-id=&amp;ldquo;marginnote-7666d4b74b76fb655532a0499c307e7e-1&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;
-/&amp;gt;
-&lt;span class=&#34;marginnote&#34;&gt;Keep this guy out of your commune&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;For this reason I think that it tends to work at small scale, like the &lt;em&gt;kibbutz&lt;/em&gt; movement or student dorm co-ops. Say I live on a &lt;em&gt;kibbutz&lt;/em&gt; and am a software engineer at Google. I put my salary into the pot, so does my neighbour the poet. At the end of year one we have a big surplus. In year two one of the members is diagnosed with a medical condition requiring expensive treatment, but luckily the surplus covers it. In year three we have grown, and by the end of the year there is little surplus left, despite the sick member having stabilised and not requiring new treatments. Upon inspection we discover that one new member, Bob, fraudulently claimed for some expenses related to renovations, spending the money on cars he sold on the side. We kick him out, but I still feel resentful. While my colleagues at Google are living it up, I am leading a modest and idealistic lifestyle, just so someone can steal or mismanage the money?!&lt;/p&gt;
+&lt;p&gt;(Firstly, this is an old debate, between Hobbes and Rousseau.)
+
+
+
+
+
+  &lt;label for=&#34;cage&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;cage&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+    
+    &lt;img src=&#34;https://pyxis.nymag.com/v1/imgs/e98/60b/54adc00b2464e4d121017900c37924b19a-06-nicholas-cage.rsquare.w190.jpg&#34; alt=&#34;Nicolas Cage&#34;&gt;
+    
+  
+
+  &lt;strong&gt;Nicolas Cage &lt;/strong&gt;
+  Keep this guy out of your commune
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+
+
+
+I don&amp;rsquo;t believe this is true, but I do believe that communism &lt;em&gt;doesn&amp;rsquo;t scale&lt;/em&gt; because as the group grows, the likelihood of bad actors increases, and bad actors destroy the trust needed for a communist society to thrive.
+For this reason I think that it tends to work at small scale, like the &lt;em&gt;kibbutz&lt;/em&gt; movement or student dorm co-ops. Say I live on a &lt;em&gt;kibbutz&lt;/em&gt; and am a software engineer at Google. I put my salary into the pot, so does my neighbour the poet. At the end of year one we have a big surplus. In year two one of the members is diagnosed with a medical condition requiring expensive treatment, but luckily the surplus covers it. In year three we have grown, and by the end of the year there is little surplus left, despite the sick member having stabilised and not requiring new treatments. Upon inspection we discover that one new member, Bob, fraudulently claimed for some expenses related to renovations, spending the money on cars he sold on the side. We kick him out, but I still feel resentful. While my colleagues at Google are living it up, I am leading a modest and idealistic lifestyle, just so someone can steal or mismanage the money?!&lt;/p&gt;
 &lt;p&gt;This is a miniature; but we can well imagine that a Ukrainian farmer might not feel well-disposed towards the Workers&amp;rsquo; Republic after &lt;a href=&#34;https://en.wikipedia.org/wiki/Holodomor&#34;&gt;being starved&lt;/a&gt; (historians disagree over whether it was intentional or if Stalin just didn&amp;rsquo;t care, but there&amp;rsquo;s not much difference for our purposes.) The Russian Empire was a vast mix of ethnicities, languages and religions, who never had much of a shared basis for trust; that is the worst possible situation in which to build a communist society.&lt;/p&gt;
 &lt;p&gt;So in sum what I believe is that it is &amp;ldquo;against human nature&amp;rdquo; only in the sense that some people are bad; and in a situation with bad people capitalism works better, since it requires less trust. In small groups of decent people it does work. I strive to make the world better; in the interim, capitalism is a Band-Aid, not a panacea.&lt;/p&gt;
 </description>
@@ -1038,19 +1059,32 @@ banged it in the oven. A brave new world.&lt;/p&gt;
       
       <guid>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys on the right.
-&amp;lt;label
-for=&amp;ldquo;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⊕
-&lt;/label&gt;
-&amp;lt;input
-type=&amp;ldquo;checkbox&amp;rdquo;
-id=&amp;ldquo;marginnote-1efa3ae6e2edb8b9846c9f2f1f3c3eed-0&amp;rdquo;
-class=&amp;ldquo;margin-toggle&amp;rdquo;
-/&amp;gt;
-&lt;span class=&#34;marginnote&#34;&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/Aedes_Albopictus.jpg&#34; alt=&#34;Aedes Albopictus (public domain image via the Centre for Disease Control)&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+    
+    &lt;img src=&#34;http://lordgrenville.github.io/img/Aedes_Albopictus.jpg&#34; alt=&#34;mosquito&#34;&gt;
+    
+  
+
+  &lt;strong&gt;Aedes Albopictus &lt;/strong&gt;
+  
+  
+  Public domain image via the Centre for Disease Control
+  
+
+  &lt;/span&gt;
+
+
+
+
+&lt;/p&gt;
 &lt;p&gt;Googling mosquitoes with zebra-striped abdomens reveals that this is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Aedes_albopictus&#34;&gt;tiger mosquito&lt;/a&gt;, an aggressive invader from SE Asia. Ranked as one of the hundred worst invasive species, it originally spread on packing crates and has penetrated most of the world, first being seen in Israel in 2003. And besides for worse things, such as being disease vectors, they are unusually awful pests: they hunt by day, unlike regular mozzies, and can easily adapt to living in almost any human habitat, not needing a humid bog. I can testify to their peculiarly aggressive nature, not minding being brushed away or swatted at, persisting until finding blood.&lt;/p&gt;
 &lt;p&gt;One of the side-effects of globalisation is the cross-pollination of nonhuman species all over the world, and simple Darwinism makes it likely that the strongest contenders from foreign environments will quickly take over many others (note the invasive Indian Mynahs and crows so prevalent here). It seems inevitable that this will result in a significant reduction in biodiversity. (The WWF claimed &lt;a href=&#34;https://qz.com/1443473/wwf-living-planet-report-says-humans-wiped-out-60-of-animals-since-1970/&#34;&gt;in a report this week&lt;/a&gt; that 60% of species had been wiped out since 1970.) This seems unpreventable, hard to track, and there might even be some unanticipated positive consequences. But it is a remarkable phenomenon.&lt;/p&gt;
 &lt;hr&gt;
