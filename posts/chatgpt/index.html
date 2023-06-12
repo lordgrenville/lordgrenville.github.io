@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<script data-goatcounter="https://lordgrenville.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<title>Frivolous Musings - ChatGPT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="The world is split about ChatGPT, and I&#39;ll throw in my two pennies. Firstly: I am something of a hater, for technological and philosophical reasons. The idea that just taking a statistical next-word maximiser and scaling the hell out of it leads to eerily good results doesn&#39;t make sense, and ChatGPT is better than it has, in my mind, any right to be. That of course does make me doubt myself and wonder what I am missing. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/chatgpt/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/chatgpt/">ChatGPT</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>
+The world is split about ChatGPT, and I&#39;ll throw in my two pennies. Firstly: I am something of a hater, for technological and philosophical reasons. The idea that just taking a statistical next-word maximiser and scaling the hell out of it leads to eerily good results doesn&#39;t make sense, and ChatGPT is better than it has, in my mind, any right to be. That of course does make me doubt myself and wonder what I am missing. I am by temperament a late adopter and dismissive of hype. But I have to acknowledge that it is possible that ChatGPT will completely change the world and/or make me and all knowledge workers obsolete and/or destroy humanity. I just don&#39;t currently think it likely. (I don&#39;t worry about this in any case, because this is an &#34;everyone problem&#34; so I rely on the other people who are busy worrying about it.)</p>
+<p>
+For a while I refused to try it (or CoPilot, etc). It seemed like a gimmick and I didn&#39;t think it would save me time. But under some pressure from colleagues, and an interest in challenging my prejudices, I have been giving it a shot lately.</p>
+<p>
+Often the output is useless. For example, I needed to write an SQL query which filters <code>WHERE ID IN (long list of ids)</code>, where the list is much longer than the maximum character limit allowed by the SQL implementation I&#39;m querying. So I wanted to write a Python function to take in a query, list of ids, and character limit, and return a list of queries below the maximum length and containing each id, only once. This seems trivial but annoying so I considered it a good task for ChatGPT. It gave me a solution that had a few obvious errors, but once I fixed them I discovered that there was also at least one non-obvious error, so at that point I gave up and just did it myself.</p>
+<p>
+After a couple of experiences like that, I did finally find something that ChatGPT was helpful with. I wanted an SQLite function that was the equivalent of <code>lstrip</code> in Python. I couldn&#39;t find it by searching the web, although I did find something which worked for removing a single character (combining <code>INSTR</code> and <code>SUBSTR</code>). After prodding ChatGPT I discovered <code>LTRIM</code>, which I hadn&#39;t been able to find through Google-fu, so one point for ChatGPT.</p>
+<p>
+So I think that it can be useful. I was going to say that it is like a better version of Google - surfacing information fairly effectively and with some added polish - but it is also worse in some ways than Google, because since Google shows you the source of the information, you can assess its quality, whereas ChatGPT lies with equal confidence. I think it is better to say that it is a <em>generative Google</em> - think of it as generating something in the same general zip code of the truth. It can be helpful for brainstorming or to get you unstuck, but its output is more poetry than science.</p>
+<p>
+People who learned to program in previous generations did it with heavy dead-tree books, which they read end-to-end. Search engines and Stack Overflow changed the way people learn, for good and bad. There are things I do often in a language I know well which I still search for, because I don&#39;t bother to remember it since it&#39;s so easy to reference online. (Example: the syntax to flatten a nested list in Python - <code>[item for sublist in l for item in sublist]</code>, which I always look up <a href="https://stackoverflow.com/a/952952/6220759">here</a>.) There is value to the old way - a deeper knowledge of the abilities of the tool you are using, knowing to use capabilities you wouldn&#39;t have guessed to search for, the ability to program where you don&#39;t have an internet connection - but there is also probably some value in the new ways, too. Tools like IDEs and autocomplete free up the human brain for working faster and more creatively, and it is possible that AI assistants will generate snippets together with a user in the future, widening the circle of entry-level coders, and improving the productivity of experienced coders. Or maybe this is an energy-burning hype trap that has already hit its limits and will soon fade away. Or maybe it will wipe us all out. Only time will tell.</p>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/prestige/?ref=footer">«   &#34;Prestige&#34; in Art and Hobbies
+  </a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>
