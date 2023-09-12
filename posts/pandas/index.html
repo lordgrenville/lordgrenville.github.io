@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<script data-goatcounter="https://lordgrenville.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<title>Frivolous Musings - Monkey-patching Pandas</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="A common catch for Pandas users is that the default DataFrame.to_csv option is index=True. Indices are often significant in Pandas, but very often the index is merely a range of integers from $0..n$, and adds no new information. You can see some expressions of annoyance about this in this thread, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a default of checking if the index is non-standard and saving it in this case. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/pandas/" />
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
+
+
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
+  <h2>Some thoughts on politics/lit/tech/life itself </h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+  <hr />
+</header>
+
+    <section>
+  
+  <h1 class="content-title">
+    
+    <a href="/posts/pandas/">Monkey-patching Pandas</a>
+    
+  </h1>
+  
+    
+    
+  
+  </section>
+    
+
+    <section><p>
+A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but very often the index is merely a range of integers from $0..n$, and adds no new information. You can see some expressions of annoyance about this in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a default of checking if the index is non-standard and saving it in this case.</p>
+<p>
+Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched this in my <code>$HOME/.ipython/startup.py</code></p>
+<div class="src src-python">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+<p>
+(If you want this in regular Python there is also <code>$HOME/.pythonrc.py</code>.)</p>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/chatgpt/?ref=footer">« ChatGPT</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>
