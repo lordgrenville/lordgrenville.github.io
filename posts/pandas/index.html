@@ -6,11 +6,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="A common catch for Pandas users is that the default DataFrame.to_csv option is index=True. Indices are often significant in Pandas, but very often the index is merely a range of integers from $0..n$, and adds no new information. You can see some expressions of annoyance about this in this thread, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a default of checking if the index is non-standard and saving it in this case. ">
+    content="A common catch for Pandas users is that the default DataFrame.to_csv option is index=True. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in this thread, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case. ">
 <link rel="canonical" href="http://lordgrenville.github.io/posts/pandas/" />
 
 <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
   
+
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
@@ -72,18 +84,13 @@
   </section>
     
 
-    <section><p>
-A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but very often the index is merely a range of integers from $0..n$, and adds no new information. You can see some expressions of annoyance about this in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a default of checking if the index is non-standard and saving it in this case.</p>
-<p>
-Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched this in my <code>$HOME/.ipython/startup.py</code></p>
-<div class="src src-python">
+    <section><p>A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.</p>
+<p>Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched it in my <code>$HOME/.ipython/startup.py</code>. The key insight here for me was how to use <code>partial</code> with a class method; for this Python 3.4 added <code>partialmethod</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></span></span></code></pre></div>
-</div>
-<p>
-(If you want this in regular Python there is also <code>$HOME/.pythonrc.py</code>.)</p>
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span></code></pre></div><p>(If you want this in a regular Python REPL there is also <code>$HOME/.pythonrc.py</code>.)</p>
 </section>
     <section>
       <footer class="page-footer">
