@@ -13,8 +13,7 @@
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/responsae/</guid>
-      <description>&lt;p&gt;
-In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised is חזרה, revision.&lt;/p&gt;
+      <description>&lt;p&gt;In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised is חזרה, revision.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.11&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -23,16 +22,27 @@ In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised i
 &lt;p&gt;one can study only in a place that his heart desires (&lt;a href=&#34;https://www.sefaria.org.il/Avodah_Zarah.19a.5&#34;&gt;Avoda Zara 19a&lt;/a&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Memorisation is also difficult. As a result, many people spend years studying Torah but retain very little of it.&lt;/p&gt;
-&lt;p&gt;
-Recently a memorisation technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_Repetition&#34;&gt;spaced repetition&lt;/a&gt; has become popular. The basic idea behind it is memorising material that is spaced out over a long period of time is more effective than memorising a large chunk of material at once. The most common way of doing this is using flashcards, and some kind of system that tracks whether the student remembers the card or not, and shows the less remembered ones more frequently.&lt;/p&gt;
-&lt;p&gt;
-Flashcards are a lot of work, though. The website &lt;a href=&#34;https://ankitorah.com/anki-cards&#34;&gt;Anki Torah&lt;/a&gt; supplies decks of flashcards for this purpose, which one can combine with the free app &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;Anki&lt;/a&gt;. But there is still some tedium.&lt;/p&gt;
-&lt;p&gt;
-It occurred to me that reading Rabbinical responsae (שו״ת) is an alternative form of spaced repetition. Seeing the principles of the Talmud applied to real-world cases helps understand them better, and resolve their contradictions. The student who goes through one or two a day is exposed to a fairly random selection of topics spanning most of the Talmud. And this form of practice is much more engaging than going through flashcards.&lt;/p&gt;
-&lt;p&gt;
-There are downsides: one does not focus more on topics one remembers less. Less practical topics, such as Temple worship, are covered less. Some responsae are not related to the Talmud at all, and some can be very long and difficult to follow.&lt;/p&gt;
-&lt;p&gt;
-Still, this can be worth considering for those not up for Anki decks. Today I opened at random &lt;a href=&#34;https://he.m.wikisource.org/wiki/%D7%A9%D7%95%22%D7%AA_%D7%94%D7%A8%D7%90%22%D7%A9/%D7%9B%D7%9C%D7%9C_%D7%A1%D7%93&#34;&gt;this one&lt;/a&gt; which contains a great review of many topics in &lt;em&gt;Bava Kama&lt;/em&gt;. Topics one doesn&amp;#39;t know (in my case הנשבעים שלא בטענה) can be easily looked up, incorporating new learning with the revision.&lt;/p&gt;
+&lt;p&gt;Recently a memorisation technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_Repetition&#34;&gt;spaced repetition&lt;/a&gt; has become popular. The basic idea behind it is memorising material that is spaced out over a long period of time is more effective than memorising a large chunk of material at once. The most common way of doing this is using flashcards, and some kind of system that tracks whether the student remembers the card or not, and shows the less remembered ones more frequently.&lt;/p&gt;
+&lt;p&gt;Flashcards are a lot of work, though. The website &lt;a href=&#34;https://ankitorah.com/anki-cards&#34;&gt;Anki Torah&lt;/a&gt; supplies decks of flashcards for this purpose, which one can combine with the free app &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;Anki&lt;/a&gt;. But there is still some tedium.&lt;/p&gt;
+&lt;p&gt;It occurred to me that reading Rabbinical responsae (שו״ת) is an alternative form of spaced repetition. Seeing the principles of the Talmud applied to real-world cases helps understand them better, and resolve their contradictions. The student who goes through one or two a day is exposed to a fairly random selection of topics spanning most of the Talmud. And this form of practice is much more engaging than going through flashcards.&lt;/p&gt;
+&lt;p&gt;There are downsides: one does not focus more on topics one remembers less. Less practical topics, such as Temple worship, are covered less. Some responsae are not related to the Talmud at all, and some can be very long and difficult to follow.&lt;/p&gt;
+&lt;p&gt;Still, this can be worth considering for those not up for Anki decks. Today I opened at random &lt;a href=&#34;https://he.m.wikisource.org/wiki/%D7%A9%D7%95%22%D7%AA_%D7%94%D7%A8%D7%90%22%D7%A9/%D7%9B%D7%9C%D7%9C_%D7%A1%D7%93&#34;&gt;this one&lt;/a&gt; which contains a great review of many topics in &lt;em&gt;Bava Kama&lt;/em&gt;. Topics one doesn&amp;rsquo;t know (in my case הנשבעים שלא בטענה) can be easily looked up, incorporating new learning with the revision.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monkey-patching Pandas</title>
+      <link>http://lordgrenville.github.io/posts/pandas/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/pandas/</guid>
+      <description>&lt;p&gt;A common catch for &lt;a href=&#34;https://pandas.pydata.org/&#34;&gt;Pandas&lt;/a&gt; users is that the default &lt;code&gt;DataFrame.to_csv&lt;/code&gt; option is &lt;code&gt;index=True&lt;/code&gt;. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in &lt;a href=&#34;https://github.com/pandas-dev/pandas/issues/34576&#34;&gt;this thread&lt;/a&gt;, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.&lt;/p&gt;
+&lt;p&gt;Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched it in my &lt;code&gt;$HOME/.ipython/startup.py&lt;/code&gt;. The key insight here for me was how to use &lt;code&gt;partial&lt;/code&gt; with a class method; for this Python 3.4 added &lt;code&gt;partialmethod&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;functools&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;partialmethod&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_csv&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;partialmethod&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_csv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(If you want this in a regular Python REPL there is also &lt;code&gt;$HOME/.pythonrc.py&lt;/code&gt;.)&lt;/p&gt;
 </description>
     </item>
     
