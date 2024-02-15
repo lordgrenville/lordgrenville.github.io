@@ -72,14 +72,11 @@
   </section>
     
 
-    <section><p>
-I often use <code>SPC /</code> in <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> for <code>+default/search-project</code>. I also often use <code>C-x v ​~</code> for <code>vc-revision-other-window</code> to compare a file in another branch in version control. I noticed the other day while searching my project that it was finding a whole lot of matches in files I had compared with another branch, which look something like <code>file.h~staging~</code>. But I had closed them, so why were they still showing up?</p>
-<p>
-I looked at <code>+default/search-project</code>, and saw that it calls the related function in <a href="https://github.com/minad/vertico">Vertico</a> (the completion framework I use), which is basically just running a text search on the directory. So…maybe these files are still there? Yes - turns out <code>vc-revision-other-window</code> leaves behind the files it creates, so it doesn&#39;t need to check them out again if you need them again. (<a href="https://stackoverflow.com/a/49112657/6220759">Here</a> is a solution someone else came up with for this problem.)</p>
-<p>
-I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use <code>find</code> with a regex, which I could, but I just had to figure out that the regex needs to match the <em>whole</em> name, not just part of it. So my final result was:</p>
+    <section><p>I often use <code>SPC /</code> in <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> for <code>+default/search-project</code>. I also often use <code>C-x v ​~</code> for <code>vc-revision-other-window</code> to compare a file in another branch in version control. I noticed the other day while searching my project that it was finding a whole lot of matches in files I had compared with another branch, which look something like <code>file.h~staging~</code>. But I had closed them, so why were they still showing up?</p>
+<p>I looked at <code>+default/search-project</code>, and saw that it calls the related function in <a href="https://github.com/minad/vertico">Vertico</a> (the completion framework I use), which is basically just running a text search on the directory. So&hellip;maybe these files are still there? Yes - turns out <code>vc-revision-other-window</code> leaves behind the files it creates, so it doesn&rsquo;t need to check them out again if you need them again. (<a href="https://stackoverflow.com/a/49112657/6220759">Here</a> is a solution someone else came up with for this problem.)</p>
+<p>I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use <code>find</code> with a regex, which I could, but I just had to figure out that the regex needs to match the <em>whole</em> name, not just part of it. So my final result was:</p>
 <blockquote>
-<p><code class="verbatim">find . -regex &#34;.*\.~.*~$&#34; | xargs rm</code></p>
+<p><code>find . -regex &quot;.*\.~.*~&quot; | xargs rm</code></p>
 </blockquote>
 <p>(At some point in the future, I would like to make a function that will kill the temp buffer, close the window it opened, and delete the file.)</p>
 </section>
