@@ -6,8 +6,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
-    content="In general my view on podcasts is the shorter the better. So I really like Bloomberg View, which runs just over a minute and distills the essence of a longer (usually well thought-out) op-ed. (I guess by this logic the ideal podcast would be 0 seconds - very Cagean.)
-But it seems like the Berg is phasing this one out. It no longer appears on the website or on most podcast providers, and the RSS feed I had (from iTunes) on Podcast Addict (a truly excellent app) suddenly returned SSLHandshakeException: java. ">
+    content="In general my view on podcasts is the shorter the better. So I really
+like Bloomberg View, which
+runs just over a minute and distills the essence of a longer (usually
+well thought-out) op-ed. (I guess by this logic the ideal podcast would
+be 0 seconds - very Cagean.)
+But it seems like the Berg is phasing this one out. It no longer appears
+on the website or on most podcast providers, and the RSS feed I had
+(from iTunes) on Podcast
+Addict
+(a truly excellent app) suddenly returned
+SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+I emailed the developer and he promptly (shout-out Xavier! He really is
+awesome) explained that SSL cert verification in modern versions of
+Android is done by the device for all apps (except web browsers), so
+this error is not coming from inside the app. I confirmed that I hadn&rsquo;t
+accidentally disabled my trust of any previously accepted certificate,
+and he later showed me that the SSL cert for the RSS feed was indeed
+expired. ">
 <link rel="canonical" href="http://lordgrenville.github.io/posts/podcasts/" />
 
 <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">

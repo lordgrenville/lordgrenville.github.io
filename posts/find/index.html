@@ -76,8 +76,7 @@
 <p>I looked at <code>+default/search-project</code>, and saw that it calls the related function in <a href="https://github.com/minad/vertico">Vertico</a> (the completion framework I use), which is basically just running a text search on the directory. So&hellip;maybe these files are still there? Yes - turns out <code>vc-revision-other-window</code> leaves behind the files it creates, so it doesn&rsquo;t need to check them out again if you need them again. (<a href="https://stackoverflow.com/a/49112657/6220759">Here</a> is a solution someone else came up with for this problem.)</p>
 <p>I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use <code>find</code> with a regex, which I could, but I just had to figure out that the regex needs to match the <em>whole</em> name, not just part of it. So my final result was:</p>
 <blockquote>
-<p><code>find . -regex &quot;.*\.~.*~&quot; | xargs rm</code></p>
-</blockquote>
+<p><code>find . -regex &quot;.*\.~.*~$&quot; | xargs rm</code></p></blockquote>
 <p>(At some point in the future, I would like to make a function that will kill the temp buffer, close the window it opened, and delete the file.)</p>
 </section>
     <section>
@@ -91,6 +90,8 @@
     </div>
 
     <div class="next-post", style="display:inline-block;float:right;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/haftarot/?ref=footer">Haftorah Stats »</a>
       
     </div>
 

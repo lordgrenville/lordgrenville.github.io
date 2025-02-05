@@ -6,7 +6,157 @@
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Haftorah Stats</title>
+      <link>http://lordgrenville.github.io/posts/haftarot/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/haftarot/</guid>
+      <description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Background
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;The custom of reading a passage from the Prophets, the &lt;em&gt;haftorah&lt;/em&gt;, is ancient and obscure. The Talmud deals with it&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; but does not elaborate on the source or the reason for the custom. According to one early source&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-2&#34; href=&#34;#footnote-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, it is no less old than the custom of public Torah reading itself, traditionally held to have been instituted by Ezra.&lt;/p&gt;
+&lt;p&gt;
+This post will not shed any light on these questions, but instead answer a far simpler one: how are the haftarot of the annual cycle distributed between the different books of the Prophets? As &amp;#34;all are subject to luck, even the Torah scroll in the ark&amp;#34;&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-3&#34; href=&#34;#footnote-3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, which books are fortunate enough to be read more often than others?&lt;/p&gt;
+&lt;p&gt;
+To this end I put together a &lt;a href=&#34;https://github.com/lordgrenville/haftarot/blob/main/haftarot.csv&#34;&gt;table of the annual readings&lt;/a&gt; and did a quick data analysis&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-4&#34; href=&#34;#footnote-4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. For each book I calculated the number of &lt;em&gt;haftarot&lt;/em&gt; it has, number of chapters, and the ratio of the two (to give a sense of &lt;em&gt;haftorah&lt;/em&gt; frequency relative to size). My takeaways were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The biggest single source of haftarot is Yeshayahu. (With the שבע דנחמתא freshly behind us, this may not feel surprising!)&lt;/li&gt;
+&lt;li&gt;When measuring relative to size, Trei Asar as a whole is the largest (scoring 0.36), with multiple haftarot coming from Hoshea, Amos and Zecharia, while the books of Ovadia and Yona are read in their entirety. (Yoel contributes just a snippet at the end of the &lt;em&gt;haftorah&lt;/em&gt; of &lt;em&gt;Shabbos Shuva&lt;/em&gt;, while Nachum, Chavakuk, Tzafania and Chagai are entirely absent.)&lt;/li&gt;
+&lt;li&gt;However, if considered separately, both Malachi (0.67) and Melachim Alef (0.45) have higher scores.&lt;/li&gt;
+&lt;li&gt;If we take “Deutero-Isaiah” (ישיעהו השני&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-5&#34; href=&#34;#footnote-5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;) as an independent book, it is the largest single source of haftarot (15, scoring 0.58). In fact, the rest of Yeshayahu has a mere 3 haftarot, giving it the lowest score (0.08) of any book. (But one of these is the famous reading of &lt;em&gt;Shabbos Chazon&lt;/em&gt;, which surely counts for something…)&lt;/li&gt;
+&lt;li&gt;There are roughly twice as many haftarot from the (mostly non-narrative&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-6&#34; href=&#34;#footnote-6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;) Latter Prophets compared to the Early Prophets (50 vs 26). This is partly due to their greater length, and partly, I suspect, because it is harder to find thematic overlap between narrative prophecies and the weekly Torah portions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Results
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Book&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;Number of Haftarot&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;Number of Chapters&lt;/th&gt;
+&lt;th class=&#34;align-right&#34;&gt;Haftarot:Chapter ratio&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;תרי עשר&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;13&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;36&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.361&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;מלכים&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;13&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;45&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.289&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ישעיהו&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;18&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;66&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.273&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;יחזקאל&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;10&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;48&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.208&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ירמיהו&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;9&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;52&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.173&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;שופטים&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;3&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;21&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.143&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;שמואל&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;7&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;53&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.132&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;יהושע&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;3&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;24&lt;/td&gt;
+&lt;td class=&#34;align-right&#34;&gt;0.125&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Notes on Methodology
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I took the list of &lt;em&gt;haftarot&lt;/em&gt; from &lt;a href=&#34;https://www.shoresh.org.il/usersfiles/articlesdocs/parashot.pdf&#34;&gt;here&lt;/a&gt;. In cases where customs differ, I followed the Ashkenazi rite (there are only a few cases where different communities read from entirely different books). I included Rosh Chodesh and holiday readings, but not that of יום עצמאות. If a haftorah included parts from different books, I included only the main part of the reading.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Footnotes
+&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr class=&#34;footnotes-separatator&#34;&gt;
+&lt;div class=&#34;footnote-definitions&#34;&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;Megilla 31a&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-2&#34;&gt;&lt;a href=&#34;#footnote-reference-2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;Tosfos Rid (R’ Yeshaya MiTrani) in &lt;em&gt;Sefer HaMachria&lt;/em&gt; 31&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-3&#34;&gt;&lt;a href=&#34;#footnote-reference-3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;Zohar Bamidbar 134a&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-4&#34;&gt;&lt;a href=&#34;#footnote-reference-4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;Code and data to reproduce are available &lt;a href=&#34;https://github.com/lordgrenville/haftarot&#34;&gt;online&lt;/a&gt;. I will gratefully receive any corrections or suggestions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-5&#34;&gt;&lt;a href=&#34;#footnote-reference-5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;Chapters 40-66, which differ from the first part in both style and chronology&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnote-definition&#34;&gt;
+&lt;sup id=&#34;footnote-6&#34;&gt;&lt;a href=&#34;#footnote-reference-6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;
+&lt;div class=&#34;footnote-body&#34;&gt;
+&lt;p&gt;A generalisation: there are some narrative parts in the Latter Prophets (e.g. Yeshayahu 36, all of Yona), and some non-narrative parts in the Early Prophets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
     <item>
       <title>Cleaning up with find(1)</title>
       <link>http://lordgrenville.github.io/posts/find/</link>
@@ -17,8 +167,7 @@
 &lt;p&gt;I looked at &lt;code&gt;+default/search-project&lt;/code&gt;, and saw that it calls the related function in &lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt; (the completion framework I use), which is basically just running a text search on the directory. So&amp;hellip;maybe these files are still there? Yes - turns out &lt;code&gt;vc-revision-other-window&lt;/code&gt; leaves behind the files it creates, so it doesn&amp;rsquo;t need to check them out again if you need them again. (&lt;a href=&#34;https://stackoverflow.com/a/49112657/6220759&#34;&gt;Here&lt;/a&gt; is a solution someone else came up with for this problem.)&lt;/p&gt;
 &lt;p&gt;I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use &lt;code&gt;find&lt;/code&gt; with a regex, which I could, but I just had to figure out that the regex needs to match the &lt;em&gt;whole&lt;/em&gt; name, not just part of it. So my final result was:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;find . -regex &amp;quot;.*\.~.*~&amp;quot; | xargs rm&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;find . -regex &amp;quot;.*\.~.*~$&amp;quot; | xargs rm&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;(At some point in the future, I would like to make a function that will kill the temp buffer, close the window it opened, and delete the file.)&lt;/p&gt;
 </description>
     </item>
@@ -31,12 +180,10 @@
       <guid>http://lordgrenville.github.io/posts/responsae/</guid>
       <description>&lt;p&gt;In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised is חזרה, revision.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.10&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.10&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;But revision is hard. We are naturally more interested in novelty, and time is limited. It is more tempting to learn new topics, and after all&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;one can study only in a place that his heart desires (&lt;a href=&#34;https://www.sefaria.org.il/Avodah_Zarah.19a.5&#34;&gt;Avoda Zara 19a&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;one can study only in a place that his heart desires (&lt;a href=&#34;https://www.sefaria.org.il/Avodah_Zarah.19a.5&#34;&gt;Avoda Zara 19a&lt;/a&gt;)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Memorisation is also difficult. As a result, many people spend years studying Torah but retain very little of it.&lt;/p&gt;
 &lt;p&gt;Recently a memorisation technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_Repetition&#34;&gt;spaced repetition&lt;/a&gt; has become popular. The basic idea behind it is memorising material that is spaced out over a long period of time is more effective than memorising a large chunk of material at once. The most common way of doing this is using flashcards, and some kind of system that tracks whether the student remembers the card or not, and shows the less remembered ones more frequently.&lt;/p&gt;
 &lt;p&gt;Flashcards are a lot of work, though. The website &lt;a href=&#34;https://ankitorah.com/anki-cards&#34;&gt;Anki Torah&lt;/a&gt; supplies decks of flashcards for this purpose, which one can combine with the free app &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;Anki&lt;/a&gt;. But there is still some tedium.&lt;/p&gt;
@@ -130,8 +277,7 @@ The grimy scraps&lt;br&gt;
 Of withered leaves about your feet&lt;br&gt;
 And newspapers from vacant lots;&lt;br&gt;
 The showers beat&lt;br&gt;
-On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;or by fiction about human relationships that pointed out things about people that I hadn&amp;rsquo;t realised and that helped me be less obtuse in social situations.)&lt;/p&gt;
 &lt;p&gt;So, I guess I come down on the side of 50% pretentiousness, 50% real value. And it struck me that the program I am using to write this, &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Emacs&#34;&gt;GNU Emacs&lt;/a&gt;, is similar. I have to admit that I picked it up out of a desire to fake being a very talented developer. What the army calls &amp;ldquo;wasah&amp;rdquo;, the appearance of seniority, like the private beating his beret to make it seem worn, or the student bending the spines of his new books. I wanted a 1337 h4x0r setup, the no-mouse, all command-line, lines of output scrolling nonstop. And for the most part this was a silly but harmless pastime. But I think I also did get something out of it. It is true that one could argue that Emacs has been replaced by IntelliJ, many of whose features are hard if not impossible to replicate in Emacs, and as a general purpose editor by VSCode, and that the nostalgia for it is just the prejudice of older developers who remember when IDEs were much worse. But I think that using Emacs has also made me a better developer. It taught me to be better at reading documentation and asking for help in a way that would get an answer; it gave me some practice writing Lisp code; it made me learn the fundamentals of some of my tools when trying to integrate them with Emacs because they don&amp;rsquo;t &amp;ldquo;just work&amp;rdquo; out of the box. So 50% pretentiousness, 50% real value.&lt;/p&gt;
 &lt;p&gt;And would I ever have switched into tech if society hadn&amp;rsquo;t decided that it had higher status than it did when I as a high schooler chose not to take any coding classes? Being totally honest - probably not.&lt;/p&gt;
@@ -379,12 +525,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <description>&lt;p&gt;I recently asked a French friend why that country produces so many brilliant mathematicians and scientists - not really expecting a good answer. He replied that in France, being an academic or theoretician is seen as the most admirable position to aspire to, on a par with philosopher or artist. However, engineers and entrepreneurs are associated with far less prestige, which would roughly explain why so many of those scientists and mathematicians end up working for foreign companies.&lt;/p&gt;
 &lt;p&gt;It reminded me that when I was growing up, I thought of writers, historians, philosophers and other intellectuals as most worthy of respect, and assumed that I should want to do something similar when I was older, if I could afford it. It is possible that this is undergoing a sea-change, as the increased prominence of information technology and financial difficulties of media and academia increase the social capital (in Bourdieu&amp;rsquo;s term) associated with &amp;ldquo;STEM&amp;rdquo; subjects. Nonetheless, I was surprised to find a very bald expression of this idea in Stefan Zweig&amp;rsquo;s memoir &lt;em&gt;The World of Yesterday&lt;/em&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It is generally assumed that getting rich is a Jew’s true and typical aim in life. Nothing could be further from the truth. Getting rich, to a Jew, is only an interim stage, a means to his real end, by no means his aim in itself. The true desire of a Jew, his inbuilt ideal, is to rise to a higher social plane by becoming an intellectual. Even the most prosperous Jew would rather marry his daughter to an indigent intellectual than a merchant. This high regard for intellectuals runs through all classes of Jewish society, and the poorest pedlar who carries his pack through wind and weather will try to give at least one son the chance of studying at university, however great the sacrifices he must make, and will consider it an honour to the entire family that one of them is clearly regarded as an intellectual: a professor, a scholar, a musician. It is as if such a man’s achievements ennobled them all.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;It is generally assumed that getting rich is a Jew’s true and typical aim in life. Nothing could be further from the truth. Getting rich, to a Jew, is only an interim stage, a means to his real end, by no means his aim in itself. The true desire of a Jew, his inbuilt ideal, is to rise to a higher social plane by becoming an intellectual. Even the most prosperous Jew would rather marry his daughter to an indigent intellectual than a merchant. This high regard for intellectuals runs through all classes of Jewish society, and the poorest pedlar who carries his pack through wind and weather will try to give at least one son the chance of studying at university, however great the sacrifices he must make, and will consider it an honour to the entire family that one of them is clearly regarded as an intellectual: a professor, a scholar, a musician. It is as if such a man’s achievements ennobled them all.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Another expression of this I found in Tom Wolfe&amp;rsquo;s &lt;a href=&#34;https://www.esquire.com/news-politics/a12149389/robert-noyce-tom-wolfe/&#34;&gt;long, interesting &lt;em&gt;Esquire&lt;/em&gt; history&lt;/a&gt; of Bob Noyce (co-founder of Fairchild Semiconductor and Intel), discussing why so many early tech pioneers came from the Midwest and West Coast, rather than the traditional East Coast centres of intellectual brilliance:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Back east engineering was an unfashionable field. The East looked to Europe in matters of intellectual fashion, and in Europe the ancient aristocratic bias against manual labor lived on. Engineering was looked upon as nothing more than manual labor raised to the level of a science. There was &amp;ldquo;pure&amp;rdquo; science and there was engineering, which was merely practical. Back east engineers ranked, socially, below lawyers; doctors; Army colonels; Navy captains; English, history, biology, chemistry, and physics professors; and business executives.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Back east engineering was an unfashionable field. The East looked to Europe in matters of intellectual fashion, and in Europe the ancient aristocratic bias against manual labor lived on. Engineering was looked upon as nothing more than manual labor raised to the level of a science. There was &amp;ldquo;pure&amp;rdquo; science and there was engineering, which was merely practical. Back east engineers ranked, socially, below lawyers; doctors; Army colonels; Navy captains; English, history, biology, chemistry, and physics professors; and business executives.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -398,8 +542,7 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
 &lt;blockquote&gt;
 &lt;p&gt;Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.&lt;/p&gt;
 &lt;p&gt;Anything that&amp;rsquo;s invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.&lt;/p&gt;
-&lt;p&gt;Anything invented after you&amp;rsquo;re thirty-five is against the natural order of things.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Anything invented after you&amp;rsquo;re thirty-five is against the natural order of things.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This is applicable to a lot of things - politics, say. There&amp;rsquo;s a common stereotype that people become more conservative as they age. Logically we could see most people becoming more politically aware in their late teens/twenties, and then seeing those new politics as the way forward. As they become older, newer innovations just seem wrong. I think I recall Paul Krugman saying on a podcast that older members of the Federal Reserve are more opposed to keeping interest rates low, because they remember the high interest rates of the &amp;rsquo;70s. Younger members, who have never experienced high inflation, are more concerned about the labour market and willing to consider low rates in the longer term. Even though this seems like a simple, easily noticed cognitive bias, it can be hard to countermand.&lt;/p&gt;
 &lt;p&gt;In a more prosaic sense, I find as I get older that I am less and less interested in discovering new music. It isn&amp;rsquo;t that I think new music is less good; I just &lt;em&gt;know enough&lt;/em&gt; music! And likewise, to a lesser extent, with TV and movies: I have enough to get by, I don&amp;rsquo;t need any more. Of course one could make an effort to overcome this, by constantly exposing oneself to new stuff, it just takes work - there are plenty of people who keep up with new gadgets or music well into old age. But it doesn&amp;rsquo;t seem worth it to most people. Perhaps in the political sphere the effort is more worthwhile.&lt;/p&gt;
 </description>
@@ -426,8 +569,7 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <guid>http://lordgrenville.github.io/posts/pragmatism/</guid>
       <description>&lt;p&gt;In &lt;em&gt;The Will to Believe&lt;/em&gt; (&lt;em&gt;Is Life Worth Living?&lt;/em&gt;, IV), William James writes:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;I&amp;rsquo;ve come across a similar idea in &lt;a href=&#34;https://philosophybites.com/2014/03/david-papineau-on-philosophy-and-sport.html&#34;&gt;this podcast&lt;/a&gt;: that &lt;em&gt;the fact of believing in something&lt;/em&gt; makes it more likely to happen. This can be true in mountaineering (James&amp;rsquo; example), sport (as in the podcast), or in business, which I&amp;rsquo;ve always thought takes extraordinary self-belief: most businesses fail, so one has to wilfully ignore the laws of probability in order to start a new one, yet countless people do, and society benefits from their appetite for risk.&lt;/p&gt;
 &lt;p&gt;As someone who tends towards &amp;ldquo;rationalism&amp;rdquo; (using the term colloquially), I struggle to understand this impulse. How does one ignore reality and leap ahead into something, convincing oneself that is true? And, at what point should reality be allowed to once again influence one&amp;rsquo;s decision-making? The perenially loss-making business foolhardily propelled into an avalanche of red ink comes to mind.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/wework.jpg&#34; alt=&#34;Look before you leap?&#34;&gt;&lt;/p&gt;
@@ -728,8 +870,7 @@ joked afterward with Segrè, &amp;ldquo;I am getting rusty and old. I cannot
 follow the highbrow theory developed by Oppenheimer&amp;rsquo;s pupils anymore.
 I went to their seminar and was depressed by my inability to
 understand them. Only the last sentence cheered me up; it was: &amp;lsquo;and
-this is Fermi&amp;rsquo;s theory of beta decay.&amp;rsquo;&amp;rdquo; (p. 667)&lt;/p&gt;
-&lt;/blockquote&gt;
+this is Fermi&amp;rsquo;s theory of beta decay.&amp;rsquo;&amp;rdquo; (p. 667)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;If you&amp;rsquo;re familiar with Menachot 29b, you&amp;rsquo;ll see the parallel
 immediately. In case you don&amp;rsquo;t, I quote it here (&lt;a href=&#34;https://www.sefaria.org.il/Menachot.29b.4?lang=bi&amp;amp;with=all&amp;amp;lang2=en&#34;&gt;via
 Sefaria&lt;/a&gt;):&lt;/p&gt;
@@ -742,8 +883,7 @@ knowledge was deficient. When Rabbi Akiva arrived at the discussion of
 one matter, his students said to him: My teacher, from where do you
 derive this? Rabbi Akiva said to them: It is a &lt;em&gt;halakha&lt;/em&gt; transmitted
 to Moses from Sinai. When Moses heard this, his mind was put at ease,
-as this too was part of the Torah that he was to receive.&lt;/p&gt;
-&lt;/blockquote&gt;
+as this too was part of the Torah that he was to receive.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -1039,8 +1179,7 @@ arises. For if we ever achieve a language that has the power of
 expressing everything, then metaphor will no longer be possible. I
 would not say, in that case, my love is like a red, red rose, for love
 would have exploded into terms for its thousands of nuances, and
-applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
-&lt;/blockquote&gt;
+applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
     </item>
     
