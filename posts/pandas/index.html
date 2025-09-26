@@ -2,48 +2,38 @@
 <html lang="en-za"><head>
 <script data-goatcounter="https://lordgrenville.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<title>Frivolous Musings - Monkey-patching Pandas</title>
+<title>Monkey-patching Pandas - Frivolous Musings</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="A common catch for Pandas users is that the default DataFrame.to_csv option is index=True. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in this thread, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case. ">
 <link rel="canonical" href="http://lordgrenville.github.io/posts/pandas/" />
 
-<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
-  
 
-    
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script defer>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
-            }
-        };
-    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
 
 
 
 <link rel="stylesheet" href="/css/hugo-tufte.min.css">
 
-<link rel="stylesheet"  href="/css/hugo-tufte-override.css">
 
 
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
 <body >
@@ -51,9 +41,9 @@
 <div id="layout" class="pure-g">
   <article class="pure-u-1">
     <header class="brand">
-  <a href="http://lordgrenville.github.io/"><h1>Frivolous Musings</h1></a>
-  <h2>Some thoughts on politics/lit/tech/life itself </h2>
-  <nav class="menu">
+<h1>Frivolous Musings</h1>
+<p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
+<nav class="menu">
     <ul>
     
         <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
@@ -67,21 +57,12 @@
     </ul>
 </nav>
 
-  <hr />
+<hr />
 </header>
 
     <section>
-  
-  <h1 class="content-title">
-    
-    <a href="/posts/pandas/">Monkey-patching Pandas</a>
-    
-  </h1>
-  
-    
-    
-  
-  </section>
+<h1 class="content-title">Monkey-patching Pandas</h1></section>
+
     
 
     <section><p>A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.</p>

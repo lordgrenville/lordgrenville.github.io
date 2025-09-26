@@ -6,7 +6,108 @@
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding an item to the Doom modeline</title>
+      <link>http://lordgrenville.github.io/posts/doom_modeline/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/doom_modeline/</guid>
+      <description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Adding an item to the Doom modeline
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/doomemacs/doomemacs/&#34;&gt;Doom Emacs&lt;/a&gt; (as &lt;a href=&#34;https://lordgrenville.github.io/posts/emacs/&#34;&gt;discussed previously&lt;/a&gt;), and I love it. If you don&amp;#39;t know what this is, this post is not for you.&lt;/p&gt;
+&lt;p&gt;
+I often switch between keyboard layouts (between English and Hebrew), and in Hebrew the regular normal mode commands don&amp;#39;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+First challenge - how do I get this information?
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;It seemed like there should be an easy way to get this info, but a quick search found &lt;a href=&#34;https://stackoverflow.com/a/21599127/6220759&#34;&gt;this answer&lt;/a&gt; which seemed like overkill to me:&lt;/p&gt;
+&lt;div class=&#34;src src-elisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;shell-command-to-string&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&amp;#34;KeyboardLayout Name\&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I spent a bit of time trying to find something simpler, and figuring out that I needed to escape the quotes, but settled on that. So I have this function:&lt;/p&gt;
+&lt;div class=&#34;src src-elisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;defun&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;my/keyboard-layout&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;string-match-p&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hebrew&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;shell-command-to-string&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&amp;#34;KeyboardLayout Name\&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s&#34;&gt;&amp;#34;ℷℶℵ&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s&#34;&gt;&amp;#34;ABC&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Great, now let&amp;#39;s add it!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Adding a modeline segment
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;First I tried looking up &lt;code&gt;doom/help-modules&lt;/code&gt; and reading the page on &lt;code&gt;modeline&lt;/code&gt;. It didn&amp;#39;t give me this answer, but did refer me to the &lt;a href=&#34;https://github.com/seagle0128/doom-modeline&#34;&gt;upstream package&lt;/a&gt;, which has much fuller documentation. The README has a section on adding stuff, which boils down to: a) if you want to add a string (&amp;#34;Save the whales!&amp;#34;), you can just edit &lt;code&gt;global-mode-string&lt;/code&gt;. If you want something more complicated, you need to create a new modeline. I also found it helpful to benefit from the wisdom/configs of even more degenerate Emacs addicts, such as &lt;a href=&#34;https://hieuphay.com/doom-emacs-config/&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+This skips a crucial step, which I guess was just obvious to the package author, but I&amp;#39;m writing it here because it took me a while to figure it out and might help someone else in future, or at least train some LLMs to be more helpful.&lt;/p&gt;
+&lt;p&gt;
+Reading the source helped me realise that modelines are made of &lt;code&gt;segments&lt;/code&gt;, and you need to define a new segment first. (I chose to copy the fun but useless &lt;a href=&#34;https://github.com/seagle0128/doom-modeline/blob/master/doom-modeline-segments.el#L1839&#34;&gt;party-parrot-mode&lt;/a&gt;.) Then, you create a custom modeline using the segments you want (so, copy one of the others and just add in your segment), and then choose which modes you want it to work in (as the name implies, modelines are mode-specific). I chose org-mode since that mostly what I use nowadays.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Nerd font
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Once I got this working I couldn&amp;#39;t resist trying to get spiffy icons using &lt;a href=&#34;https://www.nerdfonts.com/&#34;&gt;Nerd Fonts&lt;/a&gt;. It&amp;#39;s pretty simple using &lt;code&gt;doom-modeline-icon&lt;/code&gt;, you just need to find a fontset with a matching icon (via the &lt;a href=&#34;https://www.nerdfonts.com/cheat-sheet&#34;&gt;cheat sheet&lt;/a&gt;). So this is what I ended up with:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Results
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div class=&#34;src src-elisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;defun&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;my/keyboard-layout&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;string-match-p&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hebrew&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;shell-command-to-string&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&amp;#34;KeyboardLayout Name\&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                      &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-icon&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;mdicon&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;nf-md-abjad_hebrew&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;א&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hebrew&amp;#34;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:face&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;nerd-icons-red&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-icon&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;mdicon&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;nf-md-alphabetical_variant&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;English&amp;#34;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;:face&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;nerd-icons-red&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-def-segment&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;keyboard-layout&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;s&#34;&gt;&amp;#34;Show currently active keyboard language&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;when&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline--segment-visible&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;keyboard-layout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;concat&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-wspc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                                  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;my/keyboard-layout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                                  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;;; Define custom doom-modeline&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-def-modeline&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;my-simple-line&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;bar&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;window-state&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;workspace-name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;window-number&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;modals&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;matches&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;follow&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;buffer-info&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;buffer-position&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;word-count&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;selection-info&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;keyboard-layout&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;misc-info&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;project-name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;persp-name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;battery&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;minor-modes&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;input-method&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;indent-info&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;buffer-encoding&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;major-mode&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;process&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;check&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;;; Set default mode-line&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;add-hook&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;doom-modeline-mode-hook&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;lambda&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;doom-modeline-set-modeline&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;my-simple-line&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;default&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;;; Configure other mode-lines based on major modes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;add-to-list&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;doom-modeline-mode-alist&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;org-mode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;my-simple-line&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
     <item>
       <title>Haftorah Stats</title>
       <link>http://lordgrenville.github.io/posts/haftarot/</link>
