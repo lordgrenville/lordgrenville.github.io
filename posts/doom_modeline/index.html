@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-za"><head>
+<script data-goatcounter="https://lordgrenville.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<title>Adding an item to the Doom modeline - Frivolous Musings</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="
+
+Adding an item to the Doom modeline
+
+
+I use Doom Emacs (as discussed previously), and I love it. If you don&#39;t know what this is, this post is not for you.
+
+I often switch between keyboard layouts (between English and Hebrew), and in Hebrew the regular normal mode commands don&#39;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected. ">
+<link rel="canonical" href="http://lordgrenville.github.io/posts/doom_modeline/" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+
+</head>
+<body >
+        
+<div id="layout" class="pure-g">
+  <article class="pure-u-1">
+    <header class="brand">
+<h1>Frivolous Musings</h1>
+<p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
+<nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fas fa-home la-lg'></i>Home</a></li>
+    
+        <li><a href="/posts"><i class='fas fa-book fa-lg'></i> All posts</a></li>
+    
+        <li><a href="https://github.com/lordgrenville/lordgrenville.github.io"><i class='fab fa-github fa-lg'></i> Source</a></li>
+    
+        <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
+    
+    </ul>
+</nav>
+
+<hr />
+</header>
+
+    <section>
+<h1 class="content-title">Adding an item to the Doom modeline</h1></section>
+
+    
+
+    <section>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Adding an item to the Doom modeline
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>I use <a href="https://github.com/doomemacs/doomemacs/">Doom Emacs</a> (as <a href="https://lordgrenville.github.io/posts/emacs/">discussed previously</a>), and I love it. If you don&#39;t know what this is, this post is not for you.</p>
+<p>
+I often switch between keyboard layouts (between English and Hebrew), and in Hebrew the regular normal mode commands don&#39;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected.</p>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+First challenge - how do I get this information?
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>It seemed like there should be an easy way to get this info, but a quick search found <a href="https://stackoverflow.com/a/21599127/6220759">this answer</a> which seemed like overkill to me:</p>
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="s">&#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&#34;KeyboardLayout Name\&#34; &#34;</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+<p>I spent a bit of time trying to find something simpler, and figuring out that I needed to escape the quotes, but settled on that. So I have this function:</p>
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/keyboard-layout</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">string-match-p</span> <span class="s">&#34;Hebrew&#34;</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="s">&#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&#34;KeyboardLayout Name\&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;ℷℶℵ&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;ABC&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span></span></span></code></pre></div>
+</div>
+<p>Great, now let&#39;s add it!</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Adding a modeline segment
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>First I tried looking up <code>doom/help-modules</code> and reading the page on <code>modeline</code>. It didn&#39;t give me this answer, but did refer me to the <a href="https://github.com/seagle0128/doom-modeline">upstream package</a>, which has much fuller documentation. The README has a section on adding stuff, which boils down to: a) if you want to add a string (&#34;Save the whales!&#34;), you can just edit <code>global-mode-string</code>. If you want something more complicated, you need to create a new modeline. I also found it helpful to benefit from the wisdom/configs of even more degenerate Emacs addicts, such as <a href="https://hieuphay.com/doom-emacs-config/">this one</a>.</p>
+<p>
+This skips a crucial step, which I guess was just obvious to the package author, but I&#39;m writing it here because it took me a while to figure it out and might help someone else in future, or at least train some LLMs to be more helpful.</p>
+<p>
+Reading the source helped me realise that modelines are made of <code>segments</code>, and you need to define a new segment first. (I chose to copy the fun but useless <a href="https://github.com/seagle0128/doom-modeline/blob/master/doom-modeline-segments.el#L1839">party-parrot-mode</a>.) Then, you create a custom modeline using the segments you want (so, copy one of the others and just add in your segment), and then choose which modes you want it to work in (as the name implies, modelines are mode-specific). I chose org-mode since that mostly what I use nowadays.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Nerd font
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>Once I got this working I couldn&#39;t resist trying to get spiffy icons using <a href="https://www.nerdfonts.com/">Nerd Fonts</a>. It&#39;s pretty simple using <code>doom-modeline-icon</code>, you just need to find a fontset with a matching icon (via the <a href="https://www.nerdfonts.com/cheat-sheet">cheat sheet</a>). So this is what I ended up with:</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Results
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<div class="src src-elisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/keyboard-layout</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">string-match-p</span> <span class="s">&#34;Hebrew&#34;</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="s">&#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&#34;KeyboardLayout Name\&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">doom-modeline-icon</span> <span class="ss">&#39;mdicon</span> <span class="s">&#34;nf-md-abjad_hebrew&#34;</span> <span class="s">&#34;א&#34;</span> <span class="s">&#34;Hebrew&#34;</span> <span class="nb">:face</span> <span class="ss">&#39;nerd-icons-red</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">doom-modeline-icon</span> <span class="ss">&#39;mdicon</span> <span class="s">&#34;nf-md-alphabetical_variant&#34;</span> <span class="s">&#34;A&#34;</span> <span class="s">&#34;English&#34;</span> <span class="nb">:face</span> <span class="ss">&#39;nerd-icons-red</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">doom-modeline-def-segment</span> <span class="nv">keyboard-layout</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Show currently active keyboard language&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">doom-modeline--segment-visible</span> <span class="ss">&#39;keyboard-layout</span><span class="p">)</span> <span class="p">(</span><span class="nf">concat</span> <span class="p">(</span><span class="nv">doom-modeline-wspc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                                                  <span class="p">(</span><span class="nv">my/keyboard-layout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                                                  <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; Define custom doom-modeline</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">doom-modeline-def-modeline</span> <span class="ss">&#39;my-simple-line</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&#39;</span><span class="p">(</span><span class="nv">bar</span> <span class="nv">window-state</span> <span class="nv">workspace-name</span> <span class="nv">window-number</span> <span class="nv">modals</span> <span class="nv">matches</span> <span class="nv">follow</span> <span class="nv">buffer-info</span> <span class="nv">buffer-position</span> <span class="nv">word-count</span> <span class="nv">selection-info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&#39;</span><span class="p">(</span><span class="nv">keyboard-layout</span> <span class="nv">misc-info</span> <span class="nv">project-name</span> <span class="nv">persp-name</span> <span class="nv">battery</span> <span class="nv">minor-modes</span> <span class="nv">input-method</span> <span class="nv">indent-info</span> <span class="nv">buffer-encoding</span> <span class="nv">major-mode</span> <span class="nv">process</span> <span class="nv">check</span> <span class="nv">time</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; Set default mode-line</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;doom-modeline-mode-hook</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">doom-modeline-set-modeline</span> <span class="ss">&#39;my-simple-line</span> <span class="ss">&#39;default</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">;; Configure other mode-lines based on major modes</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;doom-modeline-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">my-simple-line</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+    <section>
+      <footer class="page-footer">
+		<hr>
+
+    <div class="previous-post" style="display:inline-block;">
+      
+      <a class="link-reverse" href="http://lordgrenville.github.io/posts/haftarot/?ref=footer">« Haftorah Stats</a>
+      
+    </div>
+
+    <div class="next-post", style="display:inline-block;float:right;">
+      
+    </div>
+
+		<ul class="page-footer-menu">
+
+      
+      
+      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
+      
+
+      
+      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+      
+		</ul>
+
+	<div class="copyright">
+	<p>
+        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+  </p>
+</div>
+</footer>
+
+
+    </section>
+  </article>
+</div>
+
+    </body>
+
+</html>
