@@ -7,10 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="
-
-Adding an item to the Doom modeline
-
-
 I use Doom Emacs (as discussed previously), and I love it. If you don&#39;t know what this is, this post is not for you.
 
 I often switch between keyboard layouts (between English and Hebrew), and in Hebrew the regular normal mode commands don&#39;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected. ">
@@ -73,19 +69,15 @@ I often switch between keyboard layouts (between English and Hebrew), and in Heb
     
 
     <section>
-<div id="outline-container-headline-1" class="outline-2">
-<h2 id="headline-1">
-Adding an item to the Doom modeline
-</h2>
-<div id="outline-text-headline-1" class="outline-text-2">
-<p>I use <a href="https://github.com/doomemacs/doomemacs/">Doom Emacs</a> (as <a href="https://lordgrenville.github.io/posts/emacs/">discussed previously</a>), and I love it. If you don&#39;t know what this is, this post is not for you.</p>
+<p>
+I use <a href="https://github.com/doomemacs/doomemacs/">Doom Emacs</a> (as <a href="https://lordgrenville.github.io/posts/emacs/">discussed previously</a>), and I love it. If you don&#39;t know what this is, this post is not for you.</p>
 <p>
 I often switch between keyboard layouts (between English and Hebrew), and in Hebrew the regular normal mode commands don&#39;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected.</p>
-<div id="outline-container-headline-2" class="outline-3">
-<h3 id="headline-2">
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
 First challenge - how do I get this information?
-</h3>
-<div id="outline-text-headline-2" class="outline-text-3">
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>It seemed like there should be an easy way to get this info, but a quick search found <a href="https://stackoverflow.com/a/21599127/6220759">this answer</a> which seemed like overkill to me:</p>
 <div class="src src-elisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="s">&#34;defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep \&#34;KeyboardLayout Name\&#34; &#34;</span><span class="p">)</span></span></span></code></pre></div>
@@ -104,11 +96,11 @@ First challenge - how do I get this information?
 <p>Great, now let&#39;s add it!</p>
 </div>
 </div>
-<div id="outline-container-headline-3" class="outline-3">
-<h3 id="headline-3">
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
 Adding a modeline segment
-</h3>
-<div id="outline-text-headline-3" class="outline-text-3">
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
 <p>First I tried looking up <code>doom/help-modules</code> and reading the page on <code>modeline</code>. It didn&#39;t give me this answer, but did refer me to the <a href="https://github.com/seagle0128/doom-modeline">upstream package</a>, which has much fuller documentation. The README has a section on adding stuff, which boils down to: a) if you want to add a string (&#34;Save the whales!&#34;), you can just edit <code>global-mode-string</code>. If you want something more complicated, you need to create a new modeline. I also found it helpful to benefit from the wisdom/configs of even more degenerate Emacs addicts, such as <a href="https://hieuphay.com/doom-emacs-config/">this one</a>.</p>
 <p>
 This skips a crucial step, which I guess was just obvious to the package author, but I&#39;m writing it here because it took me a while to figure it out and might help someone else in future, or at least train some LLMs to be more helpful.</p>
@@ -116,19 +108,19 @@ This skips a crucial step, which I guess was just obvious to the package author,
 Reading the source helped me realise that modelines are made of <code>segments</code>, and you need to define a new segment first. (I chose to copy the fun but useless <a href="https://github.com/seagle0128/doom-modeline/blob/master/doom-modeline-segments.el#L1839">party-parrot-mode</a>.) Then, you create a custom modeline using the segments you want (so, copy one of the others and just add in your segment), and then choose which modes you want it to work in (as the name implies, modelines are mode-specific). I chose org-mode since that mostly what I use nowadays.</p>
 </div>
 </div>
-<div id="outline-container-headline-4" class="outline-3">
-<h3 id="headline-4">
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
 Nerd font
-</h3>
-<div id="outline-text-headline-4" class="outline-text-3">
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>Once I got this working I couldn&#39;t resist trying to get spiffy icons using <a href="https://www.nerdfonts.com/">Nerd Fonts</a>. It&#39;s pretty simple using <code>doom-modeline-icon</code>, you just need to find a fontset with a matching icon (via the <a href="https://www.nerdfonts.com/cheat-sheet">cheat sheet</a>). So this is what I ended up with:</p>
 </div>
 </div>
-<div id="outline-container-headline-5" class="outline-3">
-<h3 id="headline-5">
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
 Results
-</h3>
-<div id="outline-text-headline-5" class="outline-text-3">
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
 <div class="src src-elisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my/keyboard-layout</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">string-match-p</span> <span class="s">&#34;Hebrew&#34;</span>
@@ -159,8 +151,6 @@ Results
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">;; Configure other mode-lines based on major modes</span>
 </span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;doom-modeline-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">org-mode</span> <span class="o">.</span> <span class="nv">my-simple-line</span><span class="p">))</span></span></span></code></pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
