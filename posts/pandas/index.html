@@ -36,10 +36,11 @@
 <link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
-<body >
-        
-<div id="layout" class="pure-g">
-  <article class="pure-u-1">
+<body>
+
+
+
+<article class="post-single">
     <header class="brand">
 <h1>Frivolous Musings</h1>
 <p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
@@ -54,91 +55,109 @@
     
         <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
     
+        <li><a href="/about"><i class='fas fa-info-circle  fa-lg'></i> About</a></li>
+    
     </ul>
 </nav>
 
 <hr />
 </header>
 
-    <section>
-<h1 class="content-title">Monkey-patching Pandas</h1></section>
-
-    
-
-    <section><p>A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.</p>
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      Monkey-patching Pandas
+    </h1>
+  </header>
+  <div class="post-content">
+    <p>A common catch for <a href="https://pandas.pydata.org/">Pandas</a> users is that the default <code>DataFrame.to_csv</code> option is <code>index=True</code>. Indices are often significant in Pandas, but perhaps just as often a simple range of integers $0..n$ adding no new information. You can see some expressions of annoyance about it in <a href="https://github.com/pandas-dev/pandas/issues/34576">this thread</a>, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.</p>
 <p>Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched it in my <code>$HOME/.ipython/startup.py</code>. The key insight here for me was how to use <code>partial</code> with a class method; for this Python 3.4 added <code>partialmethod</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partialmethod</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span> <span class="o">=</span> <span class="n">partialmethod</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">to_csv</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></span></code></pre></div><p>(If you want this in a regular Python REPL there is also <code>$HOME/.pythonrc.py</code>.)</p>
-</section>
-    <section>
-      <footer class="page-footer">
-		<hr>
 
-    <div class="previous-post" style="display:inline-block;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/chatgpt/?ref=footer">« ChatGPT</a>
-      
-    </div>
+  </div>
 
-    <div class="next-post", style="display:inline-block;float:right;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/responsae/?ref=footer">Responsae as Spaced Repetition »</a>
-      
-    </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" style="display:inline-block;float:right; "href="http://lordgrenville.github.io/posts/responsae/">
+    <span class="title">  </span>
+    <span>Responsae as Spaced Repetition»</span>
+  </a>
+  <a class="next"  href="http://lordgrenville.github.io/posts/chatgpt/">
+    <span class="title">  </span>
+    <span>«ChatGPT</span>
+  </a>
+</nav>
 
-		<ul class="page-footer-menu">
+  </footer>
 
-      
-      
-      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
-      
+</article>
+  <section><footer class="page-footer">
+<hr>
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://github.com/lordgrenville"><img width="30" height="30" src="/img/fa-github.svg"></a></li>
+  
+  
+  <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><img width="30" height="30" src="/img/fa-stackoverflow.svg"></a></li>
+  
+  
+  <li><a href="https://linkedin.com/in/josh-friedlander-312b926b"><img width="30" height="30" src="/img/fa-linkedin.svg"></a></li>
+  
+  
+  
+</ul>
 
-      
-      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-		</ul>
-
-	<div class="copyright">
-	<p>
-        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
-  </p>
+<div class="copyright">
+<p>
+Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+</p>
+<hr>
 </div>
+
 </footer>
+</section>
 
 
-    </section>
-  </article>
-</div>
 
-    </body>
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="/katex@/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="/katex@/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="/katex@/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
+</body>
 
 </html>

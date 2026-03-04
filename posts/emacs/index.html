@@ -37,10 +37,11 @@ After several aborted attempts to get started with Emacs, I&rsquo;ve finally mad
 <link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
-<body >
-        
-<div id="layout" class="pure-g">
-  <article class="pure-u-1">
+<body>
+
+
+
+<article class="post-single">
     <header class="brand">
 <h1>Frivolous Musings</h1>
 <p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
@@ -55,18 +56,21 @@ After several aborted attempts to get started with Emacs, I&rsquo;ve finally mad
     
         <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
     
+        <li><a href="/about"><i class='fas fa-info-circle  fa-lg'></i> About</a></li>
+    
     </ul>
 </nav>
 
 <hr />
 </header>
 
-    <section>
-<h1 class="content-title">A Complete Idiot&#39;s Guide to Doom Emacs</h1></section>
-
-    
-
-    <section><p>(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/">This</a> is a good guide from zero to Emacs. I was also helped/inspired by <a href="https://noelwelsh.com/posts/2019-01-10-doom-emacs.html">Noel Welsh&rsquo;s</a> Doom guide, and that of mad genius <a href="https://tecosaur.github.io/emacs-config/config.html">Tecosaur</a>.)</p>
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      A Complete Idiot&#39;s Guide to Doom Emacs
+    </h1>
+  </header>
+  <div class="post-content">
+    <p>(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/">This</a> is a good guide from zero to Emacs. I was also helped/inspired by <a href="https://noelwelsh.com/posts/2019-01-10-doom-emacs.html">Noel Welsh&rsquo;s</a> Doom guide, and that of mad genius <a href="https://tecosaur.github.io/emacs-config/config.html">Tecosaur</a>.)</p>
 <p>After several aborted attempts to get started with Emacs, I&rsquo;ve finally made some sense of it. Since there aren&rsquo;t many basic guides online, I thought I&rsquo;d document my process. Vim (which I&rsquo;m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit&hellip;) I think that has to do with its greater simplicity, as well as the fact that there&rsquo;s basically only one flavour. (NeoVim is from a user&rsquo;s perspective mostly identical, and if you&rsquo;re using <code>vi</code> you probably know what you&rsquo;re doing.) Emacs by contrast is a whole world.</p>
 <p>The first question I had to deal with is: which Emacs do I use? Vanilla Emacs looks like something from the Stone Age, and doesn&rsquo;t offer you enough out of the box to persuade you to learn it - at least that was my experience. I was tempted back first with <a href="https://www.spacemacs.org/">Spacemacs</a>, and finally settled on <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>, which will be the subject of this guide.</p>
 <p>To clarify, all of these involve installing Emacs, and then building stuff on top of it. Emacs adds a <code>.emacs.d</code> folder to your home directory for your personal config, and these both customize that to look snazzier and use some extra tools right out of the box. Both Spacemacs and Doom emphasise <code>Evil</code>, an Emacs layer allowing Vim keys to be used instead of learning Emacs keys (though they allow either to be configured). Doom also stresses quick loading time and simplicity: it strives to do some basic config and let you get on with your work, rather than going down the rabbit-hole of eternal tweaking.</p>
@@ -85,73 +89,58 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
 <p>By default Emacs uses different workspaces, each one containing a project. When you start working you should add your project root, and then you can navigate within it with <code>SPC f f</code>.</p>
 <p>Lastly, a word about modes. Continuing the musical analogy of chords (key combinations), Emacs has modes which are basically added functionality within a buffer. A major mode is usually the language type, and a buffer can only have one, while it can have many minor modes. Major mode chords in Evil begin with <code>SPC m</code>, after which you will see a guide in the minibuffer with your next options. (Always true in Doom.)</p>
 <p>Hopefully this should be enough to get you started with a project, the correct major mode, and some nice looking defaults. I definitely haven&rsquo;t been persuaded to drop Vim as my default <code>$EDITOR</code>, but I see it as my day-to-day tool, with Emacs as more of a speciality tool with capabilities like <a href="https://magit.vc/">Magit</a>, <code>org-mode</code>, and way more.</p>
-</section>
-    <section>
-      <footer class="page-footer">
-		<hr>
 
-    <div class="previous-post" style="display:inline-block;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/status/?ref=footer">« Status &amp; Jewish Intellectuals</a>
-      
-    </div>
+  </div>
 
-    <div class="next-post", style="display:inline-block;float:right;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/arch/?ref=footer">Notes from Installing Arch Linux »</a>
-      
-    </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" style="display:inline-block;float:right; "href="http://lordgrenville.github.io/posts/arch/">
+    <span class="title">  </span>
+    <span>Notes from Installing Arch Linux»</span>
+  </a>
+  <a class="next"  href="http://lordgrenville.github.io/posts/status/">
+    <span class="title">  </span>
+    <span>«Status &amp; Jewish Intellectuals</span>
+  </a>
+</nav>
 
-		<ul class="page-footer-menu">
+  </footer>
 
-      
-      
-      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
-      
+</article>
+  <section><footer class="page-footer">
+<hr>
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://github.com/lordgrenville"><img width="30" height="30" src="/img/fa-github.svg"></a></li>
+  
+  
+  <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><img width="30" height="30" src="/img/fa-stackoverflow.svg"></a></li>
+  
+  
+  <li><a href="https://linkedin.com/in/josh-friedlander-312b926b"><img width="30" height="30" src="/img/fa-linkedin.svg"></a></li>
+  
+  
+  
+</ul>
 
-      
-      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-		</ul>
-
-	<div class="copyright">
-	<p>
-        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
-  </p>
+<div class="copyright">
+<p>
+Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+</p>
+<hr>
 </div>
+
 </footer>
+</section>
 
 
-    </section>
-  </article>
-</div>
 
-    </body>
+
+</body>
 
 </html>

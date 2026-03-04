@@ -57,10 +57,11 @@ How does one remember those ridiculous single letter commands? My preferred solu
 <link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
-<body >
-        
-<div id="layout" class="pure-g">
-  <article class="pure-u-1">
+<body>
+
+
+
+<article class="post-single">
     <header class="brand">
 <h1>Frivolous Musings</h1>
 <p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
@@ -75,18 +76,21 @@ How does one remember those ridiculous single letter commands? My preferred solu
     
         <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
     
+        <li><a href="/about"><i class='fas fa-info-circle  fa-lg'></i> About</a></li>
+    
     </ul>
 </nav>
 
 <hr />
 </header>
 
-    <section>
-<h1 class="content-title">Tar Hack</h1></section>
-
-    
-
-    <section><p>There’s a funny <a href="https://xkcd.com/1168/">xkcd cartoon</a> about the <code>tar</code> command:</p>
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      Tar Hack
+    </h1>
+  </header>
+  <div class="post-content">
+    <p>There’s a funny <a href="https://xkcd.com/1168/">xkcd cartoon</a> about the <code>tar</code> command:</p>
 <p><img src="https://imgs.xkcd.com/comics/tar_2x.png" alt=""></p>
 <p>How does one remember those ridiculous single letter commands? My preferred solution is to first consult with <a href="https://tldr.sh/">TLDR</a>, but Justin Abrahams has a fun solution <a href="https://justin.abrah.ms/bash/forgotten_friend_3.html">over at his blog</a>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  extract <span class="o">()</span> <span class="o">{</span>
@@ -108,73 +112,58 @@ How does one remember those ridiculous single letter commands? My preferred solu
 </span></span><span class="line"><span class="cl">      <span class="nb">echo</span> <span class="s2">&#34;&#39;1&#39; is not a valid file&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">fi</span>
 </span></span></code></pre></div><p>(Appended, naturally, to <code>.bashrc</code>.)</p>
-</section>
-    <section>
-      <footer class="page-footer">
-		<hr>
 
-    <div class="previous-post" style="display:inline-block;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/communication/?ref=footer">« Communication</a>
-      
-    </div>
+  </div>
 
-    <div class="next-post", style="display:inline-block;float:right;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/pragmatism/?ref=footer">Pragmatism »</a>
-      
-    </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" style="display:inline-block;float:right; "href="http://lordgrenville.github.io/posts/pragmatism/">
+    <span class="title">  </span>
+    <span>Pragmatism»</span>
+  </a>
+  <a class="next"  href="http://lordgrenville.github.io/posts/communication/">
+    <span class="title">  </span>
+    <span>«Communication</span>
+  </a>
+</nav>
 
-		<ul class="page-footer-menu">
+  </footer>
 
-      
-      
-      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
-      
+</article>
+  <section><footer class="page-footer">
+<hr>
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://github.com/lordgrenville"><img width="30" height="30" src="/img/fa-github.svg"></a></li>
+  
+  
+  <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><img width="30" height="30" src="/img/fa-stackoverflow.svg"></a></li>
+  
+  
+  <li><a href="https://linkedin.com/in/josh-friedlander-312b926b"><img width="30" height="30" src="/img/fa-linkedin.svg"></a></li>
+  
+  
+  
+</ul>
 
-      
-      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-		</ul>
-
-	<div class="copyright">
-	<p>
-        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
-  </p>
+<div class="copyright">
+<p>
+Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+</p>
+<hr>
 </div>
+
 </footer>
+</section>
 
 
-    </section>
-  </article>
-</div>
 
-    </body>
+
+</body>
 
 </html>

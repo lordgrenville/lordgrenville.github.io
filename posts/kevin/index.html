@@ -37,10 +37,11 @@ The basic script I started with went to the author&rsquo;s page, found the box w
 <link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
-<body >
-        
-<div id="layout" class="pure-g">
-  <article class="pure-u-1">
+<body>
+
+
+
+<article class="post-single">
     <header class="brand">
 <h1>Frivolous Musings</h1>
 <p class="subtitle">Some thoughts on politics/lit/tech/life itself </p>
@@ -55,88 +56,76 @@ The basic script I started with went to the author&rsquo;s page, found the box w
     
         <li><a href="/posts/index.xml"><i class='fab fa-rss fa-lg'></i> Subscribe</a></li>
     
+        <li><a href="/about"><i class='fas fa-info-circle  fa-lg'></i> About</a></li>
+    
     </ul>
 </nav>
 
 <hr />
 </header>
 
-    <section>
-<h1 class="content-title">Scraping Kevin Lewis</h1></section>
-
-    
-
-    <section><p>Kevin Lewis&rsquo; daily <em>Findings</em> blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.</p>
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      Scraping Kevin Lewis
+    </h1>
+  </header>
+  <div class="post-content">
+    <p>Kevin Lewis&rsquo; daily <em>Findings</em> blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.</p>
 <p>The basic script I started with went to <a href="https://www.nationalaffairs.com/authors/detail/kevin-lewis">the author&rsquo;s page</a>, found the box with most recent posts, followed and scraped each link, encoded them as RSS (basically URL-encoding the HTML tags), added opening and closing RSS XML tags, and saved the file. In further iterations I added the ability to open the file if it exists, check if an item exists (and not scrape it), and cleaned up the code. Once I was happy with it, the last thing I wanted to add (for now!) was the ability to run it on the reg. The code is <a href="https://github.com/lordgrenville/scrape_kevin">here</a>.</p>
 <p>My first instinct was to run <code>crontab -e</code> and set up a weekly run there. But I found that since my Macbook goes to sleep quite aggressively to save power, often the job wouldn&rsquo;t be carried out. Turns out that macOS has a built in tool called <code>launchd</code> which is recommended over cron, and can also run after waking if it missed its cue.</p>
 <p>To add it I created a file called <code>~/Library/LaunchAgents/update_lewis.plist</code>, with the command arguments as outlined <a href="https://www.launchd.info/">here</a>. Then I called <code>launchctl load ~/Library/LaunchAgents/update_lewis.plist</code> (cancel with <code>unload</code>), and voilà!</p>
-</section>
-    <section>
-      <footer class="page-footer">
-		<hr>
 
-    <div class="previous-post" style="display:inline-block;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/arch/?ref=footer">« Notes from Installing Arch Linux</a>
-      
-    </div>
+  </div>
 
-    <div class="next-post", style="display:inline-block;float:right;">
-      
-      <a class="link-reverse" href="http://lordgrenville.github.io/posts/corruption/?ref=footer">Corruption »</a>
-      
-    </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" style="display:inline-block;float:right; "href="http://lordgrenville.github.io/posts/corruption/">
+    <span class="title">  </span>
+    <span>Corruption»</span>
+  </a>
+  <a class="next"  href="http://lordgrenville.github.io/posts/arch/">
+    <span class="title">  </span>
+    <span>«Notes from Installing Arch Linux</span>
+  </a>
+</nav>
 
-		<ul class="page-footer-menu">
+  </footer>
 
-      
-      
-      <li><a href="https://github.com/lordgrenville"><i class='fab fa-github fa-lg'></i></a></li>
-      
+</article>
+  <section><footer class="page-footer">
+<hr>
+<ul class="page-footer-menu">
+  
+  
+  <li><a href="https://github.com/lordgrenville"><img width="30" height="30" src="/img/fa-github.svg"></a></li>
+  
+  
+  <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><img width="30" height="30" src="/img/fa-stackoverflow.svg"></a></li>
+  
+  
+  <li><a href="https://linkedin.com/in/josh-friedlander-312b926b"><img width="30" height="30" src="/img/fa-linkedin.svg"></a></li>
+  
+  
+  
+</ul>
 
-      
-      <li><a href="https://stackoverflow.com/users/6220759/josh-friedlander?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://www.reddit.com/user/yehoshuf"><i class='fab fa-reddit la-lg'></i></a></li>
-      
 
-      
-      <li><a href="https://twitter.com/oshkoshbgoshjos"><i class='fab fa-twitter fa-lg'></i></a></li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-		</ul>
-
-	<div class="copyright">
-	<p>
-        Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
-  </p>
+<div class="copyright">
+<p>
+Ingredients: <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>, <a href="https://orgmode.org/">org-mode</a>...
+</p>
+<hr>
 </div>
+
 </footer>
+</section>
 
 
-    </section>
-  </article>
-</div>
 
-    </body>
+
+</body>
 
 </html>
