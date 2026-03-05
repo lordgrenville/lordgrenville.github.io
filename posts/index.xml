@@ -6,7 +6,36 @@
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rough thoughts on AI</title>
+      <link>http://lordgrenville.github.io/posts/ai/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/ai/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Made some holiday greeting cards for Purim, and used AI to make an image. Tried a few styles: first a 1930s cartoon style (which my better half rejected as &amp;ldquo;weird&amp;rdquo;, though I quite liked it), then a classic kitschy carnival one, which we liked, then finally a different version that was more minimalist and monochrome for our B&amp;amp;W printer. The art was nice. Not mind-blowing, but good enough. If a few years ago I&amp;rsquo;d gotten an artistic friend to draw one like that, I&amp;rsquo;d have been blown away and kept it forever.&lt;/li&gt;
+&lt;li&gt;Made me think of the Benjamin&amp;rsquo;s &lt;em&gt;Work of Art in the Age of Mechanical Reproduction&lt;/em&gt;. No less crazy than the idea that great art (or a natural scene) can be instantly and cheaply recreated is the idea can art can not just be mechanically &lt;em&gt;reproduced&lt;/em&gt;, but also &lt;em&gt;produced&lt;/em&gt; from scratch.&lt;/li&gt;
+&lt;li&gt;I still tend to think that AI can do &lt;em&gt;form&lt;/em&gt;, but not &lt;em&gt;content&lt;/em&gt;. I.e. given an idea and a way to express it, it will do that very well. It started with &amp;ldquo;The Gettysburg address, but in haiku about frogs&amp;rdquo;, but now it is equally true for &amp;ldquo;given this codebase that implements feature x, implement feature y&amp;rdquo;. (Or, given your training set of hundreds of raytracing libraries, write one from scratch matching x requirements.) It is AMAZING that it can do that, but it is still a form of &lt;em&gt;reproduction&lt;/em&gt;, just many degrees of complexity above that of the copier.&lt;/li&gt;
+&lt;li&gt;Human art is maybe stronger in this situation, because when anyone can have decent art, people will aspire to own art that has more meaning and a story. This has been the trend with mechanical reproduction as well.&lt;/li&gt;
+&lt;li&gt;But it is dispiriting for a human artist to know that the floor has been raised a lot. As it is for coders.&lt;/li&gt;
+&lt;li&gt;And in general a lot of the effect of AI is raising the floor in many areas. In the past, the floor for a website was Wix/Squarespace/Wordpress; now (or soon) it is a flashy looking React site on Vercel, because why not. The bar for holiday card art is now much higher. It is not clear if society gains on net from these changes - reminds me a bit of the recruitment problem, where everyone is mass-generating applications and sending them everywhere, and recruiters are using AI to filter them; everyone is working more, but we don&amp;rsquo;t gain productivity.&lt;/li&gt;
+&lt;li&gt;In the same way, what would have been a simple doc will now be a 20-pager with a table of contents and three appendices, and everyone will use AI to summarise it, and it isn&amp;rsquo;t exactly progress.&lt;/li&gt;
+&lt;li&gt;Reading about this led me to &lt;a href=&#34;https://en.wikipedia.org/wiki/Marchetti%27s_constant&#34;&gt;Marchetti&amp;rsquo;s constant&lt;/a&gt;, the idea that commute time is invariant across cultures and time periods. Here is Lewis Mumford:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;epigraph&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mr. Bertrand Russell has noted that each improvement in locomotion has increased the area over which people are compelled to move: so that a person who would have had to spend half an hour to walk to work a century ago must still spend half an hour to reach his destination, because the contrivance that would have enabled him to save time had he remained in his original situation now—by driving him to a more distant residential area—effectually cancels out the gain.&lt;/p&gt;
+
+
+    &lt;footer&gt;Lewis Mumford, &lt;cite&gt;Technics and Civilization (1934)&lt;/cite&gt;&lt;/footer&gt;
+
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
     <item>
       <title>Adding an item to the Doom modeline</title>
       <link>http://lordgrenville.github.io/posts/doom_modeline/</link>
@@ -258,7 +287,8 @@ Footnotes
 &lt;p&gt;I looked at &lt;code&gt;+default/search-project&lt;/code&gt;, and saw that it calls the related function in &lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt; (the completion framework I use), which is basically just running a text search on the directory. So&amp;hellip;maybe these files are still there? Yes - turns out &lt;code&gt;vc-revision-other-window&lt;/code&gt; leaves behind the files it creates, so it doesn&amp;rsquo;t need to check them out again if you need them again. (&lt;a href=&#34;https://stackoverflow.com/a/49112657/6220759&#34;&gt;Here&lt;/a&gt; is a solution someone else came up with for this problem.)&lt;/p&gt;
 &lt;p&gt;I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use &lt;code&gt;find&lt;/code&gt; with a regex, which I could, but I just had to figure out that the regex needs to match the &lt;em&gt;whole&lt;/em&gt; name, not just part of it. So my final result was:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;find . -regex &amp;quot;.*\.~.*~$&amp;quot; | xargs rm&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;find . -regex &amp;quot;.*\.~.*~$&amp;quot; | xargs rm&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;(At some point in the future, I would like to make a function that will kill the temp buffer, close the window it opened, and delete the file.)&lt;/p&gt;
 </description>
     </item>
@@ -271,10 +301,12 @@ Footnotes
       <guid>http://lordgrenville.github.io/posts/responsae/</guid>
       <description>&lt;p&gt;In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised is חזרה, revision.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.10&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.10&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;But revision is hard. We are naturally more interested in novelty, and time is limited. It is more tempting to learn new topics, and after all&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;one can study only in a place that his heart desires (&lt;a href=&#34;https://www.sefaria.org.il/Avodah_Zarah.19a.5&#34;&gt;Avoda Zara 19a&lt;/a&gt;)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;one can study only in a place that his heart desires (&lt;a href=&#34;https://www.sefaria.org.il/Avodah_Zarah.19a.5&#34;&gt;Avoda Zara 19a&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Memorisation is also difficult. As a result, many people spend years studying Torah but retain very little of it.&lt;/p&gt;
 &lt;p&gt;Recently a memorisation technique known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Spaced_Repetition&#34;&gt;spaced repetition&lt;/a&gt; has become popular. The basic idea behind it is memorising material that is spaced out over a long period of time is more effective than memorising a large chunk of material at once. The most common way of doing this is using flashcards, and some kind of system that tracks whether the student remembers the card or not, and shows the less remembered ones more frequently.&lt;/p&gt;
 &lt;p&gt;Flashcards are a lot of work, though. The website &lt;a href=&#34;https://ankitorah.com/anki-cards&#34;&gt;Anki Torah&lt;/a&gt; supplies decks of flashcards for this purpose, which one can combine with the free app &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;Anki&lt;/a&gt;. But there is still some tedium.&lt;/p&gt;
@@ -329,30 +361,25 @@ Footnotes
 &lt;p&gt;I personally would go with the last one, and am reminded of Walter Benjamin&amp;rsquo;s idea of &amp;ldquo;aura&amp;rdquo; in relation to mechanical copies of artworks. Images like the &lt;em&gt;Avignon Pietà&lt;/em&gt; are instantly viewable anywhere, but the original retains a value derived from its physical position and its interaction with generations of devout viewers. Today with AI models we can conjure infinite new works in the style of Picasso or Goya, and if the originals have value it is probably in the way they are enmeshed in this social context.&lt;/p&gt;
 
 
-
+    &lt;figure class=&#34;class param&#34;&gt;
   
-    &lt;figure  class=&#34;class param&#34;&gt;
-  
+    &lt;label for=&#34;mn-export-import&#34; class=&#34;margin-toggle marginnote-ind&#34;&gt;&lt;/label&gt;
+    &lt;input type=&#34;checkbox&#34; id=&#34;mn-export-import&#34; class=&#34;margin-toggle&#34;/&gt;
+    &lt;span class=&#34;marginnote&#34;&gt;
+
+&lt;strong&gt;Pietà of Villeneuve-lès-Avignon. &lt;/strong&gt;
+Oil on wood, 163cm x 219cm
+Enguerrand Quarton.
 
 
+&lt;/span&gt;
 
-  &lt;label for=&#34;mn-export-import&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-  &lt;input type=&#34;checkbox&#34; id=&#34;mn-export-import&#34; class=&#34;margin-toggle&#34;&gt;
-  &lt;span class=&#34;marginnote&#34;&gt;
-  
-
-  &lt;strong&gt;Pietà of Villeneuve-lès-Avignon &lt;/strong&gt;
-  Oil on wood, 163cm x 219cm
-  &lt;a href=&#34;https://en.wikipedia.org/wiki/Enguerrand_Quarton&#34;&gt;
-  Enguerrand Quarton
-  &lt;/a&gt;
-
-  &lt;/span&gt;
 
 
   
   &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/fb/Enguerrand_Quarton%2C_La_Piet%C3%A0_de_Villeneuve-l%C3%A8s-Avignon_%28c._1455%29.jpg&#34; alt=&#34;Avignon Pieta&#34;&gt;
   
+
 
 
 
@@ -368,7 +395,8 @@ The grimy scraps&lt;br&gt;
 Of withered leaves about your feet&lt;br&gt;
 And newspapers from vacant lots;&lt;br&gt;
 The showers beat&lt;br&gt;
-On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;or by fiction about human relationships that pointed out things about people that I hadn&amp;rsquo;t realised and that helped me be less obtuse in social situations.)&lt;/p&gt;
 &lt;p&gt;So, I guess I come down on the side of 50% pretentiousness, 50% real value. And it struck me that the program I am using to write this, &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Emacs&#34;&gt;GNU Emacs&lt;/a&gt;, is similar. I have to admit that I picked it up out of a desire to fake being a very talented developer. What the army calls &amp;ldquo;wasah&amp;rdquo;, the appearance of seniority, like the private beating his beret to make it seem worn, or the student bending the spines of his new books. I wanted a 1337 h4x0r setup, the no-mouse, all command-line, lines of output scrolling nonstop. And for the most part this was a silly but harmless pastime. But I think I also did get something out of it. It is true that one could argue that Emacs has been replaced by IntelliJ, many of whose features are hard if not impossible to replicate in Emacs, and as a general purpose editor by VSCode, and that the nostalgia for it is just the prejudice of older developers who remember when IDEs were much worse. But I think that using Emacs has also made me a better developer. It taught me to be better at reading documentation and asking for help in a way that would get an answer; it gave me some practice writing Lisp code; it made me learn the fundamentals of some of my tools when trying to integrate them with Emacs because they don&amp;rsquo;t &amp;ldquo;just work&amp;rdquo; out of the box. So 50% pretentiousness, 50% real value.&lt;/p&gt;
 &lt;p&gt;And would I ever have switched into tech if society hadn&amp;rsquo;t decided that it had higher status than it did when I as a high schooler chose not to take any coding classes? Being totally honest - probably not.&lt;/p&gt;
@@ -456,25 +484,21 @@ solution greater than the frustration of the journey.&lt;/p&gt;
 &lt;p&gt;(Firstly, this is an old debate, between Hobbes and Rousseau.)
 
 
-
-
-
-  &lt;label for=&#34;cage&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-  &lt;input type=&#34;checkbox&#34; id=&#34;cage&#34; class=&#34;margin-toggle&#34;&gt;
-  &lt;span class=&#34;marginnote&#34;&gt;
-  
+    &lt;label for=&#34;cage&#34; class=&#34;margin-toggle marginnote-ind&#34;&gt;&lt;/label&gt;
+    &lt;input type=&#34;checkbox&#34; id=&#34;cage&#34; class=&#34;margin-toggle&#34;/&gt;
+    &lt;span class=&#34;marginnote&#34;&gt;
     
     &lt;img src=&#34;https://pyxis.nymag.com/v1/imgs/e98/60b/54adc00b2464e4d121017900c37924b19a-06-nicholas-cage.rsquare.w190.jpg&#34; alt=&#34;Nicolas Cage&#34;&gt;
     
-  
 
-  &lt;strong&gt;Nicolas Cage &lt;/strong&gt;
-  Keep this guy out of your commune
-  
-  
-  
+&lt;strong&gt;Nicolas Cage. &lt;/strong&gt;
+Keep this guy out of your commune
 
-  &lt;/span&gt;
+
+
+&lt;/span&gt;
+
+
 
 
 
@@ -539,9 +563,11 @@ For this reason I think that it tends to work at small scale, like the &lt;em&gt
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>http://lordgrenville.github.io/posts/corruption/</guid>
-      <description>&lt;p&gt;I was listening to a &lt;a href=&#34;https://newbooksnetwork.com/epstein&#34;&gt;podcast&lt;/a&gt; (about metaphysics in the social sciences, very interesting but not the topic of this post) and the guest mentioned as an aside the principal-agent theory of political corruption, pretty common in economically-inclined poli-sci literature.&lt;label for=&#34;sidenote-e594f12148fa9415207f539ecf993860-0&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
-&lt;input type=&#34;checkbox&#34; id=&#34;sidenote-e594f12148fa9415207f539ecf993860-0&#34; class=&#34;margin-toggle&#34;/&gt;
-&lt;span class=&#34;sidenote&#34;&gt;Susan Rose-Ackerman, &lt;em&gt;&lt;a href=&#34;https://www.sciencedirect.com/book/9780125963503/corruption&#34;&gt;Corruption: A Study in Political Economy&lt;/a&gt;&lt;/em&gt; seems to be the classic&lt;/span&gt;
+      <description>&lt;p&gt;I was listening to a &lt;a href=&#34;https://newbooksnetwork.com/epstein&#34;&gt;podcast&lt;/a&gt; (about metaphysics in the social sciences, very interesting but not the topic of this post) and the guest mentioned as an aside the principal-agent theory of political corruption, pretty common in economically-inclined poli-sci literature.&lt;label for=&#34;sidenote-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;(1)&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;sidenote-1&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;
+&lt;span class=&#34;sidenote-number&#34;&gt;(1)&lt;/span&gt;Susan Rose-Ackerman, &lt;em&gt;&lt;a href=&#34;https://www.sciencedirect.com/book/9780125963503/corruption&#34;&gt;Corruption: A Study in Political Economy&lt;/a&gt;&lt;/em&gt; seems to be the classic
+&lt;/span&gt;
 The idea that politicians will rationally try to maximise personal gain unless held accountable by voters struck me as excessively cynical. Aren&amp;rsquo;t they at least somewhat motivated by a desire to serve the public, shame about very explicit graft, a basic sense of right and wrong? Somewhat serendipitously I came across a couple of counterexamples later the same day which disabused me of my innocence:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In Israel, income from residential rentals is tax-exempt up to a certain threshold, and has a reduced flat rate for any amount above that. This unusual rule - which doesn&amp;rsquo;t seem to exist in other countries, and has obvious distorting effects on the (already heated) housing market - doesn&amp;rsquo;t make much sense. One common reason offered for it is that many of the legislators themselves own rental properties. I can&amp;rsquo;t assess the truth of this, but &lt;a href=&#34;https://www.globes.co.il/news/article.aspx?did=1000967993&#34;&gt;here it is&lt;/a&gt; from a law professor: &amp;ldquo;The usual explanation given for this loophole is &amp;lsquo;guess how many legislators benefit from it&amp;rsquo;&amp;rdquo;.&lt;/li&gt;
@@ -616,10 +642,12 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <description>&lt;p&gt;I recently asked a French friend why that country produces so many brilliant mathematicians and scientists - not really expecting a good answer. He replied that in France, being an academic or theoretician is seen as the most admirable position to aspire to, on a par with philosopher or artist. However, engineers and entrepreneurs are associated with far less prestige, which would roughly explain why so many of those scientists and mathematicians end up working for foreign companies.&lt;/p&gt;
 &lt;p&gt;It reminded me that when I was growing up, I thought of writers, historians, philosophers and other intellectuals as most worthy of respect, and assumed that I should want to do something similar when I was older, if I could afford it. It is possible that this is undergoing a sea-change, as the increased prominence of information technology and financial difficulties of media and academia increase the social capital (in Bourdieu&amp;rsquo;s term) associated with &amp;ldquo;STEM&amp;rdquo; subjects. Nonetheless, I was surprised to find a very bald expression of this idea in Stefan Zweig&amp;rsquo;s memoir &lt;em&gt;The World of Yesterday&lt;/em&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It is generally assumed that getting rich is a Jew’s true and typical aim in life. Nothing could be further from the truth. Getting rich, to a Jew, is only an interim stage, a means to his real end, by no means his aim in itself. The true desire of a Jew, his inbuilt ideal, is to rise to a higher social plane by becoming an intellectual. Even the most prosperous Jew would rather marry his daughter to an indigent intellectual than a merchant. This high regard for intellectuals runs through all classes of Jewish society, and the poorest pedlar who carries his pack through wind and weather will try to give at least one son the chance of studying at university, however great the sacrifices he must make, and will consider it an honour to the entire family that one of them is clearly regarded as an intellectual: a professor, a scholar, a musician. It is as if such a man’s achievements ennobled them all.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;It is generally assumed that getting rich is a Jew’s true and typical aim in life. Nothing could be further from the truth. Getting rich, to a Jew, is only an interim stage, a means to his real end, by no means his aim in itself. The true desire of a Jew, his inbuilt ideal, is to rise to a higher social plane by becoming an intellectual. Even the most prosperous Jew would rather marry his daughter to an indigent intellectual than a merchant. This high regard for intellectuals runs through all classes of Jewish society, and the poorest pedlar who carries his pack through wind and weather will try to give at least one son the chance of studying at university, however great the sacrifices he must make, and will consider it an honour to the entire family that one of them is clearly regarded as an intellectual: a professor, a scholar, a musician. It is as if such a man’s achievements ennobled them all.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Another expression of this I found in Tom Wolfe&amp;rsquo;s &lt;a href=&#34;https://www.esquire.com/news-politics/a12149389/robert-noyce-tom-wolfe/&#34;&gt;long, interesting &lt;em&gt;Esquire&lt;/em&gt; history&lt;/a&gt; of Bob Noyce (co-founder of Fairchild Semiconductor and Intel), discussing why so many early tech pioneers came from the Midwest and West Coast, rather than the traditional East Coast centres of intellectual brilliance:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Back east engineering was an unfashionable field. The East looked to Europe in matters of intellectual fashion, and in Europe the ancient aristocratic bias against manual labor lived on. Engineering was looked upon as nothing more than manual labor raised to the level of a science. There was &amp;ldquo;pure&amp;rdquo; science and there was engineering, which was merely practical. Back east engineers ranked, socially, below lawyers; doctors; Army colonels; Navy captains; English, history, biology, chemistry, and physics professors; and business executives.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Back east engineering was an unfashionable field. The East looked to Europe in matters of intellectual fashion, and in Europe the ancient aristocratic bias against manual labor lived on. Engineering was looked upon as nothing more than manual labor raised to the level of a science. There was &amp;ldquo;pure&amp;rdquo; science and there was engineering, which was merely practical. Back east engineers ranked, socially, below lawyers; doctors; Army colonels; Navy captains; English, history, biology, chemistry, and physics professors; and business executives.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -633,7 +661,8 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
 &lt;blockquote&gt;
 &lt;p&gt;Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.&lt;/p&gt;
 &lt;p&gt;Anything that&amp;rsquo;s invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.&lt;/p&gt;
-&lt;p&gt;Anything invented after you&amp;rsquo;re thirty-five is against the natural order of things.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Anything invented after you&amp;rsquo;re thirty-five is against the natural order of things.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;This is applicable to a lot of things - politics, say. There&amp;rsquo;s a common stereotype that people become more conservative as they age. Logically we could see most people becoming more politically aware in their late teens/twenties, and then seeing those new politics as the way forward. As they become older, newer innovations just seem wrong. I think I recall Paul Krugman saying on a podcast that older members of the Federal Reserve are more opposed to keeping interest rates low, because they remember the high interest rates of the &amp;rsquo;70s. Younger members, who have never experienced high inflation, are more concerned about the labour market and willing to consider low rates in the longer term. Even though this seems like a simple, easily noticed cognitive bias, it can be hard to countermand.&lt;/p&gt;
 &lt;p&gt;In a more prosaic sense, I find as I get older that I am less and less interested in discovering new music. It isn&amp;rsquo;t that I think new music is less good; I just &lt;em&gt;know enough&lt;/em&gt; music! And likewise, to a lesser extent, with TV and movies: I have enough to get by, I don&amp;rsquo;t need any more. Of course one could make an effort to overcome this, by constantly exposing oneself to new stuff, it just takes work - there are plenty of people who keep up with new gadgets or music well into old age. But it doesn&amp;rsquo;t seem worth it to most people. Perhaps in the political sphere the effort is more worthwhile.&lt;/p&gt;
 </description>
@@ -660,7 +689,8 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
       <guid>http://lordgrenville.github.io/posts/pragmatism/</guid>
       <description>&lt;p&gt;In &lt;em&gt;The Will to Believe&lt;/em&gt; (&lt;em&gt;Is Life Worth Living?&lt;/em&gt;, IV), William James writes:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;I&amp;rsquo;ve come across a similar idea in &lt;a href=&#34;https://philosophybites.com/2014/03/david-papineau-on-philosophy-and-sport.html&#34;&gt;this podcast&lt;/a&gt;: that &lt;em&gt;the fact of believing in something&lt;/em&gt; makes it more likely to happen. This can be true in mountaineering (James&amp;rsquo; example), sport (as in the podcast), or in business, which I&amp;rsquo;ve always thought takes extraordinary self-belief: most businesses fail, so one has to wilfully ignore the laws of probability in order to start a new one, yet countless people do, and society benefits from their appetite for risk.&lt;/p&gt;
 &lt;p&gt;As someone who tends towards &amp;ldquo;rationalism&amp;rdquo; (using the term colloquially), I struggle to understand this impulse. How does one ignore reality and leap ahead into something, convincing oneself that is true? And, at what point should reality be allowed to once again influence one&amp;rsquo;s decision-making? The perenially loss-making business foolhardily propelled into an avalanche of red ink comes to mind.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/wework.jpg&#34; alt=&#34;Look before you leap?&#34;&gt;&lt;/p&gt;
@@ -961,7 +991,8 @@ joked afterward with Segrè, &amp;ldquo;I am getting rusty and old. I cannot
 follow the highbrow theory developed by Oppenheimer&amp;rsquo;s pupils anymore.
 I went to their seminar and was depressed by my inability to
 understand them. Only the last sentence cheered me up; it was: &amp;lsquo;and
-this is Fermi&amp;rsquo;s theory of beta decay.&amp;rsquo;&amp;rdquo; (p. 667)&lt;/p&gt;&lt;/blockquote&gt;
+this is Fermi&amp;rsquo;s theory of beta decay.&amp;rsquo;&amp;rdquo; (p. 667)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;If you&amp;rsquo;re familiar with Menachot 29b, you&amp;rsquo;ll see the parallel
 immediately. In case you don&amp;rsquo;t, I quote it here (&lt;a href=&#34;https://www.sefaria.org.il/Menachot.29b.4?lang=bi&amp;amp;with=all&amp;amp;lang2=en&#34;&gt;via
 Sefaria&lt;/a&gt;):&lt;/p&gt;
@@ -974,7 +1005,8 @@ knowledge was deficient. When Rabbi Akiva arrived at the discussion of
 one matter, his students said to him: My teacher, from where do you
 derive this? Rabbi Akiva said to them: It is a &lt;em&gt;halakha&lt;/em&gt; transmitted
 to Moses from Sinai. When Moses heard this, his mind was put at ease,
-as this too was part of the Torah that he was to receive.&lt;/p&gt;&lt;/blockquote&gt;
+as this too was part of the Torah that he was to receive.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -1270,7 +1302,8 @@ arises. For if we ever achieve a language that has the power of
 expressing everything, then metaphor will no longer be possible. I
 would not say, in that case, my love is like a red, red rose, for love
 would have exploded into terms for its thousands of nuances, and
-applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;&lt;/blockquote&gt;
+applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -1361,25 +1394,21 @@ banged it in the oven. A brave new world.&lt;/p&gt;
       <description>&lt;p&gt;I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys on the right.
 
 
-
-
-
-  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
-  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
-  &lt;span class=&#34;marginnote&#34;&gt;
-  
+    &lt;label for=&#34;marginfig-1&#34; class=&#34;margin-toggle marginnote-ind&#34;&gt;&lt;/label&gt;
+    &lt;input type=&#34;checkbox&#34; id=&#34;marginfig-1&#34; class=&#34;margin-toggle&#34;/&gt;
+    &lt;span class=&#34;marginnote&#34;&gt;
     
     &lt;img src=&#34;http://lordgrenville.github.io/img/Aedes_Albopictus.jpg&#34; alt=&#34;mosquito&#34;&gt;
     
-  
 
-  &lt;strong&gt;Aedes Albopictus &lt;/strong&gt;
-  
-  
-  Public domain image via the Centre for Disease Control
-  
+&lt;strong&gt;Aedes Albopictus. &lt;/strong&gt;
 
-  &lt;/span&gt;
+Public domain image via the Centre for Disease Control.
+
+
+&lt;/span&gt;
+
+
 
 
 
