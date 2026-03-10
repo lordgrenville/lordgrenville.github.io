@@ -67,8 +67,7 @@ Background: an APK is just a zipped archive, you can unzip it and edit the text 
   <header class="post-header">
     <h1 class="post-title entry-hint-parent">
       Editing an Android App
-    </h1>
-  </header>
+    </h1><p class="date">2022-06-01</p></header>
   <div class="post-content">
     <p>Problem: I have an app I like. I want to make a trivial change to the text in one screen. Emailed the developer, he said I could just edit the file in the <code>assets</code> folder and sideload it (although he failed to see the point of the edit&hellip;)</p>
 <p>Background: an APK is just a zipped archive, you can unzip it and edit the text files, then zip, rename to a <code>.apk</code> extension and try install it (easiest is <code>adb install /path/to/app.apk</code>). Since an Android app is compiled, most of the decompressed files will be binaries, but not all - some simple things are in plain text, including the ones I wanted to change.</p>

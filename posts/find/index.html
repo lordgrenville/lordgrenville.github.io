@@ -66,8 +66,7 @@
   <header class="post-header">
     <h1 class="post-title entry-hint-parent">
       Cleaning up with find(1)
-    </h1>
-  </header>
+    </h1><p class="date">2024-02-15</p></header>
   <div class="post-content">
     <p>I often use <code>SPC /</code> in <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> for <code>+default/search-project</code>. I also often use <code>C-x v ​~</code> for <code>vc-revision-other-window</code> to compare a file in another branch in version control. I noticed the other day while searching my project that it was finding a whole lot of matches in files I had compared with another branch, which look something like <code>file.h~staging~</code>. But I had closed them, so why were they still showing up?</p>
 <p>I looked at <code>+default/search-project</code>, and saw that it calls the related function in <a href="https://github.com/minad/vertico">Vertico</a> (the completion framework I use), which is basically just running a text search on the directory. So&hellip;maybe these files are still there? Yes - turns out <code>vc-revision-other-window</code> leaves behind the files it creates, so it doesn&rsquo;t need to check them out again if you need them again. (<a href="https://stackoverflow.com/a/49112657/6220759">Here</a> is a solution someone else came up with for this problem.)</p>
