@@ -6,7 +6,39 @@
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Another AI Post (sorry)</title>
+      <link>http://lordgrenville.github.io/posts/more_ai/</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://lordgrenville.github.io/posts/more_ai/</guid>
+      <description>&lt;p&gt;
+It feels extremely boring to talk or write or think about AI now, when everyone is doing so, when there is so much AI hype and nonsense around. But it also feels hard not to, because AI is also genuinely transformative and unprecedented. I&amp;#39;m dumping some more half-formed thoughts here:&lt;/p&gt;
+&lt;p&gt;
+With apologies to Mitch Hedberg, I used to be an AI sceptic. I still am one, too. However, sceptic doesn&amp;#39;t mean denying that there&amp;#39;s any value: there is significant value, and I use it a lot.&lt;/p&gt;
+&lt;p&gt;
+There is good use and bad use. Some good uses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In a domain you know well, a good use is to do contained tasks that you know how to do but won&amp;#39;t seriously add to your skills: write a UI for the x, import some libraries to do y. You could do it yourself, but it would take longer, and you can easily check the output and keep it within the bounds of something sensible.&lt;/li&gt;
+&lt;li&gt;In a domain you don&amp;#39;t know well, it can be good for getting you through the basics, where you don&amp;#39;t need quality, or where you just need to achieve a goal. How do I get my old laptop to connect to this monitor? How do I fix this broken widget? Make me an Android app to show me a recipe based on a prompt. There are a ton of cool use-cases (check out &lt;a href=&#34;https://news.ycombinator.com/item?id=48406174&#34;&gt;this thread&lt;/a&gt; for a lot of examples)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some bad uses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Making an app primarily meant to serve others, especially if you don&amp;#39;t know much about this domain (a graph in the FT the other day showed that there is an explosion of new apps in the app stores, but adoption is flat: everyone wants to make shovels, but not that many people want to buy them.&lt;/li&gt;
+&lt;li&gt;Outsourcing all your thinking to it and letting it go&lt;/li&gt;
+&lt;li&gt;Letting it build your production critical codebase without much supervision&lt;/li&gt;
+&lt;li&gt;Relying on it for legal or medical advice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More broadly, there is a lot of talk about where we will see AI productivity in GDP, or if it will lead to unemployment. Right now, it seems as if it is a lot of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;People doing stuff they wouldn&amp;#39;t otherwise have done - nice to have, but not really increasing economic output&lt;/li&gt;
+&lt;li&gt;A kind of symmetric cost, where A uses AI to inflate some work, requiring B to work harder to process it, or use AI to summarise it. This is really deadweight, no added value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Did the internet increase GDP? It feels like we are more productive, but it has been hard to measure. Lots of manual work went away - phone books, secretarial work, paper calendars - yet it has not added much leisure time. Perhaps AI will be the same&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Rough thoughts on AI</title>
       <link>http://lordgrenville.github.io/posts/ai/</link>
