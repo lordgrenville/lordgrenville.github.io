@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Frivolous Musings</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://lordgrenville.github.io/posts/</link>
     <description>Recent content in Posts on Frivolous Musings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-za</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://lordgrenville.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rooting my Nook Simple Touch</title>
-      <link>http://localhost:1313/posts/nook/</link>
+      <link>http://lordgrenville.github.io/posts/nook/</link>
       <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/nook/</guid>
+      <guid>http://lordgrenville.github.io/posts/nook/</guid>
       <description>&lt;p&gt;In around 2013-14 (so far back I can&amp;rsquo;t even find the email receipt!) I got a &lt;a href=&#34;https://en.wikipedia.org/wiki/Nook_Simple_Touch&#34;&gt;Nook Simple Touch&lt;/a&gt;. I&amp;rsquo;ve had it since then and still use it, although it was officially &lt;a href=&#34;https://help.barnesandnoble.com/hc/en-us/sections/26336578607131&#34;&gt;EOL-d in 2024&lt;/a&gt;. It still works fine - the plastic exterior got kind of sticky at some point and I tried (not very successfully) to clean it and ended up scraping much of it off. But the software still works fine, and with &lt;a href=&#34;https://calibre-ebook.com/download&#34;&gt;Calibre&lt;/a&gt; I can easily put any books I want on it.&lt;/p&gt;
 &lt;p&gt;Since pretty early on I wanted to try root it, because:&lt;/p&gt;
 &lt;ol&gt;
@@ -24,7 +24,7 @@
 &lt;p&gt;I finally did it yesterday, it was pretty straightforward but there were a couple of things I learned on the way that I wanted to record here:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;I had mostly used it with WiFi off (to save battery, and since I usually add books locally). So I had not gotten OTA firmware updates. I was on version 1.1, and it seemed like the rooting tool I used (&lt;a href=&#34;https://github.com/doozan/NookManager&#34;&gt;NookManager&lt;/a&gt;) would only work with the last one before EOL (2.2).&lt;/li&gt;
-&lt;li&gt;To upgrade, you need to download a zip file of the new version, copy it to the top-level directory of the Nook, and then reboot and it will go into upgrade mode automatically. However, I found that it was not possible to skip versions, and the auto-detect upgrade only worked when I got the subsequent version, so I had to do it three times, from 1.1-&amp;gt;1.2-&amp;gt;2.1-&amp;gt;2.2 .&lt;/li&gt;
+&lt;li&gt;To upgrade, you need to download a zip file of the new version, copy it to the top-level directory of the Nook, and then reboot and it will go into upgrade mode automatically. However, I found that it was not possible to skip versions, and the auto-detect upgrade only worked when I got the subsequent version, so I had to do it three times, from 1.1-&amp;gt;1.2-&amp;gt;2.1-&amp;gt;2.2 . (And shoutout to the crazy people on XDA forums and the random sites still hosting older versions of obsolete firmware!)&lt;/li&gt;
 &lt;li&gt;As an aside, all of this stuff was trial and error, with no log or feedback, just things silently not working until they did (and of course AI coming up with guesses all the time, which were sometimes helpful). So it&amp;rsquo;s possible that some of this is wrong.&lt;/li&gt;
 &lt;li&gt;Once I upgraded, I was able to copy the NookManager tool onto the SD card (using &lt;a href=&#34;https://etcher.balena.io/&#34;&gt;balenaEtcher&lt;/a&gt; in administrator mode in Windows), put it in the Nook while off, and then launch. Sometimes it would do nothing, sometimes it would get stuck at the &lt;code&gt;NookManager&lt;/code&gt; loading screen, and one time I got all the way to the rooting menu but then it froze. Wasn&amp;rsquo;t clear why.&lt;/li&gt;
 &lt;li&gt;My AI suggested that the SD card I bought was too new, and that I try an older one from a camera or GoPro. I got hold of one, flashed, booted, and boom, I was in.&lt;/li&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Another AI Post (sorry)</title>
-      <link>http://localhost:1313/posts/more_ai/</link>
+      <link>http://lordgrenville.github.io/posts/more_ai/</link>
       <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/more_ai/</guid>
+      <guid>http://lordgrenville.github.io/posts/more_ai/</guid>
       <description>&lt;p&gt;It feels extremely boring to talk or write or think about AI now, when everyone is doing so, when there is so much AI hype and nonsense around. But it also feels hard not to, because AI is also genuinely transformative and unprecedented. I&amp;rsquo;m dumping some more half-formed thoughts here:&lt;/p&gt;
 &lt;p&gt;With apologies to Mitch Hedberg, I used to be an AI sceptic. I still am one, too. However, sceptic doesn&amp;rsquo;t mean denying that there&amp;rsquo;s any value: there is significant value, and I use it a lot.&lt;/p&gt;
 &lt;p&gt;There is good use and bad use. Some good uses:&lt;/p&gt;
@@ -65,10 +65,10 @@
     
     <item>
       <title>Rough thoughts on AI</title>
-      <link>http://localhost:1313/posts/ai/</link>
+      <link>http://lordgrenville.github.io/posts/ai/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/ai/</guid>
+      <guid>http://lordgrenville.github.io/posts/ai/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Made some holiday greeting cards for Purim, and used AI to make an image. Tried a few styles: first a 1930s cartoon style (which my better half rejected as &amp;ldquo;weird&amp;rdquo;, though I quite liked it), then a classic kitschy carnival one, which we liked, then finally a different version that was more minimalist and monochrome for our B&amp;amp;W printer. The art was nice. Not mind-blowing, but good enough. If a few years ago I&amp;rsquo;d gotten an artistic friend to draw one like that, I&amp;rsquo;d have been blown away and kept it forever.&lt;/li&gt;
 &lt;li&gt;Made me think of the Benjamin&amp;rsquo;s &lt;em&gt;Work of Art in the Age of Mechanical Reproduction&lt;/em&gt;. No less crazy than the idea that great art (or a natural scene) can be instantly and cheaply recreated is the idea can art can not just be mechanically &lt;em&gt;reproduced&lt;/em&gt;, but also &lt;em&gt;produced&lt;/em&gt; from scratch.&lt;/li&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title>Adding an item to the Doom modeline</title>
-      <link>http://localhost:1313/posts/doom_modeline/</link>
+      <link>http://lordgrenville.github.io/posts/doom_modeline/</link>
       <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/doom_modeline/</guid>
+      <guid>http://lordgrenville.github.io/posts/doom_modeline/</guid>
       <description>&lt;p&gt;I use &lt;a href=&#34;https://github.com/doomemacs/doomemacs/&#34;&gt;Doom Emacs&lt;/a&gt; (as &lt;a href=&#34;https://lordgrenville.github.io/posts/emacs/&#34;&gt;discussed previously&lt;/a&gt;), and I love it. If you don&amp;rsquo;t know what that is, this post is not for you.&lt;/p&gt;
 &lt;p&gt;I often switch keyboard layouts (between English and Hebrew), and in Hebrew the regular normal-mode commands don&amp;rsquo;t work. So I wanted to add a layout indicator to the modeline. How hard can this be? Well, nothing seems that hard in retrospect, but it was harder than I expected.&lt;/p&gt;
 &lt;h2 id=&#34;first-challenge-how-do-i-get-this-information&#34;&gt;
@@ -166,10 +166,10 @@ Nerd font
     
     <item>
       <title>Haftorah Stats</title>
-      <link>http://localhost:1313/posts/haftarot/</link>
+      <link>http://lordgrenville.github.io/posts/haftarot/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/haftarot/</guid>
+      <guid>http://lordgrenville.github.io/posts/haftarot/</guid>
       <description>&lt;h2 id=&#34;background&#34;&gt;
 Background
 &lt;a href=&#34;#background&#34; class=&#34;heading-anchor&#34;&gt;#&lt;/a&gt;
@@ -288,10 +288,10 @@ Notes on Methodology
     
     <item>
       <title>Cleaning up with find(1)</title>
-      <link>http://localhost:1313/posts/find/</link>
+      <link>http://lordgrenville.github.io/posts/find/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/find/</guid>
+      <guid>http://lordgrenville.github.io/posts/find/</guid>
       <description>&lt;p&gt;I often use &lt;code&gt;SPC /&lt;/code&gt; in &lt;a href=&#34;https://github.com/doomemacs/doomemacs&#34;&gt;Doom Emacs&lt;/a&gt; for &lt;code&gt;+default/search-project&lt;/code&gt;. I also often use &lt;code&gt;C-x v ​~&lt;/code&gt; for &lt;code&gt;vc-revision-other-window&lt;/code&gt; to compare a file in another branch in version control. I noticed the other day while searching my project that it was finding a whole lot of matches in files I had compared with another branch, which look something like &lt;code&gt;file.h~staging~&lt;/code&gt;. But I had closed them, so why were they still showing up?&lt;/p&gt;
 &lt;p&gt;I looked at &lt;code&gt;+default/search-project&lt;/code&gt;, and saw that it calls the related function in &lt;a href=&#34;https://github.com/minad/vertico&#34;&gt;Vertico&lt;/a&gt; (the completion framework I use), which is basically just running a text search on the directory. So&amp;hellip;maybe these files are still there? Yes - turns out &lt;code&gt;vc-revision-other-window&lt;/code&gt; leaves behind the files it creates, so it doesn&amp;rsquo;t need to check them out again if you need them again. (&lt;a href=&#34;https://stackoverflow.com/a/49112657/6220759&#34;&gt;Here&lt;/a&gt; is a solution someone else came up with for this problem.)&lt;/p&gt;
 &lt;p&gt;I just wanted to run a one-off cleanup, since I had a lot of cruft there. I figured I could use &lt;code&gt;find&lt;/code&gt; with a regex, which I could, but I just had to figure out that the regex needs to match the &lt;em&gt;whole&lt;/em&gt; name, not just part of it. So my final result was:&lt;/p&gt;
@@ -304,10 +304,10 @@ Notes on Methodology
     
     <item>
       <title>Responsae as Spaced Repetition</title>
-      <link>http://localhost:1313/posts/responsae/</link>
+      <link>http://lordgrenville.github.io/posts/responsae/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/responsae/</guid>
+      <guid>http://lordgrenville.github.io/posts/responsae/</guid>
       <description>&lt;p&gt;In &lt;em&gt;yeshiva&lt;/em&gt; study one of the principles that is emphasised is חזרה, revision.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;One who reviews his studies one hundred times is not comparable to one who reviews his studies one hundred and one times (&lt;a href=&#34;https://www.sefaria.org.il/Chagigah.9b.10&#34;&gt;Chagiga 9b&lt;/a&gt;)&lt;/p&gt;
@@ -327,10 +327,10 @@ Notes on Methodology
     
     <item>
       <title>Monkey-patching Pandas</title>
-      <link>http://localhost:1313/posts/pandas/</link>
+      <link>http://lordgrenville.github.io/posts/pandas/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pandas/</guid>
+      <guid>http://lordgrenville.github.io/posts/pandas/</guid>
       <description>&lt;p&gt;A common catch for &lt;a href=&#34;https://pandas.pydata.org/&#34;&gt;Pandas&lt;/a&gt; users is that the default &lt;code&gt;DataFrame.to_csv&lt;/code&gt; option is &lt;code&gt;index=True&lt;/code&gt;. Indices are often significant in Pandas, but perhaps just as often a simple range of integers &lt;code&gt;$0..n$&lt;/code&gt; adding no new information. You can see some expressions of annoyance about it in &lt;a href=&#34;https://github.com/pandas-dev/pandas/issues/34576&#34;&gt;this thread&lt;/a&gt;, where Joris Van den Bossche (a Pandas core contributor and GeoPandas maintainer) notes that GeoPandas went with a much smarter default of checking if the index is non-standard and only adding it in this case.&lt;/p&gt;
 &lt;p&gt;Anyway, for me most of the time when casting to CSV I just want to send it to a colleague who will look at it in Excel or something, so I patched it in my &lt;code&gt;$HOME/.ipython/startup.py&lt;/code&gt;. The key insight here for me was how to use &lt;code&gt;partial&lt;/code&gt; with a class method; for this Python 3.4 added &lt;code&gt;partialmethod&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;functools&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;partialmethod&lt;/span&gt;
@@ -343,10 +343,10 @@ Notes on Methodology
     
     <item>
       <title>ChatGPT</title>
-      <link>http://localhost:1313/posts/chatgpt/</link>
+      <link>http://lordgrenville.github.io/posts/chatgpt/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/chatgpt/</guid>
+      <guid>http://lordgrenville.github.io/posts/chatgpt/</guid>
       <description>&lt;p&gt;The world is split about ChatGPT, and I&amp;rsquo;ll throw in my two pennies. Firstly: I am something of a hater, for technological and philosophical reasons. The idea that just taking a statistical next-word maximiser and scaling the hell out of it leads to eerily good results doesn&amp;rsquo;t make sense, and ChatGPT is better than it has, in my mind, any right to be. That of course does make me doubt myself and wonder what I am missing. I am by temperament a late adopter and dismissive of hype. But I have to acknowledge that it is possible that ChatGPT will completely change the world and/or make me and all knowledge workers obsolete and/or destroy humanity. I just don&amp;rsquo;t currently think it likely. (I don&amp;rsquo;t worry about this in any case, because this is an &amp;ldquo;everyone problem&amp;rdquo; so I rely on the other people who are busy worrying about it.)&lt;/p&gt;
 &lt;p&gt;For a while I refused to try it (or CoPilot, etc). It seemed like a gimmick and I didn&amp;rsquo;t think it would save me time. But under some pressure from colleagues, and an interest in challenging my prejudices, I have been giving it a shot lately.&lt;/p&gt;
 &lt;p&gt;Often the output is useless. For example, I needed to write an SQL query which filters &lt;code&gt;WHERE ID IN (long list of ids)&lt;/code&gt;, where the list is much longer than the maximum character limit allowed by the SQL implementation I&amp;rsquo;m querying. So I wanted to write a Python function to take in a query, list of ids, and character limit, and return a list of queries below the maximum length and containing each id, only once. This seems trivial but annoying so I considered it a good task for ChatGPT. It gave me a solution that had a few obvious errors, but once I fixed them I discovered that there was also at least one non-obvious error, so at that point I gave up and just did it myself.&lt;/p&gt;
@@ -359,10 +359,10 @@ Notes on Methodology
     <item>
       <title>  &#34;Prestige&#34; in Art and Hobbies
   </title>
-      <link>http://localhost:1313/posts/prestige/</link>
+      <link>http://lordgrenville.github.io/posts/prestige/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/prestige/</guid>
+      <guid>http://lordgrenville.github.io/posts/prestige/</guid>
       <description>&lt;p&gt;Scott Alexander &lt;a href=&#34;https://astralcodexten.substack.com/p/highlights-from-the-comments-on-nerds&#34;&gt;has a post&lt;/a&gt; about nerds and hipsters and &amp;ldquo;authentically&amp;rdquo; liking stuff and what makes art actually &amp;ldquo;good&amp;rdquo;. I&amp;rsquo;ve been interested in this topic for years and it doesn&amp;rsquo;t seem to have gotten much clearer, but I will try gather my scattered thoughts in this post.&lt;/p&gt;
 &lt;p&gt;Scott has an amusing classification of tiers of hobbies, or &amp;ldquo;things to build an identity around&amp;rdquo;, based on, I guess, perceived class signals. The top tier is some obscure intellectual area, such as &amp;ldquo;trans-finite 8-dimensional Hoffdorf groups&amp;rdquo;. Next is unusual art or music, or unusual political or philosophical views. Next is normal hobbies and mainstream mass culture. And the bottom tier is ubiquitous, obnoxious politics (&amp;ldquo;hating Trump/hating wokeness&amp;rdquo;), or &amp;ldquo;any kind of corporatized mass culture institution popular enough to have a marketing team&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;We have a vast array of leisure options and there is a corresponding anxiety about this. We are in the territory of class markers. It is easy to say, &amp;ldquo;stop worrying about what other people will think, just consume something you enjoy&amp;rdquo;, but a significant part of that consumption is a social act, a way to build an identity that will be respected and validated by our peers.&lt;/p&gt;
@@ -414,10 +414,10 @@ On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;
     
     <item>
       <title>Deadweight</title>
-      <link>http://localhost:1313/posts/deadweight/</link>
+      <link>http://lordgrenville.github.io/posts/deadweight/</link>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/deadweight/</guid>
+      <guid>http://lordgrenville.github.io/posts/deadweight/</guid>
       <description>&lt;p&gt;I was listening to a podcast about the topic of politician&amp;rsquo;s salaries, which I think are too high almost everywhere because of the obvious, but hard to mitigate, moral hazard issue. Maybe it&amp;rsquo;s best just to think of money wasted on inflated salaries as an inevitable extra tax that pays for political stability? But just for fun, let&amp;rsquo;s pretend the issue was managed fairly and consider how to handle one aspect: differentiation.&lt;/p&gt;
 &lt;p&gt;Clearly there are some parliamentarians who accomplish a lot and others who barely show up, despite the paucity of hours their office is open in general. Ideally we would condition pay on performance, but how would we measure this? One obviously bad metric is number of laws passed: too easy to game. (The more libertarian-minded might prefer number of regulations removed, but you have the same issue here.) And even if you &lt;em&gt;could&lt;/em&gt; measure performance accurately, different citizens want different things: if the pro-X politician passes lots of X laws, the pro-X citizens are happy for her salary to be higher, but not the anti-X ones.&lt;/p&gt;
 &lt;p&gt;I considered suggesting simple attendance as a metric. Just &lt;em&gt;show up&lt;/em&gt;, you know? And maybe check your phone at the door so you have to actually participate. What bad behaviour might this encourage? But on second thought, the politicians who don&amp;rsquo;t care enough to show up might actually be more harm than good if forced to participate. Paying the bad people to stay out of the way might be better than making them show up and having them get in the way of people that are getting things done. In a similar vein, the role of &amp;ldquo;Minister without Portfolio&amp;rdquo; has mostly been eliminated due to public mockery, but the result is that now some sort of portfolio is hacked together from other offices in order to give the redundant minister some responsibilities, resulting in added layers of bureaucracy and less efficiency. The Minister without Portfolio would be better for the public. Once again, just paying the deadweight tax seems the only way to go.&lt;/p&gt;
@@ -427,10 +427,10 @@ On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;
     
     <item>
       <title>Easy Things that are Hard</title>
-      <link>http://localhost:1313/posts/server/</link>
+      <link>http://lordgrenville.github.io/posts/server/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/server/</guid>
+      <guid>http://lordgrenville.github.io/posts/server/</guid>
       <description>&lt;p&gt;Something that should be easy but weirdly isn&amp;rsquo;t is sharing text or files between two of my devices, say a laptop and a phone. There are lots of sometime solutions for this - if you have a Macbook and an iPhone on the same account, you have a shared clipboard, and &lt;a href=&#34;https://kdeconnect.kde.org/&#34;&gt;KDE Connect&lt;/a&gt; is also designed to solve this, but unfortunately its support for macOS is &lt;a href=&#34;https://binary-factory.kde.org/view/MacOS/job/kdeconnect-kde_Nightly_macos/&#34;&gt;experimental&lt;/a&gt; and doesn&amp;rsquo;t seem to support Apple Silicon. Failing that, there are the more prosaic workarounds: texting it to a trusted friend (and maybe deleting afterwards), or emailing it to yourself. These solutions are inelegant to me - why should I send a file all the way to a Google or WhatsApp or Dropbox server just to move it 20 centimetres physically, within the same local network? There must be a better way!&lt;/p&gt;
 &lt;p&gt;(My previous solutions have also included using my knowledge base &lt;a href=&#34;https://joplinapp.org/&#34;&gt;Joplin&lt;/a&gt;, which also roundtrips to Dropbox [side point: another rainy day project is to use local sync most of the time for this, with a separate regular backup to Dropbox, but this does at least pose more difficult problems of consistency and resolving conflicts, etc], or else using the unpretentious &lt;a href=&#34;https://sharetxt.live&#34;&gt;https://sharetxt.live&lt;/a&gt;, built for this purpose, but sharing everything publicly unless you log in.)&lt;/p&gt;
 &lt;p&gt;Anyway, I&amp;rsquo;ve recently been writing long messages to send on my phone, so I want to edit them in Emacs and then send them to my phone clipboard. This is actually easy to solve with a local server (so the title of this post is wrong I guess&amp;hellip;), and I&amp;rsquo;m mainly just putting it here to remember the exact command. I use &lt;code&gt;buffer.txt&lt;/code&gt; for editing, then in &lt;code&gt;app.py&lt;/code&gt; I have:&lt;/p&gt;
@@ -454,10 +454,10 @@ On broken blinds and chimney-pots,&lt;br&gt;&lt;/p&gt;
     
     <item>
       <title>Editing an Android App</title>
-      <link>http://localhost:1313/posts/android/</link>
+      <link>http://lordgrenville.github.io/posts/android/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/android/</guid>
+      <guid>http://lordgrenville.github.io/posts/android/</guid>
       <description>&lt;p&gt;Problem: I have an app I like. I want to make a trivial change to the text in one screen. Emailed the developer, he said I could just edit the file in the &lt;code&gt;assets&lt;/code&gt; folder and sideload it (although he failed to see the point of the edit&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;Background: an APK is just a zipped archive, you can unzip it and edit the text files, then zip, rename to a &lt;code&gt;.apk&lt;/code&gt; extension and try install it (easiest is &lt;code&gt;adb install /path/to/app.apk&lt;/code&gt;). Since an Android app is compiled, most of the decompressed files will be binaries, but not all - some simple things are in plain text, including the ones I wanted to change.&lt;/p&gt;
 &lt;p&gt;Solved? Not quite. For security reasons, Android requires the app to be &lt;em&gt;signed&lt;/em&gt;, so once I edited it and sent it back, it was lacking a signature and I got the error &lt;code&gt;Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]&lt;/code&gt;. OK, how do I sign it? The &lt;a href=&#34;https://developer.android.com/studio/publish/app-signing&#34;&gt;Android Studio docs&lt;/a&gt; have detailed instructions. I downloaded Android Studio, and hit a wall - the menu option &lt;code&gt;Build &amp;gt; Generate Signed Bundle/APK&lt;/code&gt; just didn&amp;rsquo;t exist on the menu. I looked at some online advice, but none of it helped. Anyway, I just wanted to generate a key pair, do I really need an entire IDE for that? Apparently not, the IDE is using a tool that comes with Java called &lt;code&gt;jarsigner&lt;/code&gt; but I wasn&amp;rsquo;t able to find this in my &lt;code&gt;%JAVA\_HOME%&lt;/code&gt; and also hit permission issues (I was using WSL on Windows which may have been part of the cause).&lt;/p&gt;
@@ -477,10 +477,10 @@ solution greater than the frustration of the journey.&lt;/p&gt;
     
     <item>
       <title>Evolution of Ideas</title>
-      <link>http://localhost:1313/posts/evolution/</link>
+      <link>http://lordgrenville.github.io/posts/evolution/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/evolution/</guid>
+      <guid>http://lordgrenville.github.io/posts/evolution/</guid>
       <description>&lt;p&gt;I recently came across a &lt;a href=&#34;https://astralcodexten.substack.com/p/book-review-sadly-porn&#34;&gt;blog post&lt;/a&gt; reviewing the long-awaited book of a certain anonymous blogger who disappeared from the internet about a decade ago (after being doxxed). It reminded me that around that time I had kept up a correspondence with a friend over some of the big issues - what is the ideal political system? what makes some art better than other art? or the meaning of some common terms like &amp;ldquo;hipster&amp;rdquo; or &amp;ldquo;liberal&amp;rdquo; or &amp;ldquo;conservative&amp;rdquo;. My friend was an avid reader of said blog. I reread some of the emails and considered how much I think about those questions now, and what my views are on them today. Here are two:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;What makes, say, Proust better than, say, any given young adult romance ebook?&lt;/strong&gt;&lt;/li&gt;
@@ -522,10 +522,10 @@ For this reason I think that it tends to work at small scale, like the &lt;em&gt
     
     <item>
       <title>Wordle in One Line</title>
-      <link>http://localhost:1313/posts/wordle/</link>
+      <link>http://lordgrenville.github.io/posts/wordle/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/wordle/</guid>
+      <guid>http://lordgrenville.github.io/posts/wordle/</guid>
       <description>&lt;p&gt;You may know that the solution for each day&amp;rsquo;s Wordle puzzle is in its source code. Is there a way to grab it from the command line? Naturally.&lt;/p&gt;
 &lt;p&gt;Start with grabbing the source and outputting to stdin (may as well add &lt;code&gt;-q&lt;/code&gt;, we don&amp;rsquo;t need the output):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -q -O- powerlanguage.co.uk/wordle/main.e65ce0a5.js
@@ -548,10 +548,10 @@ For this reason I think that it tends to work at small scale, like the &lt;em&gt
     
     <item>
       <title>Populism</title>
-      <link>http://localhost:1313/posts/populism/</link>
+      <link>http://lordgrenville.github.io/posts/populism/</link>
       <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/populism/</guid>
+      <guid>http://lordgrenville.github.io/posts/populism/</guid>
       <description>&lt;p&gt;Populism is hard to define. It can be associated with both the political left and right, and, although it doesn&amp;rsquo;t sound like a pejorative term (what&amp;rsquo;s wrong with being popular?), it&amp;rsquo;s one of those terms people only used to describe others (negatively). I used to think of it as meaning &amp;ldquo;anti-elitist&amp;rdquo;, or basically something which is popular but most educated people think is stupid. But I&amp;rsquo;ve come up with something a bit clearer.&lt;/p&gt;
 &lt;p&gt;The word &amp;ldquo;democracy&amp;rdquo; can mean two somewhat contradictory things:&lt;/p&gt;
 &lt;ol&gt;
@@ -568,10 +568,10 @@ For this reason I think that it tends to work at small scale, like the &lt;em&gt
     
     <item>
       <title>Corruption</title>
-      <link>http://localhost:1313/posts/corruption/</link>
+      <link>http://lordgrenville.github.io/posts/corruption/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/corruption/</guid>
+      <guid>http://lordgrenville.github.io/posts/corruption/</guid>
       <description>&lt;p&gt;I was listening to a &lt;a href=&#34;https://newbooksnetwork.com/epstein&#34;&gt;podcast&lt;/a&gt; (about metaphysics in the social sciences, very interesting but not the topic of this post) and the guest mentioned as an aside the principal-agent theory of political corruption, pretty common in economically-inclined poli-sci literature.&lt;label for=&#34;sidenote-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;(1)&lt;/label&gt;
 &lt;input type=&#34;checkbox&#34; id=&#34;sidenote-1&#34; class=&#34;margin-toggle&#34;/&gt;
 &lt;span class=&#34;sidenote&#34;&gt;
@@ -589,10 +589,10 @@ The idea that politicians will rationally try to maximise personal gain unless h
     
     <item>
       <title>Scraping Kevin Lewis</title>
-      <link>http://localhost:1313/posts/kevin/</link>
+      <link>http://lordgrenville.github.io/posts/kevin/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/kevin/</guid>
+      <guid>http://lordgrenville.github.io/posts/kevin/</guid>
       <description>&lt;p&gt;Kevin Lewis&amp;rsquo; daily &lt;em&gt;Findings&lt;/em&gt; blog at National Affairs is a great way to stay on top of social science news, presenting a daily themed collection of abstracts of recent papers. The site is free to read, but doesn&amp;rsquo;t offer an RSS feed, which is my preferred way to consume it. I decided to write a short Python script to scrape new posts into a local XML file.&lt;/p&gt;
 &lt;p&gt;The basic script I started with went to &lt;a href=&#34;https://www.nationalaffairs.com/authors/detail/kevin-lewis&#34;&gt;the author&amp;rsquo;s page&lt;/a&gt;, found the box with most recent posts, followed and scraped each link, encoded them as RSS (basically URL-encoding the HTML tags), added opening and closing RSS XML tags, and saved the file. In further iterations I added the ability to open the file if it exists, check if an item exists (and not scrape it), and cleaned up the code. Once I was happy with it, the last thing I wanted to add (for now!) was the ability to run it on the reg. The code is &lt;a href=&#34;https://github.com/lordgrenville/scrape_kevin&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My first instinct was to run &lt;code&gt;crontab -e&lt;/code&gt; and set up a weekly run there. But I found that since my Macbook goes to sleep quite aggressively to save power, often the job wouldn&amp;rsquo;t be carried out. Turns out that macOS has a built in tool called &lt;code&gt;launchd&lt;/code&gt; which is recommended over cron, and can also run after waking if it missed its cue.&lt;/p&gt;
@@ -602,10 +602,10 @@ The idea that politicians will rationally try to maximise personal gain unless h
     
     <item>
       <title>Notes from Installing Arch Linux</title>
-      <link>http://localhost:1313/posts/arch/</link>
+      <link>http://lordgrenville.github.io/posts/arch/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/arch/</guid>
+      <guid>http://lordgrenville.github.io/posts/arch/</guid>
       <description>&lt;p&gt;About six months ago I downloaded &lt;a href=&#34;https://archlinux.org/download/&#34;&gt;the Arch ISO&lt;/a&gt; and stuck it on a thumb drive. I finally got around to installing it now - I was nervous about accidentally nuking my computer, so didn&amp;rsquo;t want to try dual-boot the way I would with a distro with a graphical installer, and &lt;a href=&#34;https://github.com/yuk7/ArchWSL&#34;&gt;running it via WSL&lt;/a&gt; would be missing the point. I finally got my hands on an old laptop I could mess around with and did it.&lt;/p&gt;
 &lt;p&gt;Overall, it was pretty simple following the &lt;a href=&#34;https://wiki.archlinux.org/index.php/Installation_guide&#34;&gt;installation guide from the Wiki&lt;/a&gt;. The only hairy bit was editing my disk partitions via &lt;code&gt;fdisk&lt;/code&gt; - I relied on &lt;a href=&#34;https://itsfoss.com/install-arch-linux/&#34;&gt;this guide&lt;/a&gt; at that point. But there were two notable issues which held me up.&lt;/p&gt;
 &lt;p&gt;The first was expired PGP keys. I ran into a lot of &lt;code&gt;Key could not be verified locally&lt;/code&gt; messages while installing, and one page told me to update my keyring with &lt;code&gt;pacman -Su archlinux-keyring&lt;/code&gt;. This resulted in trying to install a lot more software and running out of space in my thumb drive. I also tried deleting everything in &lt;code&gt;/etc/pacman.d/gnupg&lt;/code&gt; and rerunning &lt;code&gt;pacman-key --init &amp;amp;&amp;amp; pacman-key --populate archlinux&lt;/code&gt;, all to no avail. Eventually I just downloaded the newest version, overwrote it onto my thumb drive, and began from scratch. This time it worked.&lt;/p&gt;
@@ -616,10 +616,10 @@ The idea that politicians will rationally try to maximise personal gain unless h
     
     <item>
       <title>A Complete Idiot&#39;s Guide to Doom Emacs</title>
-      <link>http://localhost:1313/posts/emacs/</link>
+      <link>http://lordgrenville.github.io/posts/emacs/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/emacs/</guid>
+      <guid>http://lordgrenville.github.io/posts/emacs/</guid>
       <description>&lt;p&gt;(This guide assumes familiarity with Vim, git and command line, but no prior knowledge of Emacs. &lt;a href=&#34;http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/&#34;&gt;This&lt;/a&gt; is a good guide from zero to Emacs. I was also helped/inspired by &lt;a href=&#34;https://noelwelsh.com/posts/2019-01-10-doom-emacs.html&#34;&gt;Noel Welsh&amp;rsquo;s&lt;/a&gt; Doom guide, and that of mad genius &lt;a href=&#34;https://tecosaur.github.io/emacs-config/config.html&#34;&gt;Tecosaur&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;After several aborted attempts to get started with Emacs, I&amp;rsquo;ve finally made some sense of it. Since there aren&amp;rsquo;t many basic guides online, I thought I&amp;rsquo;d document my process. Vim (which I&amp;rsquo;m using to type this) is a lot simpler to get started with (as soon as you figure out how to quit&amp;hellip;) I think that has to do with its greater simplicity, as well as the fact that there&amp;rsquo;s basically only one flavour. (NeoVim is from a user&amp;rsquo;s perspective mostly identical, and if you&amp;rsquo;re using &lt;code&gt;vi&lt;/code&gt; you probably know what you&amp;rsquo;re doing.) Emacs by contrast is a whole world.&lt;/p&gt;
 &lt;p&gt;The first question I had to deal with is: which Emacs do I use? Vanilla Emacs looks like something from the Stone Age, and doesn&amp;rsquo;t offer you enough out of the box to persuade you to learn it - at least that was my experience. I was tempted back first with &lt;a href=&#34;https://www.spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt;, and finally settled on &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;, which will be the subject of this guide.&lt;/p&gt;
@@ -644,10 +644,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Status &amp; Jewish Intellectuals</title>
-      <link>http://localhost:1313/posts/status/</link>
+      <link>http://lordgrenville.github.io/posts/status/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/status/</guid>
+      <guid>http://lordgrenville.github.io/posts/status/</guid>
       <description>&lt;p&gt;I recently asked a French friend why that country produces so many brilliant mathematicians and scientists - not really expecting a good answer. He replied that in France, being an academic or theoretician is seen as the most admirable position to aspire to, on a par with philosopher or artist. However, engineers and entrepreneurs are associated with far less prestige, which would roughly explain why so many of those scientists and mathematicians end up working for foreign companies.&lt;/p&gt;
 &lt;p&gt;It reminded me that when I was growing up, I thought of writers, historians, philosophers and other intellectuals as most worthy of respect, and assumed that I should want to do something similar when I was older, if I could afford it. It is possible that this is undergoing a sea-change, as the increased prominence of information technology and financial difficulties of media and academia increase the social capital (in Bourdieu&amp;rsquo;s term) associated with &amp;ldquo;STEM&amp;rdquo; subjects. Nonetheless, I was surprised to find a very bald expression of this idea in Stefan Zweig&amp;rsquo;s memoir &lt;em&gt;The World of Yesterday&lt;/em&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -662,10 +662,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>The Douglas Adams Principle</title>
-      <link>http://localhost:1313/posts/adams/</link>
+      <link>http://lordgrenville.github.io/posts/adams/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/adams/</guid>
+      <guid>http://lordgrenville.github.io/posts/adams/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a great quote from Douglas Adams&amp;rsquo; posthumous final novel, &lt;em&gt;The Salmon of Doubt&lt;/em&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.&lt;/p&gt;
@@ -679,10 +679,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Gifts</title>
-      <link>http://localhost:1313/posts/gifts/</link>
+      <link>http://lordgrenville.github.io/posts/gifts/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/gifts/</guid>
+      <guid>http://lordgrenville.github.io/posts/gifts/</guid>
       <description>&lt;p&gt;I recently read the book &lt;a href=&#34;https://www.goodreads.com/book/show/160171.Just_for_Fun&#34;&gt;Just for Fun&lt;/a&gt;, a lot of which focuses on Linus Torvalds&amp;rsquo; battle for his operating system, Linux, to be &amp;ldquo;Open Source&amp;rdquo; software. Open Source doesn&amp;rsquo;t mean free; but it  means that the software&amp;rsquo;s code (the source) is freely available, so anyone can copy it. Thus there&amp;rsquo;s no viable business in selling the code, but there could be in supplying and installing the software for less tech-savvy users, or in ancillary services such as support. At the time, the &lt;em&gt;bête noire&lt;/em&gt; of OS was Bill Gates, who made a reasonable argument: OS software made it hard to earn a living from software, meaning worse quality for everybody. Yet today OS has basically won out, with even Microsoft embracing Linux and &lt;a href=&#34;https://github.com/microsoft?q=license%3Agpl-3.0+license%3Amit&amp;amp;type=&amp;amp;language=&#34;&gt;open-sourcing&lt;/a&gt; hundreds of projects. So how does the Open Source world square the circle of making it pay?&lt;/p&gt;
 &lt;p&gt;This reminds me of something the financial writer Matt Levine says about the &lt;a href=&#34;https://www.bloomberg.com/opinion/articles/2017-05-02/litvaking-and-lending&#34;&gt;gift economy&lt;/a&gt; (based on the essay &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Gift_(essay)&#34;&gt;&lt;em&gt;The Gift&lt;/em&gt;&lt;/a&gt; by the anthropologist Marcel Mauss). At a basic level, people trade goods based on pure financial value; but at a very large scale - say, an oil-and-gas company is looking for bankers to facilitate an acquisition - decisions are made much more based on gifts and relationships, which are not anchored in pure economic rationality. For example, the bank may gift the company&amp;rsquo;s decision-makers watches or fancy dinners or golfing weekends, in the hope that at some later point, they will remember them for some major deal (never as an explicit &lt;em&gt;quid pro quo&lt;/em&gt;, which would seem distatestful to both sides).&lt;/p&gt;
 &lt;p&gt;In some ways the software world has moved toward this model. Companies want to hire star developers, and to do so try to impress them with their friendliness toward open-source, perhaps through sponsorships or by allowing some of their employees to contribute to open-source projects on company time. They may also open up some of their own source code, usually from side projects which aren&amp;rsquo;t part of their main business model, or as a way to tempt customers to integrate into their ecosystem. On the developer side, a beginner programmer may contribute to an open-source project related to her specialty as a way of making an name for herself. In each case, these are not transactions based on economic value, but part of a more sophisticated ritual in which each side hopes to gain, but is able to talk in terms of lofty values such as the good of the community, gift-giving, and generally a world free of grubby pecuniary thoughts.&lt;/p&gt;
@@ -692,17 +692,17 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Pragmatism</title>
-      <link>http://localhost:1313/posts/pragmatism/</link>
+      <link>http://lordgrenville.github.io/posts/pragmatism/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pragmatism/</guid>
+      <guid>http://lordgrenville.github.io/posts/pragmatism/</guid>
       <description>&lt;p&gt;In &lt;em&gt;The Will to Believe&lt;/em&gt; (&lt;em&gt;Is Life Worth Living?&lt;/em&gt;, IV), William James writes:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Suppose, for instance, that you are climbing a mountain, and have worked yourself into a position from which the only escape is by a terrible leap. Have faith that you can successfully make it, and your feet are nerved to its accomplishment. But mistrust yourself, and think of all the sweet things you have heard the scientists say of maybes, and you will hesitate so long that, at last, all unstrung and trembling, and launching yourself in a moment of despair, you roll in the abyss. In such a case (and it belongs to an enormous class), the part of wisdom as well as of courage is to believe what is in the line of your needs, for only by such belief is the need fulfilled. Refuse to believe, and you shall indeed be right, for you shall irretrievably perish. But believe, and again you shall be right, for you shall save yourself. You make one or the other of two possible universes true by your trust or mistrust,—both universes having been only maybes, in this particular, before you contributed your act.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I&amp;rsquo;ve come across a similar idea in &lt;a href=&#34;https://philosophybites.com/2014/03/david-papineau-on-philosophy-and-sport.html&#34;&gt;this podcast&lt;/a&gt;: that &lt;em&gt;the fact of believing in something&lt;/em&gt; makes it more likely to happen. This can be true in mountaineering (James&amp;rsquo; example), sport (as in the podcast), or in business, which I&amp;rsquo;ve always thought takes extraordinary self-belief: most businesses fail, so one has to wilfully ignore the laws of probability in order to start a new one, yet countless people do, and society benefits from their appetite for risk.&lt;/p&gt;
 &lt;p&gt;As someone who tends towards &amp;ldquo;rationalism&amp;rdquo; (using the term colloquially), I struggle to understand this impulse. How does one ignore reality and leap ahead into something, convincing oneself that is true? And, at what point should reality be allowed to once again influence one&amp;rsquo;s decision-making? The perenially loss-making business foolhardily propelled into an avalanche of red ink comes to mind.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/wework.jpg&#34; alt=&#34;Look before you leap?&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://lordgrenville.github.io/img/wework.jpg&#34; alt=&#34;Look before you leap?&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This is also relevant in what we might might call &amp;ldquo;self-help&amp;rdquo;. Common advice goes that one should &amp;ldquo;be oneself&amp;rdquo; and not worry about what other people think. And sure, confidence is attractive. But judgements from others are also a way in which society communicates; obviously one doesn&amp;rsquo;t want to entirely cut oneself off from what others think. Say someone has an intensely annoying laugh, something which causes anyone with normal hearing deep psychic pain - wouldn&amp;rsquo;t it be more reasonable for him to try change it, rather than soldier on believing that others should just accept him?&lt;/p&gt;
 &lt;p&gt;But maybe I&amp;rsquo;m too rational to understand all this&amp;hellip;&lt;/p&gt;
 </description>
@@ -710,10 +710,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Tar Hack</title>
-      <link>http://localhost:1313/posts/tar/</link>
+      <link>http://lordgrenville.github.io/posts/tar/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tar/</guid>
+      <guid>http://lordgrenville.github.io/posts/tar/</guid>
       <description>&lt;p&gt;There’s a funny &lt;a href=&#34;https://xkcd.com/1168/&#34;&gt;xkcd cartoon&lt;/a&gt; about the &lt;code&gt;tar&lt;/code&gt; command:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://imgs.xkcd.com/comics/tar_2x.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;How does one remember those ridiculous single letter commands? My preferred solution is to first consult with &lt;a href=&#34;https://tldr.sh/&#34;&gt;TLDR&lt;/a&gt;, but Justin Abrahams has a fun solution &lt;a href=&#34;https://justin.abrah.ms/bash/forgotten_friend_3.html&#34;&gt;over at his blog&lt;/a&gt;:&lt;/p&gt;
@@ -741,10 +741,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Communication</title>
-      <link>http://localhost:1313/posts/communication/</link>
+      <link>http://lordgrenville.github.io/posts/communication/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/communication/</guid>
+      <guid>http://lordgrenville.github.io/posts/communication/</guid>
       <description>&lt;p&gt;I’ve just finished a &lt;a href=&#34;https://www.goodreads.com/book/show/560818.Speaking_Peace&#34;&gt;book on Nonviolent Comunication&lt;/a&gt; and thought it would have made a good pairing with one I read last year, &lt;a href=&#34;https://www.goodreads.com/book/show/26156469-never-split-the-difference&#34;&gt;&lt;em&gt;Never Split the Difference&lt;/em&gt;&lt;/a&gt;, as a lesson in effective communication. The latter is about getting what you want from your counterparty, no matter your relationship afterwards. An adversarial, zero-sum situation is assumed, and Voss (the author, a former FBI hostage negotiator) urges the reader to push for everything, using empathy toward the counterparty only as a weapon.&lt;/p&gt;
 &lt;p&gt;By contrast, Rosenberg urges something of the opposite approach: creating a peaceful relationship even at the risk of not achieving your goals. He has a somewhat Buddhistic approach to life, seeing all people as essentially good and the goal of communication as seeing the goodness in the counterparty, validating their feelings without criticising (this applies equally to oneself), and trying to find a way in which everyone’s goals can be achieved.&lt;/p&gt;
 &lt;p&gt;Both authors present a bevy of case studies in which they used their principles to achieve miraculous results, even in cases which seemed like certain exceptions. I think that both authors imply a falsehood, without making it explicit: &lt;em&gt;my principles will work in all situations&lt;/em&gt;. When push comes to shove, both would have to admit that some situations are simply insoluble; no amount of negotiating savvy or peace-building communication will lead to a positive outcome. Nonetheless, such cases are rare, and some hyperbole is probably needed in order to convince sceptical readers to apply these rules among their families and colleagues.&lt;/p&gt;
@@ -753,10 +753,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Boredom</title>
-      <link>http://localhost:1313/posts/boredom/</link>
+      <link>http://lordgrenville.github.io/posts/boredom/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/boredom/</guid>
+      <guid>http://lordgrenville.github.io/posts/boredom/</guid>
       <description>&lt;p&gt;I almost always have earphones in, filling up the time in which I&amp;rsquo;m not actively focusing on something else with a steady patter of podcasts or mildly interesting books. But occasionally I wonder: aren&amp;rsquo;t I missing out on being alone with my thoughts, the serendipitous free flow borne of tedium? Maybe it isn&amp;rsquo;t worth it.&lt;/p&gt;
 &lt;p&gt;So I have a control: one day a week, I forswear all electronic devices, and when I go for walks it&amp;rsquo;s just me and my own thoughts. I guess the ideal would be for me to ponder hard problems, or come up with a more efficient solution to a maths problem (this actually did happen the other day, for &lt;a href=&#34;https://projecteuler.net/problem=205&#34;&gt;this&lt;/a&gt;! But most of the time the topics seem to be:&lt;/p&gt;
 &lt;ul&gt;
@@ -770,10 +770,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Finally Figured Out Monty Hall!</title>
-      <link>http://localhost:1313/posts/monty_hall/</link>
+      <link>http://lordgrenville.github.io/posts/monty_hall/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/monty_hall/</guid>
+      <guid>http://lordgrenville.github.io/posts/monty_hall/</guid>
       <description>&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/DeegC/monty_hall_paradox&#34;&gt;this explanation&lt;/a&gt; (coding it out in Ruby made it clearer to me, but it&amp;rsquo;s really the verbal explanation that worked).&lt;/p&gt;
 &lt;p&gt;At the outset you have doors A, B and C. Given the choice between A or B and C, obviously you would take the latter. That&amp;rsquo;s what you&amp;rsquo;re choosing here! B and C, which combined have a greater chance of being correct. It&amp;rsquo;s more likely that it was in the two you didn&amp;rsquo;t choose: specifically the one of them which isn&amp;rsquo;t wrong. But they still represent 2/3.&lt;/p&gt;
 &lt;p&gt;As a &lt;a href=&#34;https://news.ycombinator.com/item?id=22717754&#34;&gt;HN commenter&lt;/a&gt; put it, it&amp;rsquo;s easier to think of it when it&amp;rsquo;s 100 doors. To begin, you choose one. What&amp;rsquo;s the chance you&amp;rsquo;re correct? A measly 1%. You almost certainly got it wrong. Imagine if you could switch to select &lt;em&gt;the other 99&lt;/em&gt;. Of course you&amp;rsquo;d do it! Now the host opens the 98 goat doors. The other 99 are 98 goats + 1 &lt;code&gt;?&lt;/code&gt;. Of course you should switch! &lt;em&gt;You picked the minority, so the majority of times you are wrong. You&amp;rsquo;re being given a chance to switch to the majority&lt;/em&gt;. Of course, if no door is opened, you&amp;rsquo;re still picking one of 3 - you&amp;rsquo;re still a minority, so it makes no difference if you switch or stay.&lt;/p&gt;
@@ -782,10 +782,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>How Twitter Works in 2019</title>
-      <link>http://localhost:1313/posts/twitter/</link>
+      <link>http://lordgrenville.github.io/posts/twitter/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/twitter/</guid>
+      <guid>http://lordgrenville.github.io/posts/twitter/</guid>
       <description>&lt;p&gt;Someone tweets: I like mushrooms. Mushrooms are great. Yummy! Hits “send tweet”.&lt;/p&gt;
 &lt;p&gt;Most of the replies are from the person’s followers. “Wow, you’re so  right! You have the best take on mushrooms.” “Totally! Mushrooms rule!”  “Ugh people who don’t like mushrooms be like [GIF from The Office]”.&lt;/p&gt;
 &lt;p&gt;Then one person says “mushrooms are OK, but garlic is also cool”.&lt;/p&gt;
@@ -799,10 +799,10 @@ a repository called MELPA, but can also come from the web (eg GitHub), you put t
     
     <item>
       <title>Carrying Podcasts From the Well On My Shoulders, Like In the Old Days</title>
-      <link>http://localhost:1313/posts/podcasts/</link>
+      <link>http://lordgrenville.github.io/posts/podcasts/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/podcasts/</guid>
+      <guid>http://lordgrenville.github.io/posts/podcasts/</guid>
       <description>&lt;p&gt;In general my view on podcasts is the shorter the better. So I really
 like &lt;a href=&#34;https://www.bloomberg.com/podcasts/view&#34;&gt;Bloomberg View&lt;/a&gt;, which
 runs just over a minute and distills the essence of a longer (usually
@@ -864,10 +864,10 @@ as a virtual podcast. And there you go, podcasts the old fashioned way!&lt;/p&gt
     
     <item>
       <title>The Truth Is Whatever We Believe</title>
-      <link>http://localhost:1313/posts/truth/</link>
+      <link>http://lordgrenville.github.io/posts/truth/</link>
       <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/truth/</guid>
+      <guid>http://lordgrenville.github.io/posts/truth/</guid>
       <description>&lt;p&gt;You could tell a story in which the West is in decline, and China (and
 perhaps India, Africa, whoever) is rising to take its place. Similarly,
 you could take the post Cold War view that liberalism survives all
@@ -890,10 +890,10 @@ others. Perhaps that is all that is necessary.&lt;/p&gt;
     
     <item>
       <title>The Futility of Writing</title>
-      <link>http://localhost:1313/posts/futility_of_writing/</link>
+      <link>http://lordgrenville.github.io/posts/futility_of_writing/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/futility_of_writing/</guid>
+      <guid>http://lordgrenville.github.io/posts/futility_of_writing/</guid>
       <description>&lt;p&gt;Haven&amp;rsquo;t written anything in a while, and so this post seems appropriate.
 It seems sometimes like in the Internet age, everything has been said,
 and it&amp;rsquo;s mostly wrong. Take any news event in the last 24 hours, and you
@@ -918,10 +918,10 @@ to be. I don&amp;rsquo;t know if it&amp;rsquo;s a long term solution.&lt;/p&gt;
     
     <item>
       <title>Conversation</title>
-      <link>http://localhost:1313/posts/conversation/</link>
+      <link>http://lordgrenville.github.io/posts/conversation/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/conversation/</guid>
+      <guid>http://lordgrenville.github.io/posts/conversation/</guid>
       <description>&lt;p&gt;I like to think that I&amp;rsquo;ve taught myself to become a better
 conversationalist. I know that makes me sounds rather dull; but I do try
 not to think about it as a set of procedures or an algorithm, but rather
@@ -960,10 +960,10 @@ finding which one it is.&lt;/p&gt;
     
     <item>
       <title>Rhetoric &amp; Rationalism</title>
-      <link>http://localhost:1313/posts/rhetoric_rationalism/</link>
+      <link>http://lordgrenville.github.io/posts/rhetoric_rationalism/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/rhetoric_rationalism/</guid>
+      <guid>http://lordgrenville.github.io/posts/rhetoric_rationalism/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s common to think of rhetoric as a gloss on top of &amp;rsquo;true&amp;rsquo; thinking,
 mere packaging for the intellectual content of our ideas. From some of
 the Platonic dialogues it seems like rhetoric, (or &lt;em&gt;sophistry&lt;/em&gt;, which
@@ -987,10 +987,10 @@ necessarily better - they are just different forms of knowledge.&lt;/p&gt;
     
     <item>
       <title>Parallel Texts</title>
-      <link>http://localhost:1313/posts/parallel_texts/</link>
+      <link>http://lordgrenville.github.io/posts/parallel_texts/</link>
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/parallel_texts/</guid>
+      <guid>http://lordgrenville.github.io/posts/parallel_texts/</guid>
       <description>&lt;p&gt;An anecdote from Richard Rhodes&amp;rsquo; book &lt;em&gt;The Making of the Atomic Bomb&lt;/em&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Out of curiosity in 1940, while visiting Berkeley to deliver a
@@ -1021,10 +1021,10 @@ as this too was part of the Torah that he was to receive.&lt;/p&gt;
     
     <item>
       <title>Depressing Art // Likable Politicians</title>
-      <link>http://localhost:1313/posts/depressing_art_likable_politicians/</link>
+      <link>http://lordgrenville.github.io/posts/depressing_art_likable_politicians/</link>
       <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/depressing_art_likable_politicians/</guid>
+      <guid>http://lordgrenville.github.io/posts/depressing_art_likable_politicians/</guid>
       <description>&lt;p&gt;There are elections now, and people here are deeply cynical about the
 slate of candidates. Political despair is the dominant tone, and has
 been for some time. This is also true in the wider world, where few
@@ -1082,10 +1082,10 @@ vision of a truth almost, but not quite perceived.&lt;/p&gt;
     
     <item>
       <title>Prayer</title>
-      <link>http://localhost:1313/posts/prayer/</link>
+      <link>http://lordgrenville.github.io/posts/prayer/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/prayer/</guid>
+      <guid>http://lordgrenville.github.io/posts/prayer/</guid>
       <description>&lt;p&gt;Back in my yeshiva days, I struggled with the concept of prayer. We
 observe that sometimes people pray for things and aren&amp;rsquo;t answered -
 after all, we all pray every day for health, wealth and the ultimate
@@ -1115,10 +1115,10 @@ so it&amp;rsquo;s no wonder that it&amp;rsquo;s such a conundrum.&lt;/p&gt;
     
     <item>
       <title>What is a Male Feminist? // Stats and the Social Sciences</title>
-      <link>http://localhost:1313/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</link>
+      <link>http://lordgrenville.github.io/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</guid>
+      <guid>http://lordgrenville.github.io/posts/what_is_a_male_feminist_stats_and_the_social_sciences/</guid>
       <description>&lt;p&gt;A few years ago, a lot of people were sharing an &lt;a href=&#34;https://www.youtube.com/watch?v=WJvm5-lO_Dw&#34;&gt;Aziz Ansari
 bit&lt;/a&gt; about feminism. The
 thrust - if you don&amp;rsquo;t want to click through - is that if you think men
@@ -1172,10 +1172,10 @@ Chomsky, the former sums it up in a fascinating, deep-ranging blog post
     
     <item>
       <title>Social Justice Warriors on the Intellectual Dark Web // Who Needs the News? // The Nature of Reality</title>
-      <link>http://localhost:1313/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</link>
+      <link>http://lordgrenville.github.io/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</guid>
+      <guid>http://lordgrenville.github.io/posts/social_justice_warriors_on_the_intellectual_dark_web_who_needs_the_news_the_nature_of_reality/</guid>
       <description>&lt;p&gt;A very overdiscussed topic lately is political correctness, and if
 there&amp;rsquo;s too much of it. I propose the following three points:&lt;/p&gt;
 &lt;ol&gt;
@@ -1318,10 +1318,10 @@ applying the correct term would leave the rose metaphorically dead.&lt;/p&gt;
     
     <item>
       <title>Democracy &amp; Elitism // Fish</title>
-      <link>http://localhost:1313/posts/democracy___elitism_fish/</link>
+      <link>http://lordgrenville.github.io/posts/democracy___elitism_fish/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/democracy___elitism_fish/</guid>
+      <guid>http://lordgrenville.github.io/posts/democracy___elitism_fish/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a &amp;ldquo;salon&amp;rdquo; here where people get together once in a fortnight to
 discuss a topic. The other week we were talking about politics and I
 floated the idea that there are &amp;ldquo;good&amp;rdquo; and &amp;ldquo;bad&amp;rdquo; voters: those who
@@ -1396,10 +1396,10 @@ banged it in the oven. A brave new world.&lt;/p&gt;
     
     <item>
       <title>Biodiversity // Doctors // BMX</title>
-      <link>http://localhost:1313/posts/biodiversity_doctors_bmx/</link>
+      <link>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/biodiversity_doctors_bmx/</guid>
+      <guid>http://lordgrenville.github.io/posts/biodiversity_doctors_bmx/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working at home this week, and leaving the windows open, as I like doing in all but the hottest weather. But I&amp;rsquo;ve been bothered by these guys on the right.
 
 
@@ -1407,7 +1407,7 @@ banged it in the oven. A brave new world.&lt;/p&gt;
     &lt;input type=&#34;checkbox&#34; id=&#34;marginfig-1&#34; class=&#34;margin-toggle&#34;/&gt;
     &lt;span class=&#34;marginnote&#34;&gt;
     
-    &lt;img src=&#34;http://localhost:1313/img/Aedes_Albopictus.jpg&#34; alt=&#34;mosquito&#34;&gt;
+    &lt;img src=&#34;http://lordgrenville.github.io/img/Aedes_Albopictus.jpg&#34; alt=&#34;mosquito&#34;&gt;
     
 
 &lt;strong&gt;Aedes Albopictus. &lt;/strong&gt;
