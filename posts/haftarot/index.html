@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-za"><head>
+<html lang="en-za"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <script data-goatcounter="https://lordgrenville.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 <title>Haftorah Stats - Frivolous Musings</title>
@@ -7,14 +7,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description"
     content="
-
 Background
+#
+
+The custom of reading a passage from the Prophets, the haftorah, is ancient and obscure. The Talmud deals with it(1)
 
 
-The custom of reading a passage from the Prophets, the haftorah, is ancient and obscure. The Talmud deals with it1 but does not elaborate on the source or the reason for the custom. According to one early source2, it is no less old than the custom of public Torah reading itself, traditionally held to have been instituted by Ezra.
+(1)Megilla 31a
 
-This post will not shed any light on these questions, but instead answer a far simpler one: how are the haftarot of the annual cycle distributed between the different books of the Prophets? As &#34;all are subject to luck, even the Torah scroll in the ark&#34;3, which books are fortunate enough to be read more often than others? ">
-<link rel="canonical" href="http://lordgrenville.github.io/posts/haftarot/" />
+ but does not elaborate on the source or the reason for the custom. According to one early source(2)
+
+
+(2)Tosfos Rid (R’ Yeshaya MiTrani) in Sefer HaMachria 31
+
+, it is no less old than the custom of public Torah reading itself, traditionally held to have been instituted by Ezra. ">
+<link rel="canonical" href="http://localhost:1313/posts/haftarot/" />
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -75,147 +82,119 @@ This post will not shed any light on these questions, but instead answer a far s
       Haftorah Stats
     </h1><p class="date">February 5, 2025</p></header>
   <div class="post-content">
-    
-<div id="outline-container-headline-1" class="outline-2">
-<h2 id="headline-1">
+    <h2 id="background">
 Background
+<a href="#background" class="heading-anchor">#</a>
 </h2>
-<div id="outline-text-headline-1" class="outline-text-2">
-<p>The custom of reading a passage from the Prophets, the <em>haftorah</em>, is ancient and obscure. The Talmud deals with it<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> but does not elaborate on the source or the reason for the custom. According to one early source<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>, it is no less old than the custom of public Torah reading itself, traditionally held to have been instituted by Ezra.</p>
-<p>
-This post will not shed any light on these questions, but instead answer a far simpler one: how are the haftarot of the annual cycle distributed between the different books of the Prophets? As &#34;all are subject to luck, even the Torah scroll in the ark&#34;<sup class="footnote-reference"><a id="footnote-reference-3" href="#footnote-3">3</a></sup>, which books are fortunate enough to be read more often than others?</p>
-<p>
-To this end I put together a <a href="https://github.com/lordgrenville/haftarot/blob/main/haftarot.csv">table of the annual readings</a> and did a quick data analysis<sup class="footnote-reference"><a id="footnote-reference-4" href="#footnote-4">4</a></sup>. For each book I calculated the number of <em>haftarot</em> it has, number of chapters, and the ratio of the two (to give a sense of <em>haftorah</em> frequency relative to size). My takeaways were:</p>
+<p>The custom of reading a passage from the Prophets, the <em>haftorah</em>, is ancient and obscure. The Talmud deals with it<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(1)</span>Megilla 31a
+</span>
+ but does not elaborate on the source or the reason for the custom. According to one early source<label for="sidenote-2" class="margin-toggle sidenote-number">(2)</label>
+<input type="checkbox" id="sidenote-2" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(2)</span>Tosfos Rid (R’ Yeshaya MiTrani) in <em>Sefer HaMachria</em> 31
+</span>
+, it is no less old than the custom of public Torah reading itself, traditionally held to have been instituted by Ezra.</p>
+<p>This post will not shed any light on these questions, but instead answer a far simpler one: how are the haftarot of the annual cycle distributed between the different books of the Prophets? As &ldquo;all are subject to luck, even the Torah scroll in the ark&quot;<label for="sidenote-3" class="margin-toggle sidenote-number">(3)</label>
+<input type="checkbox" id="sidenote-3" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(3)</span>Zohar Bamidbar 134a
+</span>
+, which books are fortunate enough to be read more often than others?</p>
+<p>To this end I put together a <a href="https://github.com/lordgrenville/haftarot/blob/main/haftarot.csv">table of the annual readings</a> and did a quick data analysis<label for="sidenote-4" class="margin-toggle sidenote-number">(4)</label>
+<input type="checkbox" id="sidenote-4" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(4)</span>Code and data to reproduce are available <a href="https://github.com/lordgrenville/haftarot">online</a>. I will gratefully receive any corrections or suggestions.
+</span>
+. For each book I calculated the number of <em>haftarot</em> it has, number of chapters, and the ratio of the two (to give a sense of <em>haftorah</em> frequency relative to size). My takeaways were:</p>
 <ul>
 <li>The biggest single source of haftarot is Yeshayahu. (With the שבע דנחמתא freshly behind us, this may not feel surprising!)</li>
 <li>When measuring relative to size, Trei Asar as a whole is the largest (scoring 0.36), with multiple haftarot coming from Hoshea, Amos and Zecharia, while the books of Ovadia and Yona are read in their entirety. (Yoel contributes just a snippet at the end of the <em>haftorah</em> of <em>Shabbos Shuva</em>, while Nachum, Chavakuk, Tzafania and Chagai are entirely absent.)</li>
 <li>However, if considered separately, both Malachi (0.67) and Melachim Alef (0.45) have higher scores.</li>
-<li>If we take “Deutero-Isaiah” (ישיעהו השני<sup class="footnote-reference"><a id="footnote-reference-5" href="#footnote-5">5</a></sup>) as an independent book, it is the largest single source of haftarot (15, scoring 0.58). In fact, the rest of Yeshayahu has a mere 3 haftarot, giving it the lowest score (0.08) of any book. (But one of these is the famous reading of <em>Shabbos Chazon</em>, which surely counts for something…)</li>
-<li>There are roughly twice as many haftarot from the (mostly non-narrative<sup class="footnote-reference"><a id="footnote-reference-6" href="#footnote-6">6</a></sup>) Latter Prophets compared to the Early Prophets (50 vs 26). This is partly due to their greater length, and partly, I suspect, because it is harder to find thematic overlap between narrative prophecies and the weekly Torah portions.</li>
+<li>If we take “Deutero-Isaiah” (ישיעהו השני)<label for="sidenote-5" class="margin-toggle sidenote-number">(5)</label>
+<input type="checkbox" id="sidenote-5" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(5)</span>Chapters 40-66, which differ from the first part in both style and chronology
+</span>
+ as an independent book, it is the largest single source of haftarot (15, scoring 0.58). In fact, the rest of Yeshayahu has a mere 3 haftarot, giving it the lowest score (0.08) of any book. (But one of these is the famous reading of <em>Shabbos Chazon</em>, which surely counts for something…)</li>
+<li>There are roughly twice as many haftarot from the (mostly non-narrative)<label for="sidenote-6" class="margin-toggle sidenote-number">(6)</label>
+<input type="checkbox" id="sidenote-6" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(6)</span>A generalisation: there are some narrative parts in the Latter Prophets (e.g. Yeshayahu 36, all of Yona), and some non-narrative parts in the Early Prophets.
+</span>
+ Latter Prophets compared to the Early Prophets (50 vs 26). This is partly due to their greater length, and partly, I suspect, because it is harder to find thematic overlap between narrative prophecies and the weekly Torah portions.</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-headline-2" class="outline-2">
-<h2 id="headline-2">
+<h2 id="results">
 Results
+<a href="#results" class="heading-anchor">#</a>
 </h2>
-<div id="outline-text-headline-2" class="outline-text-2">
 <table>
-<thead>
-<tr>
-<th>Book</th>
-<th class="align-right">Number of Haftarot</th>
-<th class="align-right">Number of Chapters</th>
-<th class="align-right">Haftarot:Chapter ratio</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>תרי עשר</td>
-<td class="align-right">13</td>
-<td class="align-right">36</td>
-<td class="align-right">0.361</td>
-</tr>
-<tr>
-<td>מלכים</td>
-<td class="align-right">13</td>
-<td class="align-right">45</td>
-<td class="align-right">0.289</td>
-</tr>
-<tr>
-<td>ישעיהו</td>
-<td class="align-right">18</td>
-<td class="align-right">66</td>
-<td class="align-right">0.273</td>
-</tr>
-<tr>
-<td>יחזקאל</td>
-<td class="align-right">10</td>
-<td class="align-right">48</td>
-<td class="align-right">0.208</td>
-</tr>
-<tr>
-<td>ירמיהו</td>
-<td class="align-right">9</td>
-<td class="align-right">52</td>
-<td class="align-right">0.173</td>
-</tr>
-<tr>
-<td>שופטים</td>
-<td class="align-right">3</td>
-<td class="align-right">21</td>
-<td class="align-right">0.143</td>
-</tr>
-<tr>
-<td>שמואל</td>
-<td class="align-right">7</td>
-<td class="align-right">53</td>
-<td class="align-right">0.132</td>
-</tr>
-<tr>
-<td>יהושע</td>
-<td class="align-right">3</td>
-<td class="align-right">24</td>
-<td class="align-right">0.125</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th style="text-align: left">Book</th>
+					<th style="text-align: center">Number of Haftarot</th>
+					<th style="text-align: center">Number of Chapters</th>
+					<th style="text-align: center">Haftarot:Chapter ratio</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">תרי עשר</td>
+					<td style="text-align: center">13</td>
+					<td style="text-align: center">36</td>
+					<td style="text-align: center">0.361</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">מלכים</td>
+					<td style="text-align: center">13</td>
+					<td style="text-align: center">45</td>
+					<td style="text-align: center">0.289</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">ישעיהו</td>
+					<td style="text-align: center">18</td>
+					<td style="text-align: center">66</td>
+					<td style="text-align: center">0.273</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">יחזקאל</td>
+					<td style="text-align: center">10</td>
+					<td style="text-align: center">48</td>
+					<td style="text-align: center">0.208</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">ירמיהו</td>
+					<td style="text-align: center">9</td>
+					<td style="text-align: center">52</td>
+					<td style="text-align: center">0.173</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">שופטים</td>
+					<td style="text-align: center">3</td>
+					<td style="text-align: center">21</td>
+					<td style="text-align: center">0.143</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">שמואל</td>
+					<td style="text-align: center">7</td>
+					<td style="text-align: center">53</td>
+					<td style="text-align: center">0.132</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">יהושע</td>
+					<td style="text-align: center">3</td>
+					<td style="text-align: center">24</td>
+					<td style="text-align: center">0.125</td>
+			</tr>
+	</tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-headline-3" class="outline-2">
-<h2 id="headline-3">
+<h2 id="notes-on-methodology">
 Notes on Methodology
+<a href="#notes-on-methodology" class="heading-anchor">#</a>
 </h2>
-<div id="outline-text-headline-3" class="outline-text-2">
 <p>I took the list of <em>haftarot</em> from <a href="https://www.shoresh.org.il/usersfiles/articlesdocs/parashot.pdf">here</a>. In cases where customs differ, I followed the Ashkenazi rite (there are only a few cases where different communities read from entirely different books). I included Rosh Chodesh and holiday readings, but not that of יום עצמאות. If a haftorah included parts from different books, I included only the main part of the reading.</p>
-</div>
-</div>
-<div id="outline-container-headline-4" class="outline-2">
-<h2 id="headline-4">
-Footnotes
-</h2>
-</div>
-<div class="footnotes">
-<hr class="footnotes-separatator"/>
-<div class="footnote-definitions">
-<div class="footnote-definition">
-<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
-<div class="footnote-body">
-<p>Megilla 31a</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
-<div class="footnote-body">
-<p>Tosfos Rid (R’ Yeshaya MiTrani) in <em>Sefer HaMachria</em> 31</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-3"><a href="#footnote-reference-3">3</a></sup>
-<div class="footnote-body">
-<p>Zohar Bamidbar 134a</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-4"><a href="#footnote-reference-4">4</a></sup>
-<div class="footnote-body">
-<p>Code and data to reproduce are available <a href="https://github.com/lordgrenville/haftarot">online</a>. I will gratefully receive any corrections or suggestions.</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-5"><a href="#footnote-reference-5">5</a></sup>
-<div class="footnote-body">
-<p>Chapters 40-66, which differ from the first part in both style and chronology</p>
-</div>
-</div>
-<div class="footnote-definition">
-<sup id="footnote-6"><a href="#footnote-reference-6">6</a></sup>
-<div class="footnote-body">
-<p>A generalisation: there are some narrative parts in the Latter Prophets (e.g. Yeshayahu 36, all of Yona), and some non-narrative parts in the Early Prophets.</p>
-</div>
-</div>
-</div>
-</div>
 
   </div>
 
@@ -223,11 +202,11 @@ Footnotes
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" style="display:inline-block;float:right; "href="http://lordgrenville.github.io/posts/doom_modeline/">
+  <a class="prev" style="display:inline-block;float:right; "href="http://localhost:1313/posts/doom_modeline/">
     <span class="title">  </span>
     <span>Adding an item to the Doom modeline»</span>
   </a>
-  <a class="next"  href="http://lordgrenville.github.io/posts/find/">
+  <a class="next"  href="http://localhost:1313/posts/find/">
     <span class="title">  </span>
     <span>«Cleaning up with find(1)</span>
   </a>
