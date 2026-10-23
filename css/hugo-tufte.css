@@ -1,0 +1,1110 @@
+/* You can find the original at https://github.com/edwardtufte/tufte-css */
+/* Import ET Book styles
+   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "et-book";
+  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "et-book-roman-old-style";
+  src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+  src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Tufte CSS styles */
+html {
+  font-size: 15px;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  font-family: et-book, "Noto Serif SC", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, "Noto Emoji";
+  background-color: #fffff8;
+  color: #111;
+  max-width: 1400px;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+}
+
+h2, h3 {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 2.1rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.author, .date {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1rem auto 1rem 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 1;
+}
+
+.numeral {
+  font-family: et-book-roman-old-style;
+}
+
+.danger {
+  color: red;
+}
+
+article {
+  position: relative;
+  padding: 5rem 0rem;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.page-list .content-title {
+  margin-top: 4.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.page-list .content-title:first-child {
+  margin-top: 1.4rem;
+}
+
+p,
+ol,
+ul,
+dl {
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+  hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 4;
+  -ms-hyphenate-limit-chars: 10 3 4;
+  hyphenate-limit-chars: 10 3 4;
+}
+
+/* Chapter Epigraphs */
+.epigraph {
+  margin: 3em 0;
+}
+
+.epigraph > blockquote {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.epigraph > blockquote {
+  font-style: italic;
+}
+
+.epigraph > blockquote > footer {
+  font-style: normal;
+}
+
+.epigraph > blockquote > footer > cite {
+  font-style: italic;
+}
+
+/* end chapter epigraphs styles */
+blockquote {
+  font-size: 1.4rem;
+}
+
+blockquote p {
+  width: 50%;
+}
+
+blockquote footer {
+  width: 50%;
+  font-size: 1.1rem;
+  text-align: right !important;
+}
+
+ol,
+ul,
+dl {
+  width: 45%;
+  -webkit-padding-start: 5%;
+  -webkit-padding-end: 5%;
+}
+
+li ul {
+  width: 100%;
+}
+
+li,
+dt, dd {
+  padding: 0.5rem 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+figure {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 55%;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin: 0 0 3em 0;
+}
+
+figcaption {
+  float: right;
+  clear: right;
+  margin-right: -48%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  vertical-align: baseline;
+  position: relative;
+  max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+  margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+  color: inherit;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+  max-width: 100%;
+}
+
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.table-caption {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.marginnote-ind,
+.sidenote-number {
+  position: relative;
+  vertical-align: baseline;
+  user-select: none;
+}
+
+label.marginnote-ind,
+label.sidenote-number {
+  font-size: 1rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+span.marginnote-ind,
+span.sidenote-number {
+  font-size: 1.1rem;
+}
+
+p,
+footer,
+table,
+div.table-wrapper-small,
+div.supertable-wrapper > p,
+div.booktabs-wrapper {
+  width: 55%;
+}
+
+div.fullwidth,
+table.fullwidth {
+  width: 100%;
+}
+
+div.table-wrapper {
+  overflow-x: scroll;
+  font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif, "Noto Emoji";
+}
+
+@media screen and (max-width: 760px) {
+  h2,
+  h3,
+  p,
+  footer {
+    width: 90%;
+  }
+  ul,
+  ol,
+  dl {
+    width: 85%;
+  }
+  figure {
+    max-width: 90%;
+  }
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+  }
+  blockquote p,
+  blockquote footer {
+    width: 90%;
+  }
+}
+.sans {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "Noto Emoji";
+  letter-spacing: 0.03em;
+}
+
+code,
+.code,
+kbd {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, "Noto Emoji";
+  font-size: 1.125rem;
+  line-height: 1.42;
+}
+
+h1 .code,
+h2 .code,
+h3 .code {
+  font-size: 0.8em;
+}
+
+.marginnote .code,
+.sidenote .code {
+  font-size: 1rem;
+}
+
+pre.code {
+  font-size: 0.9rem;
+  width: 52.5%;
+  padding-left: 2.5%;
+  overflow-x: scroll;
+}
+
+.fullwidth {
+  max-width: 90%;
+  clear: both;
+}
+
+.newthought {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+.margin-toggle {
+  cursor: pointer;
+}
+
+input.margin-toggle {
+  position: absolute;
+  outline: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin-left: 5px;
+  margin-top: 5px;
+  z-index: -100;
+}
+
+label:has(+ input.margin-toggle:focus) {
+  outline: medium auto currentColor;
+  outline: medium auto invert;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -3px;
+}
+
+label.sidenote-number {
+  display: inline;
+}
+
+label.marginnote-ind {
+  display: none;
+}
+
+.video-container {
+  width: 100%;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.video {
+  width: 55%;
+}
+
+.video--16x9 {
+  aspect-ratio: 16/9;
+}
+
+.video--4x3 {
+  aspect-ratio: 4/3;
+}
+
+@media (max-width: 760px) {
+  label.marginnote-ind {
+    display: inline;
+  }
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+  }
+  pre.code {
+    width: 90%;
+    padding: 0;
+  }
+  .table-caption {
+    display: block;
+    float: right;
+    clear: both;
+    width: 98%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1%;
+    margin-right: 1%;
+    vertical-align: baseline;
+    position: relative;
+  }
+  div.table-wrapper,
+  table,
+  table.booktabs {
+    width: 85%;
+  }
+  div.table-wrapper {
+    border-right: 1px solid #efefef;
+  }
+  img {
+    width: 100%;
+  }
+  .video {
+    width: 90%;
+  }
+}
+/* ------------------------------------------------------------------------ */
+/* hugo-tufte.css */
+/* Contains extensions to the original tufte.css styles to */
+/* accomodate a blog-like site. */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* Generic content, such as the index list pages */
+/* ------------------------------------------------------------------------ */
+:root * {
+  text-align: left;
+  text-rendering: optimizeLegibility;
+}
+
+:focus {
+  outline: medium auto currentColor;
+  outline: medium auto invert;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+::selection {
+  color: #fffff8;
+  background-color: #404040;
+}
+
+a.heading-anchor {
+  display: none;
+  visibility: collapse;
+}
+
+h2 {
+  margin-top: 5.5rem;
+}
+
+h2:hover > a.heading-anchor,
+h3:hover > a.heading-anchor {
+  display: inline;
+  visibility: visible;
+}
+
+hr {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  width: 75%;
+  max-width: 45rem;
+  border-style: solid none none none;
+  border-color: #111;
+}
+
+kbd {
+  border: 1px #111 solid;
+  border-radius: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+mark {
+  background: #f0d9bb;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for listing pages. */
+/* ------------------------------------------------------------------------ */
+.list-page ul {
+  list-style-type: none;
+  margin: -0.25em;
+  width: 87.5%;
+  max-width: 45rem;
+}
+.list-page li {
+  margin: 0;
+  /*font-size: 95%;*/
+}
+
+.list-page .list-date {
+  display: inline;
+  font-size: 0.75em;
+  /* padding-right: 2em; */
+  /* margin-right: 2em; */
+}
+
+table:not(.lntable) {
+  margin-top: 1.4em;
+  font-size: 1.4rem;
+  width: auto; /* making booktabs style tables the unstyled default in case someone uses Markdown styling */
+  /* margin: 0 auto; */
+  /* border-spacing: 0px; */
+}
+
+table:not(.lntable) tr th {
+  border-bottom: 1px solid #111;
+  text-transform: uppercase;
+}
+
+table:not(.lntable) tr th,
+table:not(.lntable) tr td {
+  padding-right: 0.5rem;
+}
+
+table.lntable td.lntd {
+  padding: 0em;
+}
+table.lntable {
+  border-spacing: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for footnotes. */
+/* ------------------------------------------------------------------------ */
+.footnotes hr {
+  margin-top: 4.4em;
+}
+
+.footnotes ol {
+  width: 55%;
+  margin-top: 4.4rem;
+}
+.footnotes ol li p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footnotes ol li p a.footnote-backref {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for maths. */
+/* ------------------------------------------------------------------------ */
+/* mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar,
+.katex-display::-webkit-scrollbar {
+  display: none;
+}*/
+mjx-container[jax=CHTML][display=true],
+.katex-display {
+  overflow: auto;
+  overflow-y: hidden;
+  /*     -ms-overflow-style: none;
+      scrollbar-width: none; */
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for margin/side notes. */
+/* ------------------------------------------------------------------------ */
+.marginnote .marginnote-ind,
+.sidenote .sidenote-number {
+  margin-right: 5px;
+}
+
+/* prevent over-crowding */
+.sidenote, .marginnote {
+  margin-bottom: 1rem;
+}
+
+.sidenote code,
+.marginnote code {
+  font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling & fixes for cols. */
+/* ------------------------------------------------------------------------ */
+.row {
+  /* mobile */
+  display: grid;
+  width: 75%;
+  gap: 0.3rem;
+  margin: 0 0 1rem 0;
+}
+
+.row .column:nth-of-type(2n) {
+  margin-left: 1rem;
+}
+
+.row .column:nth-of-type(3n) {
+  margin-left: 2rem;
+}
+
+.row .column > p:first-child {
+  margin-top: 0;
+}
+
+.row .column > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 760px) {
+  /* desktop */
+  /* https://stackoverflow.com/a/62086985 */
+  .row {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    /* above 2 lines are equivalent as below 1 line */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 1.4rem;
+    margin: 0 0 1.4rem 0;
+  }
+  .row .column {
+    margin-left: 0 !important;
+  }
+}
+.column > p {
+  width: 100%;
+}
+
+.column > p > label.margin-toggle.marginnote-ind {
+  display: inline;
+}
+
+.column > p > .sidenote,
+.column > p > .marginnote {
+  display: none;
+}
+
+.column > p > .margin-toggle:checked + .sidenote,
+.column > p > .margin-toggle:checked + .marginnote {
+  display: block;
+  float: left;
+  left: 1rem;
+  clear: both;
+  width: 95%;
+  margin: 1rem 2.5%;
+  vertical-align: baseline;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for buttons. */
+/* ------------------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  margin-top: 1.4rem;
+}
+
+.btn button {
+  font-size: 1.4rem;
+}
+
+.btn button .icon {
+  font-size: 1.2rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Styling for i18n. */
+/* ------------------------------------------------------------------------ */
+/* reduce zh & ja font-size to match en */
+p:lang(zh), span:lang(zh),
+p:lang(ja), span:lang(ja) {
+  font-size: 1.2rem;
+}
+
+.sidenote:lang(zh),
+.marginnote:lang(zh) {
+  font-size: 0.5rem;
+}
+
+.sidenote:lang(ja),
+.marginnote:lang(ja) {
+  font-size: 0.9rem;
+}
+
+/* Footer, but with a different name to avoid conflicts with tufte.css */
+footer.page-footer {
+  margin-top: 1.4rem;
+  color: #aaa;
+  width: 95%;
+  max-width: 45rem;
+}
+
+footer.page-footer p {
+  font-size: 1.2rem;
+  margin: 0em;
+  /* light font looked odd on chrome */
+  /*font-weight: lighter;*/
+}
+
+footer.page-footer a {
+  color: rgb(65, 70, 75);
+  text-decoration: none;
+  background: transparent;
+}
+
+footer.page-footer hr {
+  width: 100%;
+}
+
+footer.page-footer ul.page-footer-menu {
+  list-style: none;
+  display: block;
+  /*text-align:center;*/
+  margin: 0;
+  padding: 0;
+  width: unset;
+}
+
+footer.page-footer ul.page-footer-menu li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.copyright p {
+  font-size: 90%;
+}
+
+.highlight {
+  width: 50%;
+  overflow-x: scroll;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.highlight::-webkit-scrollbar {
+  display: none;
+}
+.highlight code {
+  font-size: 1rem;
+  display: block;
+}
+.highlight > .chroma {
+  margin: 0;
+}
+.highlight > .chroma .hl {
+  display: block;
+}
+.highlight > .chroma .hl::before {
+  content: "> ";
+  font-family: inherit;
+  position: absolute;
+  left: 0;
+  color: #111;
+}
+.highlight > div.chroma > table.lntable {
+  overflow: initial;
+}
+.highlight > div.chroma > table.lntable td:first-of-type span:not(.highlight > div.chroma > table.lntable td:first-of-type span > span) {
+  padding: 0 0.75em 0 0.5em;
+}
+.highlight > div.chroma > table.lntable pre {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.highlight > .chroma > code {
+  width: max-content;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+.highlight > .chroma > code > span.hl {
+  margin-left: -0.5em;
+  padding-left: 0.5em;
+}
+
+@media screen and (max-width: 760px) {
+  .highlight {
+    width: 90%;
+  }
+}
+ul > li > div.highlight {
+  width: 100%;
+}
+
+/* We utilize the html5 summary tags in order to create a post archive */
+/* with built-in folding. */
+details {
+  border-radius: 3px;
+}
+
+details summary {
+  vertical-align: top;
+  padding: 0.3em 0.5em;
+  outline: none;
+  /*color: rgba(65, 70, 75, 1);*/
+}
+
+details summary.year {
+  font-size: 1.5rem;
+}
+
+/* Table of Contents */
+.toc summary {
+  font-size: 1.5rem;
+  margin-bottom: -1.5rem;
+  padding-left: 0;
+}
+
+.toc {
+  /*padding: 0rem 1rem 1rem 1rem;*/
+  /*margin-top: 1rem;*/
+}
+
+.toc ul {
+  list-style: none;
+  display: block;
+  /*margin-top: 0.75rem;*/
+  padding: 0;
+  width: 87.5%;
+}
+
+.toc li {
+  line-height: 0.5rem;
+  margin: 1rem;
+}
+
+.menu {
+  margin: 1.4rem 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  max-width: 45rem;
+  /* Width is the same as tufte.css body */
+  font-size: 1.2rem;
+  width: 87.5%;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brand {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Content meta-data such as author, publication date, etc. */
+.content-meta {
+  display: block;
+  /*color: rgba(155, 155, 155, 1);*/
+  font-size: 1.1rem;
+  margin-top: 1em;
+}
+
+.content-meta .author {
+  /*color: rgb(90, 20, 55)*/
+}
+
+.post-avatar {
+  border-radius: 50px;
+  float: right;
+  margin-left: 1em;
+}
+
+.highlight .lnt {
+  color: #6a737d;
+} /* line number */
+.highlight .c {
+  color: #6a737d;
+} /* Comment */
+/* Error */
+.highlight .k {
+  color: #d73a49;
+} /* Keyword */
+/* Operator */
+.highlight .ch {
+  color: #6a737d;
+} /* Comment.Hashbang */
+.highlight .cm {
+  color: #6a737d;
+} /* Comment.Multiline */
+.highlight .cp {
+  color: #d73a49;
+} /* Comment.Preproc */
+.highlight .cpf {
+  color: #032f62;
+} /* Comment.PreprocFile */
+.highlight .c1 {
+  color: #6a737d;
+} /* Comment.Single */
+.highlight .cs {
+  color: #6a737d;
+} /* Comment.Special */
+.highlight .gd {
+  color: #b31d28;
+  background-color: #ffeef0;
+} /* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+.highlight .gh {
+  color: #005cc5;
+} /* Generic.Heading */
+.highlight .gi {
+  color: #22863a;
+  background-color: #f0fff4;
+} /* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+.highlight .gs {
+  font-weight: bold;
+} /* Generic.Strong */
+.highlight .gu {
+  color: #6f42c1;
+  font-weight: bold;
+} /* Generic.Subheading */
+.highlight .gt {
+  color: #0044DD;
+} /* Generic.Traceback */
+.highlight .kc {
+  color: #005cc5;
+} /* Keyword.Constant */
+.highlight .kd {
+  color: #d73a49;
+} /* Keyword.Declaration */
+.highlight .kn {
+  color: #d73a49;
+} /* Keyword.Namespace */
+.highlight .kp {
+  color: #d73a49;
+} /* Keyword.Pseudo */
+.highlight .kr {
+  color: #d73a49;
+} /* Keyword.Reserved */
+.highlight .kt {
+  color: #d73a49;
+} /* Keyword.Type */
+.highlight .m {
+  color: #666666;
+} /* Literal.Number */
+.highlight .s {
+  color: #032f62;
+} /* Literal.String */
+/* Name.Attribute */
+.highlight .nb {
+  color: #005cc5;
+} /* Name.Builtin */
+.highlight .nc {
+  color: #6f42c1;
+} /* Name.Class */
+.highlight .no {
+  color: #005cc5;
+} /* Name.Constant */
+.highlight .nd {
+  color: #6f42c1;
+} /* Name.Decorator */
+.highlight .ni {
+  color: #005cc5;
+} /* Name.Entity */
+.highlight .ne {
+  color: #005cc5;
+} /* Name.Exception */
+.highlight .nf {
+  color: #6f42c1;
+} /* Name.Function */
+.highlight .nl {
+  color: #005cc5;
+} /* Name.Label */
+.highlight .nn {
+  color: #6f42c1;
+} /* Name.Namespace */
+.highlight .nt {
+  color: #22863a;
+} /* Name.Tag */
+.highlight .nv {
+  color: #24292e;
+} /* Name.Variable */
+.highlight .ow {
+  color: #d73a49;
+} /* Operator.Word */
+.highlight .w {
+  color: #bbbbbb;
+} /* Text.Whitespace */
+.highlight .mb {
+  color: #005cc5;
+} /* Literal.Number.Bin */
+.highlight .mf {
+  color: #005cc5;
+} /* Literal.Number.Float */
+.highlight .mh {
+  color: #005cc5;
+} /* Literal.Number.Hex */
+.highlight .mi {
+  color: #005cc5;
+} /* Literal.Number.Integer */
+.highlight .mo {
+  color: #005cc5;
+} /* Literal.Number.Oct */
+.highlight .sa {
+  color: #d73a49;
+} /* Literal.String.Affix */
+.highlight .sb {
+  color: #032f62;
+} /* Literal.String.Backtick */
+.highlight .sc {
+  color: #032f62;
+} /* Literal.String.Char */
+.highlight .dl {
+  color: #d73a49;
+} /* Literal.String.Delimiter */
+.highlight .sd {
+  color: #032f62;
+} /* Literal.String.Doc */
+.highlight .s2 {
+  color: #032f62;
+} /* Literal.String.Double */
+.highlight .se {
+  color: #032f62;
+} /* Literal.String.Escape */
+.highlight .sh {
+  color: #032f62;
+} /* Literal.String.Heredoc */
+.highlight .si {
+  color: #005cc5;
+} /* Literal.String.Interpol */
+.highlight .sx {
+  color: #032f62;
+} /* Literal.String.Other */
+.highlight .sr {
+  color: #032f62;
+} /* Literal.String.Regex */
+.highlight .s1 {
+  color: #032f62;
+} /* Literal.String.Single */
+.highlight .ss {
+  color: #005cc5;
+} /* Literal.String.Symbol */
+.highlight .bp {
+  color: #005cc5;
+} /* Name.Builtin.Pseudo */
+.highlight .fm {
+  color: #005cc5;
+} /* Name.Function.Magic */
+.highlight .vc {
+  color: #24292e;
+} /* Name.Variable.Class */
+.highlight .vg {
+  color: #24292e;
+} /* Name.Variable.Global */
+.highlight .vi {
+  color: #24292e;
+} /* Name.Variable.Instance */
+.highlight .vm {
+  color: #005cc5;
+} /* Name.Variable.Magic */
+.highlight .il {
+  color: #005cc5;
+} /* Literal.Number.Integer.Long */
